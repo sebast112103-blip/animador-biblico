@@ -21,7 +21,8 @@
  "musica": "auto",
  "volumen_musica": 0.13,
  "voz_narrador": "es_MX-claude-high",
- "velocidad_narrador": 1.12,
+ "velocidad_narrador": 1.25,
+ "corte_seg": 1.8,
  "escenas": [
   {
    "fondo": "ciudad",
@@ -40,7 +41,7 @@
     }
    ],
    "camara": "acercar_rapido",
-   "pausa": 0.15,
+   "pausa": 0.08,
    "portada": true
   },
   {
@@ -72,7 +73,7 @@
     }
    ],
    "camara": "acercar",
-   "pausa": 0.15
+   "pausa": 0.08
   },
   {
    "fondo": "palacio",
@@ -106,7 +107,7 @@
     }
    ],
    "camara": "paneo",
-   "pausa": 0.15
+   "pausa": 0.08
   },
   {
    "fondo": "palacio",
@@ -131,7 +132,7 @@
     }
    ],
    "camara": "acercar_rapido",
-   "pausa": 0.15
+   "pausa": 0.08
   },
   {
    "fondo": "prision",
@@ -152,7 +153,7 @@
     }
    ],
    "camara": "alejar",
-   "pausa": 0.15
+   "pausa": 0.08
   },
   {
    "fondo": "cielo",

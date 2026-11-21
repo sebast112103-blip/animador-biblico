@@ -21,7 +21,8 @@
  "musica": "auto",
  "volumen_musica": 0.13,
  "voz_narrador": "es_MX-claude-high",
- "velocidad_narrador": 1.12,
+ "velocidad_narrador": 1.25,
+ "corte_seg": 1.8,
  "escenas": [
   {
    "fondo": "valle",
@@ -53,7 +54,7 @@
     }
    ],
    "camara": "acercar_rapido",
-   "pausa": 0.15,
+   "pausa": 0.08,
    "portada": true
   },
   {
@@ -68,7 +69,7 @@
    ],
    "foco_x": 0.5,
    "camara": "acercar",
-   "pausa": 0.15
+   "pausa": 0.08
   },
   {
    "fondo": "palacio",
@@ -102,7 +103,7 @@
     }
    ],
    "camara": "paneo",
-   "pausa": 0.15
+   "pausa": 0.08
   },
   {
    "fondo": "cielo",

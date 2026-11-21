@@ -1077,7 +1077,7 @@ def _velocidad(v):
         return 1.0
 
 
-def preparar_voz(escenas, personajes, carpeta, sin_voz, voz_narr, vel_narr=1.0):
+def preparar_voz(escenas, personajes, carpeta, sin_voz, voz_narr, vel_narr=1.0, pausa_def=0.35):
     """Genera el audio de cada escena. Devuelve lista de (audio np, palabras, duracion)."""
     res = []
     for i, e in enumerate(escenas):
@@ -1100,7 +1100,8 @@ def preparar_voz(escenas, personajes, carpeta, sin_voz, voz_narr, vel_narr=1.0):
                     audio = decodificar(mp3)
                     mp3.unlink(missing_ok=True)
                 else:
-                    a, sr = _piper(texto, nombre, _velocidad(conf.get("velocidad", vel_narr)))
+                    vel = _velocidad(conf["velocidad"]) * vel_narr if "velocidad" in conf else vel_narr
+                    a, sr = _piper(texto, nombre, vel)
                     audio = procesar_audio(a, sr, _semitonos(conf.get("tono", 0)))
             except ErrorVoz as ex:
                 sys.exit(f"\n[ERROR] {ex}")
@@ -1109,7 +1110,7 @@ def preparar_voz(escenas, personajes, carpeta, sin_voz, voz_narr, vel_narr=1.0):
                          "Si quieres el video sin voz usa --sin-voz")
             if audio is None or len(audio) < SR // 10:
                 sys.exit(f"\n[ERROR] La voz de la escena {i + 1} salio vacia.")
-            dur = len(audio) / SR + e.get("pausa", 0.35)
+            dur = len(audio) / SR + e.get("pausa", pausa_def)
             if not palabras:
                 palabras = palabras_estimadas(texto, len(audio) / SR, audio)
         else:
@@ -1909,7 +1910,7 @@ def crear_video(ruta, a):
     print(f"Historia: {h.get('titulo', ruta.stem)}  ({len(escenas)} escenas)")
     print("[1/3] Generando voces...")
     voces = preparar_voz(escenas, personajes, carpeta, a.sin_voz, h.get("voz_narrador", VOZ_NARRADOR),
-                         _velocidad(h.get("velocidad_narrador", 1.0)))
+                         _velocidad(h.get("velocidad_narrador", 1.0)), h.get("pausa_escenas", 0.35))
     inicios, t = [], 0.0
     for (_, _, d) in voces:
         inicios.append(t)
@@ -2045,7 +2046,8 @@ def crear_video(ruta, a):
                                                       j + 1 + ie, frame)
                     img.paste(spr, pos, spr)
                     manos[pid] = mano
-                    pos_cabeza[pid] = (x * W, yb - (430 + 30) * c["escala"])
+                    if not po.get("caida"):   # acostados no sirven para primer plano
+                        pos_cabeza[pid] = (x * W, yb - (430 + 30) * c["escala"])
                 d = ImageDraw.Draw(img, "RGBA")
                 sx = sy = 0
                 for ef in efectos:
@@ -2123,13 +2125,37 @@ def crear_video(ruta, a):
                 desp = 0.0
                 if camara == "paneo":
                     z, desp = 1.1, (p - 0.5) * W * 0.08
-                if sx or sy:
-                    z = max(z, 1.03)
-                if z != 1.0:
+                # cortes de camara: cada ~2 s cambia el plano (primer plano, plano medio...)
+                corte = h.get("corte_seg", 2.2)
+                centrado = None
+                if h.get("cortes", True) and e.get("cortes", True) and dur >= corte * 1.5:
+                    k = int(t // corte)
+                    frac = (t % corte) / corte
+                    caras = [pos_cabeza[i] for i in sorted(pos_cabeza)]
+                    if k > 0:
+                        if caras and k % 2 == 1:      # primer plano de un personaje
+                            cx_, cy_ = caras[(k // 2) % len(caras)]
+                            centrado = (1.6 + 0.06 * frac, cx_, cy_ + 120)
+                        elif caras:                   # plano medio del grupo
+                            mx_ = sum(c[0] for c in caras) / len(caras)
+                            my_ = sum(c[1] for c in caras) / len(caras)
+                            centrado = (1.25 + 0.05 * frac, mx_, my_ + 260)
+                        else:                         # sin personajes: acercar a la escena
+                            centrado = (1.2 + 0.08 * frac if k % 2 else 1.0 + 0.05 * frac, W / 2, suelo - 350)
+                if centrado:
+                    z, cx_, cy_ = centrado
                     cw, ch = W / z, H / z
-                    l = min(max(fx - fx / z + desp + sx, 0), W - cw)
-                    tp = min(max(fy - fy / z + sy, 0), H - ch)
+                    l = min(max(cx_ - cw / 2 + sx, 0), W - cw)
+                    tp = min(max(cy_ - ch * 0.42 + sy, 0), H - ch)
                     img = img.resize((W, H), Image.BILINEAR, box=(l, tp, l + cw, tp + ch))
+                else:
+                    if sx or sy:
+                        z = max(z, 1.03)
+                    if z != 1.0:
+                        cw, ch = W / z, H / z
+                        l = min(max(fx - fx / z + desp + sx, 0), W - cw)
+                        tp = min(max(fy - fy / z + sy, 0), H - ch)
+                        img = img.resize((W, H), Image.BILINEAR, box=(l, tp, l + cw, tp + ch))
                 if h.get("barra_progreso"):
                     db = ImageDraw.Draw(img, "RGBA")
                     db.rectangle([0, 0, W, 16], fill=(0, 0, 0, 120))

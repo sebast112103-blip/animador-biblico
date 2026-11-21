@@ -2,3 +2,14 @@
 15:37:37 Conectando con tu cuenta de GitHub (si se abre una ventana, inicia sesion y autoriza)...
 15:46:17 Sesion iniciada como: sebast112103-blip
 15:46:21 Repositorio creado: https://github.com/sebast112103-blip/animador-biblico
+15:46:30 Subiendo el proyecto a GitHub...
+15:47:11 Proyecto subido.
+15:47:13 Creacion de videos lanzada en la nube (todos).
+15:47:13 Esperando a que GitHub cree los videos (revisa cada minuto)...
+15:47:28 Puedes verla aqui: https://github.com/sebast112103-blip/animador-biblico/actions/runs/44948335699
+15:47:30   1/1 videos terminados (completed)
+15:47:30 GitHub termino: success
+15:47:31 [ERROR] Esa ejecucion no tiene videos para descargar todavia.
+15:57:55 Conectando con tu cuenta de GitHub (si se abre una ventana, inicia sesion y autoriza)...
+15:58:02 Sesion iniciada como: sebast112103-blip
+15:58:05 Cancelada la ejecucion anterior #1.

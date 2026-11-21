@@ -15,10 +15,6 @@ on:
         description: "Opcional: solo historias que contengan este texto (ej: 30s, noe, 05_)"
         type: string
         default: ""
-  push:
-    paths:
-      - "historias/**.json"
-      - "historias_cortas/**.json"
 
 permissions:
   contents: read

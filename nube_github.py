@@ -131,6 +131,14 @@ def subir(login):
     log("Proyecto subido.")
 
 
+def cancelar_pendientes(token, login):
+    for estado in ("queued", "in_progress"):
+        st, r = api(token, "GET", f"/repos/{login}/{REPO}/actions/runs?status={estado}&per_page=50")
+        for run in (r.get("workflow_runs", []) if st == 200 else []):
+            api(token, "POST", f"/repos/{login}/{REPO}/actions/runs/{run['id']}/cancel")
+            log(f"Cancelada la ejecucion anterior #{run['run_number']}.")
+
+
 def lanzar(token, login, carpeta, filtro=""):
     ruta = f"/repos/{login}/{REPO}/actions/workflows/crear_videos.yml/dispatches"
     for intento in range(12):   # GitHub tarda unos segundos en registrar el flujo nuevo
@@ -144,7 +152,7 @@ def lanzar(token, login, carpeta, filtro=""):
 
 
 def ultima_ejecucion(token, login):
-    st, r = api(token, "GET", f"/repos/{login}/{REPO}/actions/workflows/crear_videos.yml/runs?per_page=1")
+    st, r = api(token, "GET", f"/repos/{login}/{REPO}/actions/workflows/crear_videos.yml/runs?event=workflow_dispatch&per_page=1")
     if st == 200 and r.get("workflow_runs"):
         return r["workflow_runs"][0]
     return None
@@ -233,6 +241,7 @@ def main():
         crear_repo(token, login)
         subir(login)
     elif accion == "crear":
+        cancelar_pendientes(token, login)
         subir(login)
         t = lanzar(token, login, carpeta, filtro)
         run = esperar(token, login, t)

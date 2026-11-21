@@ -14,7 +14,9 @@
   "BIBLIA"
  ],
  "voz_narrador": "es_MX-claude-high",
- "velocidad_narrador": 1.05,
+ "velocidad_narrador": 1.2,
+ "pausa_escenas": 0.12,
+ "corte_seg": 2.3,
  "musica": "auto",
  "volumen_musica": 0.1,
  "efectos_sonido": true,
