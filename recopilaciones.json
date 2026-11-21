@@ -1,0 +1,194 @@
+[
+ {
+  "titulo": "7 Grandes Héroes de la Fe",
+  "miniatura": "7 HÉROES DE LA FE",
+  "intro": "Intro A",
+  "despedida": "Despedida A",
+  "capitulos": [
+   {
+    "video": "Noé y el arca HD",
+    "titulo": "Noé y el arca"
+   },
+   {
+    "video": "Abraham y la promesa imposible HD",
+    "titulo": "Abraham y la promesa imposible"
+   },
+   {
+    "video": "José de esclavo a gobernador HD",
+    "titulo": "José de esclavo a gobernador"
+   },
+   {
+    "video": "Moisés y el mar Rojo HD",
+    "titulo": "Moisés y el mar Rojo"
+   },
+   {
+    "video": "David y Goliat HD",
+    "titulo": "David y Goliat"
+   },
+   {
+    "video": "Daniel en el foso de los leones HD",
+    "titulo": "Daniel en el foso de los leones"
+   },
+   {
+    "video": "Ester la reina valiente HD",
+    "titulo": "Ester la reina valiente"
+   }
+  ]
+ },
+ {
+  "titulo": "6 Historias de Fuerza y Esperanza",
+  "miniatura": "FUERZA Y ESPERANZA",
+  "intro": "Intro B",
+  "despedida": "Despedida B",
+  "capitulos": [
+   {
+    "video": "Sansón el hombre más fuerte HD",
+    "titulo": "Sansón el hombre más fuerte"
+   },
+   {
+    "video": "Sansón y Dalila HD",
+    "titulo": "Sansón y Dalila"
+   },
+   {
+    "video": "Job el hombre que lo perdió todo HD",
+    "titulo": "Job el hombre que lo perdió todo"
+   },
+   {
+    "video": "Rut la mujer que no abandonó HD",
+    "titulo": "Rut la mujer que no abandonó"
+   },
+   {
+    "video": "Elías y el fuego del cielo HD",
+    "titulo": "Elías y el fuego del cielo"
+   },
+   {
+    "video": "Jonás y el gran pez HD",
+    "titulo": "Jonás y el gran pez"
+   }
+  ]
+ },
+ {
+  "titulo": "La Vida de Jesús en 7 Historias",
+  "miniatura": "LA VIDA DE JESÚS",
+  "intro": "Intro C",
+  "despedida": "Despedida C",
+  "capitulos": [
+   {
+    "video": "El nacimiento de Jesús HD",
+    "titulo": "El nacimiento de Jesús"
+   },
+   {
+    "video": "Jesús calma la tormenta HD",
+    "titulo": "Jesús calma la tormenta"
+   },
+   {
+    "video": "La multiplicación de los panes y los peces HD",
+    "titulo": "La multiplicación de los panes y los peces"
+   },
+   {
+    "video": "El hijo pródigo HD",
+    "titulo": "El hijo pródigo"
+   },
+   {
+    "video": "Pedro niega a Jesús tres veces HD",
+    "titulo": "Pedro niega a Jesús tres veces"
+   },
+   {
+    "video": "La resurrección de Jesús HD",
+    "titulo": "La resurrección de Jesús"
+   },
+   {
+    "video": "La conversión de Pablo HD",
+    "titulo": "La conversión de Pablo"
+   }
+  ]
+ },
+ {
+  "titulo": "20 Historias de la Biblia (Película Completa)",
+  "miniatura": "20 HISTORIAS DE LA BIBLIA",
+  "intro": "Intro D",
+  "despedida": "Despedida D",
+  "capitulos": [
+   {
+    "video": "Noé y el arca HD",
+    "titulo": "Noé y el arca"
+   },
+   {
+    "video": "David y Goliat HD",
+    "titulo": "David y Goliat"
+   },
+   {
+    "video": "José de esclavo a gobernador HD",
+    "titulo": "José de esclavo a gobernador"
+   },
+   {
+    "video": "Moisés y el mar Rojo HD",
+    "titulo": "Moisés y el mar Rojo"
+   },
+   {
+    "video": "Daniel en el foso de los leones HD",
+    "titulo": "Daniel en el foso de los leones"
+   },
+   {
+    "video": "Jonás y el gran pez HD",
+    "titulo": "Jonás y el gran pez"
+   },
+   {
+    "video": "Sansón el hombre más fuerte HD",
+    "titulo": "Sansón el hombre más fuerte"
+   },
+   {
+    "video": "Abraham y la promesa imposible HD",
+    "titulo": "Abraham y la promesa imposible"
+   },
+   {
+    "video": "Job el hombre que lo perdió todo HD",
+    "titulo": "Job el hombre que lo perdió todo"
+   },
+   {
+    "video": "Sansón y Dalila HD",
+    "titulo": "Sansón y Dalila"
+   },
+   {
+    "video": "El nacimiento de Jesús HD",
+    "titulo": "El nacimiento de Jesús"
+   },
+   {
+    "video": "Jesús calma la tormenta HD",
+    "titulo": "Jesús calma la tormenta"
+   },
+   {
+    "video": "La multiplicación de los panes y los peces HD",
+    "titulo": "La multiplicación de los panes y los peces"
+   },
+   {
+    "video": "El hijo pródigo HD",
+    "titulo": "El hijo pródigo"
+   },
+   {
+    "video": "Pedro niega a Jesús tres veces HD",
+    "titulo": "Pedro niega a Jesús tres veces"
+   },
+   {
+    "video": "La resurrección de Jesús HD",
+    "titulo": "La resurrección de Jesús"
+   },
+   {
+    "video": "Ester la reina valiente HD",
+    "titulo": "Ester la reina valiente"
+   },
+   {
+    "video": "Elías y el fuego del cielo HD",
+    "titulo": "Elías y el fuego del cielo"
+   },
+   {
+    "video": "Rut la mujer que no abandonó HD",
+    "titulo": "Rut la mujer que no abandonó"
+   },
+   {
+    "video": "La conversión de Pablo HD",
+    "titulo": "La conversión de Pablo"
+   }
+  ]
+ }
+]

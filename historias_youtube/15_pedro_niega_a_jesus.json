@@ -1,0 +1,293 @@
+{
+ "titulo": "Pedro niega a Jesús tres veces HD",
+ "gancho": "Prometió MORIR por Jesús… y lo NEGÓ 3 VECES",
+ "final": "",
+ "resaltar": [
+  "PEDRO",
+  "GALLO",
+  "NEGÓ",
+  "TRES",
+  "OPORTUNIDAD",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.1,
+ "pausa_escenas": 0.3,
+ "corte_seg": 3.0,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "escenas": [
+  {
+   "fondo": "campo",
+   "texto": "Pedro era uno de los discípulos más cercanos a Jesús.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.32,
+     "emocion": "feliz"
+    },
+    {
+     "id": "jesus",
+     "x": 0.68,
+     "mira": "izquierda"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Había prometido que nunca lo abandonaría, incluso si tenía que morir por él.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.32,
+     "accion": "senalar",
+     "emocion": "valiente"
+    },
+    {
+     "id": "jesus",
+     "x": 0.68,
+     "mira": "izquierda",
+     "emocion": "triste"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Pero aquella noche, después de que Jesús fue arrestado, Pedro comenzó a sentir miedo.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.12,
+     "accion": "temblar",
+     "emocion": "asustado",
+     "profundidad": -40
+    },
+    {
+     "id": "guardia1",
+     "x": 0.35,
+     "hasta": 0.75,
+     "accion": "caminar"
+    },
+    {
+     "id": "jesus",
+     "x": 0.5,
+     "hasta": 0.9,
+     "accion": "caminar",
+     "emocion": "triste"
+    },
+    {
+     "id": "guardia2",
+     "x": 0.65,
+     "hasta": 1.05,
+     "accion": "caminar"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "patio",
+   "texto": "Mientras esperaba cerca del lugar donde interrogaban a Jesús, varias personas lo reconocieron como uno de sus seguidores.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.3,
+     "emocion": "asustado"
+    },
+    {
+     "id": "criada",
+     "x": 0.75,
+     "mira": "izquierda",
+     "accion": "senalar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "fuego",
+     "x": 0.53,
+     "tamano": 0.45
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "patio",
+   "texto": "Pedro negó conocerlo.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.3,
+     "accion": "senalar",
+     "emocion": "enojado"
+    },
+    {
+     "id": "criada",
+     "x": 0.75,
+     "mira": "izquierda",
+     "emocion": "sorprendido"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "fuego",
+     "x": 0.53,
+     "tamano": 0.45
+    }
+   ],
+   "rotulo": "¡NO LO CONOZCO!",
+   "portada": true,
+   "camara": "fijo"
+  },
+  {
+   "fondo": "patio",
+   "texto": "La primera vez, la segunda vez y finalmente una tercera vez.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.28,
+     "accion": "temblar",
+     "emocion": "asustado"
+    },
+    {
+     "id": "hombre1",
+     "x": 0.62,
+     "mira": "izquierda",
+     "accion": "senalar"
+    },
+    {
+     "id": "hombre2",
+     "x": 0.85,
+     "mira": "izquierda",
+     "accion": "senalar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "fuego",
+     "x": 0.45,
+     "tamano": 0.45
+    }
+   ],
+   "rotulo": "3 VECES",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "patio",
+   "texto": "Entonces escuchó cantar al gallo.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.3,
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "gallo",
+     "x": 0.75,
+     "mira": "izquierda",
+     "accion": "rugir"
+    }
+   ],
+   "camara": "acercar_rapido",
+   "foco_x": 0.75
+  },
+  {
+   "fondo": "patio",
+   "texto": "En ese momento recordó las palabras de Jesús, quien le había anunciado que lo negaría tres veces antes de que cantara el gallo.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.5,
+     "emocion": "llorando"
+    }
+   ],
+   "foco_x": 0.5,
+   "camara": "fijo"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Pedro comprendió lo que había hecho y salió llorando amargamente.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.4,
+     "hasta": 0.85,
+     "accion": "caminar",
+     "emocion": "llorando"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "mar",
+   "texto": "Pero su historia no terminó con aquel error. Después de la resurrección de Jesús, Pedro recibió una nueva oportunidad para servirle.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.38,
+     "accion": "abrazar",
+     "emocion": "llorando"
+    },
+    {
+     "id": "jesus",
+     "x": 0.58,
+     "mira": "izquierda",
+     "accion": "abrazar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.5
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Un error no tiene que definir toda tu vida. Siempre puedes levantarte y cambiar.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "ENSEÑANZA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Qué error necesitas dejar atrás? Escríbelo en los comentarios.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "pausa": 1.6,
+   "camara": "fijo"
+  }
+ ],
+ "formato": "horizontal",
+ "barra_progreso": false
+}

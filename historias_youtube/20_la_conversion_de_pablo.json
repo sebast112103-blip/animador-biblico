@@ -1,0 +1,306 @@
+{
+ "titulo": "La conversión de Pablo HD",
+ "gancho": "PERSEGUÍA a los cristianos… hasta que vio una LUZ",
+ "final": "",
+ "resaltar": [
+  "SAULO",
+  "PABLO",
+  "LUZ",
+  "DAMASCO",
+  "JESÚS",
+  "CAMBIO",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.1,
+ "pausa_escenas": 0.3,
+ "corte_seg": 3.0,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "escenas": [
+  {
+   "fondo": "ciudad",
+   "texto": "Antes de convertirse en uno de los grandes predicadores del cristianismo, Pablo era conocido como Saulo.",
+   "personajes": [
+    {
+     "id": "saulo",
+     "x": 0.5,
+     "emocion": "burlon"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Perseguía a los seguidores de Jesús y estaba decidido a detener la expansión de sus enseñanzas.",
+   "personajes": [
+    {
+     "id": "guardia1",
+     "x": 0.12
+    },
+    {
+     "id": "saulo",
+     "x": 0.32,
+     "accion": "senalar",
+     "emocion": "enojado"
+    },
+    {
+     "id": "hombre1",
+     "x": 0.68,
+     "mira": "izquierda",
+     "accion": "temblar",
+     "emocion": "asustado"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.88,
+     "mira": "izquierda",
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "camino",
+   "texto": "Un día, mientras viajaba hacia Damasco, ocurrió algo que cambiaría su vida para siempre.",
+   "personajes": [
+    {
+     "id": "saulo",
+     "x": 0.15,
+     "hasta": 0.5,
+     "accion": "caminar"
+    }
+   ],
+   "rotulo": "CAMINO A DAMASCO",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "camino",
+   "texto": "Una luz brillante del cielo lo rodeó y cayó al suelo.",
+   "personajes": [
+    {
+     "id": "saulo",
+     "x": 0.25,
+     "accion": "caer_de_cara"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "flash",
+     "fin": 0.2
+    },
+    {
+     "tipo": "temblor",
+     "fin": 0.3
+    }
+   ],
+   "portada": true,
+   "camara": "paneo"
+  },
+  {
+   "fondo": "camino",
+   "texto": "Entonces escuchó una voz que le preguntó:",
+   "personajes": [
+    {
+     "id": "saulo",
+     "x": 0.5,
+     "accion": "arrodillarse",
+     "emocion": "asustado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "camino",
+   "texto": "Saulo, Saulo, ¿por qué me persigues?",
+   "personajes": [
+    {
+     "id": "saulo",
+     "x": 0.5,
+     "accion": "arrodillarse",
+     "emocion": "asustado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -900,
+     "radio": 400
+    }
+   ],
+   "habla": "jesus",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "camino",
+   "texto": "Era Jesús.",
+   "personajes": [
+    {
+     "id": "saulo",
+     "x": 0.5,
+     "accion": "arrodillarse",
+     "emocion": "sorprendido"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "¡ERA JESÚS!",
+   "duracion_min": 2.2,
+   "camara": "acercar"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Después de aquel encuentro, Saulo quedó ciego durante tres días.",
+   "personajes": [
+    {
+     "id": "saulo",
+     "x": 0.5,
+     "accion": "arrodillarse",
+     "emocion": "triste",
+     "venda": true
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.45
+    }
+   ],
+   "rotulo": "3 DÍAS",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Un discípulo llamado Ananías recibió instrucciones de Dios para visitarlo y orar por él.",
+   "personajes": [
+    {
+     "id": "saulo",
+     "x": 0.3,
+     "accion": "arrodillarse",
+     "venda": true
+    },
+    {
+     "id": "ananias",
+     "x": 0.95,
+     "mira": "izquierda",
+     "hasta": 0.62,
+     "accion": "caminar"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Saulo recuperó la vista y su vida tomó un rumbo completamente diferente.",
+   "personajes": [
+    {
+     "id": "saulo",
+     "x": 0.32,
+     "accion": "celebrar"
+    },
+    {
+     "id": "ananias",
+     "x": 0.66,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "flash",
+     "fin": 0.1
+    },
+    {
+     "tipo": "brillo",
+     "x": 0.32,
+     "y": -450
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "De perseguidor pasó a convertirse en Pablo, uno de los principales mensajeros del cristianismo.",
+   "personajes": [
+    {
+     "id": "saulo",
+     "x": 0.5,
+     "accion": "senalar",
+     "emocion": "feliz",
+     "y": -30
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.85,
+     "y": 360,
+     "delante": true
+    }
+   ],
+   "rotulo": "PABLO",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Ninguna vida está fuera del alcance del cambio cuando existe un verdadero arrepentimiento.",
+   "personajes": [
+    {
+     "id": "saulo",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "ENSEÑANZA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Cómo cambió Dios tu vida? Cuéntamelo en los comentarios.",
+   "personajes": [
+    {
+     "id": "saulo",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "pausa": 1.6,
+   "camara": "fijo"
+  }
+ ],
+ "formato": "horizontal",
+ "barra_progreso": false
+}

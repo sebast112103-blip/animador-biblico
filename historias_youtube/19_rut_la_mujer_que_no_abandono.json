@@ -1,0 +1,225 @@
+{
+ "titulo": "Rut la mujer que no abandonó HD",
+ "gancho": "Lo perdió TODO… pero eligió QUEDARSE",
+ "final": "",
+ "resaltar": [
+  "RUT",
+  "NOEMÍ",
+  "BOOZ",
+  "LEALTAD",
+  "BELÉN",
+  "DAVID",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.1,
+ "pausa_escenas": 0.3,
+ "corte_seg": 3.0,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "escenas": [
+  {
+   "fondo": "campo",
+   "texto": "Rut era una mujer moabita que se había casado con un hombre israelita.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.35,
+     "emocion": "feliz"
+    },
+    {
+     "id": "hombre1",
+     "x": 0.65,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Pero después de la muerte de su esposo, quedó viuda junto a su suegra Noemí.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.32,
+     "emocion": "llorando"
+    },
+    {
+     "id": "noemi",
+     "x": 0.68,
+     "mira": "izquierda",
+     "emocion": "llorando"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "camino",
+   "texto": "Noemí decidió regresar a Belén y le pidió a Rut que volviera con su familia.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.32,
+     "emocion": "triste"
+    },
+    {
+     "id": "noemi",
+     "x": 0.68,
+     "mira": "izquierda",
+     "accion": "senalar",
+     "emocion": "triste"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "camino",
+   "texto": "Sin embargo, Rut tomó una decisión que cambiaría su destino.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.5,
+     "emocion": "valiente"
+    }
+   ],
+   "camara": "acercar_rapido",
+   "portada": true
+  },
+  {
+   "fondo": "camino",
+   "texto": "Se negó a abandonar a su suegra y decidió acompañarla.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.4,
+     "accion": "abrazar",
+     "emocion": "llorando"
+    },
+    {
+     "id": "noemi",
+     "x": 0.56,
+     "mira": "izquierda",
+     "accion": "abrazar",
+     "emocion": "llorando"
+    }
+   ],
+   "rotulo": "¡NO TE DEJARÉ!",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "trigal",
+   "texto": "Llegaron a Belén sin riquezas y tuvieron que trabajar recogiendo las espigas que quedaban en los campos después de la cosecha.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.4,
+     "accion": "agacharse"
+    },
+    {
+     "id": "noemi",
+     "x": 0.78,
+     "mira": "izquierda"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "trigal",
+   "texto": "Allí conoció a Booz, un hombre generoso que terminó convirtiéndose en su esposo.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.3,
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "booz",
+     "x": 0.7,
+     "mira": "izquierda",
+     "emocion": "feliz",
+     "accion": "ofrecer"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Rut llegó a formar parte de la genealogía del rey David y, posteriormente, de la genealogía de Jesús.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.25,
+     "emocion": "feliz"
+    },
+    {
+     "id": "david",
+     "x": 0.5,
+     "accion": "alabar",
+     "objeto": null
+    },
+    {
+     "id": "jesus",
+     "x": 0.76,
+     "mira": "izquierda",
+     "aureola": true
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -450
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "La lealtad, la humildad y la perseverancia pueden abrir caminos que jamás imaginaste.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "ENSEÑANZA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿A quién le has sido leal en los momentos difíciles? Escríbelo en los comentarios.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "pausa": 1.6,
+   "camara": "fijo"
+  }
+ ],
+ "formato": "horizontal",
+ "barra_progreso": false
+}

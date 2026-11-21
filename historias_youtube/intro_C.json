@@ -1,0 +1,89 @@
+{
+ "titulo": "Intro C",
+ "formato": "horizontal",
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.1,
+ "pausa_escenas": 0.3,
+ "corte_seg": 3.0,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "resaltar": [
+  "BIBLIA",
+  "DIOS",
+  "JESÚS",
+  "SUSCRÍBETE",
+  "FAVORITA",
+  "HÉROES"
+ ],
+ "escenas": [
+  {
+   "fondo": "cielo",
+   "texto": "¡Hola! Hoy vamos a recorrer la vida de Jesús: desde su nacimiento en Belén hasta el día en que venció a la muerte.",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.3,
+     "accion": "celebrar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "jesus",
+     "x": 0.5,
+     "accion": "alabar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "pedro",
+     "x": 0.7,
+     "accion": "celebrar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "rotulo": "LA VIDA DE JESÚS",
+   "portada": true,
+   "camara": "acercar"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Antes de empezar, suscríbete y activa la campanita, así no te pierdes ninguna historia nueva.",
+   "personajes": [
+    {
+     "id": "jesus",
+     "x": 0.5,
+     "accion": "senalar",
+     "emocion": "feliz"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "camino",
+   "texto": "¡Y quédate hasta el final, porque la historia número 7 te va a encantar! ¿Listo? ¡Comenzamos!",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.35,
+     "accion": "caminar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "pedro",
+     "x": 0.65,
+     "accion": "caminar",
+     "emocion": "feliz"
+    }
+   ],
+   "camara": "acercar"
+  }
+ ]
+}

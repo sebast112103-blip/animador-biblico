@@ -1,0 +1,73 @@
+{
+ "titulo": "Despedida D",
+ "formato": "horizontal",
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.1,
+ "pausa_escenas": 0.3,
+ "corte_seg": 3.0,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "resaltar": [
+  "BIBLIA",
+  "DIOS",
+  "JESÚS",
+  "SUSCRÍBETE",
+  "FAVORITA",
+  "HÉROES"
+ ],
+ "escenas": [
+  {
+   "fondo": "cielo",
+   "texto": "¿Cuál fue tu historia favorita? Escríbela en los comentarios, ¡me encanta leerlos!",
+   "personajes": [
+    {
+     "id": "noe",
+     "x": 0.3,
+     "accion": "celebrar"
+    },
+    {
+     "id": "jesus",
+     "x": 0.5,
+     "accion": "orar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "david",
+     "x": 0.7,
+     "accion": "celebrar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Si te gustó este video, dale me gusta, compártelo con tu familia y suscríbete para más historias de la Biblia. ¡Dios te bendiga!",
+   "personajes": [
+    {
+     "id": "jesus",
+     "x": 0.5,
+     "accion": "alabar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "rotulo": "¡SUSCRÍBETE!",
+   "pausa": 1.5,
+   "camara": "acercar"
+  }
+ ]
+}

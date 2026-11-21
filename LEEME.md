@@ -146,3 +146,18 @@ como `"es-MX-JorgeNeural"` o `"es-DO-EmilioNeural"`. El programa reconoce solo q
 - Entre 45 y 75 segundos, con escenas cortas (4–6 segundos) y mucho movimiento.
 - Termina con una pregunta personal ("¿Qué gigante necesitas vencer hoy?"): genera comentarios.
 - Si citas versículos textuales, usa la Reina-Valera 1909 (dominio público) o cuenta la historia con tus palabras.
+
+## Videos horizontales para YouTube (recopilaciones)
+
+Doble clic en **CREAR_YOUTUBE_EN_LA_NUBE.bat**. Hace todo solo:
+
+1. `construir_youtube.py` crea en `historias_youtube` la versión horizontal (1920x1080) de cada historia,
+   más una bienvenida y una despedida para cada recopilación.
+2. GitHub crea los videos y los une en recopilaciones largas (`recopilar.py`).
+3. Se descargan en `videos\youtube`:
+   - `Recopilacion_*.mp4` – los videos largos listos para subir a YouTube.
+   - `Recopilacion_*_miniatura.jpg` – la miniatura (1280x720).
+   - `Recopilacion_*_descripcion.txt` – título, descripción y capítulos con sus minutos (cópialos en YouTube).
+   - `*_HD.mp4` – cada historia sola, en horizontal.
+
+Para cambiar qué historias van en cada recopilación, edita la lista `RECOPILACIONES` al principio de `construir_youtube.py`.

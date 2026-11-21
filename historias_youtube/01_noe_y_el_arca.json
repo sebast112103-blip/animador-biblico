@@ -1,0 +1,321 @@
+{
+ "titulo": "Noé y el arca HD",
+ "gancho": "¿Construirías un ARCA si nadie te creyera?",
+ "final": "",
+ "resaltar": [
+  "NOÉ",
+  "ARCA",
+  "DILUVIO",
+  "ARCOÍRIS",
+  "PROMESA",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.1,
+ "pausa_escenas": 0.3,
+ "corte_seg": 3.0,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "escenas": [
+  {
+   "fondo": "ciudad",
+   "texto": "En una época donde la maldad se había apoderado de la humanidad,",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.28,
+     "accion": "senalar",
+     "emocion": "enojado"
+    },
+    {
+     "id": "hombre2",
+     "x": 0.72,
+     "mira": "izquierda",
+     "emocion": "burlon"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.3
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "había un hombre que todavía caminaba con Dios. Su nombre era Noé.",
+   "personajes": [
+    {
+     "id": "noe",
+     "x": 0.15,
+     "hasta": 0.5,
+     "accion": "caminar",
+     "emocion": "feliz"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Un día, Dios le reveló que enviaría un gran diluvio para limpiar la tierra y le ordenó construir un arca.",
+   "personajes": [
+    {
+     "id": "noe",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Noé obedeció, aunque muchos se burlaban de él.",
+   "personajes": [
+    {
+     "id": "noe",
+     "x": 0.18,
+     "accion": "levantar"
+    },
+    {
+     "id": "hombre1",
+     "x": 0.86,
+     "mira": "izquierda",
+     "emocion": "burlon",
+     "accion": "senalar",
+     "profundidad": 40
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "arca",
+     "x": 0.6,
+     "escala": 0.8,
+     "puerta": true
+    }
+   ],
+   "portada": true,
+   "camara": "paneo"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Construyó aquella enorme embarcación y reunió animales de todas las especies.",
+   "personajes": [
+    {
+     "id": "oveja1",
+     "x": -0.05,
+     "hasta": 0.3,
+     "accion": "caminar",
+     "profundidad": 40
+    },
+    {
+     "id": "burro",
+     "x": -0.2,
+     "hasta": 0.15,
+     "accion": "caminar",
+     "profundidad": 10
+    },
+    {
+     "id": "leon1",
+     "x": -0.35,
+     "hasta": 0.02,
+     "accion": "caminar",
+     "profundidad": 60
+    },
+    {
+     "id": "noe",
+     "x": 0.88,
+     "mira": "izquierda",
+     "accion": "senalar",
+     "profundidad": 50
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "arca",
+     "x": 0.62,
+     "escala": 0.8,
+     "puerta": true
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "tormenta",
+   "texto": "Cuando todo estuvo preparado, comenzó a llover.",
+   "personajes": [],
+   "cosas": [
+    {
+     "tipo": "arca",
+     "x": 0.5,
+     "escala": 0.9
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    },
+    {
+     "tipo": "rayo"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "tormenta",
+   "texto": "No dejó de llover durante cuarenta días y cuarenta noches.",
+   "personajes": [],
+   "cosas": [
+    {
+     "tipo": "arca",
+     "x": 0.5,
+     "escala": 0.9,
+     "y": -60,
+     "sube": -60,
+     "balanceo": true
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    },
+    {
+     "tipo": "agua",
+     "nivel": 0.12,
+     "hasta": 0.3
+    },
+    {
+     "tipo": "rayo"
+    }
+   ],
+   "rotulo": "40 DÍAS Y 40 NOCHES",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "tormenta",
+   "texto": "Las aguas cubrieron la tierra, pero Noé, su familia y los animales estaban protegidos dentro del arca.",
+   "personajes": [],
+   "cosas": [
+    {
+     "tipo": "arca",
+     "x": 0.5,
+     "escala": 0.9,
+     "y": -160,
+     "balanceo": true
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    },
+    {
+     "tipo": "agua",
+     "nivel": 0.33
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Después de muchos días, las aguas descendieron y Dios estableció un pacto con Noé,",
+   "personajes": [
+    {
+     "id": "noe",
+     "x": 0.22,
+     "accion": "alabar",
+     "profundidad": 60
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "arca",
+     "x": 0.65,
+     "escala": 0.75
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "agua",
+     "nivel": 0.15,
+     "hasta": 0
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "valle",
+   "texto": "colocando un arcoíris en el cielo como señal de su promesa.",
+   "personajes": [
+    {
+     "id": "noe",
+     "x": 0.5,
+     "accion": "alabar"
+    },
+    {
+     "id": "oveja1",
+     "x": 0.82,
+     "mira": "izquierda",
+     "profundidad": 30
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "arcoiris",
+     "inicio": 0,
+     "fin": 0.35
+    }
+   ],
+   "camara": "alejar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "No necesitas que todos crean en ti cuando sabes que estás obedeciendo a Dios.",
+   "personajes": [
+    {
+     "id": "noe",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "ENSEÑANZA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Alguna vez obedeciste a Dios aunque nadie te creyera? Cuéntamelo en los comentarios.",
+   "personajes": [
+    {
+     "id": "noe",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "pausa": 1.6,
+   "camara": "fijo"
+  }
+ ],
+ "formato": "horizontal",
+ "barra_progreso": false
+}

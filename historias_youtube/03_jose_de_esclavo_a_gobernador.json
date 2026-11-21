@@ -1,0 +1,313 @@
+{
+ "titulo": "José de esclavo a gobernador HD",
+ "gancho": "Lo VENDIERON sus hermanos… y terminó GOBERNANDO Egipto",
+ "final": "",
+ "resaltar": [
+  "JOSÉ",
+  "EGIPTO",
+  "GOBERNADOR",
+  "PERDONARLOS",
+  "ESCLAVO",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.1,
+ "pausa_escenas": 0.3,
+ "corte_seg": 3.0,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "escenas": [
+  {
+   "fondo": "campo",
+   "texto": "José era uno de los hijos favoritos de Jacob.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.35,
+     "emocion": "feliz"
+    },
+    {
+     "id": "jacob",
+     "x": 0.68,
+     "mira": "izquierda",
+     "accion": "abrazar"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Sus hermanos sentían tantos celos de él",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.22,
+     "emocion": "asustado"
+    },
+    {
+     "id": "hermano1",
+     "x": 0.62,
+     "mira": "izquierda",
+     "emocion": "enojado"
+    },
+    {
+     "id": "hermano2",
+     "x": 0.84,
+     "mira": "izquierda",
+     "emocion": "enojado",
+     "accion": "senalar"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "desierto",
+   "texto": "que terminaron vendiéndolo como esclavo a unos comerciantes.",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.15
+    },
+    {
+     "id": "jose",
+     "x": 0.4,
+     "emocion": "llorando",
+     "accion": "temblar"
+    },
+    {
+     "id": "hermano1",
+     "x": 0.82,
+     "mira": "izquierda",
+     "emocion": "burlon",
+     "accion": "ofrecer"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "monedas",
+     "x": 0.62,
+     "profundidad": 100
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "egipto",
+   "texto": "José fue llevado a Egipto, donde comenzó una vida llena de dificultades.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.1,
+     "hasta": 0.5,
+     "accion": "caminar",
+     "emocion": "triste"
+    }
+   ],
+   "portada": true,
+   "camara": "paneo"
+  },
+  {
+   "fondo": "prision",
+   "texto": "A pesar de su sufrimiento, nunca abandonó su fe en Dios.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.45,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.65
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "prision",
+   "texto": "Después de ser acusado injustamente y pasar tiempo en prisión, recibió una oportunidad inesperada.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.4,
+     "accion": "arrodillarse",
+     "emocion": "triste"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "El faraón tuvo unos sueños que nadie podía interpretar.",
+   "personajes": [
+    {
+     "id": "faraon",
+     "x": 0.5,
+     "emocion": "asustado",
+     "accion": "temblar"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.5,
+     "profundidad": -30
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Entonces llamaron a José, quien explicó que Egipto viviría siete años de abundancia seguidos de siete años de hambre.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.3,
+     "accion": "senalar",
+     "emocion": "valiente"
+    },
+    {
+     "id": "faraon",
+     "x": 0.72,
+     "mira": "izquierda",
+     "emocion": "sorprendido"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.78,
+     "profundidad": -30
+    }
+   ],
+   "rotulo": "7 AÑOS + 7 AÑOS",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "egipto",
+   "texto": "Impresionado por su sabiduría, el faraón lo nombró gobernador de Egipto.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.32,
+     "accion": "alabar",
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e"
+    },
+    {
+     "id": "faraon",
+     "x": 0.72,
+     "mira": "izquierda",
+     "accion": "senalar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "brillo",
+     "x": 0.32,
+     "y": -450
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "egipto",
+   "texto": "Años después, sus propios hermanos llegaron buscando alimento y no lo reconocieron.",
+   "personajes": [
+    {
+     "id": "hermano1",
+     "x": 0.2,
+     "accion": "arrodillarse"
+    },
+    {
+     "id": "hermano2",
+     "x": 0.4,
+     "accion": "arrodillarse"
+    },
+    {
+     "id": "jose",
+     "x": 0.75,
+     "mira": "izquierda",
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e"
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "egipto",
+   "texto": "José pudo vengarse, pero decidió perdonarlos.",
+   "personajes": [
+    {
+     "id": "hermano1",
+     "x": 0.32,
+     "accion": "abrazar",
+     "emocion": "llorando"
+    },
+    {
+     "id": "jose",
+     "x": 0.62,
+     "mira": "izquierda",
+     "accion": "abrazar",
+     "emocion": "llorando",
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Lo que hoy parece una derrota puede convertirse mañana en parte de un propósito mucho mayor.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "ENSEÑANZA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Hay alguien a quien necesitas perdonar? Escríbelo en los comentarios.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "pausa": 1.6,
+   "camara": "fijo"
+  }
+ ],
+ "formato": "horizontal",
+ "barra_progreso": false
+}

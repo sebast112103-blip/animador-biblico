@@ -1,0 +1,279 @@
+{
+ "titulo": "Ester la reina valiente HD",
+ "gancho": "Arriesgó su VIDA para salvar a su PUEBLO",
+ "final": "",
+ "resaltar": [
+  "ESTER",
+  "REINA",
+  "REY",
+  "AMÁN",
+  "PUEBLO",
+  "VALENTÍA",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.1,
+ "pausa_escenas": 0.3,
+ "corte_seg": 3.0,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "escenas": [
+  {
+   "fondo": "palacio",
+   "texto": "Ester era una joven judía que llegó a convertirse en reina de Persia.",
+   "personajes": [
+    {
+     "id": "ester",
+     "x": 0.5,
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.5,
+     "profundidad": -30
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "brillo",
+     "y": -500
+    }
+   ],
+   "portada": true,
+   "camara": "acercar"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Pero su pueblo enfrentaba una amenaza terrible.",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.3,
+     "emocion": "asustado",
+     "accion": "temblar"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.68,
+     "mira": "izquierda",
+     "emocion": "asustado",
+     "accion": "temblar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.35
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Un hombre llamado Amán había convencido al rey para aprobar un decreto que ordenaba destruir a todos los judíos del reino.",
+   "personajes": [
+    {
+     "id": "aman",
+     "x": 0.28,
+     "accion": "ofrecer",
+     "emocion": "burlon"
+    },
+    {
+     "id": "rey_asuero",
+     "x": 0.72,
+     "mira": "izquierda"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.78,
+     "profundidad": -30
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Cuando Ester descubrió lo que estaba ocurriendo, entendió que tenía que hacer algo.",
+   "personajes": [
+    {
+     "id": "ester",
+     "x": 0.5,
+     "emocion": "asustado"
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Pero existía un problema: presentarse ante el rey sin ser llamada podía costarle la vida.",
+   "personajes": [
+    {
+     "id": "guardia1",
+     "x": 0.18
+    },
+    {
+     "id": "ester",
+     "x": 0.5,
+     "emocion": "triste"
+    },
+    {
+     "id": "guardia2",
+     "x": 0.82,
+     "mira": "izquierda"
+    }
+   ],
+   "rotulo": "PENA DE MUERTE",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Aun así, Ester decidió arriesgarse.",
+   "personajes": [
+    {
+     "id": "ester",
+     "x": 0.1,
+     "hasta": 0.45,
+     "accion": "caminar",
+     "emocion": "valiente"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Se presentó ante el rey y reveló el plan de Amán.",
+   "personajes": [
+    {
+     "id": "ester",
+     "x": 0.25,
+     "accion": "senalar",
+     "emocion": "valiente"
+    },
+    {
+     "id": "rey_asuero",
+     "x": 0.6,
+     "mira": "izquierda",
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "aman",
+     "x": 0.88,
+     "mira": "izquierda",
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.66,
+     "profundidad": -30
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "El rey escuchó su petición y finalmente permitió que los judíos se defendieran.",
+   "personajes": [
+    {
+     "id": "ester",
+     "x": 0.3,
+     "emocion": "feliz"
+    },
+    {
+     "id": "rey_asuero",
+     "x": 0.68,
+     "mira": "izquierda",
+     "accion": "senalar",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.74,
+     "profundidad": -30
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Gracias a su valentía, Ester ayudó a salvar a su pueblo.",
+   "personajes": [
+    {
+     "id": "ester",
+     "x": 0.5,
+     "accion": "alabar",
+     "y": -30
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.85,
+     "y": 360,
+     "delante": true
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "brillo",
+     "y": -500
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "A veces, una sola persona puede marcar la diferencia cuando encuentra el valor para defender lo correcto.",
+   "personajes": [
+    {
+     "id": "ester",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "ENSEÑANZA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Para qué te ha puesto Dios donde estás hoy? Escríbelo en los comentarios.",
+   "personajes": [
+    {
+     "id": "ester",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "pausa": 1.6,
+   "camara": "fijo"
+  }
+ ],
+ "formato": "horizontal",
+ "barra_progreso": false
+}

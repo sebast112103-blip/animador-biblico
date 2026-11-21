@@ -1,0 +1,326 @@
+{
+ "titulo": "Elías y el fuego del cielo HD",
+ "gancho": "Le pidió a Dios FUEGO… y cayó del CIELO",
+ "final": "",
+ "resaltar": [
+  "ELÍAS",
+  "FUEGO",
+  "BAAL",
+  "ALTAR",
+  "CIELO",
+  "AGUA",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.1,
+ "pausa_escenas": 0.3,
+ "corte_seg": 3.0,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "escenas": [
+  {
+   "fondo": "ciudad",
+   "texto": "El pueblo de Israel había comenzado a adorar a otros dioses y había olvidado al Dios verdadero.",
+   "personajes": [
+    {
+     "id": "profeta_baal1",
+     "x": 0.5,
+     "accion": "alabar",
+     "y": -40
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.85,
+     "y": 360,
+     "delante": true
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.25
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Entonces el profeta Elías desafió a los profetas de Baal a una prueba extraordinaria.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.25,
+     "accion": "senalar",
+     "emocion": "valiente"
+    },
+    {
+     "id": "profeta_baal1",
+     "x": 0.65,
+     "mira": "izquierda",
+     "emocion": "burlon"
+    },
+    {
+     "id": "profeta_baal2",
+     "x": 0.86,
+     "mira": "izquierda",
+     "emocion": "burlon"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Prepararían dos altares, colocarían un sacrificio sobre cada uno y pedirían a sus respectivos dioses que enviaran fuego del cielo.",
+   "personajes": [],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.27
+    },
+    {
+     "tipo": "altar",
+     "x": 0.73
+    }
+   ],
+   "rotulo": "2 ALTARES",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Los profetas de Baal comenzaron a gritar y a pedir ayuda durante horas, pero no ocurrió absolutamente nada.",
+   "personajes": [
+    {
+     "id": "profeta_baal1",
+     "x": 0.2,
+     "accion": "saltar",
+     "emocion": "enojado"
+    },
+    {
+     "id": "profeta_baal2",
+     "x": 0.85,
+     "mira": "izquierda",
+     "accion": "alabar",
+     "emocion": "enojado"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.52,
+     "profundidad": -40
+    }
+   ],
+   "rotulo": "NADA...",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Después llegó el turno de Elías.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.15,
+     "hasta": 0.4,
+     "accion": "caminar",
+     "emocion": "valiente"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.7,
+     "profundidad": -40
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Preparó su altar, colocó el sacrificio y pidió que derramaran agua sobre él.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.25,
+     "accion": "senalar"
+    },
+    {
+     "id": "hombre1",
+     "x": 0.85,
+     "mira": "izquierda",
+     "accion": "ofrecer"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.58
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Incluso llenaron una zanja alrededor del altar.",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.85,
+     "mira": "izquierda",
+     "accion": "ofrecer",
+     "emocion": "sorprendido"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.5,
+     "profundidad": -40
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "agua",
+     "nivel": 0.07,
+     "hasta": 0.13
+    }
+   ],
+   "rotulo": "¡AGUA!",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Entonces Elías oró a Dios.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.25,
+     "accion": "alabar"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.62,
+     "profundidad": -40
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.2
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "montana",
+   "texto": "De repente, descendió fuego del cielo y consumió el sacrificio, la leña, las piedras y hasta el agua.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.2,
+     "accion": "celebrar"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.62,
+     "profundidad": -40
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.62
+    },
+    {
+     "tipo": "flash",
+     "fin": 0.08
+    },
+    {
+     "tipo": "fuego",
+     "x": 0.62,
+     "y": -120,
+     "tamano": 1.6,
+     "crece": true
+    },
+    {
+     "tipo": "temblor",
+     "fin": 0.35
+    }
+   ],
+   "portada": true,
+   "rotulo": "¡FUEGO!",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "montana",
+   "texto": "El pueblo quedó impresionado ante aquel acontecimiento.",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.3,
+     "accion": "arrodillarse",
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.7,
+     "mira": "izquierda",
+     "accion": "arrodillarse",
+     "emocion": "sorprendido"
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "La verdadera fe no depende de las apariencias, sino de la confianza en Dios.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "ENSEÑANZA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Crees que Dios todavía responde con fuego? Escribe AMÉN en los comentarios.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "pausa": 1.6,
+   "camara": "fijo"
+  }
+ ],
+ "formato": "horizontal",
+ "barra_progreso": false
+}

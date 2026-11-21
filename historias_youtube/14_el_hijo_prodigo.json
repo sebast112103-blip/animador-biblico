@@ -1,0 +1,316 @@
+{
+ "titulo": "El hijo pródigo HD",
+ "gancho": "Lo gastó TODO… y su padre CORRIÓ a abrazarlo",
+ "final": "",
+ "resaltar": [
+  "PADRE",
+  "HIJO",
+  "PERDÓN",
+  "ABRAZARLO",
+  "CELEBRACIÓN",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.1,
+ "pausa_escenas": 0.3,
+ "corte_seg": 3.0,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "escenas": [
+  {
+   "fondo": "campo",
+   "texto": "Un hombre tenía dos hijos.",
+   "personajes": [
+    {
+     "id": "hijo_menor",
+     "x": 0.22
+    },
+    {
+     "id": "padre",
+     "x": 0.5,
+     "emocion": "feliz"
+    },
+    {
+     "id": "hermano1",
+     "x": 0.78,
+     "mira": "izquierda"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Un día, el menor le pidió su parte de la herencia y decidió marcharse lejos de casa.",
+   "personajes": [
+    {
+     "id": "padre",
+     "x": 0.2,
+     "emocion": "triste"
+    },
+    {
+     "id": "hijo_menor",
+     "x": 0.4,
+     "hasta": 1.0,
+     "accion": "caminar"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "monedas",
+     "x": 0.5,
+     "profundidad": 100
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Comenzó a gastar todo su dinero en fiestas y placeres, hasta quedarse completamente sin nada.",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.18,
+     "accion": "celebrar"
+    },
+    {
+     "id": "hijo_menor",
+     "x": 0.5,
+     "accion": "celebrar"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.82,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "mesa",
+     "x": 0.5,
+     "profundidad": 100
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.3
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Cuando llegó una gran escasez, terminó trabajando cuidando cerdos y pasando hambre.",
+   "personajes": [
+    {
+     "id": "hijo_menor",
+     "x": 0.3,
+     "emocion": "triste",
+     "tunica": "#8a8070",
+     "manto": null
+    },
+    {
+     "id": "cerdo1",
+     "x": 0.7,
+     "mira": "izquierda"
+    },
+    {
+     "id": "cerdo2",
+     "x": 0.88,
+     "mira": "izquierda",
+     "profundidad": 40
+    }
+   ],
+   "portada": true,
+   "camara": "paneo"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Entonces recordó la casa de su padre y decidió regresar.",
+   "personajes": [
+    {
+     "id": "hijo_menor",
+     "x": 0.4,
+     "accion": "arrodillarse",
+     "emocion": "llorando",
+     "tunica": "#8a8070",
+     "manto": null
+    },
+    {
+     "id": "cerdo1",
+     "x": 0.82,
+     "mira": "izquierda"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "camino",
+   "texto": "Pensó que ya no merecía ser llamado hijo, pero estaba dispuesto a pedir perdón.",
+   "personajes": [
+    {
+     "id": "hijo_menor",
+     "x": 0.15,
+     "hasta": 0.5,
+     "accion": "caminar",
+     "emocion": "triste",
+     "tunica": "#8a8070",
+     "manto": null
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Cuando todavía estaba lejos, su padre lo vio",
+   "personajes": [
+    {
+     "id": "padre",
+     "x": 0.8,
+     "mira": "izquierda",
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "hijo_menor",
+     "x": 0.15,
+     "escala": 0.7,
+     "profundidad": -60,
+     "emocion": "triste",
+     "tunica": "#8a8070",
+     "manto": null
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "y corrió a abrazarlo.",
+   "personajes": [
+    {
+     "id": "padre",
+     "x": 0.9,
+     "mira": "izquierda",
+     "hasta": 0.56,
+     "accion": "correr",
+     "emocion": "feliz"
+    },
+    {
+     "id": "hijo_menor",
+     "x": 0.38,
+     "emocion": "llorando",
+     "tunica": "#8a8070",
+     "manto": null
+    }
+   ],
+   "duracion_min": 2.5,
+   "camara": "fijo"
+  },
+  {
+   "fondo": "campo",
+   "texto": "",
+   "personajes": [
+    {
+     "id": "hijo_menor",
+     "x": 0.4,
+     "accion": "abrazar",
+     "emocion": "llorando",
+     "tunica": "#8a8070",
+     "manto": null
+    },
+    {
+     "id": "padre",
+     "x": 0.56,
+     "mira": "izquierda",
+     "accion": "abrazar",
+     "emocion": "llorando"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "brillo",
+     "x": 0.48,
+     "y": -450
+    }
+   ],
+   "duracion": 2.2,
+   "camara": "acercar"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "En lugar de rechazarlo, ordenó preparar una celebración porque su hijo había regresado.",
+   "personajes": [
+    {
+     "id": "hijo_menor",
+     "x": 0.25,
+     "accion": "celebrar"
+    },
+    {
+     "id": "padre",
+     "x": 0.5,
+     "accion": "celebrar"
+    },
+    {
+     "id": "hombre1",
+     "x": 0.8,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "mesa",
+     "x": 0.5,
+     "profundidad": 100
+    }
+   ],
+   "rotulo": "¡VOLVIÓ A CASA!",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "La misericordia y el perdón pueden abrir las puertas para comenzar una nueva vida.",
+   "personajes": [
+    {
+     "id": "padre",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "ENSEÑANZA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Alguien te está esperando con los brazos abiertos? Escríbelo en los comentarios.",
+   "personajes": [
+    {
+     "id": "padre",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "pausa": 1.6,
+   "camara": "fijo"
+  }
+ ],
+ "formato": "horizontal",
+ "barra_progreso": false
+}

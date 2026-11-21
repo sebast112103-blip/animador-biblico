@@ -140,12 +140,14 @@ def cancelar_pendientes(token, login):
 
 
 def lanzar(token, login, carpeta, filtro=""):
+    previa = ultima_ejecucion(token, login)
+    previa_id = previa["id"] if previa else None
     ruta = f"/repos/{login}/{REPO}/actions/workflows/crear_videos.yml/dispatches"
     for intento in range(12):   # GitHub tarda unos segundos en registrar el flujo nuevo
         st, r = api(token, "POST", ruta, {"ref": "main", "inputs": {"carpeta": carpeta, "filtro": filtro}})
         if st == 204:
             log(f"Creacion de videos lanzada en la nube ({carpeta}).")
-            return time.time()
+            return previa_id
         time.sleep(10)
     log(f"[ERROR] No se pudo lanzar la creacion ({st}): {str(r)[:300]}")
     sys.exit(1)
@@ -158,13 +160,15 @@ def ultima_ejecucion(token, login):
     return None
 
 
-def esperar(token, login, desde=0):
+def esperar(token, login, previa_id="no-filtrar"):
+    """Sigue la ejecucion mas nueva (si previa_id se da, espera una distinta a esa)."""
     log("Esperando a que GitHub cree los videos (revisa cada minuto)...")
     run = None
     for _ in range(30):
         run = ultima_ejecucion(token, login)
-        if run and calendar.timegm(time.strptime(run["created_at"], "%Y-%m-%dT%H:%M:%SZ")) >= desde - 120:
+        if run and (previa_id == "no-filtrar" or run["id"] != previa_id):
             break
+        run = None
         time.sleep(10)
     if not run:
         log("[ERROR] No encontre la ejecucion en GitHub.")
@@ -205,8 +209,6 @@ def descargar(token, login, run=None):
     if not arts:
         log("[ERROR] Esa ejecucion no tiene videos para descargar todavia.")
         sys.exit(1)
-    destino = RAIZ / "videos" / "nube"
-    destino.mkdir(parents=True, exist_ok=True)
     zip_path = RAIZ / "videos" / "_nube.zip"
     log(f"Descargando videos ({arts[0]['size_in_bytes'] / 1e6:.0f} MB)...")
     req = urllib.request.Request(arts[0]["archive_download_url"])
@@ -215,7 +217,11 @@ def descargar(token, login, run=None):
     with urllib.request.urlopen(req, timeout=600) as resp, open(zip_path, "wb") as f:
         shutil.copyfileobj(resp, f, 1 << 20)
     with zipfile.ZipFile(zip_path) as z:
+        es_youtube = "_youtube.txt" in z.namelist()
+        destino = RAIZ / "videos" / ("youtube" if es_youtube else "nube")
+        destino.mkdir(parents=True, exist_ok=True)
         z.extractall(destino)
+    (destino / "_youtube.txt").unlink(missing_ok=True)
     zip_path.unlink()
     n = len(list(destino.glob("*.mp4")))
     log(f"LISTO: {n} videos en {destino}")
@@ -247,7 +253,8 @@ def main():
         run = esperar(token, login, t)
         descargar(token, login, run)
     elif accion == "descargar":
-        descargar(token, login)
+        run = esperar(token, login)   # si todavia esta trabajando, espera; luego descarga
+        descargar(token, login, run)
     else:
         print(__doc__)
 

@@ -1,0 +1,410 @@
+{
+ "titulo": "Jesús calma la tormenta HD",
+ "gancho": "Hasta el VIENTO y el MAR le obedecen",
+ "final": "",
+ "resaltar": [
+  "JESÚS",
+  "TORMENTA",
+  "MAR",
+  "VIENTO",
+  "PAZ",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.1,
+ "pausa_escenas": 0.3,
+ "corte_seg": 3.0,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "escenas": [
+  {
+   "fondo": "mar",
+   "texto": "Una noche, Jesús y sus discípulos subieron a una barca para cruzar el mar de Galilea.",
+   "personajes": [
+    {
+     "id": "jesus",
+     "x": 0.26,
+     "y": -120
+    },
+    {
+     "id": "pedro",
+     "x": 0.5,
+     "y": -120
+    },
+    {
+     "id": "discipulo1",
+     "x": 0.74,
+     "y": -120
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "barca",
+     "x": 0.5,
+     "y": -60,
+     "delante": true,
+     "balanceo": true,
+     "vela": false,
+     "escala": 1.15
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.3
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "mar",
+   "texto": "Mientras navegaban, Jesús se quedó dormido.",
+   "personajes": [
+    {
+     "id": "jesus",
+     "x": 0.22,
+     "accion": "dormir",
+     "mira": "izquierda",
+     "escala": 0.72,
+     "y": -215
+    },
+    {
+     "id": "pedro",
+     "x": 0.72,
+     "y": -120
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "barca",
+     "x": 0.5,
+     "y": -60,
+     "delante": true,
+     "balanceo": true,
+     "vela": false,
+     "escala": 1.15
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.35
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "mar_tormenta",
+   "texto": "De repente, una tormenta comenzó a sacudir la embarcación.",
+   "personajes": [
+    {
+     "id": "jesus",
+     "x": 0.22,
+     "accion": "dormir",
+     "mira": "izquierda",
+     "escala": 0.72,
+     "y": -95
+    },
+    {
+     "id": "pedro",
+     "x": 0.72,
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "barca",
+     "x": 0.5,
+     "y": 60,
+     "delante": true,
+     "balanceo": true,
+     "vela": false,
+     "escala": 1.15
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    },
+    {
+     "tipo": "rayo"
+    },
+    {
+     "tipo": "temblor",
+     "fin": 0.25
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "mar_tormenta",
+   "texto": "Las olas golpeaban con tanta fuerza que el agua comenzó a entrar en la barca.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.38,
+     "accion": "temblar",
+     "emocion": "asustado"
+    },
+    {
+     "id": "discipulo1",
+     "x": 0.62,
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "barca",
+     "x": 0.5,
+     "y": 60,
+     "delante": true,
+     "balanceo": true,
+     "vela": false,
+     "escala": 1.15
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    },
+    {
+     "tipo": "agua",
+     "nivel": 0.1,
+     "hasta": 0.2
+    }
+   ],
+   "portada": true,
+   "camara": "paneo"
+  },
+  {
+   "fondo": "mar_tormenta",
+   "texto": "Los discípulos estaban aterrorizados.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.38,
+     "accion": "temblar",
+     "emocion": "asustado"
+    },
+    {
+     "id": "discipulo1",
+     "x": 0.62,
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "barca",
+     "x": 0.5,
+     "y": 60,
+     "delante": true,
+     "balanceo": true,
+     "vela": false,
+     "escala": 1.15
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    },
+    {
+     "tipo": "rayo"
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "mar_tormenta",
+   "texto": "Desesperados, despertaron a Jesús y le gritaron que estaban a punto de morir.",
+   "personajes": [
+    {
+     "id": "jesus",
+     "x": 0.22,
+     "accion": "dormir",
+     "mira": "izquierda",
+     "escala": 0.72,
+     "y": -95
+    },
+    {
+     "id": "pedro",
+     "x": 0.74,
+     "mira": "izquierda",
+     "accion": "senalar",
+     "emocion": "asustado"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "barca",
+     "x": 0.5,
+     "y": 60,
+     "delante": true,
+     "balanceo": true,
+     "vela": false,
+     "escala": 1.15
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "mar_tormenta",
+   "texto": "Jesús se levantó, reprendió al viento y ordenó al mar que se calmara.",
+   "personajes": [
+    {
+     "id": "jesus",
+     "x": 0.5,
+     "accion": "levantar",
+     "emocion": "valiente"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "barca",
+     "x": 0.5,
+     "y": 60,
+     "delante": true,
+     "balanceo": true,
+     "vela": false,
+     "escala": 1.15
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia",
+     "fin": 0.6
+    },
+    {
+     "tipo": "luz",
+     "inicio": 0.4
+    }
+   ],
+   "camara": "acercar",
+   "foco_x": 0.5
+  },
+  {
+   "fondo": "mar",
+   "texto": "Inmediatamente, la tormenta desapareció y todo quedó en silencio.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.26,
+     "emocion": "sorprendido",
+     "y": -120
+    },
+    {
+     "id": "jesus",
+     "x": 0.5,
+     "emocion": "feliz",
+     "y": -120
+    },
+    {
+     "id": "discipulo1",
+     "x": 0.74,
+     "mira": "izquierda",
+     "emocion": "sorprendido",
+     "y": -120
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "barca",
+     "x": 0.5,
+     "y": -60,
+     "delante": true,
+     "vela": false,
+     "escala": 1.15
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "mar",
+   "texto": "Los discípulos quedaron sorprendidos y comenzaron a preguntarse quién era realmente aquel hombre, porque hasta el viento y el mar obedecían sus órdenes.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.32,
+     "emocion": "sorprendido",
+     "y": -120
+    },
+    {
+     "id": "discipulo1",
+     "x": 0.68,
+     "mira": "izquierda",
+     "emocion": "sorprendido",
+     "y": -120
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "barca",
+     "x": 0.5,
+     "y": -60,
+     "delante": true,
+     "vela": false,
+     "escala": 1.15
+    }
+   ],
+   "rotulo": "¿QUIÉN ES ESTE?",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Incluso cuando tu vida parece estar en medio de una tormenta, recuerda que la fe puede ayudarte a encontrar paz.",
+   "personajes": [
+    {
+     "id": "jesus",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "ENSEÑANZA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Qué tormenta estás viviendo hoy? Escríbela y oremos juntos.",
+   "personajes": [
+    {
+     "id": "jesus",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "pausa": 1.6,
+   "camara": "fijo"
+  }
+ ],
+ "formato": "horizontal",
+ "barra_progreso": false
+}

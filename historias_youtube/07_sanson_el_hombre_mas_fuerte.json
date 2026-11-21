@@ -1,0 +1,311 @@
+{
+ "titulo": "Sansón el hombre más fuerte HD",
+ "gancho": "El hombre más FUERTE del mundo… perdió todo por un SECRETO",
+ "final": "",
+ "resaltar": [
+  "SANSÓN",
+  "FUERZA",
+  "CABELLO",
+  "DALILA",
+  "COLUMNAS",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.1,
+ "pausa_escenas": 0.3,
+ "corte_seg": 3.0,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "escenas": [
+  {
+   "fondo": "valle",
+   "texto": "Desde su nacimiento, Sansón había sido elegido por Dios y tenía una fuerza extraordinaria.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "accion": "celebrar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Su fuerza estaba relacionada con el voto especial que había hecho, que incluía no cortarse el cabello.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "emocion": "valiente"
+    }
+   ],
+   "foco_x": 0.5,
+   "camara": "fijo"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Sansón derrotaba enemigos con facilidad y nadie parecía capaz de detenerlo.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.3,
+     "accion": "empujar"
+    },
+    {
+     "id": "filisteo1",
+     "x": 0.68,
+     "mira": "izquierda",
+     "accion": "caer"
+    },
+    {
+     "id": "filisteo2",
+     "x": 0.88,
+     "mira": "izquierda",
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "temblor",
+     "fin": 0.2
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Pero conoció a una mujer llamada Dalila, quien fue convencida para descubrir el secreto de su fuerza.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.28,
+     "emocion": "feliz"
+    },
+    {
+     "id": "dalila",
+     "x": 0.58,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    },
+    {
+     "id": "filisteo1",
+     "x": 0.88,
+     "mira": "izquierda",
+     "accion": "ofrecer",
+     "emocion": "burlon"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "monedas",
+     "x": 0.78,
+     "profundidad": 100
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Después de insistirle durante mucho tiempo, Sansón terminó revelándole que su cabello nunca había sido cortado.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.3,
+     "emocion": "triste"
+    },
+    {
+     "id": "dalila",
+     "x": 0.68,
+     "mira": "izquierda",
+     "accion": "senalar"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Mientras dormía, Dalila permitió que le cortaran el cabello.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.08,
+     "accion": "dormir",
+     "mira": "izquierda",
+     "escala": 0.72,
+     "profundidad": 30
+    },
+    {
+     "id": "dalila",
+     "x": 0.76,
+     "mira": "izquierda",
+     "emocion": "burlon"
+    },
+    {
+     "id": "filisteo2",
+     "x": 0.93,
+     "mira": "izquierda",
+     "objeto": "espada"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.45
+    }
+   ],
+   "portada": true,
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Cuando despertó, descubrió que había perdido su fuerza.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "accion": "temblar",
+     "emocion": "asustado",
+     "pelo_largo": false
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "prision",
+   "texto": "Sus enemigos lo capturaron, le sacaron los ojos y lo llevaron prisionero.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.35,
+     "emocion": "triste",
+     "venda": true,
+     "pelo_largo": false
+    },
+    {
+     "id": "filisteo1",
+     "x": 0.75,
+     "mira": "izquierda",
+     "emocion": "burlon"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "templo",
+   "texto": "Pero tiempo después, Sansón pidió fuerzas a Dios una última vez",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "accion": "orar",
+     "venda": true
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "columna",
+     "x": 0.2
+    },
+    {
+     "tipo": "columna",
+     "x": 0.8
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "templo",
+   "texto": "y derribó las columnas del templo donde se encontraban sus enemigos.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "accion": "empujar",
+     "venda": true
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "columna",
+     "x": 0.2,
+     "caer": true,
+     "mira": "izquierda"
+    },
+    {
+     "tipo": "columna",
+     "x": 0.8,
+     "caer": true
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "temblor",
+     "inicio": 0.1,
+     "fin": 0.7
+    },
+    {
+     "tipo": "flash",
+     "inicio": 0.55,
+     "fin": 0.65
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "No permitas que tus debilidades te hagan perder aquello que has construido con tanto esfuerzo.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "ENSEÑANZA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Cuál es tu mayor debilidad? Pídele fuerzas a Dios en los comentarios.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "pausa": 1.6,
+   "camara": "fijo"
+  }
+ ],
+ "formato": "horizontal",
+ "barra_progreso": false
+}

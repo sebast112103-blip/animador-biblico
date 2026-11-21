@@ -1887,6 +1887,12 @@ def crear_video(ruta, a):
     except json.JSONDecodeError as ex:
         sys.exit(f"[ERROR] El archivo de la historia tiene un error de formato: {ex}")
     base_dir = ruta.parent
+    # Formato: vertical (TikTok/Shorts) o horizontal (YouTube normal).
+    # El horizontal se dibuja a 3412x1920 (misma altura, mismo tamano de personajes)
+    # y se entrega en 1920x1080.
+    global W, H
+    horizontal = h.get("formato") == "horizontal"
+    W, H = (3412, 1920) if horizontal else (1080, 1920)
 
     personajes = {}
     biblioteca = {}
@@ -1941,7 +1947,10 @@ def crear_video(ruta, a):
     print(f"[2/3] Animando {total:.0f} segundos de video...")
     salida = f"_creando_{TMP}.mp4"
     final_mp4 = carpeta / f"{nombre}.mp4"
-    escala_out = "540:960" if a.borrador else f"{W}:{H}"
+    if horizontal:
+        escala_out = "960:540" if a.borrador else "1920:1080"
+    else:
+        escala_out = "540:960" if a.borrador else f"{W}:{H}"
     cmd = ["ffmpeg", "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
            "-i", "-", "-i", f"_narracion_{TMP}.wav"]
     musica = h.get("musica") if h.get("musica") != "auto" else None
@@ -1970,6 +1979,7 @@ def crear_video(ruta, a):
             "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", salida]
     proc = None if a.vista else subprocess.Popen(cmd, stdin=subprocess.PIPE, cwd=carpeta)
     vistas = []
+    VW = 853 if horizontal else 270
 
     luz = rayos_luz()
     cache_fondo = {}
@@ -2161,10 +2171,10 @@ def crear_video(ruta, a):
                     db.rectangle([0, 0, W, 16], fill=(0, 0, 0, 120))
                     db.rectangle([0, 0, int(W * min(1, (t0 + t) / total)), 16], fill=(255, 214, 0, 255))
                 if not portada_guardada and e.get("portada") and fi == nfr // 2:
-                    img.save(carpeta / f"{nombre}_portada.png")
+                    (img.resize((1920, 1080), Image.LANCZOS) if horizontal else img).save(carpeta / f"{nombre}_portada.png")
                     portada_guardada = True
                 if a.vista:
-                    vistas.append(img.resize((270, 480), Image.LANCZOS))
+                    vistas.append(img.resize((VW, 480), Image.LANCZOS))
                 else:
                     proc.stdin.write(img.tobytes())
                 frame += 1
@@ -2172,11 +2182,11 @@ def crear_video(ruta, a):
     except BrokenPipeError:
         pass
     if a.vista:
-        cols = 6
+        cols = 6 if not horizontal else 3
         filas = (len(vistas) + cols - 1) // cols
-        hoja = Image.new("RGB", (cols * 270, filas * 480), (30, 30, 30))
+        hoja = Image.new("RGB", (cols * VW, filas * 480), (30, 30, 30))
         for i, v in enumerate(vistas):
-            hoja.paste(v, ((i % cols) * 270, (i // cols) * 480))
+            hoja.paste(v, ((i % cols) * VW, (i // cols) * 480))
         hoja.save(carpeta / f"{nombre}_vista.png")
         for f in (f"_narracion_{TMP}.wav", f"_subs_{TMP}.ass"):
             (carpeta / f).unlink(missing_ok=True)
