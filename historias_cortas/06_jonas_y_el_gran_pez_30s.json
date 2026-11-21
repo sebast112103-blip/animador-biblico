@@ -1,0 +1,185 @@
+{
+ "titulo": "Jonás y el gran pez (30s)",
+ "gancho": "Intentó HUIR de Dios… y un PEZ se lo tragó",
+ "final": "SÍGUEME",
+ "resaltar": [
+  "JONÁS",
+  "PEZ",
+  "NÍNIVE",
+  "TORMENTA",
+  "PERDÓN",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA",
+  "AMÉN",
+  "SÍ",
+  "NO"
+ ],
+ "formato": "corto",
+ "barra_progreso": true,
+ "efectos_sonido": true,
+ "musica": "auto",
+ "volumen_musica": 0.13,
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.12,
+ "escenas": [
+  {
+   "fondo": "mar_tormenta",
+   "texto": "¿Te imaginas ser tragado por un pez gigante?",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.12,
+     "escala": 0.55,
+     "accion": "temblar",
+     "emocion": "asustado",
+     "y": -40
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "pez_gigante",
+     "x": 0.58,
+     "y": 120,
+     "abierta": true,
+     "mira": "izquierda"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "agua",
+     "nivel": 0.16
+    },
+    {
+     "tipo": "lluvia"
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15,
+   "portada": true
+  },
+  {
+   "fondo": "valle",
+   "texto": "Jonás huyó de Dios en un barco.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.7,
+     "mira": "izquierda",
+     "hasta": 0.25,
+     "accion": "caminar",
+     "emocion": "enojado"
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "mar_tormenta",
+   "texto": "Una tormenta terrible casi hunde la embarcación.",
+   "personajes": [
+    {
+     "id": "marinero1",
+     "x": 0.32,
+     "accion": "temblar",
+     "emocion": "asustado"
+    },
+    {
+     "id": "marinero2",
+     "x": 0.62,
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "barca",
+     "x": 0.5,
+     "y": 60,
+     "delante": true,
+     "balanceo": true,
+     "vela": false
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    },
+    {
+     "tipo": "rayo"
+    },
+    {
+     "tipo": "temblor",
+     "fin": 0.3
+    }
+   ],
+   "camara": "paneo",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "dentro_pez",
+   "texto": "Dentro del pez, Jonás oró y pidió perdón.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "orar",
+     "emocion": "llorando"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "mar",
+   "texto": "Y el pez lo devolvió a tierra firme.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.15,
+     "accion": "arrodillarse",
+     "emocion": "sorprendido",
+     "profundidad": 40
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "pez_gigante",
+     "x": 0.72,
+     "y": 100,
+     "abierta": true,
+     "mira": "izquierda"
+    }
+   ],
+   "camara": "alejar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿De qué estás huyendo tú? Cuéntamelo abajo.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.6
+  }
+ ]
+}

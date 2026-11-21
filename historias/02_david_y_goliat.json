@@ -1,0 +1,291 @@
+{
+ "titulo": "David y Goliat",
+ "gancho": "¿Cómo un NIÑO venció a un GIGANTE?",
+ "final": "Sígueme para más historias de la BIBLIA",
+ "resaltar": [
+  "GIGANTE",
+  "DAVID",
+  "GOLIAT",
+  "PIEDRA",
+  "NIÑO",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.05,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "escenas": [
+  {
+   "fondo": "valle",
+   "texto": "El ejército de Israel estaba aterrorizado.",
+   "personajes": [
+    {
+     "id": "soldado1",
+     "x": 0.18,
+     "accion": "temblar",
+     "emocion": "asustado"
+    },
+    {
+     "id": "soldado2",
+     "x": 0.38,
+     "accion": "temblar",
+     "emocion": "asustado"
+    },
+    {
+     "id": "goliat",
+     "x": 0.78,
+     "mira": "izquierda",
+     "emocion": "burlon"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Frente a ellos se encontraba Goliat, un gigante guerrero que desafiaba a cualquiera a enfrentarlo.",
+   "personajes": [
+    {
+     "id": "goliat",
+     "x": 0.62,
+     "mira": "izquierda",
+     "accion": "senalar",
+     "emocion": "enojado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "temblor",
+     "fin": 0.15
+    }
+   ],
+   "camara": "acercar_rapido",
+   "foco_x": 0.62,
+   "portada": true
+  },
+  {
+   "fondo": "valle",
+   "texto": "Durante cuarenta días, nadie se atrevió a luchar contra él.",
+   "personajes": [
+    {
+     "id": "soldado1",
+     "x": 0.3,
+     "accion": "temblar",
+     "emocion": "asustado"
+    },
+    {
+     "id": "soldado2",
+     "x": 0.68,
+     "mira": "izquierda",
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "rotulo": "40 DÍAS",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Pero un joven pastor llamado David llegó al campamento y escuchó las amenazas del gigante.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.1,
+     "hasta": 0.42,
+     "accion": "caminar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "oveja1",
+     "x": 0.75,
+     "mira": "izquierda",
+     "profundidad": -30
+    },
+    {
+     "id": "oveja2",
+     "x": 0.9,
+     "mira": "izquierda",
+     "profundidad": 30
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Mientras los soldados veían a un enemigo imposible de vencer, David veía una oportunidad para demostrar el poder de Dios.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.2,
+     "emocion": "valiente"
+    },
+    {
+     "id": "goliat",
+     "x": 0.72,
+     "mira": "izquierda",
+     "emocion": "burlon"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "El rey Saúl intentó vestirlo con una armadura, pero David no estaba acostumbrado a ella.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.3,
+     "armadura": true,
+     "tocado": "casco",
+     "accion": "temblar",
+     "emocion": "triste"
+    },
+    {
+     "id": "saul",
+     "x": 0.7,
+     "mira": "izquierda",
+     "emocion": "sorprendido"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Tomó cinco piedras lisas, su honda y salió al encuentro del gigante.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.5,
+     "accion": "agacharse",
+     "objeto": "honda",
+     "emocion": "valiente"
+    }
+   ],
+   "rotulo": "5 PIEDRAS",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Goliat se burló de él, pero David respondió que luchaba en nombre del Señor.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.2,
+     "objeto": "honda",
+     "accion": "senalar",
+     "emocion": "valiente"
+    },
+    {
+     "id": "goliat",
+     "x": 0.72,
+     "mira": "izquierda",
+     "emocion": "burlon"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Lanzó una piedra con su honda y golpeó al gigante en la frente.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.2,
+     "accion": "lanzar",
+     "objeto": "honda"
+    },
+    {
+     "id": "goliat",
+     "x": 0.72,
+     "mira": "izquierda",
+     "emocion": "burlon"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "proyectil",
+     "de": "david",
+     "a": "goliat",
+     "inicio": 0.64,
+     "fin": 0.86
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Goliat cayó al suelo derrotado.",
+   "personajes": [
+    {
+     "id": "goliat",
+     "x": 0.9,
+     "mira": "izquierda",
+     "accion": "caer_de_cara",
+     "escala": 0.85
+    },
+    {
+     "id": "david",
+     "x": 0.14,
+     "accion": "celebrar",
+     "objeto": "honda",
+     "profundidad": 40
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "flash",
+     "fin": 0.1
+    },
+    {
+     "tipo": "temblor",
+     "inicio": 0.25,
+     "fin": 0.45
+    }
+   ],
+   "duracion_min": 3.2,
+   "camara": "paneo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "No importa qué tan grande sea tu problema, la fe puede darte el valor para enfrentarlo.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "ENSEÑANZA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Qué gigante necesitas vencer hoy? Escríbelo en los comentarios.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "pausa": 1.6,
+   "camara": "fijo"
+  }
+ ]
+}

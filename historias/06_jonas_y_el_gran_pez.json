@@ -1,0 +1,310 @@
+{
+ "titulo": "Jonás y el gran pez",
+ "gancho": "Intentó HUIR de Dios… y un PEZ se lo tragó",
+ "final": "Sígueme para más historias de la BIBLIA",
+ "resaltar": [
+  "JONÁS",
+  "PEZ",
+  "NÍNIVE",
+  "TORMENTA",
+  "PERDÓN",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.05,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "escenas": [
+  {
+   "fondo": "valle",
+   "texto": "Dios llamó a Jonás y le ordenó viajar a Nínive para advertir a sus habitantes que debían abandonar su mal camino.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "emocion": "sorprendido"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Pero Jonás no quiso obedecer.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.7,
+     "mira": "izquierda",
+     "hasta": 0.25,
+     "accion": "caminar",
+     "emocion": "enojado"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "mar",
+   "texto": "En lugar de ir a Nínive, compró un pasaje en un barco que viajaba en dirección contraria.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.32,
+     "emocion": "neutral",
+     "y": -120
+    },
+    {
+     "id": "marinero1",
+     "x": 0.64,
+     "mira": "izquierda",
+     "y": -120
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "barca",
+     "x": 0.5,
+     "y": -60,
+     "delante": true,
+     "balanceo": true,
+     "vela": false
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "mar_tormenta",
+   "texto": "Durante el viaje, una terrible tormenta golpeó la embarcación.",
+   "personajes": [
+    {
+     "id": "marinero1",
+     "x": 0.32,
+     "accion": "temblar",
+     "emocion": "asustado"
+    },
+    {
+     "id": "marinero2",
+     "x": 0.62,
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "barca",
+     "x": 0.5,
+     "y": 60,
+     "delante": true,
+     "balanceo": true,
+     "vela": false
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    },
+    {
+     "tipo": "rayo"
+    },
+    {
+     "tipo": "temblor",
+     "fin": 0.3
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "mar_tormenta",
+   "texto": "Los marineros descubrieron que Jonás estaba huyendo de Dios y terminaron arrojándolo al mar.",
+   "personajes": [
+    {
+     "id": "marinero1",
+     "x": 0.28,
+     "accion": "senalar",
+     "emocion": "enojado"
+    },
+    {
+     "id": "jonas",
+     "x": 0.6,
+     "mira": "izquierda",
+     "emocion": "triste"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "barca",
+     "x": 0.5,
+     "y": 60,
+     "delante": true,
+     "balanceo": true,
+     "vela": false
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "mar_tormenta",
+   "texto": "Entonces apareció un enorme pez que se lo tragó.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.12,
+     "escala": 0.55,
+     "accion": "temblar",
+     "emocion": "asustado",
+     "y": -40
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "pez_gigante",
+     "x": 0.58,
+     "y": 120,
+     "abierta": true,
+     "mira": "izquierda"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "agua",
+     "nivel": 0.16
+    },
+    {
+     "tipo": "lluvia"
+    }
+   ],
+   "portada": true,
+   "camara": "acercar"
+  },
+  {
+   "fondo": "dentro_pez",
+   "texto": "Jonás permaneció dentro del pez durante tres días y tres noches.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "emocion": "triste",
+     "accion": "arrodillarse"
+    }
+   ],
+   "rotulo": "3 DÍAS Y 3 NOCHES",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "dentro_pez",
+   "texto": "Allí oró y pidió perdón.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "orar",
+     "emocion": "llorando"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "mar",
+   "texto": "Finalmente, el pez lo expulsó en tierra firme.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.15,
+     "accion": "arrodillarse",
+     "emocion": "sorprendido",
+     "profundidad": 40
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "pez_gigante",
+     "x": 0.72,
+     "y": 100,
+     "abierta": true,
+     "mira": "izquierda"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Esta vez, Jonás obedeció y fue a Nínive para transmitir el mensaje de Dios.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.3,
+     "accion": "senalar",
+     "emocion": "valiente",
+     "profundidad": 40
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.62,
+     "escala": 0.6,
+     "y": -60,
+     "profundidad": -50
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Puedes intentar escapar de una responsabilidad, pero nunca es tarde para reconocer tus errores y cambiar de dirección.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "ENSEÑANZA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿De qué estás huyendo tú? Escríbelo en los comentarios.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "pausa": 1.6,
+   "camara": "fijo"
+  }
+ ]
+}

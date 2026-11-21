@@ -1,0 +1,187 @@
+{
+ "titulo": "Job el hombre que lo perdió todo (30s)",
+ "gancho": "Lo PERDIÓ TODO… pero no perdió su FE",
+ "final": "SÍGUEME",
+ "resaltar": [
+  "JOB",
+  "PRUEBA",
+  "BENDICIONES",
+  "FE",
+  "TODO",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA",
+  "AMÉN",
+  "SÍ",
+  "NO"
+ ],
+ "formato": "corto",
+ "barra_progreso": true,
+ "efectos_sonido": true,
+ "musica": "auto",
+ "volumen_musica": 0.13,
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.12,
+ "escenas": [
+  {
+   "fondo": "tormenta",
+   "texto": "Lo perdió todo en un solo día.",
+   "personajes": [
+    {
+     "id": "job",
+     "x": 0.5,
+     "accion": "arrodillarse",
+     "emocion": "llorando"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    },
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.3
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15,
+   "portada": true
+  },
+  {
+   "fondo": "campo",
+   "texto": "Job era un hombre justo, con familia y riquezas.",
+   "personajes": [
+    {
+     "id": "job",
+     "x": 0.3,
+     "emocion": "feliz"
+    },
+    {
+     "id": "esposa_job",
+     "x": 0.55,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    },
+    {
+     "id": "oveja1",
+     "x": 0.82,
+     "mira": "izquierda",
+     "profundidad": 30
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "monedas",
+     "x": 0.12,
+     "profundidad": 100
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "desierto",
+   "texto": "Además, una terrible enfermedad atacó su cuerpo.",
+   "personajes": [
+    {
+     "id": "job",
+     "x": 0.5,
+     "accion": "arrodillarse",
+     "emocion": "triste",
+     "tunica": "#8a8070",
+     "manto": null,
+     "piel": "#d8c0a0"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.25
+    }
+   ],
+   "camara": "paneo",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "noche",
+   "texto": "Aun así, nunca dejó de buscar a Dios.",
+   "personajes": [
+    {
+     "id": "job",
+     "x": 0.5,
+     "accion": "orar",
+     "tunica": "#8a8070",
+     "manto": null,
+     "piel": "#d8c0a0"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "campo",
+   "texto": "Y Dios le devolvió más de lo que había perdido.",
+   "personajes": [
+    {
+     "id": "job",
+     "x": 0.3,
+     "accion": "alabar"
+    },
+    {
+     "id": "esposa_job",
+     "x": 0.55,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    },
+    {
+     "id": "oveja1",
+     "x": 0.78,
+     "mira": "izquierda",
+     "profundidad": 20
+    },
+    {
+     "id": "oveja2",
+     "x": 0.92,
+     "mira": "izquierda",
+     "profundidad": 60
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "monedas",
+     "x": 0.12,
+     "profundidad": 100
+    }
+   ],
+   "camara": "alejar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Qué prueba estás pasando? Escribe AMÉN y oremos.",
+   "personajes": [
+    {
+     "id": "job",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.6
+  }
+ ]
+}

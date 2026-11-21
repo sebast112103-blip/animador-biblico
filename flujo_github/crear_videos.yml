@@ -1,0 +1,114 @@
+name: Crear videos
+
+# Se ejecuta:
+#  - a mano: pestaña "Actions" -> "Crear videos" -> "Run workflow"
+#  - solo, cuando subes o cambias una historia (crea solo esos videos)
+on:
+  workflow_dispatch:
+    inputs:
+      carpeta:
+        description: "Qué videos crear"
+        type: choice
+        options: [cortos, largos, todos]
+        default: cortos
+      filtro:
+        description: "Opcional: solo historias que contengan este texto (ej: 30s, noe, 05_)"
+        type: string
+        default: ""
+  push:
+    paths:
+      - "historias/**.json"
+      - "historias_cortas/**.json"
+
+permissions:
+  contents: read
+
+jobs:
+  preparar:
+    runs-on: ubuntu-latest
+    outputs:
+      lista: ${{ steps.lista.outputs.lista }}
+      cantidad: ${{ steps.lista.outputs.cantidad }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - id: lista
+        env:
+          EVENTO: ${{ github.event_name }}
+          CARPETA: ${{ github.event.inputs.carpeta }}
+          FILTRO: ${{ github.event.inputs.filtro }}
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess, glob
+          if os.environ["EVENTO"] == "push":
+              out = subprocess.run(["git", "diff", "--name-only", "HEAD~1", "HEAD"], capture_output=True, text=True).stdout
+              archivos = [f for f in out.split() if f.endswith(".json") and f.startswith(("historias/", "historias_cortas/")) and os.path.exists(f)]
+          else:
+              c = os.environ.get("CARPETA") or "cortos"
+              dirs = {"cortos": ["historias_cortas"], "largos": ["historias"], "todos": ["historias", "historias_cortas"]}[c]
+              archivos = sorted(f for d in dirs for f in glob.glob(f"{d}/*.json"))
+              filtro = (os.environ.get("FILTRO") or "").strip().lower()
+              if filtro:
+                  archivos = [f for f in archivos if filtro in f.lower()]
+          archivos = archivos[:250]
+          with open(os.environ["GITHUB_OUTPUT"], "a") as g:
+              g.write("lista=" + json.dumps(archivos) + "\n")
+              g.write(f"cantidad={len(archivos)}\n")
+          print(f"{len(archivos)} video(s):", *archivos, sep="\n  ")
+          PY
+
+  video:
+    needs: preparar
+    if: needs.preparar.outputs.cantidad != '0'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        archivo: ${{ fromJson(needs.preparar.outputs.lista) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Instalar ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+      - name: Instalar librerías
+        run: pip install -r requirements.txt
+      - name: Recuperar voces guardadas
+        uses: actions/cache@v4
+        with:
+          path: voces
+          key: voces-piper-v1
+      - name: Crear video
+        run: python animador.py "${{ matrix.archivo }}" --salida salida
+      - name: Nombre del paquete
+        id: nombre
+        run: echo "n=$(basename '${{ matrix.archivo }}' .json)" >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: video-${{ steps.nombre.outputs.n }}
+          path: |
+            salida/*.mp4
+            salida/*_portada.png
+          retention-days: 1
+
+  juntar:
+    needs: video
+    if: always() && needs.video.result != 'skipped'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: video-*
+          merge-multiple: true
+          path: videos
+      - run: ls -la videos
+      - uses: actions/upload-artifact@v4
+        with:
+          name: TODOS_LOS_VIDEOS
+          path: videos
+          retention-days: 30

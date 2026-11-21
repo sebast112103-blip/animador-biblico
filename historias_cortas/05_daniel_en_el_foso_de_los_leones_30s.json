@@ -1,0 +1,174 @@
+{
+ "titulo": "Daniel en el foso de los leones (30s)",
+ "gancho": "Lo lanzaron a los LEONES… por ORAR",
+ "final": "SÍGUEME",
+ "resaltar": [
+  "DANIEL",
+  "LEONES",
+  "ORAR",
+  "ÁNGEL",
+  "VIVO",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA",
+  "AMÉN",
+  "SÍ",
+  "NO"
+ ],
+ "formato": "corto",
+ "barra_progreso": true,
+ "efectos_sonido": true,
+ "musica": "auto",
+ "volumen_musica": 0.13,
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.12,
+ "escenas": [
+  {
+   "fondo": "foso",
+   "texto": "Lo lanzaron a un foso de leones… por orar.",
+   "personajes": [
+    {
+     "id": "leon1",
+     "x": 0.25,
+     "accion": "rugir"
+    },
+    {
+     "id": "leon2",
+     "x": 0.78,
+     "mira": "izquierda",
+     "accion": "rugir"
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15,
+   "portada": true
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Daniel no dejó de orar, aunque estaba prohibido.",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "foso",
+   "texto": "Al amanecer, el rey corrió al foso… ¡y Daniel estaba vivo!",
+   "personajes": [
+    {
+     "id": "leon1",
+     "x": 0.2,
+     "accion": "dormir"
+    },
+    {
+     "id": "daniel",
+     "x": 0.5,
+     "emocion": "feliz",
+     "accion": "alabar"
+    },
+    {
+     "id": "leon2",
+     "x": 0.82,
+     "mira": "izquierda",
+     "accion": "dormir"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "paneo",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "foso",
+   "texto": "Un ángel cerró la boca de los leones.",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.25,
+     "accion": "orar"
+    },
+    {
+     "id": "angel",
+     "x": 0.62,
+     "mira": "izquierda",
+     "accion": "senalar"
+    },
+    {
+     "id": "leon2",
+     "x": 0.86,
+     "mira": "izquierda",
+     "accion": "dormir",
+     "profundidad": 40
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.62
+    },
+    {
+     "tipo": "brillo",
+     "x": 0.62,
+     "y": -450
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Nunca abandones tu fe por miedo.",
+   "personajes": [
+    {
+     "id": "rey_dario",
+     "x": 0.5,
+     "emocion": "llorando"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.5,
+     "profundidad": -30
+    }
+   ],
+   "camara": "alejar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Qué león estás enfrentando? Escribe AMÉN si confías en Dios.",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.6
+  }
+ ]
+}

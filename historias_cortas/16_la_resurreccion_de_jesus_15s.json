@@ -1,0 +1,148 @@
+{
+ "titulo": "La resurrección de Jesús (15s)",
+ "gancho": "La TUMBA estaba VACÍA",
+ "final": "SÍGUEME",
+ "resaltar": [
+  "JESÚS",
+  "TUMBA",
+  "VACÍA",
+  "RESUCITADO",
+  "VIVO",
+  "ESPERANZA",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA",
+  "AMÉN",
+  "SÍ",
+  "NO"
+ ],
+ "formato": "corto",
+ "barra_progreso": true,
+ "efectos_sonido": true,
+ "musica": "auto",
+ "volumen_musica": 0.13,
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.12,
+ "escenas": [
+  {
+   "fondo": "jardin",
+   "texto": "La tumba estaba vacía.",
+   "personajes": [
+    {
+     "id": "maria_magdalena",
+     "x": 0.3,
+     "emocion": "asustado",
+     "profundidad": 40
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "tumba",
+     "x": 0.6
+    },
+    {
+     "tipo": "piedra",
+     "x": 0.92,
+     "profundidad": 10
+    }
+   ],
+   "camara": "acercar_rapido",
+   "foco_x": 0.55,
+   "pausa": 0.15,
+   "portada": true
+  },
+  {
+   "fondo": "jardin",
+   "texto": "Una gran piedra y guardias vigilaban la tumba.",
+   "personajes": [
+    {
+     "id": "guardia1",
+     "x": 0.15,
+     "profundidad": 40
+    },
+    {
+     "id": "guardia2",
+     "x": 0.9,
+     "mira": "izquierda",
+     "profundidad": 40
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "tumba",
+     "x": 0.6
+    },
+    {
+     "tipo": "piedra",
+     "x": 0.6,
+     "profundidad": 10
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.4
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "jardin",
+   "texto": "Al tercer día, la piedra fue removida.",
+   "personajes": [],
+   "cosas": [
+    {
+     "tipo": "tumba",
+     "x": 0.6
+    },
+    {
+     "tipo": "piedra",
+     "x": 0.6,
+     "hasta": 0.92,
+     "girar": true,
+     "profundidad": 10
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.6
+    },
+    {
+     "tipo": "flash",
+     "fin": 0.1
+    },
+    {
+     "tipo": "temblor",
+     "inicio": 0.1,
+     "fin": 0.5
+    }
+   ],
+   "camara": "paneo",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Sígueme para más historias de la Biblia.",
+   "personajes": [
+    {
+     "id": "jesus",
+     "x": 0.5,
+     "accion": "senalar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.6
+  }
+ ]
+}

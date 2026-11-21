@@ -1,0 +1,113 @@
+{
+ "titulo": "José de esclavo a gobernador (10s)",
+ "gancho": "Lo VENDIERON sus hermanos… y terminó GOBERNANDO Egipto",
+ "final": "SÍGUEME",
+ "resaltar": [
+  "JOSÉ",
+  "EGIPTO",
+  "GOBERNADOR",
+  "PERDONARLOS",
+  "ESCLAVO",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA",
+  "AMÉN",
+  "SÍ",
+  "NO"
+ ],
+ "formato": "corto",
+ "barra_progreso": true,
+ "efectos_sonido": true,
+ "musica": "auto",
+ "volumen_musica": 0.13,
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.12,
+ "escenas": [
+  {
+   "fondo": "desierto",
+   "texto": "Sus propios hermanos lo vendieron como esclavo.",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.15
+    },
+    {
+     "id": "jose",
+     "x": 0.4,
+     "emocion": "llorando",
+     "accion": "temblar"
+    },
+    {
+     "id": "hermano1",
+     "x": 0.82,
+     "mira": "izquierda",
+     "emocion": "burlon",
+     "accion": "ofrecer"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "monedas",
+     "x": 0.62,
+     "profundidad": 100
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15,
+   "portada": true
+  },
+  {
+   "fondo": "egipto",
+   "texto": "¡Y el faraón lo nombró gobernador de Egipto!",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.32,
+     "accion": "alabar",
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e"
+    },
+    {
+     "id": "faraon",
+     "x": 0.72,
+     "mira": "izquierda",
+     "accion": "senalar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "brillo",
+     "x": 0.32,
+     "y": -450
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Sígueme para más historias de la Biblia.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.5,
+     "accion": "senalar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.6
+  }
+ ]
+}

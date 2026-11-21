@@ -1,0 +1,88 @@
+{
+ "titulo": "Ester la reina valiente (10s)",
+ "gancho": "Arriesgó su VIDA para salvar a su PUEBLO",
+ "final": "SÍGUEME",
+ "resaltar": [
+  "ESTER",
+  "REINA",
+  "REY",
+  "AMÁN",
+  "PUEBLO",
+  "VALENTÍA",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA",
+  "AMÉN",
+  "SÍ",
+  "NO"
+ ],
+ "formato": "corto",
+ "barra_progreso": true,
+ "efectos_sonido": true,
+ "musica": "auto",
+ "volumen_musica": 0.13,
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.12,
+ "escenas": [
+  {
+   "fondo": "palacio",
+   "texto": "Arriesgó su vida para salvar a su pueblo.",
+   "personajes": [
+    {
+     "id": "guardia1",
+     "x": 0.18
+    },
+    {
+     "id": "ester",
+     "x": 0.5,
+     "emocion": "triste"
+    },
+    {
+     "id": "guardia2",
+     "x": 0.82,
+     "mira": "izquierda"
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15,
+   "portada": true
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Ester decidió presentarse ante el rey sin ser llamada.",
+   "personajes": [
+    {
+     "id": "ester",
+     "x": 0.1,
+     "hasta": 0.45,
+     "accion": "caminar",
+     "emocion": "valiente"
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Sígueme para más historias de la Biblia.",
+   "personajes": [
+    {
+     "id": "ester",
+     "x": 0.5,
+     "accion": "senalar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.6
+  }
+ ]
+}

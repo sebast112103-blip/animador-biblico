@@ -1,0 +1,117 @@
+{
+ "titulo": "Elías y el fuego del cielo (10s)",
+ "gancho": "Le pidió a Dios FUEGO… y cayó del CIELO",
+ "final": "SÍGUEME",
+ "resaltar": [
+  "ELÍAS",
+  "FUEGO",
+  "BAAL",
+  "ALTAR",
+  "CIELO",
+  "AGUA",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA",
+  "AMÉN",
+  "SÍ",
+  "NO"
+ ],
+ "formato": "corto",
+ "barra_progreso": true,
+ "efectos_sonido": true,
+ "musica": "auto",
+ "volumen_musica": 0.13,
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.12,
+ "escenas": [
+  {
+   "fondo": "montana",
+   "texto": "Le pidió fuego a Dios… y cayó del cielo.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.2,
+     "accion": "celebrar"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.62,
+     "profundidad": -40
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.62
+    },
+    {
+     "tipo": "flash",
+     "fin": 0.08
+    },
+    {
+     "tipo": "fuego",
+     "x": 0.62,
+     "y": -120,
+     "tamano": 1.6,
+     "crece": true
+    },
+    {
+     "tipo": "temblor",
+     "fin": 0.35
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15,
+   "portada": true
+  },
+  {
+   "fondo": "montana",
+   "texto": "Elías empapó su altar con agua.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.25,
+     "accion": "senalar"
+    },
+    {
+     "id": "hombre1",
+     "x": 0.85,
+     "mira": "izquierda",
+     "accion": "ofrecer"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.58
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Sígueme para más historias de la Biblia.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.5,
+     "accion": "senalar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.6
+  }
+ ]
+}

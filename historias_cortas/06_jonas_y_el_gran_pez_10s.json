@@ -1,0 +1,126 @@
+{
+ "titulo": "Jonás y el gran pez (10s)",
+ "gancho": "Intentó HUIR de Dios… y un PEZ se lo tragó",
+ "final": "SÍGUEME",
+ "resaltar": [
+  "JONÁS",
+  "PEZ",
+  "NÍNIVE",
+  "TORMENTA",
+  "PERDÓN",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA",
+  "AMÉN",
+  "SÍ",
+  "NO"
+ ],
+ "formato": "corto",
+ "barra_progreso": true,
+ "efectos_sonido": true,
+ "musica": "auto",
+ "volumen_musica": 0.13,
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.12,
+ "escenas": [
+  {
+   "fondo": "mar_tormenta",
+   "texto": "¿Te imaginas ser tragado por un pez gigante?",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.12,
+     "escala": 0.55,
+     "accion": "temblar",
+     "emocion": "asustado",
+     "y": -40
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "pez_gigante",
+     "x": 0.58,
+     "y": 120,
+     "abierta": true,
+     "mira": "izquierda"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "agua",
+     "nivel": 0.16
+    },
+    {
+     "tipo": "lluvia"
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15,
+   "portada": true
+  },
+  {
+   "fondo": "mar_tormenta",
+   "texto": "Una tormenta terrible casi hunde la embarcación.",
+   "personajes": [
+    {
+     "id": "marinero1",
+     "x": 0.32,
+     "accion": "temblar",
+     "emocion": "asustado"
+    },
+    {
+     "id": "marinero2",
+     "x": 0.62,
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "barca",
+     "x": 0.5,
+     "y": 60,
+     "delante": true,
+     "balanceo": true,
+     "vela": false
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    },
+    {
+     "tipo": "rayo"
+    },
+    {
+     "tipo": "temblor",
+     "fin": 0.3
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Sígueme para más historias de la Biblia.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "senalar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.6
+  }
+ ]
+}

@@ -1,0 +1,207 @@
+{
+ "titulo": "Elías y el fuego del cielo (30s)",
+ "gancho": "Le pidió a Dios FUEGO… y cayó del CIELO",
+ "final": "SÍGUEME",
+ "resaltar": [
+  "ELÍAS",
+  "FUEGO",
+  "BAAL",
+  "ALTAR",
+  "CIELO",
+  "AGUA",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA",
+  "AMÉN",
+  "SÍ",
+  "NO"
+ ],
+ "formato": "corto",
+ "barra_progreso": true,
+ "efectos_sonido": true,
+ "musica": "auto",
+ "volumen_musica": 0.13,
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.12,
+ "escenas": [
+  {
+   "fondo": "montana",
+   "texto": "Le pidió fuego a Dios… y cayó del cielo.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.2,
+     "accion": "celebrar"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.62,
+     "profundidad": -40
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.62
+    },
+    {
+     "tipo": "flash",
+     "fin": 0.08
+    },
+    {
+     "tipo": "fuego",
+     "x": 0.62,
+     "y": -120,
+     "tamano": 1.6,
+     "crece": true
+    },
+    {
+     "tipo": "temblor",
+     "fin": 0.35
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15,
+   "portada": true
+  },
+  {
+   "fondo": "montana",
+   "texto": "Los profetas de Baal gritaron por horas. Nada pasó.",
+   "personajes": [
+    {
+     "id": "profeta_baal1",
+     "x": 0.2,
+     "accion": "saltar",
+     "emocion": "enojado"
+    },
+    {
+     "id": "profeta_baal2",
+     "x": 0.85,
+     "mira": "izquierda",
+     "accion": "alabar",
+     "emocion": "enojado"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.52,
+     "profundidad": -40
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "montana",
+   "texto": "Elías empapó su altar con agua.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.25,
+     "accion": "senalar"
+    },
+    {
+     "id": "hombre1",
+     "x": 0.85,
+     "mira": "izquierda",
+     "accion": "ofrecer"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.58
+    }
+   ],
+   "camara": "paneo",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "montana",
+   "texto": "¡Y el fuego de Dios lo consumió todo!",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.2,
+     "accion": "celebrar"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.62,
+     "profundidad": -40
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.62
+    },
+    {
+     "tipo": "flash",
+     "fin": 0.08
+    },
+    {
+     "tipo": "fuego",
+     "x": 0.62,
+     "y": -120,
+     "tamano": 1.6,
+     "crece": true
+    },
+    {
+     "tipo": "temblor",
+     "fin": 0.35
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "montana",
+   "texto": "El pueblo supo quién era el Dios verdadero.",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.3,
+     "accion": "arrodillarse",
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.7,
+     "mira": "izquierda",
+     "accion": "arrodillarse",
+     "emocion": "sorprendido"
+    }
+   ],
+   "camara": "alejar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Escribe AMÉN si crees que Dios sigue respondiendo.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.6
+  }
+ ]
+}

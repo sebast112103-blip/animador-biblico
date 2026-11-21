@@ -1,0 +1,291 @@
+{
+ "titulo": "Daniel en el foso de los leones",
+ "gancho": "Lo lanzaron a los LEONES… por ORAR",
+ "final": "Sígueme para más historias de la BIBLIA",
+ "resaltar": [
+  "DANIEL",
+  "LEONES",
+  "ORAR",
+  "ÁNGEL",
+  "VIVO",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.05,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "escenas": [
+  {
+   "fondo": "palacio",
+   "texto": "Daniel era un hombre respetado por su sabiduría y fidelidad a Dios.",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.32,
+     "emocion": "feliz"
+    },
+    {
+     "id": "rey_dario",
+     "x": 0.7,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Sus enemigos tenían tanta envidia de él que prepararon una trampa para destruirlo.",
+   "personajes": [
+    {
+     "id": "enemigo1",
+     "x": 0.3,
+     "emocion": "burlon"
+    },
+    {
+     "id": "enemigo2",
+     "x": 0.68,
+     "mira": "izquierda",
+     "emocion": "enojado",
+     "accion": "senalar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.3
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Convencieron al rey de firmar una ley que prohibía orar a cualquier dios o persona que no fuera el propio monarca durante treinta días.",
+   "personajes": [
+    {
+     "id": "enemigo1",
+     "x": 0.28,
+     "accion": "ofrecer",
+     "emocion": "burlon"
+    },
+    {
+     "id": "rey_dario",
+     "x": 0.72,
+     "mira": "izquierda"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.78,
+     "profundidad": -30
+    }
+   ],
+   "rotulo": "30 DÍAS",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Pero Daniel no dejó de orar.",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "portada": true,
+   "camara": "paneo"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Cuando sus enemigos lo descubrieron, fue condenado a ser arrojado a un foso lleno de leones hambrientos.",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.3,
+     "emocion": "triste"
+    },
+    {
+     "id": "guardia1",
+     "x": 0.62,
+     "mira": "izquierda"
+    },
+    {
+     "id": "enemigo1",
+     "x": 0.86,
+     "mira": "izquierda",
+     "accion": "senalar",
+     "emocion": "burlon"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "foso",
+   "texto": "",
+   "personajes": [
+    {
+     "id": "leon1",
+     "x": 0.25,
+     "accion": "rugir"
+    },
+    {
+     "id": "leon2",
+     "x": 0.78,
+     "mira": "izquierda",
+     "accion": "rugir"
+    }
+   ],
+   "duracion": 1.8,
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "El rey estaba angustiado, porque apreciaba mucho a Daniel, pero no podía cambiar la ley.",
+   "personajes": [
+    {
+     "id": "rey_dario",
+     "x": 0.5,
+     "emocion": "llorando"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.5,
+     "profundidad": -30
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "camino",
+   "texto": "Al amanecer, corrió hacia el foso y gritó su nombre.",
+   "personajes": [
+    {
+     "id": "rey_dario",
+     "x": 0.15,
+     "hasta": 0.62,
+     "accion": "correr",
+     "emocion": "asustado"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "foso",
+   "texto": "Para su sorpresa, Daniel estaba vivo.",
+   "personajes": [
+    {
+     "id": "leon1",
+     "x": 0.2,
+     "accion": "dormir"
+    },
+    {
+     "id": "daniel",
+     "x": 0.5,
+     "emocion": "feliz",
+     "accion": "alabar"
+    },
+    {
+     "id": "leon2",
+     "x": 0.82,
+     "mira": "izquierda",
+     "accion": "dormir"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "¡VIVO!",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "foso",
+   "texto": "Dios había enviado a su ángel para cerrar la boca de los leones y protegerlo.",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.25,
+     "accion": "orar"
+    },
+    {
+     "id": "angel",
+     "x": 0.62,
+     "mira": "izquierda",
+     "accion": "senalar"
+    },
+    {
+     "id": "leon2",
+     "x": 0.86,
+     "mira": "izquierda",
+     "accion": "dormir",
+     "profundidad": 40
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.62
+    },
+    {
+     "tipo": "brillo",
+     "x": 0.62,
+     "y": -450
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Mantener tus principios puede ser difícil, pero nunca debes abandonar aquello en lo que crees por miedo a los demás.",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "ENSEÑANZA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Qué león estás enfrentando hoy? Escríbelo en los comentarios.",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "pausa": 1.6,
+   "camara": "fijo"
+  }
+ ]
+}

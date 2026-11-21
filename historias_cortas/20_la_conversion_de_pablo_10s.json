@@ -1,0 +1,102 @@
+{
+ "titulo": "La conversión de Pablo (10s)",
+ "gancho": "PERSEGUÍA a los cristianos… hasta que vio una LUZ",
+ "final": "SÍGUEME",
+ "resaltar": [
+  "SAULO",
+  "PABLO",
+  "LUZ",
+  "DAMASCO",
+  "JESÚS",
+  "CAMBIO",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA",
+  "AMÉN",
+  "SÍ",
+  "NO"
+ ],
+ "formato": "corto",
+ "barra_progreso": true,
+ "efectos_sonido": true,
+ "musica": "auto",
+ "volumen_musica": 0.13,
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.12,
+ "escenas": [
+  {
+   "fondo": "camino",
+   "texto": "Perseguía a los cristianos… hasta que vio una luz.",
+   "personajes": [
+    {
+     "id": "saulo",
+     "x": 0.25,
+     "accion": "caer_de_cara"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "flash",
+     "fin": 0.2
+    },
+    {
+     "tipo": "temblor",
+     "fin": 0.3
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15,
+   "portada": true
+  },
+  {
+   "fondo": "camino",
+   "texto": "Saulo, Saulo, ¿por qué me persigues?",
+   "personajes": [
+    {
+     "id": "saulo",
+     "x": 0.5,
+     "accion": "arrodillarse",
+     "emocion": "asustado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -900,
+     "radio": 400
+    }
+   ],
+   "habla": "jesus",
+   "camara": "acercar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Sígueme para más historias de la Biblia.",
+   "personajes": [
+    {
+     "id": "saulo",
+     "x": 0.5,
+     "accion": "senalar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.6
+  }
+ ]
+}

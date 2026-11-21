@@ -1,0 +1,109 @@
+{
+ "titulo": "Noé y el arca (10s)",
+ "gancho": "¿Construirías un ARCA si nadie te creyera?",
+ "final": "SÍGUEME",
+ "resaltar": [
+  "NOÉ",
+  "ARCA",
+  "DILUVIO",
+  "ARCOÍRIS",
+  "PROMESA",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA",
+  "AMÉN",
+  "SÍ",
+  "NO"
+ ],
+ "formato": "corto",
+ "barra_progreso": true,
+ "efectos_sonido": true,
+ "musica": "auto",
+ "volumen_musica": 0.13,
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.12,
+ "escenas": [
+  {
+   "fondo": "valle",
+   "texto": "¿Construirías un barco gigante si todos se burlaran de ti?",
+   "personajes": [
+    {
+     "id": "noe",
+     "x": 0.18,
+     "accion": "levantar"
+    },
+    {
+     "id": "hombre1",
+     "x": 0.86,
+     "mira": "izquierda",
+     "emocion": "burlon",
+     "accion": "senalar",
+     "profundidad": 40
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "arca",
+     "x": 0.6,
+     "escala": 0.8,
+     "puerta": true
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15,
+   "portada": true
+  },
+  {
+   "fondo": "tormenta",
+   "texto": "Llovió cuarenta días y cuarenta noches sin parar.",
+   "personajes": [],
+   "cosas": [
+    {
+     "tipo": "arca",
+     "x": 0.5,
+     "escala": 0.9,
+     "y": -60,
+     "sube": -60,
+     "balanceo": true
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    },
+    {
+     "tipo": "agua",
+     "nivel": 0.12,
+     "hasta": 0.3
+    },
+    {
+     "tipo": "rayo"
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Sígueme para más historias de la Biblia.",
+   "personajes": [
+    {
+     "id": "noe",
+     "x": 0.5,
+     "accion": "senalar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.6
+  }
+ ]
+}

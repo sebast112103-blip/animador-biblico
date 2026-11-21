@@ -1,0 +1,149 @@
+{
+ "titulo": "Moisés y el mar Rojo (15s)",
+ "gancho": "¿Y si el MAR se abriera frente a ti?",
+ "final": "SÍGUEME",
+ "resaltar": [
+  "MOISÉS",
+  "MAR",
+  "ROJO",
+  "EGIPTO",
+  "CAMINO",
+  "FARAÓN",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA",
+  "AMÉN",
+  "SÍ",
+  "NO"
+ ],
+ "formato": "corto",
+ "barra_progreso": true,
+ "efectos_sonido": true,
+ "musica": "auto",
+ "volumen_musica": 0.13,
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.12,
+ "escenas": [
+  {
+   "fondo": "mar",
+   "texto": "Atrapados frente al mar, con un ejército detrás. ¿Qué harías?",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.3,
+     "accion": "temblar",
+     "emocion": "asustado"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.65,
+     "mira": "izquierda",
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.75,
+     "y": 330,
+     "delante": true
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15,
+   "portada": true
+  },
+  {
+   "fondo": "mar_rojo",
+   "texto": "Moisés levantó su vara obedeciendo a Dios.",
+   "personajes": [
+    {
+     "id": "moises",
+     "x": 0.5,
+     "accion": "levantar",
+     "profundidad": 120
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.8,
+     "y": 330,
+     "profundidad": 200
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "abrir_mar",
+     "inicio": 0.99,
+     "fin": 1
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "mar_rojo",
+   "texto": "¡Y el mar se abrió en dos!",
+   "personajes": [
+    {
+     "id": "moises",
+     "x": 0.5,
+     "accion": "levantar",
+     "profundidad": 120
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.8,
+     "y": 330,
+     "profundidad": 200
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "abrir_mar",
+     "inicio": 0.05,
+     "fin": 0.85
+    },
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "temblor",
+     "inicio": 0.1,
+     "fin": 0.3
+    }
+   ],
+   "camara": "paneo",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Sígueme para más historias de la Biblia.",
+   "personajes": [
+    {
+     "id": "moises",
+     "x": 0.5,
+     "accion": "senalar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.6
+  }
+ ]
+}

@@ -1,0 +1,391 @@
+{
+ "titulo": "El nacimiento de Jesús",
+ "gancho": "La NOCHE que cambió la HISTORIA",
+ "final": "Sígueme para más historias de la BIBLIA",
+ "resaltar": [
+  "JESÚS",
+  "BELÉN",
+  "PESEBRE",
+  "SALVADOR",
+  "ÁNGEL",
+  "MARÍA",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.05,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "escenas": [
+  {
+   "fondo": "camino",
+   "texto": "Hace más de dos mil años, María y José viajaron hasta Belén.",
+   "personajes": [
+    {
+     "id": "jose_carpintero",
+     "x": -0.1,
+     "hasta": 0.18,
+     "accion": "caminar"
+    },
+    {
+     "id": "maria",
+     "x": 0.15,
+     "hasta": 0.44,
+     "accion": "caminar"
+    },
+    {
+     "id": "burro",
+     "x": 0.45,
+     "hasta": 0.76,
+     "accion": "caminar",
+     "profundidad": -20
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "María estaba esperando un hijo, pero cuando llegaron a la ciudad no encontraron alojamiento.",
+   "personajes": [
+    {
+     "id": "jose_carpintero",
+     "x": 0.14,
+     "emocion": "triste"
+    },
+    {
+     "id": "maria",
+     "x": 0.42,
+     "emocion": "triste"
+    },
+    {
+     "id": "hombre1",
+     "x": 0.8,
+     "mira": "izquierda",
+     "accion": "senalar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.35
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "establo",
+   "texto": "Finalmente, tuvieron que refugiarse en un lugar donde guardaban animales.",
+   "personajes": [
+    {
+     "id": "jose_carpintero",
+     "x": -0.1,
+     "hasta": 0.18,
+     "accion": "caminar"
+    },
+    {
+     "id": "maria",
+     "x": 0.15,
+     "hasta": 0.44,
+     "accion": "caminar"
+    },
+    {
+     "id": "burro",
+     "x": 0.84,
+     "mira": "izquierda",
+     "profundidad": -60
+    },
+    {
+     "id": "oveja1",
+     "x": 0.66,
+     "mira": "izquierda",
+     "profundidad": 40
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "establo",
+   "texto": "Allí nació Jesús.",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.25,
+     "accion": "arrodillarse",
+     "emocion": "feliz"
+    },
+    {
+     "id": "jose_carpintero",
+     "x": 0.85,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "pesebre",
+     "x": 0.55
+    },
+    {
+     "tipo": "estrella",
+     "x": 0.5,
+     "y": -1250
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.55
+    }
+   ],
+   "portada": true,
+   "camara": "acercar",
+   "foco_x": 0.55
+  },
+  {
+   "fondo": "establo",
+   "texto": "María lo envolvió en pañales y lo acostó en un pesebre.",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.25,
+     "accion": "arrodillarse",
+     "emocion": "feliz"
+    },
+    {
+     "id": "burro",
+     "x": 0.85,
+     "mira": "izquierda",
+     "profundidad": -60
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "pesebre",
+     "x": 0.55
+    },
+    {
+     "tipo": "estrella",
+     "x": 0.5,
+     "y": -1250
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Esa misma noche, unos pastores que cuidaban sus ovejas recibieron la visita de un ángel.",
+   "personajes": [
+    {
+     "id": "pastor1",
+     "x": 0.18
+    },
+    {
+     "id": "pastor2",
+     "x": 0.44,
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "oveja1",
+     "x": 0.05,
+     "mira": "izquierda",
+     "profundidad": 40
+    },
+    {
+     "id": "angel",
+     "x": 0.8,
+     "mira": "izquierda",
+     "entra_en": 1.5
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.8,
+     "inicio": 0.25
+    },
+    {
+     "tipo": "flash",
+     "inicio": 0.24,
+     "fin": 0.3
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "noche",
+   "texto": "El ángel les anunció una gran noticia: había nacido el Salvador.",
+   "personajes": [
+    {
+     "id": "pastor1",
+     "x": 0.14,
+     "accion": "arrodillarse",
+     "emocion": "asustado"
+    },
+    {
+     "id": "pastor2",
+     "x": 0.38,
+     "accion": "arrodillarse",
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "angel",
+     "x": 0.72,
+     "mira": "izquierda",
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.72
+    },
+    {
+     "tipo": "brillo",
+     "x": 0.72,
+     "y": -500
+    }
+   ],
+   "rotulo": "¡NACIÓ EL SALVADOR!",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Los pastores fueron rápidamente a Belén y encontraron al niño tal como se les había anunciado.",
+   "personajes": [
+    {
+     "id": "pastor1",
+     "x": 0.05,
+     "hasta": 0.5,
+     "accion": "correr"
+    },
+    {
+     "id": "pastor2",
+     "x": 0.25,
+     "hasta": 0.75,
+     "accion": "correr"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "estrella",
+     "x": 0.5,
+     "y": -1250
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "La noticia de aquel nacimiento comenzó a extenderse.",
+   "personajes": [
+    {
+     "id": "pastor1",
+     "x": 0.3,
+     "accion": "celebrar",
+     "profundidad": 40
+    },
+    {
+     "id": "mujer1",
+     "x": 0.72,
+     "mira": "izquierda",
+     "emocion": "sorprendido",
+     "profundidad": 40
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.6,
+     "y": -80,
+     "profundidad": -40
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "establo",
+   "texto": "El niño que nació en un humilde pesebre cambiaría la historia de la humanidad.",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.25,
+     "accion": "arrodillarse",
+     "emocion": "feliz"
+    },
+    {
+     "id": "pastor1",
+     "x": 0.85,
+     "mira": "izquierda",
+     "accion": "arrodillarse"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "pesebre",
+     "x": 0.55
+    },
+    {
+     "tipo": "estrella",
+     "x": 0.5,
+     "y": -1250
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.55
+    },
+    {
+     "tipo": "brillo",
+     "x": 0.55,
+     "y": -250
+    }
+   ],
+   "foco_x": 0.55,
+   "camara": "paneo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Los grandes acontecimientos no siempre comienzan en lugares importantes. A veces, la humildad es el comienzo de algo extraordinario.",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "ENSEÑANZA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Qué significa para ti el nacimiento de Jesús? Escríbelo en los comentarios.",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "pausa": 1.6,
+   "camara": "fijo"
+  }
+ ]
+}

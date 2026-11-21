@@ -1,0 +1,301 @@
+{
+ "titulo": "Abraham y la promesa imposible",
+ "gancho": "Tuvo un HIJO… a los 100 AÑOS",
+ "final": "Sígueme para más historias de la BIBLIA",
+ "resaltar": [
+  "ABRAHAM",
+  "PROMESA",
+  "ISAAC",
+  "ESTRELLAS",
+  "FE",
+  "IMPOSIBLE",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.05,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "escenas": [
+  {
+   "fondo": "noche",
+   "texto": "Abraham era un hombre que había recibido una promesa extraordinaria de Dios.",
+   "personajes": [
+    {
+     "id": "abraham",
+     "x": 0.5,
+     "emocion": "sorprendido"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "noche",
+   "texto": "A pesar de ser mayor y no tener hijos, Dios le prometió que tendría una descendencia tan numerosa como las estrellas del cielo.",
+   "personajes": [
+    {
+     "id": "abraham",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "brillo",
+     "y": -1050,
+     "cantidad": 30,
+     "radio": 480
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "desierto",
+   "texto": "Los años pasaban y la promesa parecía imposible de cumplirse.",
+   "personajes": [
+    {
+     "id": "abraham",
+     "x": 0.32,
+     "emocion": "triste"
+    },
+    {
+     "id": "sara",
+     "x": 0.68,
+     "mira": "izquierda",
+     "emocion": "triste"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "desierto",
+   "texto": "Sin embargo, Abraham decidió confiar.",
+   "personajes": [
+    {
+     "id": "abraham",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Cuando tenía cien años, su esposa Sara dio a luz a un hijo llamado Isaac.",
+   "personajes": [
+    {
+     "id": "abraham",
+     "x": 0.22,
+     "accion": "celebrar"
+    },
+    {
+     "id": "sara",
+     "x": 0.78,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "pesebre",
+     "x": 0.5,
+     "aureola": false,
+     "escala": 0.8
+    }
+   ],
+   "rotulo": "100 AÑOS",
+   "portada": true,
+   "camara": "fijo"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Aquello que parecía imposible finalmente se convirtió en realidad.",
+   "personajes": [
+    {
+     "id": "abraham",
+     "x": 0.25,
+     "accion": "celebrar"
+    },
+    {
+     "id": "isaac",
+     "x": 0.5,
+     "accion": "saltar"
+    },
+    {
+     "id": "sara",
+     "x": 0.75,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Pero la historia no terminó allí.",
+   "personajes": [
+    {
+     "id": "abraham",
+     "x": 0.5,
+     "emocion": "sorprendido"
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Tiempo después, Dios puso a prueba la fe de Abraham y le pidió que ofreciera a Isaac como sacrificio.",
+   "personajes": [
+    {
+     "id": "abraham",
+     "x": 0.1,
+     "hasta": 0.4,
+     "accion": "caminar",
+     "emocion": "triste"
+    },
+    {
+     "id": "isaac",
+     "x": 0.28,
+     "hasta": 0.58,
+     "accion": "caminar"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Abraham obedeció y se preparó para hacerlo.",
+   "personajes": [
+    {
+     "id": "abraham",
+     "x": 0.25,
+     "accion": "orar",
+     "emocion": "llorando"
+    },
+    {
+     "id": "isaac",
+     "x": 0.82,
+     "mira": "izquierda"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.55,
+     "sacrificio": false
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Justo antes de que pudiera sacrificar a su hijo, un ángel lo detuvo.",
+   "personajes": [
+    {
+     "id": "abraham",
+     "x": 0.25,
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "angel",
+     "x": 0.72,
+     "mira": "izquierda",
+     "accion": "senalar"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.5,
+     "sacrificio": false,
+     "profundidad": -40
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.72
+    },
+    {
+     "tipo": "flash",
+     "fin": 0.08
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Dios había visto su fe y proporcionó un carnero para el sacrificio.",
+   "personajes": [
+    {
+     "id": "abraham",
+     "x": 0.22,
+     "accion": "alabar"
+    },
+    {
+     "id": "isaac",
+     "x": 0.45,
+     "emocion": "feliz"
+    },
+    {
+     "id": "carnero",
+     "x": 0.8,
+     "mira": "izquierda"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "La fe verdadera consiste en confiar incluso cuando todavía no puedes ver cómo se cumplirá una promesa.",
+   "personajes": [
+    {
+     "id": "abraham",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "ENSEÑANZA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Qué promesa de Dios estás esperando? Escríbela en los comentarios.",
+   "personajes": [
+    {
+     "id": "abraham",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "pausa": 1.6,
+   "camara": "fijo"
+  }
+ ]
+}

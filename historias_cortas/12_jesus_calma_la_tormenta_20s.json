@@ -1,0 +1,209 @@
+{
+ "titulo": "Jesús calma la tormenta (20s)",
+ "gancho": "Hasta el VIENTO y el MAR le obedecen",
+ "final": "SÍGUEME",
+ "resaltar": [
+  "JESÚS",
+  "TORMENTA",
+  "MAR",
+  "VIENTO",
+  "PAZ",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA",
+  "AMÉN",
+  "SÍ",
+  "NO"
+ ],
+ "formato": "corto",
+ "barra_progreso": true,
+ "efectos_sonido": true,
+ "musica": "auto",
+ "volumen_musica": 0.13,
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.12,
+ "escenas": [
+  {
+   "fondo": "mar_tormenta",
+   "texto": "Una tormenta terrible… y Jesús estaba dormido.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.38,
+     "accion": "temblar",
+     "emocion": "asustado"
+    },
+    {
+     "id": "discipulo1",
+     "x": 0.62,
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "barca",
+     "x": 0.5,
+     "y": 60,
+     "delante": true,
+     "balanceo": true,
+     "vela": false,
+     "escala": 1.15
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    },
+    {
+     "tipo": "rayo"
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15,
+   "portada": true
+  },
+  {
+   "fondo": "mar_tormenta",
+   "texto": "Las olas golpeaban la barca con fuerza.",
+   "personajes": [
+    {
+     "id": "jesus",
+     "x": 0.22,
+     "accion": "dormir",
+     "mira": "izquierda",
+     "escala": 0.72,
+     "y": -95
+    },
+    {
+     "id": "pedro",
+     "x": 0.72,
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "barca",
+     "x": 0.5,
+     "y": 60,
+     "delante": true,
+     "balanceo": true,
+     "vela": false,
+     "escala": 1.15
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    },
+    {
+     "tipo": "rayo"
+    },
+    {
+     "tipo": "temblor",
+     "fin": 0.25
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "mar_tormenta",
+   "texto": "Jesús se levantó y le ordenó al mar: ¡calma!",
+   "personajes": [
+    {
+     "id": "jesus",
+     "x": 0.5,
+     "accion": "levantar",
+     "emocion": "valiente"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "barca",
+     "x": 0.5,
+     "y": 60,
+     "delante": true,
+     "balanceo": true,
+     "vela": false,
+     "escala": 1.15
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia",
+     "fin": 0.6
+    },
+    {
+     "tipo": "luz",
+     "inicio": 0.4
+    }
+   ],
+   "camara": "paneo",
+   "foco_x": 0.5,
+   "pausa": 0.15
+  },
+  {
+   "fondo": "mar",
+   "texto": "Y todo quedó en silencio.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.26,
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "jesus",
+     "x": 0.5,
+     "emocion": "feliz"
+    },
+    {
+     "id": "discipulo1",
+     "x": 0.74,
+     "mira": "izquierda",
+     "emocion": "sorprendido"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "barca",
+     "x": 0.5,
+     "y": 60,
+     "delante": true,
+     "vela": false,
+     "escala": 1.15
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Qué tormenta estás viviendo? Escribe AMÉN.",
+   "personajes": [
+    {
+     "id": "jesus",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.6
+  }
+ ]
+}

@@ -1,0 +1,184 @@
+{
+ "titulo": "José de esclavo a gobernador (30s)",
+ "gancho": "Lo VENDIERON sus hermanos… y terminó GOBERNANDO Egipto",
+ "final": "SÍGUEME",
+ "resaltar": [
+  "JOSÉ",
+  "EGIPTO",
+  "GOBERNADOR",
+  "PERDONARLOS",
+  "ESCLAVO",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA",
+  "AMÉN",
+  "SÍ",
+  "NO"
+ ],
+ "formato": "corto",
+ "barra_progreso": true,
+ "efectos_sonido": true,
+ "musica": "auto",
+ "volumen_musica": 0.13,
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.12,
+ "escenas": [
+  {
+   "fondo": "desierto",
+   "texto": "Sus propios hermanos lo vendieron como esclavo.",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.15
+    },
+    {
+     "id": "jose",
+     "x": 0.4,
+     "emocion": "llorando",
+     "accion": "temblar"
+    },
+    {
+     "id": "hermano1",
+     "x": 0.82,
+     "mira": "izquierda",
+     "emocion": "burlon",
+     "accion": "ofrecer"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "monedas",
+     "x": 0.62,
+     "profundidad": 100
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15,
+   "portada": true
+  },
+  {
+   "fondo": "prision",
+   "texto": "En la prisión, José nunca dejó de confiar en Dios.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.45,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.65
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "egipto",
+   "texto": "¡Y el faraón lo nombró gobernador de Egipto!",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.32,
+     "accion": "alabar",
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e"
+    },
+    {
+     "id": "faraon",
+     "x": 0.72,
+     "mira": "izquierda",
+     "accion": "senalar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "brillo",
+     "x": 0.32,
+     "y": -450
+    }
+   ],
+   "camara": "paneo",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "egipto",
+   "texto": "Pudo vengarse de sus hermanos, pero decidió perdonarlos.",
+   "personajes": [
+    {
+     "id": "hermano1",
+     "x": 0.32,
+     "accion": "abrazar",
+     "emocion": "llorando"
+    },
+    {
+     "id": "jose",
+     "x": 0.62,
+     "mira": "izquierda",
+     "accion": "abrazar",
+     "emocion": "llorando",
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e"
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "egipto",
+   "texto": "Lo que parecía el fin era parte de un propósito.",
+   "personajes": [
+    {
+     "id": "hermano1",
+     "x": 0.2,
+     "accion": "arrodillarse"
+    },
+    {
+     "id": "hermano2",
+     "x": 0.4,
+     "accion": "arrodillarse"
+    },
+    {
+     "id": "jose",
+     "x": 0.75,
+     "mira": "izquierda",
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e"
+    }
+   ],
+   "camara": "alejar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Tú hubieras perdonado? Responde SÍ o NO.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.6
+  }
+ ]
+}

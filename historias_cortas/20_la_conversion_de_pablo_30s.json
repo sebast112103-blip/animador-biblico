@@ -1,0 +1,179 @@
+{
+ "titulo": "La conversión de Pablo (30s)",
+ "gancho": "PERSEGUÍA a los cristianos… hasta que vio una LUZ",
+ "final": "SÍGUEME",
+ "resaltar": [
+  "SAULO",
+  "PABLO",
+  "LUZ",
+  "DAMASCO",
+  "JESÚS",
+  "CAMBIO",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA",
+  "AMÉN",
+  "SÍ",
+  "NO"
+ ],
+ "formato": "corto",
+ "barra_progreso": true,
+ "efectos_sonido": true,
+ "musica": "auto",
+ "volumen_musica": 0.13,
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.12,
+ "escenas": [
+  {
+   "fondo": "camino",
+   "texto": "Perseguía a los cristianos… hasta que vio una luz.",
+   "personajes": [
+    {
+     "id": "saulo",
+     "x": 0.25,
+     "accion": "caer_de_cara"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "flash",
+     "fin": 0.2
+    },
+    {
+     "tipo": "temblor",
+     "fin": 0.3
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15,
+   "portada": true
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Saulo estaba decidido a detener a los seguidores de Jesús.",
+   "personajes": [
+    {
+     "id": "guardia1",
+     "x": 0.12
+    },
+    {
+     "id": "saulo",
+     "x": 0.32,
+     "accion": "senalar",
+     "emocion": "enojado"
+    },
+    {
+     "id": "hombre1",
+     "x": 0.68,
+     "mira": "izquierda",
+     "accion": "temblar",
+     "emocion": "asustado"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.88,
+     "mira": "izquierda",
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "camino",
+   "texto": "Saulo, Saulo, ¿por qué me persigues?",
+   "personajes": [
+    {
+     "id": "saulo",
+     "x": 0.5,
+     "accion": "arrodillarse",
+     "emocion": "asustado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -900,
+     "radio": 400
+    }
+   ],
+   "habla": "jesus",
+   "camara": "paneo",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Quedó ciego durante tres días.",
+   "personajes": [
+    {
+     "id": "saulo",
+     "x": 0.5,
+     "accion": "arrodillarse",
+     "emocion": "triste",
+     "venda": true
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.45
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Y se convirtió en Pablo, el gran predicador.",
+   "personajes": [
+    {
+     "id": "saulo",
+     "x": 0.5,
+     "accion": "senalar",
+     "emocion": "feliz",
+     "y": -30
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.85,
+     "y": 360,
+     "delante": true
+    }
+   ],
+   "camara": "alejar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Cómo cambió Dios tu vida? Cuéntamelo abajo.",
+   "personajes": [
+    {
+     "id": "saulo",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.6
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+videos/
+voces/
+__pycache__/
+salida/
+*.log
+instalacion_log.txt
+reparar_log.txt

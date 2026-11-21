@@ -1,0 +1,136 @@
+{
+ "titulo": "El hijo pródigo (15s)",
+ "gancho": "Lo gastó TODO… y su padre CORRIÓ a abrazarlo",
+ "final": "SÍGUEME",
+ "resaltar": [
+  "PADRE",
+  "HIJO",
+  "PERDÓN",
+  "ABRAZARLO",
+  "CELEBRACIÓN",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA",
+  "AMÉN",
+  "SÍ",
+  "NO"
+ ],
+ "formato": "corto",
+ "barra_progreso": true,
+ "efectos_sonido": true,
+ "musica": "auto",
+ "volumen_musica": 0.13,
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.12,
+ "escenas": [
+  {
+   "fondo": "campo",
+   "texto": "Lo gastó todo… y su padre corrió a abrazarlo.",
+   "personajes": [
+    {
+     "id": "padre",
+     "x": 0.9,
+     "mira": "izquierda",
+     "hasta": 0.56,
+     "accion": "correr",
+     "emocion": "feliz"
+    },
+    {
+     "id": "hijo_menor",
+     "x": 0.38,
+     "emocion": "llorando",
+     "tunica": "#8a8070",
+     "manto": null
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15,
+   "portada": true
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "El hijo menor desperdició su herencia en fiestas.",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.18,
+     "accion": "celebrar"
+    },
+    {
+     "id": "hijo_menor",
+     "x": 0.5,
+     "accion": "celebrar"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.82,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "mesa",
+     "x": 0.5,
+     "profundidad": 100
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.3
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "campo",
+   "texto": "Terminó cuidando cerdos y pasando hambre.",
+   "personajes": [
+    {
+     "id": "hijo_menor",
+     "x": 0.3,
+     "emocion": "triste",
+     "tunica": "#8a8070",
+     "manto": null
+    },
+    {
+     "id": "cerdo1",
+     "x": 0.7,
+     "mira": "izquierda"
+    },
+    {
+     "id": "cerdo2",
+     "x": 0.88,
+     "mira": "izquierda",
+     "profundidad": 40
+    }
+   ],
+   "camara": "paneo",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Sígueme para más historias de la Biblia.",
+   "personajes": [
+    {
+     "id": "padre",
+     "x": 0.5,
+     "accion": "senalar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.6
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "titulo": "Sansón el hombre más fuerte (10s)",
+ "gancho": "El hombre más FUERTE del mundo… perdió todo por un SECRETO",
+ "final": "SÍGUEME",
+ "resaltar": [
+  "SANSÓN",
+  "FUERZA",
+  "CABELLO",
+  "DALILA",
+  "COLUMNAS",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA",
+  "AMÉN",
+  "SÍ",
+  "NO"
+ ],
+ "formato": "corto",
+ "barra_progreso": true,
+ "efectos_sonido": true,
+ "musica": "auto",
+ "volumen_musica": 0.13,
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.12,
+ "escenas": [
+  {
+   "fondo": "valle",
+   "texto": "El hombre más fuerte del mundo… tenía un secreto.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.3,
+     "accion": "empujar"
+    },
+    {
+     "id": "filisteo1",
+     "x": 0.68,
+     "mira": "izquierda",
+     "accion": "caer"
+    },
+    {
+     "id": "filisteo2",
+     "x": 0.88,
+     "mira": "izquierda",
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "temblor",
+     "fin": 0.2
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15,
+   "portada": true
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Mientras dormía, Dalila hizo que se lo cortaran.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.08,
+     "accion": "dormir",
+     "mira": "izquierda",
+     "escala": 0.72,
+     "profundidad": 30
+    },
+    {
+     "id": "dalila",
+     "x": 0.76,
+     "mira": "izquierda",
+     "emocion": "burlon"
+    },
+    {
+     "id": "filisteo2",
+     "x": 0.93,
+     "mira": "izquierda",
+     "objeto": "espada"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.45
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Sígueme para más historias de la Biblia.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "accion": "senalar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.6
+  }
+ ]
+}

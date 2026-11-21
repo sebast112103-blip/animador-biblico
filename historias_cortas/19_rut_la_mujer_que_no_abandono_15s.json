@@ -1,0 +1,112 @@
+{
+ "titulo": "Rut la mujer que no abandonó (15s)",
+ "gancho": "Lo perdió TODO… pero eligió QUEDARSE",
+ "final": "SÍGUEME",
+ "resaltar": [
+  "RUT",
+  "NOEMÍ",
+  "BOOZ",
+  "LEALTAD",
+  "BELÉN",
+  "DAVID",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA",
+  "AMÉN",
+  "SÍ",
+  "NO"
+ ],
+ "formato": "corto",
+ "barra_progreso": true,
+ "efectos_sonido": true,
+ "musica": "auto",
+ "volumen_musica": 0.13,
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.12,
+ "escenas": [
+  {
+   "fondo": "camino",
+   "texto": "Lo perdió todo… pero eligió no abandonar.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.4,
+     "accion": "abrazar",
+     "emocion": "llorando"
+    },
+    {
+     "id": "noemi",
+     "x": 0.56,
+     "mira": "izquierda",
+     "accion": "abrazar",
+     "emocion": "llorando"
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15,
+   "portada": true
+  },
+  {
+   "fondo": "noche",
+   "texto": "Rut quedó viuda junto a su suegra Noemí.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.32,
+     "emocion": "llorando"
+    },
+    {
+     "id": "noemi",
+     "x": 0.68,
+     "mira": "izquierda",
+     "emocion": "llorando"
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "camino",
+   "texto": "Le dijo: a donde tú vayas, yo iré.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.4,
+     "accion": "abrazar",
+     "emocion": "llorando"
+    },
+    {
+     "id": "noemi",
+     "x": 0.56,
+     "mira": "izquierda",
+     "accion": "abrazar",
+     "emocion": "llorando"
+    }
+   ],
+   "camara": "paneo",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Sígueme para más historias de la Biblia.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.5,
+     "accion": "senalar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.6
+  }
+ ]
+}

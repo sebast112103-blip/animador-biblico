@@ -1,0 +1,7 @@
+numpy
+pillow
+piper-tts
+# solo Windows: componente que necesita Piper
+msvc-runtime; sys_platform == "win32"
+# opcional, voces de Microsoft por internet:
+# edge-tts

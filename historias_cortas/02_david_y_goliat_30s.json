@@ -1,0 +1,175 @@
+{
+ "titulo": "David y Goliat (30s)",
+ "gancho": "¿Cómo un NIÑO venció a un GIGANTE?",
+ "final": "SÍGUEME",
+ "resaltar": [
+  "GIGANTE",
+  "DAVID",
+  "GOLIAT",
+  "PIEDRA",
+  "NIÑO",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA",
+  "AMÉN",
+  "SÍ",
+  "NO"
+ ],
+ "formato": "corto",
+ "barra_progreso": true,
+ "efectos_sonido": true,
+ "musica": "auto",
+ "volumen_musica": 0.13,
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.12,
+ "escenas": [
+  {
+   "fondo": "valle",
+   "texto": "¿Cómo un niño venció a un gigante con una sola piedra?",
+   "personajes": [
+    {
+     "id": "goliat",
+     "x": 0.62,
+     "mira": "izquierda",
+     "accion": "senalar",
+     "emocion": "enojado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "temblor",
+     "fin": 0.15
+    }
+   ],
+   "camara": "acercar_rapido",
+   "foco_x": 0.62,
+   "pausa": 0.15,
+   "portada": true
+  },
+  {
+   "fondo": "valle",
+   "texto": "Todo el ejército temblaba de miedo frente a Goliat.",
+   "personajes": [
+    {
+     "id": "soldado1",
+     "x": 0.18,
+     "accion": "temblar",
+     "emocion": "asustado"
+    },
+    {
+     "id": "soldado2",
+     "x": 0.38,
+     "accion": "temblar",
+     "emocion": "asustado"
+    },
+    {
+     "id": "goliat",
+     "x": 0.78,
+     "mira": "izquierda",
+     "emocion": "burlon"
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "valle",
+   "texto": "David giró su honda y lanzó una sola piedra.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.2,
+     "accion": "lanzar",
+     "objeto": "honda"
+    },
+    {
+     "id": "goliat",
+     "x": 0.72,
+     "mira": "izquierda",
+     "emocion": "burlon"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "proyectil",
+     "de": "david",
+     "a": "goliat",
+     "inicio": 0.64,
+     "fin": 0.86
+    }
+   ],
+   "camara": "paneo",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "valle",
+   "texto": "¡El gigante cayó al suelo derrotado!",
+   "personajes": [
+    {
+     "id": "goliat",
+     "x": 0.9,
+     "mira": "izquierda",
+     "accion": "caer_de_cara",
+     "escala": 0.85
+    },
+    {
+     "id": "david",
+     "x": 0.14,
+     "accion": "celebrar",
+     "objeto": "honda",
+     "profundidad": 40
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "flash",
+     "fin": 0.1
+    },
+    {
+     "tipo": "temblor",
+     "inicio": 0.25,
+     "fin": 0.45
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "campo",
+   "texto": "No fue la fuerza: fue su fe en Dios.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.5,
+     "accion": "agacharse",
+     "objeto": "honda",
+     "emocion": "valiente"
+    }
+   ],
+   "camara": "alejar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Qué gigante quieres vencer? Escríbelo abajo.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.6
+  }
+ ]
+}

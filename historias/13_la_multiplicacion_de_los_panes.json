@@ -1,0 +1,358 @@
+{
+ "titulo": "La multiplicación de los panes y los peces",
+ "gancho": "5 PANES y 2 PECES para MILES de personas",
+ "final": "Sígueme para más historias de la BIBLIA",
+ "resaltar": [
+  "PANES",
+  "PECES",
+  "MILES",
+  "CANASTAS",
+  "JESÚS",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.05,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "escenas": [
+  {
+   "fondo": "campo",
+   "texto": "Una enorme multitud seguía a Jesús para escuchar sus enseñanzas.",
+   "personajes": [
+    {
+     "id": "jesus",
+     "x": 0.5,
+     "accion": "senalar",
+     "y": -40
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.85,
+     "y": 360,
+     "delante": true
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Después de varias horas, la gente comenzó a sentir hambre.",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.3,
+     "emocion": "triste"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.68,
+     "mira": "izquierda",
+     "emocion": "triste"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.6,
+     "y": -140,
+     "profundidad": -60
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Los discípulos se preocuparon porque estaban lejos de cualquier lugar donde pudieran comprar alimentos.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.32,
+     "emocion": "triste"
+    },
+    {
+     "id": "discipulo1",
+     "x": 0.68,
+     "mira": "izquierda",
+     "emocion": "triste"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Entonces encontraron a un niño que tenía cinco panes y dos peces.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.22,
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "nino",
+     "x": 0.55,
+     "accion": "ofrecer",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "panes_peces",
+     "x": 0.72,
+     "profundidad": 100
+    }
+   ],
+   "rotulo": "5 PANES Y 2 PECES",
+   "portada": true,
+   "camara": "paneo"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Parecía muy poco para alimentar a tantas personas.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.3,
+     "emocion": "triste"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "panes_peces",
+     "x": 0.62,
+     "profundidad": 100
+    },
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.6,
+     "y": -140,
+     "profundidad": -60
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Sin embargo, Jesús tomó los alimentos, levantó sus ojos al cielo y dio gracias a Dios.",
+   "personajes": [
+    {
+     "id": "jesus",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "panes_peces",
+     "x": 0.5,
+     "profundidad": 100
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -300
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Después comenzó a repartirlos entre la multitud.",
+   "personajes": [
+    {
+     "id": "jesus",
+     "x": 0.38,
+     "accion": "ofrecer"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "canasta",
+     "x": 0.62,
+     "profundidad": 100
+    },
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.6,
+     "y": -140,
+     "profundidad": -60
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Lo que parecía insuficiente comenzó a multiplicarse.",
+   "personajes": [
+    {
+     "id": "jesus",
+     "x": 0.5,
+     "accion": "ofrecer",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "canasta",
+     "x": 0.2,
+     "profundidad": 100
+    },
+    {
+     "tipo": "canasta",
+     "x": 0.4,
+     "profundidad": 100,
+     "entra_en": 0.8
+    },
+    {
+     "tipo": "canasta",
+     "x": 0.6,
+     "profundidad": 100,
+     "entra_en": 1.6
+    },
+    {
+     "tipo": "canasta",
+     "x": 0.8,
+     "profundidad": 100,
+     "entra_en": 2.4
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "brillo",
+     "y": -150,
+     "radio": 420,
+     "cantidad": 24
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Miles de personas comieron hasta quedar satisfechas.",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.3,
+     "accion": "celebrar"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.68,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.6,
+     "y": -140,
+     "profundidad": -60
+    }
+   ],
+   "rotulo": "¡MILES!",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Cuando terminaron, los discípulos recogieron doce canastas con los pedazos que habían sobrado.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.2,
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "discipulo1",
+     "x": 0.82,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "canasta",
+     "x": 0.38,
+     "profundidad": 100
+    },
+    {
+     "tipo": "canasta",
+     "x": 0.5,
+     "profundidad": 110
+    },
+    {
+     "tipo": "canasta",
+     "x": 0.62,
+     "profundidad": 100
+    },
+    {
+     "tipo": "canasta",
+     "x": 0.44,
+     "y": -80,
+     "profundidad": 90
+    },
+    {
+     "tipo": "canasta",
+     "x": 0.56,
+     "y": -80,
+     "profundidad": 90
+    }
+   ],
+   "rotulo": "12 CANASTAS",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Nunca subestimes lo que tienes. En las manos de Dios, hasta lo más pequeño puede convertirse en algo extraordinario.",
+   "personajes": [
+    {
+     "id": "jesus",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "ENSEÑANZA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Qué tienes en tus manos que Dios puede multiplicar? Escríbelo en los comentarios.",
+   "personajes": [
+    {
+     "id": "jesus",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "pausa": 1.6,
+   "camara": "fijo"
+  }
+ ]
+}

@@ -1,0 +1,178 @@
+{
+ "titulo": "Noé y el arca (30s)",
+ "gancho": "¿Construirías un ARCA si nadie te creyera?",
+ "final": "SÍGUEME",
+ "resaltar": [
+  "NOÉ",
+  "ARCA",
+  "DILUVIO",
+  "ARCOÍRIS",
+  "PROMESA",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA",
+  "AMÉN",
+  "SÍ",
+  "NO"
+ ],
+ "formato": "corto",
+ "barra_progreso": true,
+ "efectos_sonido": true,
+ "musica": "auto",
+ "volumen_musica": 0.13,
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.12,
+ "escenas": [
+  {
+   "fondo": "valle",
+   "texto": "¿Construirías un barco gigante si todos se burlaran de ti?",
+   "personajes": [
+    {
+     "id": "noe",
+     "x": 0.18,
+     "accion": "levantar"
+    },
+    {
+     "id": "hombre1",
+     "x": 0.86,
+     "mira": "izquierda",
+     "emocion": "burlon",
+     "accion": "senalar",
+     "profundidad": 40
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "arca",
+     "x": 0.6,
+     "escala": 0.8,
+     "puerta": true
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15,
+   "portada": true
+  },
+  {
+   "fondo": "campo",
+   "texto": "Dios le pidió a Noé construir un arca antes del diluvio.",
+   "personajes": [
+    {
+     "id": "noe",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "tormenta",
+   "texto": "Llovió cuarenta días y cuarenta noches sin parar.",
+   "personajes": [],
+   "cosas": [
+    {
+     "tipo": "arca",
+     "x": 0.5,
+     "escala": 0.9,
+     "y": -60,
+     "sube": -60,
+     "balanceo": true
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    },
+    {
+     "tipo": "agua",
+     "nivel": 0.12,
+     "hasta": 0.3
+    },
+    {
+     "tipo": "rayo"
+    }
+   ],
+   "camara": "paneo",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "tormenta",
+   "texto": "Todo quedó bajo el agua, pero el arca resistió.",
+   "personajes": [],
+   "cosas": [
+    {
+     "tipo": "arca",
+     "x": 0.5,
+     "escala": 0.9,
+     "y": -160,
+     "balanceo": true
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    },
+    {
+     "tipo": "agua",
+     "nivel": 0.33
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "valle",
+   "texto": "Y Dios puso un arcoíris como señal de su promesa.",
+   "personajes": [
+    {
+     "id": "noe",
+     "x": 0.5,
+     "accion": "alabar"
+    },
+    {
+     "id": "oveja1",
+     "x": 0.82,
+     "mira": "izquierda",
+     "profundidad": 30
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "arcoiris",
+     "inicio": 0,
+     "fin": 0.35
+    }
+   ],
+   "camara": "alejar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Tú hubieras construido el arca? Responde SÍ o NO.",
+   "personajes": [
+    {
+     "id": "noe",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.6
+  }
+ ]
+}

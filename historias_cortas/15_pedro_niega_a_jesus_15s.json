@@ -1,0 +1,123 @@
+{
+ "titulo": "Pedro niega a Jesús tres veces (15s)",
+ "gancho": "Prometió MORIR por Jesús… y lo NEGÓ 3 VECES",
+ "final": "SÍGUEME",
+ "resaltar": [
+  "PEDRO",
+  "GALLO",
+  "NEGÓ",
+  "TRES",
+  "OPORTUNIDAD",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA",
+  "AMÉN",
+  "SÍ",
+  "NO"
+ ],
+ "formato": "corto",
+ "barra_progreso": true,
+ "efectos_sonido": true,
+ "musica": "auto",
+ "volumen_musica": 0.13,
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.12,
+ "escenas": [
+  {
+   "fondo": "patio",
+   "texto": "Prometió morir por Jesús… y lo negó tres veces.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.3,
+     "accion": "senalar",
+     "emocion": "enojado"
+    },
+    {
+     "id": "criada",
+     "x": 0.75,
+     "mira": "izquierda",
+     "emocion": "sorprendido"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "fuego",
+     "x": 0.53,
+     "tamano": 0.45
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15,
+   "portada": true
+  },
+  {
+   "fondo": "patio",
+   "texto": "Esa noche, lo reconocieron como su seguidor.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.3,
+     "emocion": "asustado"
+    },
+    {
+     "id": "criada",
+     "x": 0.75,
+     "mira": "izquierda",
+     "accion": "senalar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "fuego",
+     "x": 0.53,
+     "tamano": 0.45
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "patio",
+   "texto": "Entonces cantó el gallo.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.3,
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "gallo",
+     "x": 0.75,
+     "mira": "izquierda",
+     "accion": "rugir"
+    }
+   ],
+   "camara": "paneo",
+   "foco_x": 0.75,
+   "pausa": 0.15
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Sígueme para más historias de la Biblia.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.5,
+     "accion": "senalar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.6
+  }
+ ]
+}

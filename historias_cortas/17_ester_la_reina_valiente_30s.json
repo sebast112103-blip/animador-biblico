@@ -1,0 +1,177 @@
+{
+ "titulo": "Ester la reina valiente (30s)",
+ "gancho": "Arriesgó su VIDA para salvar a su PUEBLO",
+ "final": "SÍGUEME",
+ "resaltar": [
+  "ESTER",
+  "REINA",
+  "REY",
+  "AMÁN",
+  "PUEBLO",
+  "VALENTÍA",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA",
+  "AMÉN",
+  "SÍ",
+  "NO"
+ ],
+ "formato": "corto",
+ "barra_progreso": true,
+ "efectos_sonido": true,
+ "musica": "auto",
+ "volumen_musica": 0.13,
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.12,
+ "escenas": [
+  {
+   "fondo": "palacio",
+   "texto": "Arriesgó su vida para salvar a su pueblo.",
+   "personajes": [
+    {
+     "id": "guardia1",
+     "x": 0.18
+    },
+    {
+     "id": "ester",
+     "x": 0.5,
+     "emocion": "triste"
+    },
+    {
+     "id": "guardia2",
+     "x": 0.82,
+     "mira": "izquierda"
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15,
+   "portada": true
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Un decreto ordenaba destruir a todo su pueblo.",
+   "personajes": [
+    {
+     "id": "aman",
+     "x": 0.28,
+     "accion": "ofrecer",
+     "emocion": "burlon"
+    },
+    {
+     "id": "rey_asuero",
+     "x": 0.72,
+     "mira": "izquierda"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.78,
+     "profundidad": -30
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Ester decidió presentarse ante el rey sin ser llamada.",
+   "personajes": [
+    {
+     "id": "ester",
+     "x": 0.1,
+     "hasta": 0.45,
+     "accion": "caminar",
+     "emocion": "valiente"
+    }
+   ],
+   "camara": "paneo",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Y reveló el plan malvado de Amán.",
+   "personajes": [
+    {
+     "id": "ester",
+     "x": 0.25,
+     "accion": "senalar",
+     "emocion": "valiente"
+    },
+    {
+     "id": "rey_asuero",
+     "x": 0.6,
+     "mira": "izquierda",
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "aman",
+     "x": 0.88,
+     "mira": "izquierda",
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.66,
+     "profundidad": -30
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Gracias a su valentía, su pueblo fue salvado.",
+   "personajes": [
+    {
+     "id": "ester",
+     "x": 0.5,
+     "accion": "alabar",
+     "y": -30
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.85,
+     "y": 360,
+     "delante": true
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "brillo",
+     "y": -500
+    }
+   ],
+   "camara": "alejar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Tú te hubieras arriesgado? Responde SÍ o NO.",
+   "personajes": [
+    {
+     "id": "ester",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.6
+  }
+ ]
+}

@@ -1,0 +1,150 @@
+{
+ "titulo": "El nacimiento de Jesús (15s)",
+ "gancho": "La NOCHE que cambió la HISTORIA",
+ "final": "SÍGUEME",
+ "resaltar": [
+  "JESÚS",
+  "BELÉN",
+  "PESEBRE",
+  "SALVADOR",
+  "ÁNGEL",
+  "MARÍA",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA",
+  "AMÉN",
+  "SÍ",
+  "NO"
+ ],
+ "formato": "corto",
+ "barra_progreso": true,
+ "efectos_sonido": true,
+ "musica": "auto",
+ "volumen_musica": 0.13,
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.12,
+ "escenas": [
+  {
+   "fondo": "establo",
+   "texto": "La noche que cambió la historia para siempre.",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.25,
+     "accion": "arrodillarse",
+     "emocion": "feliz"
+    },
+    {
+     "id": "jose_carpintero",
+     "x": 0.85,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "pesebre",
+     "x": 0.55
+    },
+    {
+     "tipo": "estrella",
+     "x": 0.5,
+     "y": -1250
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.55
+    }
+   ],
+   "camara": "acercar_rapido",
+   "foco_x": 0.55,
+   "pausa": 0.15,
+   "portada": true
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "No había lugar para ellos en ninguna casa.",
+   "personajes": [
+    {
+     "id": "jose_carpintero",
+     "x": 0.14,
+     "emocion": "triste"
+    },
+    {
+     "id": "maria",
+     "x": 0.42,
+     "emocion": "triste"
+    },
+    {
+     "id": "hombre1",
+     "x": 0.8,
+     "mira": "izquierda",
+     "accion": "senalar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.35
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "establo",
+   "texto": "Jesús nació en un humilde pesebre.",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.25,
+     "accion": "arrodillarse",
+     "emocion": "feliz"
+    },
+    {
+     "id": "burro",
+     "x": 0.85,
+     "mira": "izquierda",
+     "profundidad": -60
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "pesebre",
+     "x": 0.55
+    },
+    {
+     "tipo": "estrella",
+     "x": 0.5,
+     "y": -1250
+    }
+   ],
+   "camara": "paneo",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Sígueme para más historias de la Biblia.",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.5,
+     "accion": "senalar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.6
+  }
+ ]
+}

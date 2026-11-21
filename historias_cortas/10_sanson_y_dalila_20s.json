@@ -1,0 +1,159 @@
+{
+ "titulo": "Sansón y Dalila (20s)",
+ "gancho": "La TRAICIÓN que destruyó al hombre más FUERTE",
+ "final": "SÍGUEME",
+ "resaltar": [
+  "SANSÓN",
+  "DALILA",
+  "TRAICIÓN",
+  "CABELLO",
+  "CONFIANZA",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA",
+  "AMÉN",
+  "SÍ",
+  "NO"
+ ],
+ "formato": "corto",
+ "barra_progreso": true,
+ "efectos_sonido": true,
+ "musica": "auto",
+ "volumen_musica": 0.13,
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.12,
+ "escenas": [
+  {
+   "fondo": "ciudad",
+   "texto": "La traición que destruyó al hombre más fuerte.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.3,
+     "emocion": "feliz"
+    },
+    {
+     "id": "dalila",
+     "x": 0.66,
+     "mira": "izquierda",
+     "emocion": "burlon"
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15,
+   "portada": true
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Los enemigos de Sansón le pagaron a Dalila.",
+   "personajes": [
+    {
+     "id": "dalila",
+     "x": 0.3
+    },
+    {
+     "id": "filisteo1",
+     "x": 0.66,
+     "mira": "izquierda",
+     "accion": "ofrecer",
+     "emocion": "burlon"
+    },
+    {
+     "id": "filisteo2",
+     "x": 0.88,
+     "mira": "izquierda"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "monedas",
+     "x": 0.48,
+     "profundidad": 100
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Mientras dormía, le cortaron las siete trenzas.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.08,
+     "accion": "dormir",
+     "mira": "izquierda",
+     "escala": 0.72,
+     "profundidad": 30
+    },
+    {
+     "id": "dalila",
+     "x": 0.76,
+     "mira": "izquierda",
+     "emocion": "burlon"
+    },
+    {
+     "id": "filisteo2",
+     "x": 0.93,
+     "mira": "izquierda",
+     "objeto": "espada"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.45
+    }
+   ],
+   "camara": "paneo",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Despertó… y lo capturaron sin fuerza.",
+   "personajes": [
+    {
+     "id": "filisteo1",
+     "x": 0.15,
+     "accion": "senalar"
+    },
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "accion": "temblar",
+     "emocion": "asustado",
+     "pelo_largo": false
+    },
+    {
+     "id": "filisteo2",
+     "x": 0.85,
+     "mira": "izquierda"
+    }
+   ],
+   "camara": "acercar_rapido",
+   "pausa": 0.15
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Te han traicionado alguna vez? Responde SÍ o NO.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar",
+   "pausa": 0.6
+  }
+ ]
+}
