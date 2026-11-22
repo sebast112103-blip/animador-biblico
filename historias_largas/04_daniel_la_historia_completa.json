@@ -1,0 +1,1432 @@
+{
+ "titulo": "Daniel - El Foso de los Leones",
+ "gancho": "Lo arrojaron a los LEONES por orar a DIOS... esto fue lo que pasó.",
+ "final": "",
+ "formato": "horizontal",
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.1,
+ "pausa_escenas": 0.35,
+ "corte_seg": 3.0,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "barra_progreso": false,
+ "resaltar": [
+  "DANIEL",
+  "LEONES",
+  "FOSO",
+  "REY",
+  "BABILONIA",
+  "HORNO",
+  "FUEGO",
+  "ÁNGEL",
+  "ORAR",
+  "DARÍO",
+  "DIOS",
+  "COMENTARIOS",
+  "SUSCRÍBETE"
+ ],
+ "personajes": {},
+ "escenas": [
+  {
+   "fondo": "foso",
+   "texto": "Una piedra enorme sella la entrada. Adentro, en la oscuridad, hay leones hambrientos que no han comido en días. Y un anciano acaba de ser arrojado ahí dentro.",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.5,
+     "tunica": "#f4f1ea",
+     "manto": "#7a5c8a",
+     "tocado": "turbante",
+     "color_tocado": "#7a5c8a",
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "accion": "orar"
+    },
+    {
+     "id": "leon1",
+     "x": 0.22,
+     "accion": "rugir"
+    },
+    {
+     "id": "leon2",
+     "x": 0.8,
+     "mira": "izquierda",
+     "accion": "rugir"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.45
+    },
+    {
+     "tipo": "temblor",
+     "inicio": 0.7,
+     "fin": 0.8
+    }
+   ],
+   "camara": "acercar_rapido",
+   "portada": true
+  },
+  {
+   "fondo": "foso",
+   "texto": "¿Su delito? Orar a Dios. ¿Qué pasó esa noche en el foso? Para entenderlo, tenemos que ir setenta años atrás.",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.5,
+     "tunica": "#f4f1ea",
+     "manto": "#7a5c8a",
+     "tocado": "turbante",
+     "color_tocado": "#7a5c8a",
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.4
+    },
+    {
+     "tipo": "flash",
+     "inicio": 0.85
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Jerusalén había caído. El poderoso rey Nabucodonosor de Babilonia conquistó la ciudad y se llevó a los mejores jóvenes de Israel.",
+   "personajes": [
+    {
+     "id": "soldado1",
+     "x": 0.3,
+     "objeto": "lanza"
+    },
+    {
+     "id": "daniel",
+     "x": 0.55,
+     "tunica": "#3f6fb5",
+     "manto": "#d9c7a3",
+     "emocion": "triste",
+     "accion": "caminar",
+     "hasta": 0.65
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.75,
+     "escala": 0.55,
+     "y": -160,
+     "profundidad": -70,
+     "variante": "soldados"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "fuego",
+     "x": 0.15,
+     "tamano": 1.0
+    }
+   ],
+   "rotulo": "CAPÍTULO 1: CAUTIVOS",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Entre ellos estaba Daniel, un adolescente, junto con sus tres amigos: Sadrac, Mesac y Abed-nego. Lejos de su casa y de su familia.",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.3,
+     "tunica": "#3f6fb5",
+     "manto": "#d9c7a3",
+     "emocion": "triste"
+    },
+    {
+     "id": "hermano1",
+     "x": 0.48,
+     "emocion": "triste"
+    },
+    {
+     "id": "hermano2",
+     "x": 0.64,
+     "emocion": "triste"
+    },
+    {
+     "id": "hombre2",
+     "x": 0.8,
+     "emocion": "triste"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "El rey quería convertirlos en sabios de Babilonia. Les cambiaron el nombre, les enseñaron otra lengua... y les ofrecieron comida de la mesa del rey.",
+   "personajes": [
+    {
+     "id": "enemigo1",
+     "x": 0.65,
+     "mira": "izquierda",
+     "accion": "ofrecer",
+     "emocion": "feliz"
+    },
+    {
+     "id": "daniel",
+     "x": 0.35,
+     "tunica": "#3f6fb5",
+     "manto": "#d9c7a3"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "mesa",
+     "x": 0.5
+    },
+    {
+     "tipo": "panes_peces",
+     "x": 0.5,
+     "y": -40
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Pero esa comida había sido ofrecida a los ídolos. Y Daniel decidió en su corazón no contaminarse, aunque eso le costara caro.",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.4,
+     "tunica": "#3f6fb5",
+     "manto": "#d9c7a3",
+     "accion": "orar",
+     "emocion": "valiente"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.4
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Pruébanos diez días, pidió Daniel. Danos solo verduras y agua, y después compáranos con los demás.",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.35,
+     "tunica": "#3f6fb5",
+     "manto": "#d9c7a3",
+     "accion": "ofrecer"
+    },
+    {
+     "id": "enemigo1",
+     "x": 0.68,
+     "mira": "izquierda",
+     "emocion": "sorprendido"
+    }
+   ],
+   "habla": "daniel",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Y a los diez días, Daniel y sus amigos se veían más sanos y fuertes que todos los demás. Dios les dio sabiduría diez veces mayor que la de todos los magos del reino.",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.3,
+     "tunica": "#3f6fb5",
+     "manto": "#d9c7a3",
+     "emocion": "feliz",
+     "accion": "celebrar"
+    },
+    {
+     "id": "hermano1",
+     "x": 0.5,
+     "emocion": "feliz"
+    },
+    {
+     "id": "hermano2",
+     "x": 0.68,
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo"
+    }
+   ],
+   "rotulo": "10 DÍAS",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Una noche, el rey Nabucodonosor tuvo un sueño que lo dejó aterrado. Pero al despertar... no lo podía recordar.",
+   "personajes": [
+    {
+     "id": "rey_dario",
+     "x": 0.5,
+     "accion": "temblar",
+     "emocion": "asustado",
+     "manto": "#8a2a2a"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.55,
+     "profundidad": -30
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "rayo",
+     "inicio": 0.3
+    }
+   ],
+   "rotulo": "CAPÍTULO 2: EL SUEÑO OLVIDADO",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Llamó a todos sus magos y les exigió algo imposible: Díganme qué soñé, y lo que significa. Si no, todos morirán.",
+   "personajes": [
+    {
+     "id": "rey_dario",
+     "x": 0.65,
+     "mira": "izquierda",
+     "accion": "senalar",
+     "emocion": "enojado",
+     "manto": "#8a2a2a"
+    },
+    {
+     "id": "enemigo1",
+     "x": 0.3,
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "habla": "rey_dario",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Nadie en la tierra puede hacer eso, respondieron los magos temblando. Y el rey, furioso, ordenó matar a todos los sabios de Babilonia... incluyendo a Daniel.",
+   "personajes": [
+    {
+     "id": "enemigo1",
+     "x": 0.3,
+     "accion": "arrodillarse",
+     "emocion": "asustado"
+    },
+    {
+     "id": "soldado1",
+     "x": 0.7,
+     "mira": "izquierda",
+     "objeto": "espada",
+     "emocion": "enojado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "temblor",
+     "inicio": 0.6,
+     "fin": 0.75
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Daniel reunió a sus amigos y oraron toda la noche. Y Dios le reveló el misterio en una visión.",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.4,
+     "tunica": "#3f6fb5",
+     "manto": "#d9c7a3",
+     "accion": "orar"
+    },
+    {
+     "id": "hermano1",
+     "x": 0.6,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.4
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Ante el rey, Daniel dijo: Ningún sabio puede revelar esto. Pero hay un Dios en los cielos que revela los misterios.",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.35,
+     "tunica": "#3f6fb5",
+     "manto": "#d9c7a3",
+     "accion": "senalar",
+     "emocion": "valiente"
+    },
+    {
+     "id": "rey_dario",
+     "x": 0.7,
+     "mira": "izquierda",
+     "manto": "#8a2a2a",
+     "emocion": "sorprendido"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.35
+    }
+   ],
+   "habla": "daniel",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Soñaste con una estatua gigante: cabeza de oro, pecho de plata, vientre de bronce y pies de hierro mezclado con barro. Y una piedra la hizo pedazos.",
+   "personajes": [],
+   "cosas": [
+    {
+     "tipo": "columna",
+     "x": 0.5
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "brillo"
+    },
+    {
+     "tipo": "temblor",
+     "inicio": 0.75,
+     "fin": 0.9
+    }
+   ],
+   "camara": "alejar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "El rey cayó de rodillas: ¡Verdaderamente tu Dios es Dios de dioses! Y nombró a Daniel jefe de todos los sabios de Babilonia.",
+   "personajes": [
+    {
+     "id": "rey_dario",
+     "x": 0.6,
+     "mira": "izquierda",
+     "accion": "arrodillarse",
+     "manto": "#8a2a2a",
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "daniel",
+     "x": 0.35,
+     "tunica": "#f4f1ea",
+     "manto": "#7a5c8a",
+     "tocado": "turbante",
+     "color_tocado": "#7a5c8a",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Si crees que Dios puede revelar lo que nadie más entiende, escribe en los comentarios: Dios tiene la respuesta.",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.5,
+     "tunica": "#f4f1ea",
+     "manto": "#7a5c8a",
+     "tocado": "turbante",
+     "color_tocado": "#7a5c8a",
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Pero el orgullo del rey creció. Mandó construir una estatua de oro de casi treinta metros, y ordenó que todos se arrodillaran ante ella.",
+   "personajes": [],
+   "cosas": [
+    {
+     "tipo": "columna",
+     "x": 0.5,
+     "escala": 1.2
+    },
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.6,
+     "y": 250,
+     "profundidad": 100
+    }
+   ],
+   "rotulo": "CAPÍTULO 3: EL HORNO DE FUEGO",
+   "camara": "alejar"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Cuando sonó la música, todo el pueblo se inclinó... excepto tres jóvenes. Los amigos de Daniel permanecieron de pie.",
+   "personajes": [
+    {
+     "id": "hermano1",
+     "x": 0.35,
+     "emocion": "valiente"
+    },
+    {
+     "id": "hermano2",
+     "x": 0.5,
+     "emocion": "valiente"
+    },
+    {
+     "id": "hombre2",
+     "x": 0.65,
+     "emocion": "valiente"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.55,
+     "y": 320,
+     "delante": true
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "El rey, rojo de ira, les dio una última oportunidad: Si no se arrodillan, serán echados en un horno de fuego ardiendo. ¿Y qué dios los librará de mi mano?",
+   "personajes": [
+    {
+     "id": "rey_dario",
+     "x": 0.6,
+     "mira": "izquierda",
+     "accion": "senalar",
+     "manto": "#8a2a2a",
+     "emocion": "enojado"
+    }
+   ],
+   "habla": "rey_dario",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Ellos respondieron: Nuestro Dios puede librarnos. Y si no lo hace... de todas maneras no adoraremos tu estatua.",
+   "personajes": [
+    {
+     "id": "hermano1",
+     "x": 0.3,
+     "emocion": "valiente",
+     "accion": "senalar"
+    },
+    {
+     "id": "hermano2",
+     "x": 0.46,
+     "emocion": "valiente"
+    },
+    {
+     "id": "hombre2",
+     "x": 0.62,
+     "emocion": "valiente"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "habla": "hermano1",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Furioso, el rey ordenó calentar el horno siete veces más de lo normal. El fuego era tan intenso que mató a los soldados que los arrojaron.",
+   "personajes": [
+    {
+     "id": "soldado1",
+     "x": 0.25,
+     "accion": "caer",
+     "emocion": "asustado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "fuego",
+     "x": 0.6,
+     "tamano": 2.2,
+     "crece": true
+    },
+    {
+     "tipo": "temblor",
+     "inicio": 0.3,
+     "fin": 0.9
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Pero entonces el rey miró dentro del horno y se levantó de un salto: ¿No echamos a tres hombres? ¡Yo veo cuatro, caminando en medio del fuego! Y el cuarto parece un hijo de los dioses.",
+   "personajes": [
+    {
+     "id": "hermano1",
+     "x": 0.4,
+     "accion": "caminar",
+     "hasta": 0.45
+    },
+    {
+     "id": "hermano2",
+     "x": 0.55
+    },
+    {
+     "id": "hombre2",
+     "x": 0.7
+    },
+    {
+     "id": "angel",
+     "x": 0.85
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "fuego",
+     "x": 0.6,
+     "tamano": 2.4
+    },
+    {
+     "tipo": "luz",
+     "x": 0.85
+    },
+    {
+     "tipo": "brillo",
+     "x": 0.85
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Salieron del horno sin una sola quemadura. Ni siquiera olían a humo. Y el rey tuvo que reconocer que no hay otro Dios que pueda salvar así.",
+   "personajes": [
+    {
+     "id": "hermano1",
+     "x": 0.3,
+     "accion": "celebrar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "hermano2",
+     "x": 0.48,
+     "accion": "alabar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "hombre2",
+     "x": 0.66,
+     "accion": "celebrar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Aun así, Nabucodonosor volvió a llenarse de orgullo. Paseando por su palacio dijo: ¿No es esta la gran Babilonia que yo construí con mi poder y para mi gloria?",
+   "personajes": [
+    {
+     "id": "rey_dario",
+     "x": 0.5,
+     "accion": "levantar",
+     "manto": "#8a2a2a",
+     "emocion": "burlon"
+    }
+   ],
+   "habla": "rey_dario",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Y en ese mismo instante perdió la razón. Durante siete años vivió en el campo como un animal, comiendo hierba como los bueyes, con el pelo largo como plumas de águila.",
+   "personajes": [
+    {
+     "id": "rey_dario",
+     "x": 0.5,
+     "accion": "agacharse",
+     "manto": "#8a2a2a",
+     "emocion": "noqueado",
+     "pelo_largo": true
+    },
+    {
+     "id": "burro",
+     "x": 0.75,
+     "mira": "izquierda"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    }
+   ],
+   "rotulo": "7 AÑOS",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Hasta que un día levantó los ojos al cielo, y Dios le devolvió la razón y su reino. Y el rey más poderoso del mundo escribió: Ahora yo alabo al Rey del cielo, porque él puede humillar a los soberbios.",
+   "personajes": [
+    {
+     "id": "rey_dario",
+     "x": 0.5,
+     "accion": "alabar",
+     "manto": "#8a2a2a",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Pasaron los años y los reyes. Ahora gobernaba Belsasar, que hizo una gran fiesta y usó las copas sagradas del templo de Dios para emborracharse.",
+   "personajes": [
+    {
+     "id": "enemigo2",
+     "x": 0.5,
+     "accion": "celebrar",
+     "emocion": "burlon",
+     "tocado": "corona"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "mesa",
+     "x": 0.5
+    },
+    {
+     "tipo": "monedas",
+     "x": 0.4,
+     "y": -40
+    }
+   ],
+   "rotulo": "CAPÍTULO 4: LA MANO MISTERIOSA",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "De repente, apareció una mano... y empezó a escribir en la pared del palacio. El rey se puso pálido y le temblaban las rodillas.",
+   "personajes": [
+    {
+     "id": "enemigo2",
+     "x": 0.4,
+     "accion": "temblar",
+     "emocion": "asustado",
+     "tocado": "corona"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "brillo",
+     "x": 0.7,
+     "y": -600
+    },
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.35
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Llamaron a Daniel, ya anciano. Y él leyó: Mene, Mene, Tekel, Uparsin. Dios ha contado tu reino y le ha puesto fin. Fuiste pesado en la balanza... y fuiste hallado falto.",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.35,
+     "tunica": "#f4f1ea",
+     "manto": "#7a5c8a",
+     "tocado": "turbante",
+     "color_tocado": "#7a5c8a",
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "accion": "senalar",
+     "emocion": "valiente"
+    },
+    {
+     "id": "enemigo2",
+     "x": 0.7,
+     "mira": "izquierda",
+     "tocado": "corona",
+     "emocion": "asustado"
+    }
+   ],
+   "habla": "daniel",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Esa misma noche, los ejércitos de los medos y los persas entraron en Babilonia. Y el imperio cayó.",
+   "personajes": [],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.65,
+     "y": -120,
+     "profundidad": -70,
+     "variante": "soldados"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "fuego",
+     "x": 0.3,
+     "tamano": 1.2
+    },
+    {
+     "tipo": "temblor",
+     "inicio": 0.2,
+     "fin": 0.8
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "El nuevo rey, Darío, puso a Daniel como uno de los tres hombres más importantes del reino. Y pensaba ponerlo sobre todos.",
+   "personajes": [
+    {
+     "id": "rey_dario",
+     "x": 0.65,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    },
+    {
+     "id": "daniel",
+     "x": 0.35,
+     "tunica": "#f4f1ea",
+     "manto": "#7a5c8a",
+     "tocado": "turbante",
+     "color_tocado": "#7a5c8a",
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.72,
+     "profundidad": -30
+    }
+   ],
+   "rotulo": "CAPÍTULO 5: LA TRAMPA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Pero los otros gobernadores le tenían envidia. Buscaron algún error en Daniel... y no encontraron nada. Era un hombre fiel y honesto.",
+   "personajes": [
+    {
+     "id": "enemigo1",
+     "x": 0.4,
+     "emocion": "enojado"
+    },
+    {
+     "id": "enemigo2",
+     "x": 0.6,
+     "emocion": "burlon"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Entonces dijeron: Solo podremos acusarlo por algo relacionado con su Dios. Y prepararon una trampa.",
+   "personajes": [
+    {
+     "id": "enemigo1",
+     "x": 0.4,
+     "accion": "senalar",
+     "emocion": "burlon"
+    },
+    {
+     "id": "enemigo2",
+     "x": 0.6,
+     "mira": "izquierda",
+     "emocion": "burlon"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.3
+    }
+   ],
+   "habla": "enemigo1",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Convencieron al rey de firmar una ley: durante treinta días, nadie podía orar a ningún dios ni hombre, solo al rey. Y quien desobedeciera, sería echado al foso de los leones.",
+   "personajes": [
+    {
+     "id": "enemigo1",
+     "x": 0.3,
+     "accion": "ofrecer"
+    },
+    {
+     "id": "rey_dario",
+     "x": 0.65,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.7,
+     "profundidad": -30
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Daniel supo de la ley. Y aun así, fue a su casa, abrió las ventanas hacia Jerusalén, y se arrodilló a orar tres veces al día, como siempre lo había hecho.",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.45,
+     "tunica": "#f4f1ea",
+     "manto": "#7a5c8a",
+     "tocado": "turbante",
+     "color_tocado": "#7a5c8a",
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "accion": "arrodillarse"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.45
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Sus enemigos lo estaban espiando. ¡Lo atrapamos!",
+   "personajes": [
+    {
+     "id": "enemigo1",
+     "x": 0.75,
+     "mira": "izquierda",
+     "accion": "senalar",
+     "emocion": "burlon"
+    },
+    {
+     "id": "daniel",
+     "x": 0.3,
+     "tunica": "#f4f1ea",
+     "manto": "#7a5c8a",
+     "tocado": "turbante",
+     "color_tocado": "#7a5c8a",
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "accion": "orar"
+    }
+   ],
+   "habla": "enemigo1",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "El rey Darío se dio cuenta de que lo habían engañado. Trató hasta el atardecer de salvar a Daniel. Pero la ley de los medos y persas no se podía cambiar.",
+   "personajes": [
+    {
+     "id": "rey_dario",
+     "x": 0.5,
+     "accion": "temblar",
+     "emocion": "triste"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.25
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Antes de ver qué pasó en el foso, dime en los comentarios: ¿tú habrías cerrado la ventana para orar a escondidas?",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.5,
+     "tunica": "#f4f1ea",
+     "manto": "#7a5c8a",
+     "tocado": "turbante",
+     "color_tocado": "#7a5c8a",
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "¿Y TÚ?",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "foso",
+   "texto": "Arrojaron a Daniel al foso. Y antes de sellar la piedra, el rey le dijo: El Dios a quien tú sirves siempre... él te libre.",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.5,
+     "tunica": "#f4f1ea",
+     "manto": "#7a5c8a",
+     "tocado": "turbante",
+     "color_tocado": "#7a5c8a",
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "accion": "caer"
+    },
+    {
+     "id": "leon1",
+     "x": 0.2,
+     "accion": "rugir"
+    },
+    {
+     "id": "leon2",
+     "x": 0.82,
+     "mira": "izquierda",
+     "accion": "rugir"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.45
+    },
+    {
+     "tipo": "temblor",
+     "inicio": 0.5,
+     "fin": 0.65
+    }
+   ],
+   "habla": "rey_dario",
+   "rotulo": "CAPÍTULO 6: EL FOSO",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Esa noche, el rey no comió. No quiso música. Y no pudo dormir.",
+   "personajes": [
+    {
+     "id": "rey_dario",
+     "x": 0.5,
+     "accion": "temblar",
+     "emocion": "triste"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.5
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "foso",
+   "texto": "Mientras tanto, en el foso, los leones se acercaron a Daniel... rugiendo...",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.5,
+     "tunica": "#f4f1ea",
+     "manto": "#7a5c8a",
+     "tocado": "turbante",
+     "color_tocado": "#7a5c8a",
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "accion": "orar"
+    },
+    {
+     "id": "leon1",
+     "x": 0.3,
+     "accion": "caminar",
+     "hasta": 0.36
+    },
+    {
+     "id": "leon2",
+     "x": 0.72,
+     "mira": "izquierda",
+     "accion": "caminar",
+     "hasta": 0.66
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.5
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "foso",
+   "texto": "...pero de pronto, una luz llenó la cueva. Dios envió a su ángel, y cerró la boca de los leones.",
+   "personajes": [
+    {
+     "id": "angel",
+     "x": 0.5
+    },
+    {
+     "id": "daniel",
+     "x": 0.32,
+     "tunica": "#f4f1ea",
+     "manto": "#7a5c8a",
+     "tocado": "turbante",
+     "color_tocado": "#7a5c8a",
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "accion": "orar"
+    },
+    {
+     "id": "leon1",
+     "x": 0.15,
+     "accion": "dormir"
+    },
+    {
+     "id": "leon2",
+     "x": 0.82,
+     "accion": "dormir"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.5
+    },
+    {
+     "tipo": "brillo",
+     "x": 0.5
+    },
+    {
+     "tipo": "flash",
+     "inicio": 0.1
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "foso",
+   "texto": "Los leones se echaron a su lado como gatitos. Y Daniel pasó la noche entera... sin un solo rasguño.",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.5,
+     "tunica": "#f4f1ea",
+     "manto": "#7a5c8a",
+     "tocado": "turbante",
+     "color_tocado": "#7a5c8a",
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "accion": "dormir"
+    },
+    {
+     "id": "leon1",
+     "x": 0.3,
+     "accion": "dormir"
+    },
+    {
+     "id": "leon2",
+     "x": 0.7,
+     "accion": "dormir"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "alejar"
+  },
+  {
+   "fondo": "foso",
+   "texto": "Al amanecer, el rey corrió al foso y gritó con angustia: ¡Daniel! ¿Tu Dios ha podido librarte de los leones?",
+   "personajes": [
+    {
+     "id": "rey_dario",
+     "x": 0.5,
+     "accion": "correr",
+     "hasta": 0.55,
+     "emocion": "asustado"
+    }
+   ],
+   "habla": "rey_dario",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "foso",
+   "texto": "Y desde adentro se oyó una voz: ¡Oh rey, vive para siempre! Mi Dios envió a su ángel y cerró la boca de los leones.",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.5,
+     "tunica": "#f4f1ea",
+     "manto": "#7a5c8a",
+     "tocado": "turbante",
+     "color_tocado": "#7a5c8a",
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "accion": "alabar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "leon1",
+     "x": 0.25,
+     "accion": "dormir"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "habla": "daniel",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "El rey se llenó de alegría y mandó sacar a Daniel. Y los que habían preparado la trampa... recibieron el castigo que querían para él.",
+   "personajes": [
+    {
+     "id": "rey_dario",
+     "x": 0.6,
+     "mira": "izquierda",
+     "accion": "abrazar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "daniel",
+     "x": 0.35,
+     "tunica": "#f4f1ea",
+     "manto": "#7a5c8a",
+     "tocado": "turbante",
+     "color_tocado": "#7a5c8a",
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "accion": "abrazar",
+     "emocion": "feliz"
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Y Darío escribió a todas las naciones: Que todos teman al Dios de Daniel, porque él es el Dios viviente, que salva y hace maravillas.",
+   "personajes": [
+    {
+     "id": "rey_dario",
+     "x": 0.5,
+     "accion": "levantar",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.55,
+     "y": 320,
+     "delante": true
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Daniel no oró para salir del foso. Oró antes de entrar. Su fe no dependía de lo que pasara, sino de quién era su Dios.",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.5,
+     "tunica": "#f4f1ea",
+     "manto": "#7a5c8a",
+     "tocado": "turbante",
+     "color_tocado": "#7a5c8a",
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "ENSEÑANZA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "A veces Dios no te saca del foso... te acompaña dentro de él, y cierra la boca de los leones.",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.5,
+     "tunica": "#f4f1ea",
+     "manto": "#7a5c8a",
+     "tocado": "turbante",
+     "color_tocado": "#7a5c8a",
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "accion": "alabar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "leon1",
+     "x": 0.75,
+     "accion": "dormir"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Qué momento te impactó más: el horno de fuego, la mano en la pared o el foso? Escríbelo en los comentarios.",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.4,
+     "tunica": "#f4f1ea",
+     "manto": "#7a5c8a",
+     "tocado": "turbante",
+     "color_tocado": "#7a5c8a",
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "accion": "senalar"
+    },
+    {
+     "id": "leon1",
+     "x": 0.65,
+     "mira": "izquierda"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Suscríbete y activa la campanita, que mañana viene otra gran historia de la Biblia. ¡Dios te bendiga!",
+   "personajes": [
+    {
+     "id": "daniel",
+     "x": 0.5,
+     "tunica": "#f4f1ea",
+     "manto": "#7a5c8a",
+     "tocado": "turbante",
+     "color_tocado": "#7a5c8a",
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "accion": "alabar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "rotulo": "¡SUSCRÍBETE!",
+   "pausa": 2.0,
+   "camara": "acercar"
+  }
+ ]
+}

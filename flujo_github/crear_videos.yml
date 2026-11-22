@@ -17,7 +17,7 @@ on:
         default: ""
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   preparar:
@@ -47,7 +47,8 @@ jobs:
               archivos = sorted(f for d in dirs for f in glob.glob(f"{d}/*.json"))
               filtro = (os.environ.get("FILTRO") or "").strip().lower()
               if filtro:
-                  archivos = [f for f in archivos if filtro in f.lower()]
+                  partes = [x.strip() for x in filtro.split(",") if x.strip()]
+                  archivos = [f for f in archivos if any(x in f.lower() for x in partes)]
           archivos = archivos[:250]
           with open(os.environ["GITHUB_OUTPUT"], "a") as g:
               g.write("lista=" + json.dumps(archivos) + "\n")
@@ -111,6 +112,42 @@ jobs:
           git clone -q --depth 1 "https://github.com/${{ github.repository }}" codigo
           python codigo/recopilar.py videos
           echo "${{ github.event.inputs.carpeta }}" > videos/_youtube.txt
+      - name: Dejar los videos del dia listos para subir a YouTube (rama "publicar")
+        if: github.event.inputs.carpeta == 'diario'
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'EOF'
+          import json, os, re, shutil, subprocess, unicodedata
+          from pathlib import Path
+          src, pub = Path("videos"), Path("pub")
+          pub.mkdir()
+          lista = []
+          for f in sorted(src.glob("*.mp4")):
+              base = f.stem
+              slug = unicodedata.normalize("NFKD", base).encode("ascii", "ignore").decode()
+              slug = re.sub(r"[^A-Za-z0-9_-]+", "_", slug).strip("_")
+              d = pub / slug
+              d.mkdir()
+              subprocess.run(["split", "-b", "45m", "-d", "-a", "2", str(f), str(d / "parte_")], check=True)
+              partes = sorted(p.name for p in d.iterdir())
+              mini = src / f"{base}_miniatura.jpg"
+              if mini.exists():
+                  shutil.copy(mini, d / "miniatura.jpg")
+              desc = src / f"{base}_descripcion.txt"
+              lista.append({"video": base, "carpeta": slug, "archivo": f.name, "bytes": f.stat().st_size,
+                            "partes": partes, "miniatura": "miniatura.jpg" if mini.exists() else None,
+                            "descripcion": desc.read_text(encoding="utf-8") if desc.exists() else ""})
+          (pub / "lista.json").write_text(json.dumps(lista, ensure_ascii=False, indent=1), encoding="utf-8")
+          print(json.dumps([[x["video"], len(x["partes"])] for x in lista], ensure_ascii=False))
+          EOF
+          cd pub
+          git init -q -b publicar
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add -A
+          git commit -q -m "Videos listos para subir"
+          git push -q -f "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}" publicar
       - run: ls -la videos
       - uses: actions/upload-artifact@v4
         with:

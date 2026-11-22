@@ -74,3 +74,24 @@
 18:09:52 LISTO: 32 videos en C:\Users\hp\Videos\animador_biblico\videos\youtube
 11:19:45 Conectando con tu cuenta de GitHub (si se abre una ventana, inicia sesion y autoriza)...
 11:20:04 Sesion iniciada como: sebast112103-blip
+11:20:11 Subiendo el proyecto a GitHub...
+11:20:40 Proyecto subido.
+11:20:42 Creacion de videos lanzada en la nube (diario).
+11:20:42 Esperando a que GitHub cree los videos (revisa cada minuto)...
+11:20:54 Puedes verla aqui: https://github.com/sebast112103-blip/animador-biblico/actions/runs/45043556634
+11:20:56   0/1 videos terminados (in_progress)
+12:29:40   1/1 videos terminados (completed)
+12:29:40 GitHub termino: success
+12:29:43 Videos: 2 (0 ya estaban). Por bajar: 166 MB. Espacio libre en el disco: 3183 MB.
+12:29:43   [1/2] Moisés_-_La_Historia_Completa.mp4 (164 MB)
+12:30:34   [2/2] Moisés_-_La_Historia_Completa_portada.png (2 MB)
+12:30:34 LISTO: 1 videos en C:\Users\hp\Videos\animador_biblico\videos\diarios
+12:32:59 Video pendiente: Moisés - La Historia Completa
+12:32:59 Video pendiente: José - De Esclavo a Gobernador
+12:33:00 Video pendiente: David y Goliat - La Historia Completa
+12:33:00 Video pendiente: Daniel - El Foso de los Leones
+12:33:00 Video pendiente: Noé y el Arca - La Historia Completa
+12:33:00 Video pendiente: Jonás y el Gran Pez - La Historia Completa
+12:33:00 Video pendiente: Sansón - La Historia Completa
+12:33:00 Conectando con tu cuenta de GitHub (si se abre una ventana, inicia sesion y autoriza)...
+12:33:08 Sesion iniciada como: sebast112103-blip

@@ -1,0 +1,1271 @@
+{
+ "titulo": "David y Goliat - La Historia Completa",
+ "gancho": "Un MUCHACHO con una honda contra un GIGANTE de tres metros.",
+ "final": "",
+ "formato": "horizontal",
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.1,
+ "pausa_escenas": 0.35,
+ "corte_seg": 3.0,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "barra_progreso": false,
+ "resaltar": [
+  "DAVID",
+  "GOLIAT",
+  "GIGANTE",
+  "SAÚL",
+  "PIEDRA",
+  "HONDA",
+  "ISRAEL",
+  "SEÑOR",
+  "REY",
+  "DIOS",
+  "COMENTARIOS",
+  "SUSCRÍBETE"
+ ],
+ "personajes": {},
+ "escenas": [
+  {
+   "fondo": "valle",
+   "texto": "Un gigante de casi tres metros, cubierto de bronce. Frente a él, un muchacho sin armadura, con cinco piedras y una honda. Todo un ejército contiene la respiración.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.3,
+     "objeto": "honda",
+     "emocion": "valiente"
+    },
+    {
+     "id": "goliat",
+     "x": 0.72,
+     "mira": "izquierda",
+     "emocion": "burlon",
+     "objeto": "lanza"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "temblor",
+     "inicio": 0.6,
+     "fin": 0.75
+    }
+   ],
+   "camara": "acercar_rapido",
+   "portada": true
+  },
+  {
+   "fondo": "valle",
+   "texto": "¿Cómo terminó ese muchacho ahí? ¿Y qué pasó en los segundos siguientes? Quédate, porque esta historia empieza mucho antes, en un campo lleno de ovejas.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.5,
+     "objeto": "honda",
+     "emocion": "valiente"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "flash",
+     "inicio": 0.85
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "David era el más pequeño de los ocho hijos de Isaí, en el pueblo de Belén. Mientras sus hermanos eran fuertes y altos, a él le tocaba cuidar las ovejas.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.45,
+     "objeto": "cayado",
+     "emocion": "feliz"
+    },
+    {
+     "id": "oveja1",
+     "x": 0.65
+    },
+    {
+     "id": "oveja2",
+     "x": 0.8
+    }
+   ],
+   "rotulo": "CAPÍTULO 1: EL PASTORCITO",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Pasaba días y noches en el campo, tocando su arpa y cantándole a Dios. Nadie lo veía... pero Dios sí lo veía.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.5,
+     "objeto": "cayado",
+     "accion": "alabar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "oveja1",
+     "x": 0.75
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.5
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Un día, un león atacó el rebaño y se llevó una oveja. David no huyó: corrió tras el león, le quitó la oveja de la boca... y lo venció.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.35,
+     "objeto": "cayado",
+     "accion": "correr",
+     "emocion": "valiente"
+    },
+    {
+     "id": "leon1",
+     "x": 0.7,
+     "mira": "izquierda",
+     "accion": "rugir"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "temblor",
+     "inicio": 0.5,
+     "fin": 0.6
+    },
+    {
+     "tipo": "flash",
+     "inicio": 0.7
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Lo mismo hizo con un oso. David sabía que su fuerza no venía de sus brazos, sino de Dios. Y esa confianza lo prepararía para algo mucho más grande.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.5,
+     "objeto": "cayado",
+     "accion": "levantar",
+     "emocion": "valiente"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "valle",
+   "texto": "En ese tiempo, el rey de Israel era Saúl. Pero Saúl había desobedecido a Dios, y Dios buscaba un nuevo rey.",
+   "personajes": [
+    {
+     "id": "saul",
+     "x": 0.5,
+     "emocion": "enojado",
+     "tocado": "corona"
+    }
+   ],
+   "rotulo": "CAPÍTULO 2: EL ELEGIDO",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Dios envió al profeta Samuel a la casa de Isaí. Uno de tus hijos será el próximo rey, le dijo.",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.35,
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "tunica": "#5a4a8a",
+     "accion": "senalar"
+    },
+    {
+     "id": "jacob",
+     "x": 0.68,
+     "mira": "izquierda",
+     "emocion": "sorprendido"
+    }
+   ],
+   "habla": "hombre1",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Isaí le presentó a sus hijos mayores, uno por uno. Eran altos, fuertes y elegantes. Pero Dios le dijo a Samuel: No mires su apariencia.",
+   "personajes": [
+    {
+     "id": "hermano1",
+     "x": 0.3,
+     "emocion": "valiente"
+    },
+    {
+     "id": "hermano2",
+     "x": 0.48,
+     "emocion": "valiente"
+    },
+    {
+     "id": "hombre1",
+     "x": 0.75,
+     "mira": "izquierda",
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "tunica": "#5a4a8a"
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "El hombre mira lo que está delante de sus ojos, pero Dios mira el corazón.",
+   "personajes": [],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "rotulo": "1 SAMUEL 16:7",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "¿No tienes más hijos?, preguntó Samuel. Bueno, queda el más pequeño, pero está cuidando las ovejas.",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.35,
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "tunica": "#5a4a8a",
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "jacob",
+     "x": 0.65,
+     "mira": "izquierda"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Cuando David llegó, Dios dijo: Es él. Y Samuel derramó aceite sobre su cabeza. El pastorcito que nadie tomaba en cuenta... sería el futuro rey de Israel.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.55,
+     "objeto": "cayado",
+     "accion": "arrodillarse"
+    },
+    {
+     "id": "hombre1",
+     "x": 0.35,
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "tunica": "#5a4a8a",
+     "accion": "ofrecer"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.55
+    },
+    {
+     "tipo": "brillo",
+     "x": 0.55
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Si alguna vez te sentiste invisible, escribe en los comentarios: Dios mira mi corazón.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.5,
+     "objeto": "cayado",
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Mientras tanto, en el palacio, el rey Saúl estaba atormentado. Tenía noches de angustia y ataques de furia que nadie podía calmar.",
+   "personajes": [
+    {
+     "id": "saul",
+     "x": 0.5,
+     "tocado": "corona",
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.55,
+     "profundidad": -30
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.4
+    }
+   ],
+   "rotulo": "CAPÍTULO 3: EL ARPISTA DEL REY",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Sus siervos le dijeron: Busquemos a alguien que toque el arpa. Y uno de ellos respondió: Conozco a un joven de Belén, hijo de Isaí, que toca muy bien. Y el Señor está con él.",
+   "personajes": [
+    {
+     "id": "hombre2",
+     "x": 0.35,
+     "accion": "senalar"
+    },
+    {
+     "id": "saul",
+     "x": 0.68,
+     "mira": "izquierda",
+     "tocado": "corona",
+     "emocion": "triste"
+    }
+   ],
+   "habla": "hombre2",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Así, el pastorcito llegó al palacio del rey. Y cada vez que Saúl se angustiaba, David tocaba su arpa... y la paz volvía al corazón del rey.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.35,
+     "accion": "alabar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "saul",
+     "x": 0.68,
+     "mira": "izquierda",
+     "tocado": "corona",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.35
+    },
+    {
+     "tipo": "brillo",
+     "x": 0.35
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Saúl le tomó tanto cariño, que lo nombró su escudero. Lo que el rey no sabía es que ese joven sería el que ocuparía su trono.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.4,
+     "objeto": "escudo",
+     "emocion": "valiente"
+    },
+    {
+     "id": "saul",
+     "x": 0.68,
+     "mira": "izquierda",
+     "tocado": "corona"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Después David volvió a casa a cuidar las ovejas de su padre. Pero muy pronto, una guerra lo cambiaría todo.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.3,
+     "hasta": 0.6,
+     "accion": "caminar",
+     "objeto": "cayado"
+    },
+    {
+     "id": "oveja1",
+     "x": 0.75
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.2
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Años después, los filisteos declararon la guerra a Israel. Los dos ejércitos se acamparon en dos montes, con un valle en medio.",
+   "personajes": [],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.25,
+     "escala": 0.6,
+     "y": -160,
+     "profundidad": -70,
+     "variante": "soldados"
+    },
+    {
+     "tipo": "multitud",
+     "x": 0.75,
+     "escala": 0.6,
+     "y": -160,
+     "profundidad": -70,
+     "variante": "soldados"
+    }
+   ],
+   "rotulo": "CAPÍTULO 4: EL GIGANTE",
+   "camara": "alejar"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Y de entre los filisteos salió un guerrero enorme: Goliat de Gat. Su armadura pesaba más de cincuenta kilos, y la punta de su lanza era de hierro.",
+   "personajes": [
+    {
+     "id": "goliat",
+     "x": 0.55,
+     "accion": "caminar",
+     "hasta": 0.6,
+     "objeto": "lanza",
+     "emocion": "enojado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "temblor",
+     "inicio": 0.1,
+     "fin": 0.9
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "valle",
+   "texto": "¡Elijan a un hombre que pelee conmigo! Si me vence, seremos sus esclavos. Pero si yo lo venzo, ustedes serán nuestros esclavos.",
+   "personajes": [
+    {
+     "id": "goliat",
+     "x": 0.5,
+     "accion": "senalar",
+     "objeto": "lanza",
+     "emocion": "burlon"
+    }
+   ],
+   "habla": "goliat",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Durante cuarenta días, mañana y tarde, Goliat salía a desafiar a Israel. Y nadie, ni siquiera el rey Saúl, se atrevía a enfrentarlo.",
+   "personajes": [
+    {
+     "id": "soldado1",
+     "x": 0.35,
+     "accion": "temblar",
+     "emocion": "asustado"
+    },
+    {
+     "id": "saul",
+     "x": 0.6,
+     "tocado": "corona",
+     "emocion": "asustado"
+    }
+   ],
+   "rotulo": "40 DÍAS",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "camino",
+   "texto": "Un día, Isaí envió a David a llevar comida a sus hermanos, que estaban en el ejército.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.15,
+     "hasta": 0.55,
+     "accion": "caminar",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "canasta",
+     "x": 0.3
+    }
+   ],
+   "rotulo": "CAPÍTULO 5: ¿QUIÉN ES ESE FILISTEO?",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Justo cuando llegó, escuchó los gritos de Goliat burlándose del Dios de Israel. Y vio a todos los soldados huir de miedo.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.3,
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "goliat",
+     "x": 0.75,
+     "mira": "izquierda",
+     "accion": "senalar",
+     "emocion": "burlon",
+     "objeto": "lanza"
+    }
+   ],
+   "habla": "goliat",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "valle",
+   "texto": "¿Quién es este filisteo para desafiar a los ejércitos del Dios vivo?, preguntó David indignado.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.45,
+     "accion": "senalar",
+     "emocion": "enojado"
+    }
+   ],
+   "habla": "david",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Su hermano mayor se enojó: ¿Qué haces aquí? Solo viniste a ver la batalla. Pero David no se dejó desanimar.",
+   "personajes": [
+    {
+     "id": "hermano1",
+     "x": 0.65,
+     "mira": "izquierda",
+     "emocion": "enojado",
+     "accion": "senalar"
+    },
+    {
+     "id": "david",
+     "x": 0.35,
+     "emocion": "valiente"
+    }
+   ],
+   "habla": "hermano1",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Lo llevaron ante el rey Saúl. Y David le dijo: Nadie tenga miedo de ese gigante. Yo iré a pelear contra él.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.35,
+     "emocion": "valiente",
+     "accion": "senalar"
+    },
+    {
+     "id": "saul",
+     "x": 0.7,
+     "mira": "izquierda",
+     "tocado": "corona",
+     "emocion": "sorprendido"
+    }
+   ],
+   "habla": "david",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Saúl casi se ríe. Tú no puedes. Eres solo un muchacho, y él es guerrero desde su juventud.",
+   "personajes": [
+    {
+     "id": "saul",
+     "x": 0.55,
+     "tocado": "corona",
+     "emocion": "burlon",
+     "accion": "senalar"
+    }
+   ],
+   "habla": "saul",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Pero David le contó lo del león y el oso. El Señor que me libró de las garras del león, me librará también de este filisteo.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.45,
+     "objeto": "cayado",
+     "accion": "levantar",
+     "emocion": "valiente"
+    },
+    {
+     "id": "leon1",
+     "x": 0.75,
+     "mira": "izquierda",
+     "accion": "caer"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Saúl le dio su propia armadura y su espada. Pero David apenas podía caminar con ella. No estoy acostumbrado, dijo, y se la quitó.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.5,
+     "armadura": true,
+     "objeto": "espada",
+     "accion": "temblar",
+     "emocion": "sorprendido"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "mar",
+   "texto": "En su lugar, bajó al arroyo y eligió cinco piedras lisas. Las guardó en su bolsa de pastor... y tomó su honda.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.45,
+     "accion": "agacharse",
+     "objeto": "honda"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "rocas",
+     "x": 0.6,
+     "escala": 0.5
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Pausa. Antes de ver la batalla, dime en los comentarios: ¿cuál es el gigante que estás enfrentando hoy?",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.5,
+     "objeto": "honda",
+     "accion": "senalar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "¿Y TU GIGANTE?",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "valle",
+   "texto": "David caminó hacia el valle. Cuando Goliat lo vio, soltó una carcajada: ¿Soy acaso un perro, para que vengas contra mí con palos?",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.2,
+     "hasta": 0.35,
+     "accion": "caminar",
+     "objeto": "honda"
+    },
+    {
+     "id": "goliat",
+     "x": 0.75,
+     "mira": "izquierda",
+     "accion": "senalar",
+     "emocion": "burlon",
+     "objeto": "lanza"
+    }
+   ],
+   "rotulo": "CAPÍTULO 6: LA BATALLA",
+   "habla": "goliat",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "valle",
+   "texto": "¡Ven acá, y daré tu carne a las aves del cielo!",
+   "personajes": [
+    {
+     "id": "goliat",
+     "x": 0.55,
+     "accion": "rugir",
+     "objeto": "lanza",
+     "emocion": "enojado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "temblor",
+     "inicio": 0.2,
+     "fin": 0.5
+    }
+   ],
+   "habla": "goliat",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Y David respondió con una voz que todo el valle escuchó: Tú vienes contra mí con espada y lanza. Pero yo vengo contra ti en el nombre del Señor.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.4,
+     "objeto": "honda",
+     "accion": "senalar",
+     "emocion": "valiente"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.4
+    }
+   ],
+   "habla": "david",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "valle",
+   "texto": "¡Hoy toda la tierra sabrá que hay Dios en Israel! Porque la batalla es del Señor.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.45,
+     "objeto": "honda",
+     "accion": "levantar",
+     "emocion": "valiente"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "brillo"
+    },
+    {
+     "tipo": "rayo",
+     "inicio": 0.8
+    }
+   ],
+   "habla": "david",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Goliat avanzó con paso pesado. Y David, en vez de huir... ¡corrió hacia él!",
+   "personajes": [
+    {
+     "id": "goliat",
+     "x": 0.75,
+     "mira": "izquierda",
+     "accion": "caminar",
+     "hasta": 0.65,
+     "objeto": "lanza",
+     "emocion": "enojado"
+    },
+    {
+     "id": "david",
+     "x": 0.15,
+     "hasta": 0.4,
+     "accion": "correr",
+     "objeto": "girar_honda",
+     "emocion": "valiente"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "temblor",
+     "inicio": 0.1,
+     "fin": 0.9
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Metió la mano en su bolsa, sacó una piedra, la puso en la honda... y la lanzó con todas sus fuerzas.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.35,
+     "objeto": "lanzo",
+     "accion": "lanzar",
+     "emocion": "valiente"
+    },
+    {
+     "id": "goliat",
+     "x": 0.72,
+     "mira": "izquierda",
+     "objeto": "lanza"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "proyectil",
+     "inicio": 0.55,
+     "fin": 0.85
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "valle",
+   "texto": "La piedra voló por el aire y se clavó justo en la frente del gigante.",
+   "personajes": [
+    {
+     "id": "goliat",
+     "x": 0.6,
+     "mira": "izquierda",
+     "emocion": "noqueado",
+     "accion": "temblar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "flash",
+     "inicio": 0.3
+    },
+    {
+     "tipo": "temblor",
+     "inicio": 0.3,
+     "fin": 0.5
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Goliat se tambaleó... y cayó de cara al suelo, con un estruendo que hizo temblar el valle entero.",
+   "personajes": [
+    {
+     "id": "goliat",
+     "x": 0.6,
+     "mira": "izquierda",
+     "accion": "caer_de_cara",
+     "emocion": "noqueado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "temblor",
+     "inicio": 0.5,
+     "fin": 0.8
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Un pastorcito, sin espada y sin armadura, había vencido al guerrero más temido de su tiempo.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.35,
+     "accion": "levantar",
+     "emocion": "valiente",
+     "objeto": "honda"
+    },
+    {
+     "id": "goliat",
+     "x": 0.7,
+     "accion": "caer_de_cara",
+     "emocion": "noqueado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "alejar"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Al ver a su campeón derrotado, los filisteos huyeron. Y el ejército de Israel salió tras ellos gritando de alegría.",
+   "personajes": [
+    {
+     "id": "soldado1",
+     "x": 0.3,
+     "accion": "celebrar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "soldado2",
+     "x": 0.5,
+     "accion": "correr",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.75,
+     "escala": 0.55,
+     "y": -160,
+     "profundidad": -70,
+     "variante": "soldados",
+     "hasta": 0.95
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Ese día, David se volvió el héroe de todo Israel. Las mujeres salían a las calles cantando y bailando en su honor.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.4,
+     "emocion": "feliz",
+     "accion": "alabar"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.65,
+     "accion": "celebrar",
+     "emocion": "feliz"
+    }
+   ],
+   "rotulo": "CAPÍTULO 7: EL FUTURO REY",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Pero no todo fue fácil. El rey Saúl sintió celos de él, y durante años David tuvo que huir y esconderse en cuevas.",
+   "personajes": [
+    {
+     "id": "saul",
+     "x": 0.6,
+     "tocado": "corona",
+     "emocion": "enojado",
+     "accion": "senalar"
+    },
+    {
+     "id": "david",
+     "x": 0.25,
+     "accion": "correr",
+     "hasta": 0.05,
+     "emocion": "asustado"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "rocas",
+   "texto": "Una vez, Saúl entró solo en una cueva para descansar. No sabía que David y sus hombres estaban escondidos al fondo, en la oscuridad.",
+   "personajes": [
+    {
+     "id": "saul",
+     "x": 0.65,
+     "tocado": "corona",
+     "accion": "dormir"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.55
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "rocas",
+   "texto": "¡Es tu oportunidad!, le susurraron sus hombres. Dios te entregó a tu enemigo. David se acercó en silencio, con un cuchillo en la mano...",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.35,
+     "accion": "agacharse",
+     "objeto": "espada",
+     "emocion": "valiente"
+    },
+    {
+     "id": "saul",
+     "x": 0.7,
+     "tocado": "corona",
+     "accion": "dormir"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.5
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "rocas",
+   "texto": "...pero solo cortó un pedacito del manto del rey. No tocaré al ungido del Señor, dijo. David prefirió perdonar antes que vengarse.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.4,
+     "accion": "ofrecer",
+     "emocion": "triste"
+    },
+    {
+     "id": "saul",
+     "x": 0.7,
+     "mira": "izquierda",
+     "tocado": "corona",
+     "emocion": "llorando"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.4
+    }
+   ],
+   "habla": "david",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "rocas",
+   "texto": "Aun así, David nunca dejó de confiar en Dios. En esos años difíciles escribió muchos de los salmos que hoy leemos en la Biblia.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.5
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "El Señor es mi pastor, nada me faltará. Esas palabras las escribió el mismo pastorcito que venció al gigante.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.5,
+     "objeto": "cayado",
+     "accion": "alabar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "oveja1",
+     "x": 0.72
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "rotulo": "SALMO 23",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Y finalmente, tal como Dios había prometido, David fue coronado rey de Israel. El rey más amado de toda su historia.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.5,
+     "tocado": "corona",
+     "manto": "#b8302a",
+     "accion": "alabar",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.55,
+     "profundidad": -30
+    },
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.55,
+     "y": 200,
+     "delante": true
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Y de su familia, muchos años después, nacería en Belén alguien todavía más grande: Jesús, el Hijo de David.",
+   "personajes": [
+    {
+     "id": "jesus",
+     "x": 0.5,
+     "accion": "ofrecer",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "David no venció por ser el más grande, ni el más fuerte. Venció porque sabía que su Dios era más grande que su gigante.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.5,
+     "objeto": "honda",
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "ENSEÑANZA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "No le digas a Dios lo grande que es tu gigante. Dile a tu gigante lo grande que es tu Dios.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.5,
+     "objeto": "honda",
+     "accion": "alabar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Qué parte te gustó más: el león, la piedra o la caída del gigante? Cuéntamelo en los comentarios.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.4,
+     "objeto": "honda",
+     "accion": "senalar"
+    },
+    {
+     "id": "oveja1",
+     "x": 0.62
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Suscríbete y activa la campanita, porque mañana llega otra gran historia de la Biblia. ¡Dios te bendiga!",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.5,
+     "objeto": "honda",
+     "accion": "alabar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "rotulo": "¡SUSCRÍBETE!",
+   "pausa": 2.0,
+   "camara": "acercar"
+  }
+ ]
+}

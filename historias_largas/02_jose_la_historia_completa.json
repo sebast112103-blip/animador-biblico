@@ -1,0 +1,1561 @@
+{
+ "titulo": "José - De Esclavo a Gobernador",
+ "gancho": "Lo VENDIERON sus propios hermanos... y terminó gobernando EGIPTO.",
+ "final": "",
+ "formato": "horizontal",
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.1,
+ "pausa_escenas": 0.35,
+ "corte_seg": 3.0,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "barra_progreso": false,
+ "resaltar": [
+  "JOSÉ",
+  "EGIPTO",
+  "FARAÓN",
+  "HERMANOS",
+  "SUEÑO",
+  "PERDÓN",
+  "BENJAMÍN",
+  "JACOB",
+  "DIOS",
+  "COMENTARIOS",
+  "SUSCRÍBETE"
+ ],
+ "personajes": {},
+ "escenas": [
+  {
+   "fondo": "egipto",
+   "texto": "Once hombres arrodillados ante el gobernador más poderoso de Egipto. No saben que ese hombre... es el hermano que ellos vendieron como esclavo.",
+   "personajes": [
+    {
+     "id": "hermano1",
+     "x": 0.25,
+     "accion": "arrodillarse",
+     "emocion": "asustado"
+    },
+    {
+     "id": "hermano2",
+     "x": 0.42,
+     "accion": "arrodillarse",
+     "emocion": "asustado"
+    },
+    {
+     "id": "jose",
+     "x": 0.75,
+     "mira": "izquierda",
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e",
+     "emocion": "valiente"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.35,
+     "escala": 0.55,
+     "y": -140,
+     "profundidad": -70
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "temblor",
+     "inicio": 0.7,
+     "fin": 0.8
+    }
+   ],
+   "camara": "acercar_rapido",
+   "portada": true
+  },
+  {
+   "fondo": "egipto",
+   "texto": "¿Se vengará de ellos... o hará algo que nadie se imagina? Para entenderlo, tenemos que volver veinte años atrás.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.5,
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e",
+     "emocion": "triste"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "flash",
+     "inicio": 0.85
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "José tenía diecisiete años y era el hijo favorito de su padre Jacob. Jacob lo amaba tanto, que le regaló una túnica de muchos colores.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.38,
+     "tunica": "#3f6fb5",
+     "manto": "#d9a62e",
+     "cinturon": "#c0392b",
+     "emocion": "feliz",
+     "accion": "celebrar"
+    },
+    {
+     "id": "jacob",
+     "x": 0.65,
+     "mira": "izquierda",
+     "accion": "ofrecer",
+     "emocion": "feliz"
+    }
+   ],
+   "rotulo": "CAPÍTULO 1: EL HIJO FAVORITO",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Pero sus diez hermanos mayores, al ver esa túnica, sentían celos. Tanto, que ya no podían ni hablarle con cariño.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.25,
+     "tunica": "#3f6fb5",
+     "manto": "#d9a62e",
+     "cinturon": "#c0392b"
+    },
+    {
+     "id": "hermano1",
+     "x": 0.6,
+     "mira": "izquierda",
+     "emocion": "enojado"
+    },
+    {
+     "id": "hermano2",
+     "x": 0.78,
+     "mira": "izquierda",
+     "emocion": "enojado"
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Una noche, José tuvo un sueño muy extraño. Soñó que estaba en el campo atando manojos de trigo con sus hermanos...",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.5,
+     "tunica": "#3f6fb5",
+     "manto": "#d9a62e",
+     "cinturon": "#c0392b",
+     "accion": "dormir"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "brillo",
+     "y": -500
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "trigal",
+   "texto": "Y de repente, su manojo se levantaba, y los manojos de sus hermanos se inclinaban ante el suyo.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.5,
+     "tunica": "#3f6fb5",
+     "manto": "#d9a62e",
+     "cinturon": "#c0392b",
+     "emocion": "sorprendido"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.5
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "campo",
+   "texto": "José, muy emocionado, les contó el sueño a sus hermanos. ¿Acaso piensas reinar sobre nosotros?, le dijeron furiosos.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.3,
+     "tunica": "#3f6fb5",
+     "manto": "#d9a62e",
+     "cinturon": "#c0392b",
+     "accion": "senalar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "hermano1",
+     "x": 0.65,
+     "mira": "izquierda",
+     "emocion": "enojado",
+     "accion": "senalar"
+    }
+   ],
+   "habla": "hermano1",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Luego tuvo otro sueño: el sol, la luna y once estrellas se inclinaban ante él. Y desde ese día, sus hermanos lo odiaron todavía más.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.5,
+     "tunica": "#3f6fb5",
+     "manto": "#d9a62e",
+     "cinturon": "#c0392b",
+     "emocion": "sorprendido"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "estrella",
+     "x": 0.3,
+     "y": -700
+    },
+    {
+     "tipo": "estrella",
+     "x": 0.7,
+     "y": -650
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Lo que José no sabía es que esos sueños eran un mensaje de Dios. Pero antes de cumplirse, José iba a pasar por lo peor.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.5,
+     "tunica": "#3f6fb5",
+     "manto": "#d9a62e",
+     "cinturon": "#c0392b"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.3
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Un día, Jacob envió a José a buscar a sus hermanos, que cuidaban las ovejas lejos de casa.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.1,
+     "hasta": 0.55,
+     "tunica": "#3f6fb5",
+     "manto": "#d9a62e",
+     "cinturon": "#c0392b",
+     "accion": "caminar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "oveja1",
+     "x": 0.8
+    }
+   ],
+   "rotulo": "CAPÍTULO 2: TRAICIONADO",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Cuando lo vieron venir de lejos, dijeron: ¡Ahí viene el soñador! Vamos a matarlo, y veremos qué pasa con sus sueños.",
+   "personajes": [
+    {
+     "id": "hermano1",
+     "x": 0.4,
+     "emocion": "burlon",
+     "accion": "senalar"
+    },
+    {
+     "id": "hermano2",
+     "x": 0.6,
+     "emocion": "enojado"
+    }
+   ],
+   "habla": "hermano1",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "desierto",
+   "texto": "Le quitaron la túnica de colores y lo arrojaron a un pozo vacío, en medio del desierto.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.5,
+     "tunica": "#b8a888",
+     "manto": null,
+     "accion": "caer",
+     "emocion": "llorando"
+    },
+    {
+     "id": "hermano1",
+     "x": 0.75,
+     "mira": "izquierda",
+     "emocion": "burlon"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "temblor",
+     "inicio": 0.4,
+     "fin": 0.55
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "desierto",
+   "texto": "José gritaba y suplicaba desde el fondo del pozo. Pero sus hermanos se sentaron tranquilamente a comer.",
+   "personajes": [
+    {
+     "id": "hermano1",
+     "x": 0.4,
+     "accion": "agacharse",
+     "emocion": "burlon"
+    },
+    {
+     "id": "hermano2",
+     "x": 0.62,
+     "accion": "agacharse"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "panes_peces",
+     "x": 0.5
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "desierto",
+   "texto": "Entonces pasó una caravana de comerciantes rumbo a Egipto. Y uno de los hermanos tuvo una idea terrible.",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.1,
+     "hasta": 0.35,
+     "accion": "caminar"
+    },
+    {
+     "id": "burro",
+     "x": 0.0,
+     "hasta": 0.2,
+     "accion": "caminar"
+    },
+    {
+     "id": "hermano1",
+     "x": 0.75,
+     "mira": "izquierda",
+     "emocion": "burlon"
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "desierto",
+   "texto": "Vendieron a su propio hermano por veinte monedas de plata.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.38,
+     "tunica": "#b8a888",
+     "manto": null,
+     "emocion": "llorando",
+     "accion": "temblar"
+    },
+    {
+     "id": "hermano1",
+     "x": 0.72,
+     "mira": "izquierda",
+     "accion": "ofrecer",
+     "emocion": "burlon"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "monedas",
+     "x": 0.6,
+     "escala": 0.8
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "flash",
+     "inicio": 0.6
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Luego mancharon la túnica con sangre de un cabrito y se la llevaron a su padre. Jacob creyó que una fiera había matado a José, y lloró por muchos días.",
+   "personajes": [
+    {
+     "id": "jacob",
+     "x": 0.5,
+     "accion": "arrodillarse",
+     "emocion": "llorando"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    },
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.3
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Si alguna vez alguien cercano te traicionó, escribe en los comentarios: Dios ve mi dolor. Porque esta historia apenas comienza.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.5,
+     "tunica": "#b8a888",
+     "manto": null,
+     "accion": "orar",
+     "emocion": "triste"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "egipto",
+   "texto": "En Egipto, José fue vendido otra vez, ahora a Potifar, el capitán de la guardia del faraón.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.35,
+     "tunica": "#b8a888",
+     "manto": null,
+     "emocion": "triste"
+    },
+    {
+     "id": "guardia1",
+     "x": 0.68,
+     "mira": "izquierda",
+     "objeto": "lanza",
+     "emocion": "valiente"
+    }
+   ],
+   "rotulo": "CAPÍTULO 3: ESCLAVO EN EGIPTO",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "egipto",
+   "texto": "Pero José no se rindió. Trabajó con honestidad, y Dios lo bendecía en todo lo que hacía.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.45,
+     "tunica": "#b8a888",
+     "manto": null,
+     "accion": "empujar",
+     "emocion": "valiente"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "piedra",
+     "x": 0.6,
+     "escala": 0.6
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.45
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Tanto, que Potifar lo puso a cargo de toda su casa y de todo lo que tenía.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.4,
+     "tunica": "#e9e4d8",
+     "manto": "#7a5c8a",
+     "emocion": "feliz"
+    },
+    {
+     "id": "guardia1",
+     "x": 0.68,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Pero la esposa de Potifar acusó falsamente a José de algo que él nunca hizo. Y Potifar, lleno de furia, le creyó a ella.",
+   "personajes": [
+    {
+     "id": "criada",
+     "x": 0.3,
+     "accion": "senalar",
+     "emocion": "enojado"
+    },
+    {
+     "id": "jose",
+     "x": 0.55,
+     "tunica": "#e9e4d8",
+     "emocion": "asustado"
+    },
+    {
+     "id": "guardia1",
+     "x": 0.8,
+     "mira": "izquierda",
+     "emocion": "enojado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "temblor",
+     "inicio": 0.6,
+     "fin": 0.75
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "prision",
+   "texto": "Sin juicio y sin defensa, José fue encerrado en la cárcel del rey. Había hecho lo correcto... y aun así lo perdió todo otra vez.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.45,
+     "tunica": "#b8a888",
+     "manto": null,
+     "accion": "arrodillarse",
+     "emocion": "llorando"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.35
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "prision",
+   "texto": "¿Por qué Dios permitía todo esto? José no lo entendía. Pero aun en la cárcel, Dios seguía con él.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.45,
+     "tunica": "#b8a888",
+     "manto": null,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.6
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "prision",
+   "texto": "En la prisión, el jefe de la cárcel confió en José y lo puso a cargo de los demás presos.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.4,
+     "tunica": "#b8a888",
+     "manto": null,
+     "emocion": "valiente",
+     "accion": "senalar"
+    },
+    {
+     "id": "hombre1",
+     "x": 0.65,
+     "mira": "izquierda"
+    },
+    {
+     "id": "hombre2",
+     "x": 0.82,
+     "mira": "izquierda"
+    }
+   ],
+   "rotulo": "CAPÍTULO 4: LOS SUEÑOS",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "prision",
+   "texto": "Un día llegaron dos presos muy importantes: el copero y el panadero del faraón. Y una mañana, los dos amanecieron muy tristes.",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.35,
+     "emocion": "triste"
+    },
+    {
+     "id": "hombre2",
+     "x": 0.6,
+     "emocion": "triste"
+    },
+    {
+     "id": "jose",
+     "x": 0.82,
+     "mira": "izquierda",
+     "tunica": "#b8a888",
+     "manto": null
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "prision",
+   "texto": "Tuvimos un sueño, y no hay nadie que nos diga qué significa, le dijeron. Y José respondió: Las interpretaciones pertenecen a Dios. Cuéntenmelos.",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.35,
+     "emocion": "triste"
+    },
+    {
+     "id": "jose",
+     "x": 0.65,
+     "mira": "izquierda",
+     "tunica": "#b8a888",
+     "manto": null,
+     "accion": "senalar",
+     "emocion": "valiente"
+    }
+   ],
+   "habla": "jose",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "prision",
+   "texto": "Al copero le dijo: En tres días el faraón te devolverá tu puesto. Pero al panadero le dio una noticia muy triste.",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.35,
+     "accion": "celebrar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "hombre2",
+     "x": 0.6,
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "prision",
+   "texto": "Y todo pasó exactamente como José dijo. Antes de que el copero saliera, José le pidió: Acuérdate de mí cuando estés con el faraón.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.4,
+     "tunica": "#b8a888",
+     "manto": null,
+     "accion": "ofrecer",
+     "emocion": "triste"
+    },
+    {
+     "id": "hombre1",
+     "x": 0.65,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "habla": "jose",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "prision",
+   "texto": "Pero el copero... se olvidó de él. Y José pasó dos años más en la cárcel.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.5,
+     "tunica": "#b8a888",
+     "manto": null,
+     "accion": "dormir"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.45
+    }
+   ],
+   "rotulo": "2 AÑOS DESPUÉS",
+   "camara": "alejar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Hasta que una noche, el mismísimo faraón tuvo dos sueños que lo dejaron temblando.",
+   "personajes": [
+    {
+     "id": "faraon",
+     "x": 0.5,
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.55,
+     "profundidad": -30
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "rayo",
+     "inicio": 0.3
+    }
+   ],
+   "rotulo": "CAPÍTULO 5: EL SUEÑO DEL FARAÓN",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Soñó que del río salían siete vacas gordas y hermosas. Y detrás, siete vacas flacas y feas... que se comían a las gordas.",
+   "personajes": [
+    {
+     "id": "burro",
+     "x": 0.3
+    },
+    {
+     "id": "oveja1",
+     "x": 0.5
+    },
+    {
+     "id": "oveja2",
+     "x": 0.7
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.25
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "trigal",
+   "texto": "Luego soñó con siete espigas llenas de trigo, que eran tragadas por siete espigas secas y quemadas por el viento.",
+   "personajes": [],
+   "efectos": [
+    {
+     "tipo": "fuego",
+     "x": 0.6,
+     "tamano": 0.8
+    },
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.2
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Ninguno de los sabios de Egipto pudo explicarlo. Y en ese momento, el copero se acordó de José.",
+   "personajes": [
+    {
+     "id": "faraon",
+     "x": 0.65,
+     "mira": "izquierda",
+     "emocion": "enojado"
+    },
+    {
+     "id": "hombre1",
+     "x": 0.35,
+     "accion": "senalar",
+     "emocion": "sorprendido"
+    }
+   ],
+   "habla": "hombre1",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Sacaron a José de la cárcel, lo afeitaron, le dieron ropa nueva y lo llevaron ante el hombre más poderoso del mundo.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.1,
+     "hasta": 0.35,
+     "tunica": "#e9e4d8",
+     "accion": "caminar",
+     "emocion": "asustado"
+    },
+    {
+     "id": "faraon",
+     "x": 0.72,
+     "mira": "izquierda"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.78,
+     "profundidad": -30
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Me dicen que tú sabes interpretar sueños, le dijo el faraón. Y José respondió: No soy yo. Es Dios quien te dará la respuesta.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.35,
+     "tunica": "#e9e4d8",
+     "accion": "senalar",
+     "emocion": "valiente"
+    },
+    {
+     "id": "faraon",
+     "x": 0.72,
+     "mira": "izquierda",
+     "emocion": "sorprendido"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.35
+    }
+   ],
+   "habla": "jose",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Los dos sueños son uno solo: vendrán siete años de mucha abundancia, y después siete años de un hambre terrible.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.4,
+     "tunica": "#e9e4d8",
+     "accion": "levantar",
+     "emocion": "valiente"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "brillo"
+    }
+   ],
+   "habla": "jose",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Guarda la quinta parte de cada cosecha durante los años buenos, y así Egipto no morirá de hambre.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.35,
+     "tunica": "#e9e4d8",
+     "accion": "ofrecer"
+    },
+    {
+     "id": "faraon",
+     "x": 0.7,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "habla": "jose",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "El faraón quedó impresionado. ¿Dónde vamos a encontrar a alguien como este, que tiene el espíritu de Dios?",
+   "personajes": [
+    {
+     "id": "faraon",
+     "x": 0.5,
+     "accion": "senalar",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.55,
+     "profundidad": -30
+    }
+   ],
+   "habla": "faraon",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "egipto",
+   "texto": "Y ese mismo día, el esclavo que había pasado años en la cárcel se convirtió en el gobernador de todo Egipto. Solo el faraón estaba por encima de él.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.4,
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e",
+     "accion": "alabar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "faraon",
+     "x": 0.72,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.6,
+     "y": -150,
+     "profundidad": -70,
+     "variante": "egipcios"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "José tenía treinta años. Trece años de dolor... y en un solo día, Dios cambió su historia. ¿Estás esperando tu día? Escribe: Mi día va a llegar.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.5,
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e",
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "13 AÑOS",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "trigal",
+   "texto": "Durante siete años, José guardó trigo en enormes almacenes por todo Egipto. Tanto, que dejaron de contarlo.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.5,
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e",
+     "accion": "senalar"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "canasta",
+     "x": 0.7
+    }
+   ],
+   "rotulo": "CAPÍTULO 6: EL HAMBRE",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "desierto",
+   "texto": "Y luego llegó el hambre, tal como Dios había dicho. No solo en Egipto, sino en todas las tierras de alrededor.",
+   "personajes": [
+    {
+     "id": "hombre2",
+     "x": 0.4,
+     "accion": "agacharse",
+     "emocion": "triste"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.6,
+     "emocion": "triste"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.3
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Allá en Canaán, el anciano Jacob les dijo a sus hijos: He oído que en Egipto hay trigo. Vayan y compren comida, para que no muramos.",
+   "personajes": [
+    {
+     "id": "jacob",
+     "x": 0.62,
+     "mira": "izquierda",
+     "accion": "senalar",
+     "emocion": "triste",
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc"
+    },
+    {
+     "id": "hermano1",
+     "x": 0.35
+    },
+    {
+     "id": "nino",
+     "x": 0.2,
+     "emocion": "triste"
+    }
+   ],
+   "habla": "jacob",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Pero Jacob no dejó ir a Benjamín, el hermano menor. Tenía miedo de perderlo como había perdido a José.",
+   "personajes": [
+    {
+     "id": "jacob",
+     "x": 0.55,
+     "accion": "abrazar",
+     "emocion": "triste",
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc"
+    },
+    {
+     "id": "nino",
+     "x": 0.35,
+     "emocion": "triste"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "egipto",
+   "texto": "Y así llegamos al momento del principio: los diez hermanos, inclinados hasta el suelo ante el gobernador de Egipto.",
+   "personajes": [
+    {
+     "id": "hermano1",
+     "x": 0.25,
+     "accion": "arrodillarse"
+    },
+    {
+     "id": "hermano2",
+     "x": 0.42,
+     "accion": "arrodillarse"
+    },
+    {
+     "id": "jose",
+     "x": 0.75,
+     "mira": "izquierda",
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e"
+    }
+   ],
+   "rotulo": "CAPÍTULO 7: EL REENCUENTRO",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "egipto",
+   "texto": "El sueño de José se estaba cumpliendo. Él los reconoció enseguida... pero ellos no lo reconocieron a él.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.5,
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e",
+     "emocion": "sorprendido"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "flash",
+     "inicio": 0.5
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "egipto",
+   "texto": "José les habló con dureza: ¡Ustedes son espías! Quería saber si sus hermanos habían cambiado, o si seguían siendo los mismos de antes.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.6,
+     "mira": "izquierda",
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e",
+     "accion": "senalar",
+     "emocion": "enojado"
+    },
+    {
+     "id": "hermano1",
+     "x": 0.3,
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "habla": "jose",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "egipto",
+   "texto": "Les exigió que trajeran a Benjamín. Y cuando volvieron con él, José escondió su copa de plata en el saco del muchacho.",
+   "personajes": [
+    {
+     "id": "nino",
+     "x": 0.35,
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "jose",
+     "x": 0.7,
+     "mira": "izquierda",
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "monedas",
+     "x": 0.5
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "egipto",
+   "texto": "Los guardias encontraron la copa. Benjamín se quedará aquí como mi esclavo, dijo José. Era la prueba final.",
+   "personajes": [
+    {
+     "id": "guardia1",
+     "x": 0.25,
+     "objeto": "lanza"
+    },
+    {
+     "id": "nino",
+     "x": 0.45,
+     "accion": "temblar",
+     "emocion": "llorando"
+    },
+    {
+     "id": "jose",
+     "x": 0.75,
+     "mira": "izquierda",
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e",
+     "emocion": "valiente"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "temblor",
+     "inicio": 0.5,
+     "fin": 0.65
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "egipto",
+   "texto": "Entonces Judá, el mismo hermano que años antes propuso venderlo, se arrodilló: Por favor, déjeme a mí como esclavo en lugar del muchacho.",
+   "personajes": [
+    {
+     "id": "hermano1",
+     "x": 0.4,
+     "accion": "arrodillarse",
+     "emocion": "llorando"
+    },
+    {
+     "id": "jose",
+     "x": 0.72,
+     "mira": "izquierda",
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e",
+     "emocion": "sorprendido"
+    }
+   ],
+   "habla": "hermano1",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "egipto",
+   "texto": "Sus hermanos habían cambiado. Y José ya no pudo contenerse más. Mandó salir a todos los egipcios... y se echó a llorar a gritos.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.5,
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e",
+     "emocion": "llorando",
+     "accion": "temblar"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "egipto",
+   "texto": "¡Yo soy José, su hermano, el que ustedes vendieron!",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.5,
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e",
+     "accion": "levantar",
+     "emocion": "llorando"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "flash",
+     "inicio": 0.2
+    },
+    {
+     "tipo": "luz"
+    }
+   ],
+   "habla": "jose",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "egipto",
+   "texto": "Los hermanos quedaron paralizados de miedo. Pero José les dijo: No se angustien. Ustedes pensaron hacerme mal, pero Dios lo convirtió en bien, para salvar muchas vidas.",
+   "personajes": [
+    {
+     "id": "hermano1",
+     "x": 0.32,
+     "accion": "abrazar",
+     "emocion": "llorando"
+    },
+    {
+     "id": "jose",
+     "x": 0.6,
+     "mira": "izquierda",
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e",
+     "accion": "abrazar",
+     "emocion": "llorando"
+    }
+   ],
+   "habla": "jose",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "egipto",
+   "texto": "Y abrazó a Benjamín, y besó a cada uno de sus hermanos, llorando con ellos.",
+   "personajes": [
+    {
+     "id": "nino",
+     "x": 0.38,
+     "accion": "abrazar",
+     "emocion": "llorando"
+    },
+    {
+     "id": "jose",
+     "x": 0.58,
+     "mira": "izquierda",
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e",
+     "accion": "abrazar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "hermano2",
+     "x": 0.8,
+     "mira": "izquierda",
+     "emocion": "llorando"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Cuando los hermanos volvieron a Canaán y le dijeron a Jacob: ¡José está vivo, y es gobernador de Egipto!, el anciano no lo podía creer.",
+   "personajes": [
+    {
+     "id": "jacob",
+     "x": 0.6,
+     "mira": "izquierda",
+     "emocion": "sorprendido",
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc"
+    },
+    {
+     "id": "hermano1",
+     "x": 0.35,
+     "accion": "celebrar",
+     "emocion": "feliz"
+    }
+   ],
+   "rotulo": "CAPÍTULO 8: EL ABRAZO",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "egipto",
+   "texto": "Jacob viajó a Egipto con toda su familia. Y cuando José vio a su padre, corrió hacia él, lo abrazó... y lloró sobre su cuello por largo rato.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.35,
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e",
+     "accion": "abrazar",
+     "emocion": "llorando"
+    },
+    {
+     "id": "jacob",
+     "x": 0.58,
+     "mira": "izquierda",
+     "accion": "abrazar",
+     "emocion": "llorando",
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Después de veintidós años separados, la familia volvió a estar unida. Y Dios los cuidó en Egipto durante todo el tiempo del hambre.",
+   "personajes": [
+    {
+     "id": "jacob",
+     "x": 0.3,
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "emocion": "feliz"
+    },
+    {
+     "id": "jose",
+     "x": 0.5,
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e",
+     "emocion": "feliz",
+     "accion": "celebrar"
+    },
+    {
+     "id": "nino",
+     "x": 0.65,
+     "accion": "celebrar"
+    },
+    {
+     "id": "hermano1",
+     "x": 0.8,
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "arcoiris"
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "El pozo, la esclavitud y la cárcel no eran el final de la historia de José. Eran el camino hacia el palacio.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.5,
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e",
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "ENSEÑANZA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Lo que otros hacen para hacerte daño, Dios lo puede convertir en bien. Y el perdón no cambia el pasado... pero sí cambia el futuro.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.5,
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e",
+     "accion": "alabar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Tú habrías perdonado a tus hermanos como José? Respóndeme en los comentarios, que leo cada uno.",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.4,
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e",
+     "accion": "senalar"
+    },
+    {
+     "id": "nino",
+     "x": 0.62,
+     "mira": "izquierda",
+     "accion": "celebrar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Y si esta historia te tocó el corazón, suscríbete y activa la campanita. Mañana te espera otra gran historia de la Biblia. ¡Dios te bendiga!",
+   "personajes": [
+    {
+     "id": "jose",
+     "x": 0.5,
+     "tunica": "#f4f1ea",
+     "manto": "#d9a62e",
+     "tocado": "turbante",
+     "color_tocado": "#d9a62e",
+     "accion": "alabar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "rotulo": "¡SUSCRÍBETE!",
+   "pausa": 2.0,
+   "camara": "acercar"
+  }
+ ]
+}

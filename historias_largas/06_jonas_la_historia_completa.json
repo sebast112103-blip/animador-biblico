@@ -1,0 +1,1151 @@
+{
+ "titulo": "Jonás y el Gran Pez - La Historia Completa",
+ "gancho": "Tres días VIVO dentro de un PEZ gigante... ¿cómo llegó ahí?",
+ "final": "",
+ "formato": "horizontal",
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.1,
+ "pausa_escenas": 0.35,
+ "corte_seg": 3.0,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "barra_progreso": false,
+ "resaltar": [
+  "JONÁS",
+  "NÍNIVE",
+  "PEZ",
+  "TORMENTA",
+  "MAR",
+  "TARSIS",
+  "COMPASIÓN",
+  "SEÑOR",
+  "DIOS",
+  "COMENTARIOS",
+  "SUSCRÍBETE"
+ ],
+ "personajes": {},
+ "escenas": [
+  {
+   "fondo": "dentro_pez",
+   "texto": "Oscuridad total. Algas enredadas en la cabeza. Un olor insoportable. Un hombre está vivo... dentro del estómago de un pez gigante.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.35
+    }
+   ],
+   "camara": "acercar_rapido",
+   "portada": true
+  },
+  {
+   "fondo": "dentro_pez",
+   "texto": "Lleva ahí tres días y tres noches. ¿Cómo llegó a ese lugar? Todo empezó cuando Dios le pidió algo... y él salió corriendo en dirección contraria.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "orar",
+     "emocion": "llorando"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.35
+    },
+    {
+     "tipo": "flash",
+     "inicio": 0.85
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Jonás era un profeta de Israel. Un hombre que escuchaba la voz de Dios y llevaba sus mensajes al pueblo.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.5
+    }
+   ],
+   "rotulo": "CAPÍTULO 1: LA ORDEN",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Vivía en un pueblito de Galilea llamado Gat-hefer, muy cerca de donde siglos después crecería Jesús. Y ya había anunciado buenas noticias al rey de Israel, que se cumplieron tal como él dijo.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.4,
+     "accion": "senalar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "hombre1",
+     "x": 0.68,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Un día, Dios le habló: Levántate y ve a Nínive, la gran ciudad, y anúnciale que su maldad ha llegado hasta mí.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.45,
+     "emocion": "sorprendido"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.7
+    },
+    {
+     "tipo": "brillo",
+     "x": 0.7,
+     "y": -600
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Pero Nínive no era cualquier ciudad. Era la capital de Asiria, el imperio más cruel de su tiempo. Los enemigos más temidos de Israel.",
+   "personajes": [
+    {
+     "id": "enemigo1",
+     "x": 0.35,
+     "objeto": "espada",
+     "emocion": "enojado"
+    },
+    {
+     "id": "enemigo2",
+     "x": 0.6,
+     "objeto": "lanza",
+     "emocion": "burlon"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.6,
+     "y": -160,
+     "profundidad": -70,
+     "variante": "soldados"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "fuego",
+     "x": 0.85,
+     "tamano": 0.9
+    },
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.3
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Los asirios conquistaban pueblos y trataban a los prisioneros con una crueldad terrible. Todo el mundo les tenía miedo.",
+   "personajes": [
+    {
+     "id": "enemigo1",
+     "x": 0.4,
+     "accion": "senalar",
+     "emocion": "enojado"
+    },
+    {
+     "id": "hombre2",
+     "x": 0.65,
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Jonás pensó: ¿Ir a advertirles? ¿Y si se arrepienten y Dios los perdona? ¡No! Ellos merecen el castigo.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "emocion": "enojado",
+     "accion": "senalar"
+    }
+   ],
+   "habla": "jonas",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "camino",
+   "texto": "Así que Jonás tomó una decisión. Se levantó... pero no fue hacia Nínive, que estaba al oriente. Huyó hacia el occidente, a Tarsis, lo más lejos posible.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.6,
+     "accion": "correr",
+     "hasta": 0.05,
+     "mira": "izquierda",
+     "emocion": "asustado"
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "mar",
+   "texto": "Bajó al puerto de Jope, pagó su pasaje y se subió a un barco que salía hacia Tarsis. Quería huir de la presencia de Dios.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.2,
+     "hasta": 0.45,
+     "accion": "caminar"
+    },
+    {
+     "id": "marinero1",
+     "x": 0.7,
+     "mira": "izquierda"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "barca",
+     "x": 0.65,
+     "escala": 1.0
+    }
+   ],
+   "rotulo": "CAPÍTULO 2: LA HUIDA",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "mar",
+   "texto": "Tarsis estaba en el otro extremo del mar conocido, probablemente en lo que hoy es España. Era como decir: me voy al fin del mundo, donde Dios no me encuentre.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.45,
+     "emocion": "valiente"
+    },
+    {
+     "id": "marinero2",
+     "x": 0.72,
+     "mira": "izquierda"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "barca",
+     "x": 0.6,
+     "escala": 1.0,
+     "profundidad": -100
+    }
+   ],
+   "camara": "alejar"
+  },
+  {
+   "fondo": "mar",
+   "texto": "Una vez en alta mar, Jonás bajó a lo más profundo del barco, se acostó... y se quedó profundamente dormido.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "dormir"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "barca",
+     "x": 0.5,
+     "escala": 1.0
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Alguna vez intentaste huir de algo que sabías que debías hacer? Escribe en los comentarios: Yo también he huido. Porque lo que pasó después nos enseña mucho.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "dormir"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "mar_tormenta",
+   "texto": "Pero no se puede huir de Dios. El Señor envió un viento tan fuerte sobre el mar, que la tormenta amenazaba con partir el barco en pedazos.",
+   "personajes": [],
+   "cosas": [
+    {
+     "tipo": "barca",
+     "x": 0.5,
+     "escala": 1.0
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    },
+    {
+     "tipo": "rayo",
+     "inicio": 0.3
+    },
+    {
+     "tipo": "temblor",
+     "inicio": 0.2,
+     "fin": 0.9
+    }
+   ],
+   "rotulo": "CAPÍTULO 3: LA TORMENTA",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "mar_tormenta",
+   "texto": "Los marineros, aterrados, empezaron a gritar cada uno a su dios. Y tiraron la carga al mar para que el barco no se hundiera.",
+   "personajes": [
+    {
+     "id": "marinero1",
+     "x": 0.35,
+     "accion": "lanzar",
+     "emocion": "asustado"
+    },
+    {
+     "id": "marinero2",
+     "x": 0.62,
+     "accion": "orar",
+     "emocion": "asustado"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "barca",
+     "x": 0.5,
+     "escala": 1.0,
+     "profundidad": -100
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    },
+    {
+     "tipo": "rayo",
+     "inicio": 0.6
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "mar_tormenta",
+   "texto": "El capitán bajó y encontró a Jonás dormido. ¿Cómo puedes dormir? ¡Levántate y clama a tu Dios! Quizás él tenga compasión de nosotros.",
+   "personajes": [
+    {
+     "id": "marinero1",
+     "x": 0.35,
+     "accion": "senalar",
+     "emocion": "asustado"
+    },
+    {
+     "id": "jonas",
+     "x": 0.65,
+     "accion": "dormir"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    }
+   ],
+   "habla": "marinero1",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "mar_tormenta",
+   "texto": "Los marineros echaron suertes para saber quién tenía la culpa de esa desgracia. Y la suerte cayó sobre Jonás.",
+   "personajes": [
+    {
+     "id": "marinero1",
+     "x": 0.3,
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "marinero2",
+     "x": 0.5,
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "jonas",
+     "x": 0.75,
+     "mira": "izquierda",
+     "emocion": "asustado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    },
+    {
+     "tipo": "flash",
+     "inicio": 0.7
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "mar_tormenta",
+   "texto": "¿Quién eres? ¿Qué has hecho?, le preguntaron. Y Jonás confesó: Soy hebreo. Temo al Señor, el Dios del cielo, que hizo el mar y la tierra... y estoy huyendo de él.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.45,
+     "accion": "arrodillarse",
+     "emocion": "triste"
+    },
+    {
+     "id": "marinero1",
+     "x": 0.72,
+     "mira": "izquierda",
+     "emocion": "asustado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    }
+   ],
+   "habla": "jonas",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "mar_tormenta",
+   "texto": "¿Qué hacemos contigo para que el mar se calme? Y Jonás respondió: Tírenme al mar. Yo sé que esta tormenta es por mi culpa.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "senalar",
+     "emocion": "triste"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    },
+    {
+     "tipo": "rayo",
+     "inicio": 0.7
+    }
+   ],
+   "habla": "jonas",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "mar_tormenta",
+   "texto": "Los marineros no querían hacerlo. Remaron con todas sus fuerzas hacia la orilla... pero el mar se embravecía cada vez más.",
+   "personajes": [
+    {
+     "id": "marinero1",
+     "x": 0.35,
+     "accion": "empujar",
+     "emocion": "asustado"
+    },
+    {
+     "id": "marinero2",
+     "x": 0.6,
+     "accion": "empujar",
+     "emocion": "asustado"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "barca",
+     "x": 0.5,
+     "escala": 1.0,
+     "profundidad": -100
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    },
+    {
+     "tipo": "temblor",
+     "inicio": 0.1,
+     "fin": 0.9
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "mar_tormenta",
+   "texto": "Al final, tomaron a Jonás... y lo lanzaron al mar.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "caer",
+     "emocion": "asustado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "agua"
+    },
+    {
+     "tipo": "flash",
+     "inicio": 0.5
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "mar",
+   "texto": "Y en ese mismo instante, el mar se calmó por completo. Los marineros, asombrados, adoraron al Dios de Jonás.",
+   "personajes": [
+    {
+     "id": "marinero1",
+     "x": 0.4,
+     "accion": "alabar",
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "marinero2",
+     "x": 0.6,
+     "accion": "arrodillarse",
+     "emocion": "sorprendido"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "barca",
+     "x": 0.5,
+     "escala": 1.0,
+     "profundidad": -100
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "alejar"
+  },
+  {
+   "fondo": "mar",
+   "texto": "Jonás se hundía en las profundidades. Las olas pasaban sobre su cabeza. Ya no había esperanza...",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "caer",
+     "emocion": "asustado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.4
+    }
+   ],
+   "rotulo": "CAPÍTULO 4: EL GRAN PEZ",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "mar",
+   "texto": "Pero Dios ya había preparado algo. De la oscuridad del océano apareció un pez enorme... y se tragó a Jonás de un solo bocado.",
+   "personajes": [],
+   "cosas": [
+    {
+     "tipo": "pez_gigante",
+     "x": 0.5,
+     "escala": 1.2
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "agua"
+    },
+    {
+     "tipo": "temblor",
+     "inicio": 0.5,
+     "fin": 0.7
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "dentro_pez",
+   "texto": "Y ahí estaba Jonás, en el vientre del pez, vivo. Tres días y tres noches en la oscuridad.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.35
+    }
+   ],
+   "rotulo": "3 DÍAS",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "dentro_pez",
+   "texto": "Imagínalo: sin luz, sin aire fresco, rodeado de agua y algas. Cada movimiento del pez lo sacudía de un lado a otro. Jonás pensó que ese sería su final.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "caer",
+     "emocion": "asustado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.4
+    },
+    {
+     "tipo": "temblor",
+     "inicio": 0.3,
+     "fin": 0.6
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "dentro_pez",
+   "texto": "Y en ese lugar, donde ya no podía huir de nada, Jonás hizo lo que debió hacer desde el principio: oró.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "arrodillarse",
+     "emocion": "llorando"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.3
+    },
+    {
+     "tipo": "luz",
+     "x": 0.5
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "dentro_pez",
+   "texto": "En mi angustia clamé al Señor, y él me respondió. Me echaste a lo profundo del mar, las aguas me rodearon... pero tú sacaste mi vida de la fosa.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "orar",
+     "emocion": "llorando"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.5
+    }
+   ],
+   "habla": "jonas",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "dentro_pez",
+   "texto": "Te ofreceré sacrificios con cantos de gratitud. Cumpliré lo que prometí. ¡La salvación viene del Señor!",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "alabar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo"
+    }
+   ],
+   "habla": "jonas",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "mar",
+   "texto": "Entonces Dios le habló al pez... y el pez vomitó a Jonás en tierra seca.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.4,
+     "accion": "caer_de_cara",
+     "emocion": "sorprendido"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "pez_gigante",
+     "x": 0.75,
+     "escala": 0.9
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "agua",
+     "x": 0.6
+    },
+    {
+     "tipo": "flash",
+     "inicio": 0.4
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Pausa. Dime en los comentarios: ¿qué crees que sintió Jonás al ver la luz del sol otra vez?",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "levantar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "¿QUÉ SINTIÓ?",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "camino",
+   "texto": "Por segunda vez, Dios le dijo a Jonás: Levántate y ve a Nínive. Y esta vez, Jonás obedeció.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.15,
+     "hasta": 0.6,
+     "accion": "caminar",
+     "emocion": "valiente"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.8
+    }
+   ],
+   "rotulo": "CAPÍTULO 5: NÍNIVE",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Nínive era tan grande que se necesitaban tres días para recorrerla. Jonás entró y empezó a gritar por las calles:",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.4,
+     "accion": "senalar",
+     "emocion": "valiente"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.65,
+     "escala": 0.6,
+     "y": -160,
+     "profundidad": -70
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "¡Dentro de cuarenta días, Nínive será destruida!",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "levantar",
+     "emocion": "enojado"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.6,
+     "y": 320,
+     "delante": true
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "temblor",
+     "inicio": 0.4,
+     "fin": 0.6
+    }
+   ],
+   "habla": "jonas",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Imagina a un extranjero, con la piel blanqueada por los jugos del pez, gritando en medio de la ciudad más peligrosa del mundo. Jonás pudo haber sido apresado en ese mismo momento.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.45,
+     "accion": "senalar",
+     "emocion": "valiente",
+     "piel": "#f3e6d8"
+    },
+    {
+     "id": "enemigo1",
+     "x": 0.72,
+     "mira": "izquierda",
+     "objeto": "lanza",
+     "emocion": "sorprendido"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Y entonces pasó algo increíble. La gente de Nínive le creyó a Dios. Dejaron de comer, se vistieron de luto, desde el más grande hasta el más pequeño.",
+   "personajes": [
+    {
+     "id": "hombre2",
+     "x": 0.3,
+     "accion": "arrodillarse",
+     "emocion": "llorando"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.5,
+     "accion": "orar",
+     "emocion": "llorando"
+    },
+    {
+     "id": "enemigo1",
+     "x": 0.7,
+     "accion": "arrodillarse",
+     "emocion": "triste"
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Hasta el rey de Nínive se levantó de su trono, se quitó su manto real, se sentó en ceniza, y ordenó a toda la ciudad: Clamen a Dios con todas sus fuerzas. ¿Quién sabe si Dios se arrepiente y nos perdona?",
+   "personajes": [
+    {
+     "id": "rey_asuero",
+     "x": 0.5,
+     "accion": "arrodillarse",
+     "emocion": "llorando"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.7,
+     "profundidad": -30
+    }
+   ],
+   "habla": "rey_asuero",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Y Dios vio que se apartaron de su mal camino. Y tuvo compasión. No destruyó la ciudad. Más de ciento veinte mil personas fueron salvadas.",
+   "personajes": [
+    {
+     "id": "hombre2",
+     "x": 0.35,
+     "accion": "celebrar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.6,
+     "accion": "alabar",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.55,
+     "y": -150,
+     "profundidad": -70
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo"
+    }
+   ],
+   "camara": "alejar"
+  },
+  {
+   "fondo": "desierto",
+   "texto": "Cualquiera pensaría que Jonás estaría feliz. Pero no. Jonás se enojó muchísimo.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "emocion": "enojado",
+     "accion": "temblar"
+    }
+   ],
+   "rotulo": "CAPÍTULO 6: EL CORAZÓN DE DIOS",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "desierto",
+   "texto": "¡Por esto huí a Tarsis!, le reclamó a Dios. Yo sabía que tú eres un Dios clemente y misericordioso, lento para la ira y lleno de amor.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "senalar",
+     "emocion": "enojado"
+    }
+   ],
+   "habla": "jonas",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "desierto",
+   "texto": "Jonás salió de la ciudad y se sentó a esperar, por si acaso Dios la destruía. Hacía un calor terrible.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "agacharse",
+     "emocion": "enojado"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "desierto",
+   "texto": "Dios hizo crecer una planta que le dio sombra. Jonás se puso muy contento con su planta.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.45,
+     "emocion": "feliz",
+     "accion": "dormir"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "arbol",
+     "x": 0.55,
+     "escala": 0.7
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "brillo",
+     "x": 0.55
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "desierto",
+   "texto": "Pero al día siguiente, Dios envió un gusano que secó la planta. Y con el sol y el viento caliente, Jonás deseó morirse.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.45,
+     "emocion": "llorando",
+     "accion": "temblar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.15
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "desierto",
+   "texto": "Entonces Dios le dijo: Tú tienes lástima de una planta que no sembraste y que vivió una sola noche.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "emocion": "sorprendido"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.7
+    },
+    {
+     "tipo": "brillo",
+     "x": 0.7,
+     "y": -600
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Y no voy a tener yo compasión de Nínive, donde hay más de ciento veinte mil personas que no saben distinguir su derecha de su izquierda?",
+   "personajes": [],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "alejar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Jonás huyó de Dios, pero Dios no huyó de Jonás. Lo buscó en el barco, en el mar, y hasta en el vientre de un pez.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "ENSEÑANZA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Y nos recuerda algo importante: el amor de Dios es más grande que nuestros enojos. Él quiere salvar incluso a los que nosotros creemos que no lo merecen.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "alabar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Y algo más: Jesús dijo que así como Jonás estuvo tres días en el vientre del pez, él estaría tres días en la tumba antes de resucitar.",
+   "personajes": [
+    {
+     "id": "jesus",
+     "x": 0.5,
+     "accion": "ofrecer",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Hay alguna Nínive en tu vida, alguien a quien te cuesta perdonar? Escríbelo en los comentarios. Y suscríbete, que mañana llega otra gran historia. ¡Dios te bendiga!",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "alabar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "rotulo": "¡SUSCRÍBETE!",
+   "pausa": 2.0,
+   "camara": "acercar"
+  }
+ ]
+}

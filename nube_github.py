@@ -317,6 +317,22 @@ def main():
     accion = sys.argv[1] if len(sys.argv) > 1 else "todo"
     carpeta = sys.argv[2] if len(sys.argv) > 2 else "todos"
     filtro = sys.argv[3] if len(sys.argv) > 3 else ""
+    if carpeta == "diario" and not filtro:
+        # solo el siguiente video largo que todavia no se ha creado
+        import re as _re
+        # pendientes = historias largas que todavia no se han subido a YouTube
+        pub = RAIZ / "historias_largas" / "_publicados.txt"
+        hechos = set(pub.read_text(encoding="utf-8").split()) if pub.exists() else set()
+        pendientes = []
+        for f in sorted((RAIZ / "historias_largas").glob("*.json")):
+            t = json.loads(f.read_text(encoding="utf-8")).get("titulo") or f.stem
+            if _re.sub(r"[^\w-]+", "_", t).strip("_") not in hechos:
+                pendientes.append(f.name.lower())
+                log(f"Video pendiente: {t}")
+        filtro = ",".join(pendientes)
+        if not pendientes:
+            log("Todos los videos largos ya estan creados. Pideme nuevas historias.")
+            sys.exit(0)
     if shutil.which("git") is None:
         log("[ERROR] No encuentro Git. Instala Git para Windows: https://git-scm.com")
         sys.exit(1)
@@ -337,7 +353,12 @@ def main():
         subir(login)
         t = lanzar(token, login, carpeta, filtro)
         run = esperar(token, login, t)
-        descargar(token, login, run)
+        if carpeta == "diario":
+            # los videos largos quedan en GitHub (rama "publicar") y Claude los sube a YouTube:
+            # no hace falta llenar el disco de la computadora
+            log("LISTO: los videos del dia quedaron en GitHub, listos para subir a YouTube.")
+        else:
+            descargar(token, login, run)
     elif accion == "descargar":
         run = esperar(token, login)   # si todavia esta trabajando, espera; luego descarga
         descargar(token, login, run)

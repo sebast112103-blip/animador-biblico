@@ -1,0 +1,1212 @@
+{
+ "titulo": "Sansón - La Historia Completa",
+ "gancho": "El hombre más FUERTE del mundo... perdió todo por un SECRETO.",
+ "final": "",
+ "formato": "horizontal",
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.1,
+ "pausa_escenas": 0.35,
+ "corte_seg": 3.0,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "barra_progreso": false,
+ "resaltar": [
+  "SANSÓN",
+  "DALILA",
+  "FILISTEOS",
+  "FUERZA",
+  "CABELLO",
+  "LEÓN",
+  "COLUMNAS",
+  "SEÑOR",
+  "DIOS",
+  "COMENTARIOS",
+  "SUSCRÍBETE"
+ ],
+ "personajes": {},
+ "escenas": [
+  {
+   "fondo": "templo",
+   "texto": "Tres mil personas se burlan de él. Está ciego, encadenado entre dos columnas gigantes. Era el hombre más fuerte que jamás existió... y ahora es un esclavo.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "accion": "empujar",
+     "venda": true,
+     "emocion": "triste"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "columna",
+     "x": 0.3
+    },
+    {
+     "tipo": "columna",
+     "x": 0.7
+    },
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.55,
+     "y": -200,
+     "profundidad": -70,
+     "variante": "soldados"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.3
+    }
+   ],
+   "camara": "acercar_rapido",
+   "portada": true
+  },
+  {
+   "fondo": "templo",
+   "texto": "¿Cómo perdió su fuerza? ¿Y qué hizo en ese último momento? Para entenderlo, tenemos que ir al día en que un ángel anunció su nacimiento.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "venda": true,
+     "emocion": "triste",
+     "accion": "orar"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "columna",
+     "x": 0.3
+    },
+    {
+     "tipo": "columna",
+     "x": 0.7
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "flash",
+     "inicio": 0.85
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "En aquellos días, el pueblo de Israel había olvidado a Dios. Y durante cuarenta años, los filisteos los dominaban y los oprimían.",
+   "personajes": [
+    {
+     "id": "filisteo1",
+     "x": 0.35,
+     "objeto": "espada",
+     "emocion": "burlon"
+    },
+    {
+     "id": "hombre2",
+     "x": 0.62,
+     "accion": "agacharse",
+     "emocion": "triste"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.25
+    }
+   ],
+   "rotulo": "CAPÍTULO 1: EL NIÑO PROMETIDO",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Había un hombre llamado Manoa, de la tribu de Dan, cuya esposa no podía tener hijos. Un día, a ella se le apareció el ángel del Señor.",
+   "personajes": [
+    {
+     "id": "mujer1",
+     "x": 0.4,
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "angel",
+     "x": 0.68,
+     "mira": "izquierda"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.68
+    },
+    {
+     "tipo": "brillo",
+     "x": 0.68
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Vas a tener un hijo, le dijo. Nunca se cortará el cabello, porque será nazareo, consagrado a Dios desde antes de nacer. Y él comenzará a liberar a Israel de los filisteos.",
+   "personajes": [
+    {
+     "id": "angel",
+     "x": 0.6,
+     "mira": "izquierda",
+     "accion": "senalar"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.35,
+     "accion": "arrodillarse",
+     "emocion": "feliz"
+    }
+   ],
+   "habla": "angel",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Manoa ofreció un sacrificio a Dios sobre una roca. Y cuando la llama subió hacia el cielo, el ángel subió dentro del fuego del altar. Manoa y su esposa cayeron rostro en tierra.",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.3,
+     "accion": "arrodillarse",
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.5,
+     "accion": "arrodillarse",
+     "emocion": "sorprendido"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.72
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "fuego",
+     "x": 0.72,
+     "y": -120,
+     "tamano": 1.4,
+     "crece": true
+    },
+    {
+     "tipo": "brillo",
+     "x": 0.72,
+     "y": -600
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Y así nació Sansón. El niño creció, y el Señor lo bendecía. Su cabello largo era la señal de su promesa con Dios.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.45,
+     "escala": 0.8,
+     "emocion": "feliz",
+     "accion": "celebrar"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.68,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "camino",
+   "texto": "Ya joven, Sansón bajó un día a la ciudad de Timnat. Y de repente, entre las viñas, un león joven salió rugiendo contra él.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.3,
+     "accion": "caminar",
+     "hasta": 0.35
+    },
+    {
+     "id": "leon1",
+     "x": 0.75,
+     "mira": "izquierda",
+     "accion": "rugir"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "temblor",
+     "inicio": 0.6,
+     "fin": 0.75
+    }
+   ],
+   "rotulo": "CAPÍTULO 2: LA FUERZA DE DIOS",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "camino",
+   "texto": "Sansón no tenía nada en las manos. Pero el Espíritu del Señor vino sobre él con poder... y despedazó al león como si fuera un cabrito.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.45,
+     "accion": "empujar",
+     "emocion": "valiente"
+    },
+    {
+     "id": "leon1",
+     "x": 0.65,
+     "accion": "caer"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "flash",
+     "inicio": 0.4
+    },
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "camino",
+   "texto": "Días después pasó por el mismo lugar, y vio que en el cuerpo del león... ¡unas abejas habían hecho un panal de miel!",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.45,
+     "accion": "agacharse",
+     "emocion": "sorprendido"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "brillo",
+     "x": 0.6
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "En su boda, Sansón les puso una adivinanza a treinta filisteos: Del que come salió comida, y del fuerte salió dulzura. Si la adivinan, les daré treinta trajes.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.35,
+     "accion": "senalar",
+     "emocion": "burlon"
+    },
+    {
+     "id": "filisteo1",
+     "x": 0.6,
+     "mira": "izquierda",
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "filisteo2",
+     "x": 0.78,
+     "mira": "izquierda"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "mesa",
+     "x": 0.5
+    }
+   ],
+   "habla": "sanson",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Pero los filisteos amenazaron a su esposa, y ella le sacó la respuesta llorando. Sansón tuvo que pagar... y desde ese día, la guerra entre él y los filisteos no paró.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.4,
+     "emocion": "enojado"
+    },
+    {
+     "id": "filisteo1",
+     "x": 0.7,
+     "mira": "izquierda",
+     "emocion": "burlon"
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "trigal",
+   "texto": "Una vez, Sansón atrapó trescientas zorras, les ató antorchas en la cola y las soltó en los trigales de los filisteos. Todo se quemó: el trigo, las viñas y los olivos.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.25,
+     "accion": "lanzar",
+     "emocion": "enojado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "fuego",
+     "x": 0.6,
+     "tamano": 2.0,
+     "crece": true
+    },
+    {
+     "tipo": "fuego",
+     "x": 0.85,
+     "tamano": 1.6,
+     "crece": true
+    }
+   ],
+   "rotulo": "CAPÍTULO 3: UN EJÉRCITO DE UN HOMBRE",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "rocas",
+   "texto": "Los filisteos mandaron un ejército para capturarlo. Y los mismos israelitas, por miedo, lo ataron con dos cuerdas nuevas y se lo entregaron.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.45,
+     "accion": "quieto",
+     "emocion": "valiente"
+    },
+    {
+     "id": "hombre1",
+     "x": 0.25,
+     "emocion": "asustado"
+    },
+    {
+     "id": "hombre2",
+     "x": 0.7,
+     "emocion": "asustado"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Cuando los filisteos lo vieron atado, gritaron de alegría. Pero en ese momento, el Espíritu del Señor vino sobre Sansón...",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "emocion": "valiente"
+    },
+    {
+     "id": "filisteo1",
+     "x": 0.75,
+     "mira": "izquierda",
+     "accion": "celebrar",
+     "emocion": "burlon"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.8,
+     "escala": 0.55,
+     "y": -160,
+     "profundidad": -70,
+     "variante": "soldados"
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "valle",
+   "texto": "...y las cuerdas se rompieron como hilos quemados. Tomó la quijada de un burro que estaba en el suelo... y con ella venció a mil soldados filisteos.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.45,
+     "accion": "levantar",
+     "emocion": "enojado"
+    },
+    {
+     "id": "filisteo1",
+     "x": 0.7,
+     "accion": "caer"
+    },
+    {
+     "id": "filisteo2",
+     "x": 0.85,
+     "accion": "correr",
+     "hasta": 1.0,
+     "emocion": "asustado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "flash",
+     "inicio": 0.2
+    },
+    {
+     "tipo": "temblor",
+     "inicio": 0.3,
+     "fin": 0.8
+    }
+   ],
+   "rotulo": "1000",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "desierto",
+   "texto": "Después de esa batalla, Sansón tenía tanta sed que sentía que iba a morir. Clamó a Dios, y Dios abrió una roca hueca, y de ella brotó agua. Sansón bebió, y recobró sus fuerzas.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.4,
+     "accion": "arrodillarse",
+     "emocion": "triste"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "rocas",
+     "x": 0.65,
+     "escala": 0.6
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "agua",
+     "x": 0.62
+    },
+    {
+     "tipo": "luz",
+     "x": 0.62
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "En otra ocasión, sus enemigos lo encerraron en la ciudad de Gaza. Pero a medianoche, Sansón arrancó las puertas de la ciudad con todo y postes... y se las llevó cargadas a la cima de un monte.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "accion": "levantar",
+     "emocion": "valiente"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.4
+    },
+    {
+     "tipo": "temblor",
+     "inicio": 0.5,
+     "fin": 0.7
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Pausa. ¿Cuál de las hazañas de Sansón te parece más increíble: el león, los mil soldados o las puertas de Gaza? Escríbelo en los comentarios.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "accion": "levantar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "¿CUÁL?",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Sansón fue juez de Israel durante veinte años. Pero tenía una debilidad... y sus enemigos estaban a punto de descubrirla.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.3
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Sansón se enamoró de una mujer del valle de Sorec. Se llamaba Dalila.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.4,
+     "emocion": "feliz"
+    },
+    {
+     "id": "dalila",
+     "x": 0.62,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "rotulo": "CAPÍTULO 4: DALILA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Sansón había hecho un voto de no tocar nada impuro y de no cortarse el cabello. Pero poco a poco, fue jugando con su promesa... como si su fuerza fuera suya y no de Dios.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "emocion": "burlon"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.2
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Los príncipes de los filisteos fueron a verla en secreto: Descubre de dónde viene su fuerza. Cada uno de nosotros te dará mil cien monedas de plata.",
+   "personajes": [
+    {
+     "id": "filisteo1",
+     "x": 0.35,
+     "accion": "ofrecer",
+     "emocion": "burlon"
+    },
+    {
+     "id": "dalila",
+     "x": 0.65,
+     "mira": "izquierda",
+     "emocion": "sorprendido"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "monedas",
+     "x": 0.5
+    }
+   ],
+   "habla": "filisteo1",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Y Dalila aceptó. Esa noche le preguntó con dulzura: Sansón, dime, ¿de dónde viene tu gran fuerza?",
+   "personajes": [
+    {
+     "id": "dalila",
+     "x": 0.4,
+     "accion": "abrazar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "sanson",
+     "x": 0.62,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "habla": "dalila",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Sansón le mintió: Si me atan con siete cuerdas de arco nuevas, seré débil como cualquier hombre. Ella lo ató mientras dormía y gritó: ¡Sansón, los filisteos!",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "accion": "dormir"
+    },
+    {
+     "id": "dalila",
+     "x": 0.75,
+     "mira": "izquierda",
+     "accion": "senalar",
+     "emocion": "burlon"
+    }
+   ],
+   "habla": "dalila",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Y Sansón rompió las cuerdas como si nada. Lo mismo pasó una segunda vez, y una tercera. Dalila estaba furiosa: ¡Me has engañado tres veces!",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.4,
+     "accion": "levantar",
+     "emocion": "burlon"
+    },
+    {
+     "id": "dalila",
+     "x": 0.68,
+     "mira": "izquierda",
+     "emocion": "enojado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "flash",
+     "inicio": 0.2
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "¿Cómo puedes decir que me amas, si no confías en mí? Día tras día lo presionaba, hasta que Sansón se sintió morir de cansancio.",
+   "personajes": [
+    {
+     "id": "dalila",
+     "x": 0.4,
+     "accion": "senalar",
+     "emocion": "llorando"
+    },
+    {
+     "id": "sanson",
+     "x": 0.65,
+     "mira": "izquierda",
+     "emocion": "triste"
+    }
+   ],
+   "habla": "dalila",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Y al final... le contó todo su corazón. Nunca se ha pasado navaja por mi cabeza. Si me cortan el cabello, mi fuerza se irá.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "accion": "agacharse",
+     "emocion": "triste"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.35
+    }
+   ],
+   "habla": "sanson",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Dalila supo que esta vez era verdad. Lo hizo dormir sobre sus rodillas... y llamó a un hombre que le cortó las siete trenzas.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.45,
+     "accion": "dormir"
+    },
+    {
+     "id": "dalila",
+     "x": 0.65,
+     "mira": "izquierda",
+     "emocion": "burlon"
+    },
+    {
+     "id": "filisteo2",
+     "x": 0.82,
+     "mira": "izquierda",
+     "objeto": "espada"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.5
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "noche",
+   "texto": "¡Sansón, los filisteos sobre ti! Él se despertó, pensando: Saldré como las otras veces. Pero no sabía que el Señor ya se había apartado de él.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "accion": "temblar",
+     "emocion": "sorprendido",
+     "pelo_largo": false
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.45
+    },
+    {
+     "tipo": "temblor",
+     "inicio": 0.3,
+     "fin": 0.5
+    }
+   ],
+   "habla": "dalila",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "prision",
+   "texto": "Los filisteos lo atraparon fácilmente. Le sacaron los ojos, lo llevaron a Gaza, lo ataron con cadenas de bronce... y lo pusieron a moler grano en la cárcel, como un animal.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "accion": "empujar",
+     "venda": true,
+     "emocion": "triste",
+     "pelo_largo": false
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "piedra",
+     "x": 0.68,
+     "escala": 0.8
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.4
+    }
+   ],
+   "rotulo": "CAPÍTULO 5: CAÍDO",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "prision",
+   "texto": "El hombre más fuerte del mundo, el juez de Israel... ahora era un prisionero ciego, dando vueltas a una piedra de molino día tras día.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "accion": "caminar",
+     "hasta": 0.55,
+     "venda": true,
+     "emocion": "triste",
+     "pelo_largo": false
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "piedra",
+     "x": 0.7,
+     "escala": 0.8
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.4
+    }
+   ],
+   "camara": "alejar"
+  },
+  {
+   "fondo": "prision",
+   "texto": "Pero la Biblia guarda un pequeño detalle lleno de esperanza: el cabello de su cabeza comenzó a crecer otra vez.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "venda": true,
+     "emocion": "triste",
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.5
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Si alguna vez sentiste que arruinaste todo, escribe en los comentarios: Dios no ha terminado conmigo. Porque esta historia todavía no termina.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "venda": true,
+     "emocion": "triste",
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "templo",
+   "texto": "Un día, los filisteos hicieron una gran fiesta en el templo de su dios Dagón. ¡Nuestro dios nos entregó a Sansón!, cantaban.",
+   "personajes": [],
+   "cosas": [
+    {
+     "tipo": "columna",
+     "x": 0.3
+    },
+    {
+     "tipo": "columna",
+     "x": 0.7
+    },
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.65,
+     "y": -150,
+     "profundidad": -70,
+     "variante": "soldados"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "fuego",
+     "x": 0.5,
+     "y": -300,
+     "tamano": 0.8
+    }
+   ],
+   "rotulo": "CAPÍTULO 6: EL ÚLTIMO ACTO",
+   "camara": "alejar"
+  },
+  {
+   "fondo": "templo",
+   "texto": "Traigan a Sansón para que nos divierta. Y lo sacaron de la cárcel para burlarse de él delante de todos. El templo estaba lleno, y en el techo había unas tres mil personas más.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "venda": true,
+     "emocion": "triste",
+     "accion": "caminar",
+     "hasta": 0.5
+    },
+    {
+     "id": "filisteo1",
+     "x": 0.25,
+     "accion": "senalar",
+     "emocion": "burlon"
+    },
+    {
+     "id": "filisteo2",
+     "x": 0.8,
+     "mira": "izquierda",
+     "accion": "celebrar",
+     "emocion": "burlon"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "columna",
+     "x": 0.35,
+     "profundidad": -60
+    },
+    {
+     "tipo": "columna",
+     "x": 0.65,
+     "profundidad": -60
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "templo",
+   "texto": "Sansón le pidió al muchacho que lo guiaba: Déjame tocar las columnas que sostienen el templo, para apoyarme en ellas.",
+   "personajes": [
+    {
+     "id": "nino",
+     "x": 0.3,
+     "emocion": "triste"
+    },
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "venda": true,
+     "emocion": "triste"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "columna",
+     "x": 0.38
+    },
+    {
+     "tipo": "columna",
+     "x": 0.62
+    }
+   ],
+   "habla": "sanson",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "templo",
+   "texto": "Y entonces Sansón oró: Señor, acuérdate de mí. Dame fuerzas solo una vez más.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "venda": true,
+     "emocion": "triste",
+     "accion": "orar"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "columna",
+     "x": 0.38
+    },
+    {
+     "tipo": "columna",
+     "x": 0.62
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.5
+    }
+   ],
+   "habla": "sanson",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "templo",
+   "texto": "Puso una mano en cada columna... empujó con todas sus fuerzas... y gritó: ¡Muera yo con los filisteos!",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "accion": "empujar",
+     "venda": true,
+     "emocion": "triste"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "columna",
+     "x": 0.38,
+     "caer": true,
+     "mira": "izquierda",
+     "caer_desde": 0.55,
+     "caer_hasta": 0.95
+    },
+    {
+     "tipo": "columna",
+     "x": 0.62,
+     "caer": true,
+     "caer_desde": 0.55,
+     "caer_hasta": 0.95
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "temblor",
+     "inicio": 0.3,
+     "fin": 1.0
+    },
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "templo",
+   "texto": "Las columnas cedieron... y el templo entero se vino abajo sobre los príncipes y sobre todo el pueblo que estaba ahí.",
+   "personajes": [],
+   "cosas": [
+    {
+     "tipo": "columna",
+     "x": 0.3,
+     "caer": true,
+     "mira": "izquierda",
+     "caer_desde": 0,
+     "caer_hasta": 0.01
+    },
+    {
+     "tipo": "columna",
+     "x": 0.7,
+     "caer": true,
+     "caer_desde": 0,
+     "caer_hasta": 0.01
+    },
+    {
+     "tipo": "rocas",
+     "x": 0.5,
+     "escala": 0.9
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "temblor",
+     "inicio": 0.0,
+     "fin": 0.8
+    },
+    {
+     "tipo": "flash",
+     "inicio": 0.3
+    },
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.4
+    }
+   ],
+   "camara": "alejar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "En su muerte, Sansón venció a más enemigos que en toda su vida. Dios escuchó su última oración.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "accion": "alabar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "La fuerza de Sansón nunca estuvo en su cabello. Estaba en su promesa con Dios. El cabello solo era la señal.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "ENSEÑANZA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Y aunque Sansón falló muchas veces, Dios lo escuchó cuando volvió a él con humildad. Mientras haya vida, nunca es tarde para decir: Señor, acuérdate de mí.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "accion": "alabar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Qué crees que fue lo que más debilitó a Sansón: Dalila, su orgullo o haberse alejado de Dios? Respóndeme en los comentarios.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.4,
+     "accion": "senalar"
+    },
+    {
+     "id": "dalila",
+     "x": 0.65,
+     "mira": "izquierda"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Suscríbete y activa la campanita, que mañana llega otra gran historia de la Biblia. ¡Dios te bendiga!",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "accion": "levantar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "rotulo": "¡SUSCRÍBETE!",
+   "pausa": 2.0,
+   "camara": "acercar"
+  }
+ ]
+}
