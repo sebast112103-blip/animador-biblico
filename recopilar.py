@@ -40,7 +40,7 @@ def fuente(n, tam):
     return ImageFont.load_default()
 
 
-def miniatura(portadas, texto, n, destino):
+def miniatura(portadas, texto, n, destino, sello=None):
     W, H = 1280, 720
     img = Image.new("RGB", (W, H), (20, 20, 30))
     usadas = [Image.open(p).convert("RGB") for p in portadas[:3] if p.exists()]
@@ -70,7 +70,7 @@ def miniatura(portadas, texto, n, destino):
            stroke_width=8, stroke_fill=(0, 0, 0))
     # sello con la cantidad de historias
     fb = fuente("ArchivoBlack-Regular.ttf", 46)
-    sello = f"{n} HISTORIAS"
+    sello = sello or f"{n} HISTORIAS"
     sw = d.textlength(sello, font=fb)
     d.rounded_rectangle([30, 30, 30 + sw + 50, 110], 20, fill=(220, 30, 40))
     d.text((55, 38), sello, font=fb, fill=(255, 255, 255))
@@ -82,6 +82,8 @@ def main():
     recs = json.loads((RAIZ / "recopilaciones.json").read_text(encoding="utf-8"))
     hechas = 0
     for rec in recs:
+        if not (carpeta / f"{nombre(rec['intro'])}.mp4").exists():
+            continue
         partes = [rec["intro"]] + [c["video"] for c in rec["capitulos"]] + [rec["despedida"]]
         archivos = [carpeta / f"{nombre(p)}.mp4" for p in partes]
         faltan = [a.name for a in archivos if not a.exists()]
@@ -122,6 +124,26 @@ def main():
         print(f"Listo: {salida.name}  ({marca(total)})")
         hechas += 1
     print(f"{hechas} recopilacion(es) creadas en {carpeta}")
+
+    # videos largos del dia: miniatura + descripcion con capitulos
+    for caps in sorted(carpeta.glob("*_capitulos.txt")):
+        base = caps.name[:-len("_capitulos.txt")]
+        if not (carpeta / f"{base}.mp4").exists():
+            continue
+        titulo = base.replace("_", " ")
+        texto = titulo.split(" - ")[0].upper()
+        sub = titulo.split(" - ")[1].upper() if " - " in titulo else ""
+        portada = carpeta / f"{base}_portada.png"
+        miniatura([portada] if portada.exists() else [], texto, 0, carpeta / f"{base}_miniatura.jpg", sello=sub or None)
+        desc = (f"TÍTULO:\n{titulo} | Historia de la Biblia animada\n\n"
+                f"DESCRIPCIÓN:\nLa historia completa de {titulo.split(' - ')[0]}, contada en dibujos animados "
+                f"para ver en familia. ¿Qué parte te gustó más? Cuéntame en los comentarios.\n\n"
+                f"🔔 Suscríbete: cada día una nueva historia de la Biblia.\n\n"
+                f"CAPÍTULOS:\n{caps.read_text(encoding='utf-8')}\n"
+                "#biblia #historiasbiblicas #dibujosanimados #fe #Dios #Jesus #niños\n")
+        (carpeta / f"{base}_descripcion.txt").write_text(desc, encoding="utf-8")
+        caps.unlink()
+        print(f"Listo: miniatura y descripcion de {base}")
 
 
 if __name__ == "__main__":

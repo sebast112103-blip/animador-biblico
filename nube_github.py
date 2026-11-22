@@ -12,6 +12,7 @@ El programa nunca muestra ni guarda tu clave: la maneja el administrador de
 credenciales de Git/Windows.
 """
 import calendar
+import io
 import json
 import shutil
 import subprocess
@@ -199,6 +200,77 @@ def esperar(token, login, previa_id="no-filtrar"):
         time.sleep(60)
 
 
+class ZipRemoto(io.RawIOBase):
+    """Lee el zip de GitHub por partes (sin guardarlo entero en el disco)."""
+    BLOQUE = 8 << 20
+
+    def __init__(self, token, url_api, tam):
+        self.token, self.url_api, self.tam = token, url_api, tam
+        self.pos, self.buf_ini, self.buf = 0, 0, b""
+        self.url = None
+
+    def _enlace(self):
+        # GitHub da un enlace temporal (dura poco): se pide de nuevo cuando caduca
+        req = urllib.request.Request(self.url_api)
+        req.add_unredirected_header("Authorization", f"Bearer {self.token}")
+        req.add_header("User-Agent", "animador-biblico")
+        req.add_header("Range", "bytes=0-0")
+        with urllib.request.urlopen(req, timeout=120) as r:
+            self.url = r.geturl()
+
+    def _traer(self, ini, fin):
+        for intento in range(6):
+            try:
+                if not self.url:
+                    self._enlace()
+                req = urllib.request.Request(self.url)
+                req.add_header("Range", f"bytes={ini}-{fin - 1}")
+                req.add_header("User-Agent", "animador-biblico")
+                with urllib.request.urlopen(req, timeout=300) as r:
+                    datos = r.read()
+                if r.status == 206 and len(datos) == fin - ini:
+                    return datos
+                raise IOError(f"respuesta inesperada {r.status}")
+            except Exception as ex:
+                self.url = None
+                if intento == 5:
+                    raise
+                time.sleep(3 + intento * 3)
+
+    def readable(self):
+        return True
+
+    def seekable(self):
+        return True
+
+    def tell(self):
+        return self.pos
+
+    def seek(self, off, desde=0):
+        self.pos = {0: off, 1: self.pos + off, 2: self.tam + off}[desde]
+        return self.pos
+
+    def read(self, n=-1):
+        if n is None or n < 0:
+            n = self.tam - self.pos
+        n = min(n, self.tam - self.pos)
+        if n <= 0:
+            return b""
+        fin_buf = self.buf_ini + len(self.buf)
+        if not (self.buf_ini <= self.pos and self.pos + n <= fin_buf):
+            ini = self.pos
+            fin = min(self.tam, ini + max(n, self.BLOQUE))
+            self.buf, self.buf_ini = self._traer(ini, fin), ini
+        k = self.pos - self.buf_ini
+        self.pos += n
+        return self.buf[k:k + n]
+
+    def readinto(self, b):
+        d = self.read(len(b))
+        b[:len(d)] = d
+        return len(d)
+
+
 def descargar(token, login, run=None):
     run = run or ultima_ejecucion(token, login)
     if not run:
@@ -209,20 +281,34 @@ def descargar(token, login, run=None):
     if not arts:
         log("[ERROR] Esa ejecucion no tiene videos para descargar todavia.")
         sys.exit(1)
-    zip_path = RAIZ / "videos" / "_nube.zip"
-    log(f"Descargando videos ({arts[0]['size_in_bytes'] / 1e6:.0f} MB)...")
-    req = urllib.request.Request(arts[0]["archive_download_url"])
-    req.add_unredirected_header("Authorization", f"Bearer {token}")
-    req.add_header("User-Agent", "animador-biblico")
-    with urllib.request.urlopen(req, timeout=600) as resp, open(zip_path, "wb") as f:
-        shutil.copyfileobj(resp, f, 1 << 20)
-    with zipfile.ZipFile(zip_path) as z:
-        es_youtube = "_youtube.txt" in z.namelist()
-        destino = RAIZ / "videos" / ("youtube" if es_youtube else "nube")
+    # restos de descargas viejas (zip temporal que antes se guardaba entero)
+    viejo = RAIZ / "videos" / "_nube.zip"
+    if viejo.exists():
+        viejo.unlink()
+        log("Borre el archivo temporal de una descarga anterior (_nube.zip).")
+    remoto = ZipRemoto(token, arts[0]["archive_download_url"], arts[0]["size_in_bytes"])
+    with zipfile.ZipFile(io.BufferedReader(remoto, 1 << 20)) as z:
+        nombres = z.namelist()
+        tipo = z.read("_youtube.txt").decode().strip() if "_youtube.txt" in nombres else "nube"
+        destino = RAIZ / "videos" / {"youtube": "youtube", "diario": "diarios"}.get(tipo, "nube")
         destino.mkdir(parents=True, exist_ok=True)
-        z.extractall(destino)
-    (destino / "_youtube.txt").unlink(missing_ok=True)
-    zip_path.unlink()
+        miembros = [m for m in z.infolist() if not m.is_dir() and m.filename != "_youtube.txt"]
+        faltan = [m for m in miembros
+                  if not ((destino / m.filename).exists() and (destino / m.filename).stat().st_size == m.file_size)]
+        necesita = sum(m.file_size for m in faltan)
+        libre = shutil.disk_usage(destino).free
+        log(f"Videos: {len(miembros)} ({len(miembros) - len(faltan)} ya estaban). "
+            f"Por bajar: {necesita / 1e6:.0f} MB. Espacio libre en el disco: {libre / 1e6:.0f} MB.")
+        if necesita + 50e6 > libre:
+            log(f"[ERROR] No hay espacio suficiente en el disco. Libera al menos "
+                f"{(necesita + 50e6 - libre) / 1e6:.0f} MB (vacia la Papelera, borra descargas viejas) y vuelve a intentar.")
+            sys.exit(1)
+        for i, m in enumerate(faltan, 1):
+            log(f"  [{i}/{len(faltan)}] {m.filename} ({m.file_size / 1e6:.0f} MB)")
+            tmp = destino / (m.filename + ".parcial")
+            with z.open(m) as fuente, open(tmp, "wb") as f:
+                shutil.copyfileobj(fuente, f, 1 << 20)
+            tmp.replace(destino / m.filename)
     n = len(list(destino.glob("*.mp4")))
     log(f"LISTO: {n} videos en {destino}")
 

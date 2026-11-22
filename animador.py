@@ -1942,6 +1942,11 @@ def crear_video(ruta, a):
         w.writeframes((np.clip(pista, -1, 1) * 32767).astype(np.int16).tobytes())
 
     rotulos = [(t0, t0 + d, e["rotulo"]) for e, t0, (_, _, d) in zip(escenas, inicios, voces) if e.get("rotulo")]
+    caps = [(t0, r.split(":", 1)[-1].strip().capitalize()) for t0, _, r in rotulos if r.upper().startswith("CAPÍTULO")]
+    if caps:   # capitulos para la descripcion de YouTube
+        mmss = lambda x: f"{int(x) // 60}:{int(x) % 60:02d}"
+        lineas = ["0:00 Introducción"] + [f"{mmss(t0)} {txt}" for t0, txt in caps if t0 >= 10]
+        (carpeta / f"{nombre}_capitulos.txt").write_text("\n".join(lineas) + "\n", encoding="utf-8")
     crear_ass(todas, h.get("gancho"), h.get("final"), total, h.get("resaltar", []), carpeta / f"_subs_{TMP}.ass", rotulos)
 
     print(f"[2/3] Animando {total:.0f} segundos de video...")

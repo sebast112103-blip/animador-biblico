@@ -33,3 +33,44 @@
 16:47:39 LISTO: 100 videos en C:\Users\hp\Videos\animador_biblico\videos\nube
 17:08:45 Conectando con tu cuenta de GitHub (si se abre una ventana, inicia sesion y autoriza)...
 17:08:55 Sesion iniciada como: sebast112103-blip
+17:09:02 Subiendo el proyecto a GitHub...
+17:09:10 Proyecto subido.
+17:09:12 Creacion de videos lanzada en la nube (youtube).
+17:09:12 Esperando a que GitHub cree los videos (revisa cada minuto)...
+17:09:23 Puedes verla aqui: https://github.com/sebast112103-blip/animador-biblico/actions/runs/44955471710
+17:09:24   0/28 videos terminados (queued)
+17:13:32   2/28 videos terminados (queued)
+17:14:33   4/28 videos terminados (queued)
+17:15:34   5/28 videos terminados (queued)
+17:16:36   6/28 videos terminados (queued)
+17:17:37   9/28 videos terminados (queued)
+17:18:39   11/28 videos terminados (queued)
+17:19:41   12/28 videos terminados (queued)
+17:21:45   13/28 videos terminados (queued)
+17:22:47   17/28 videos terminados (in_progress)
+17:23:49   19/28 videos terminados (in_progress)
+17:24:51   25/28 videos terminados (in_progress)
+17:27:56   28/28 videos terminados (in_progress)
+17:28:58   28/28 videos terminados (completed)
+17:28:58 GitHub termino: success
+17:28:59 Descargando videos (1141 MB)...
+18:08:24 Conectando con tu cuenta de GitHub (si se abre una ventana, inicia sesion y autoriza)...
+18:08:35 Sesion iniciada como: sebast112103-blip
+18:08:35 Esperando a que GitHub cree los videos (revisa cada minuto)...
+18:08:36 Puedes verla aqui: https://github.com/sebast112103-blip/animador-biblico/actions/runs/44955471710
+18:08:38   28/28 videos terminados (completed)
+18:08:38 GitHub termino: success
+18:08:38 Borre el archivo temporal de una descarga anterior (_nube.zip).
+18:08:40 Videos: 64 (55 ya estaban). Por bajar: 180 MB. Espacio libre en el disco: 1242 MB.
+18:08:40   [1/9] Recopilacion_La_Vida_de_Jesús_en_7_Historias.mp4 (127 MB)
+18:09:24   [2/9] Recopilacion_La_Vida_de_Jesús_en_7_Historias_descripcion.txt (0 MB)
+18:09:24   [3/9] Recopilacion_La_Vida_de_Jesús_en_7_Historias_miniatura.jpg (0 MB)
+18:09:24   [4/9] Rut_la_mujer_que_no_abandonó_HD.mp4 (15 MB)
+18:09:26   [5/9] Rut_la_mujer_que_no_abandonó_HD_portada.png (2 MB)
+18:09:32   [6/9] Sansón_el_hombre_más_fuerte_HD.mp4 (17 MB)
+18:09:38   [7/9] Sansón_el_hombre_más_fuerte_HD_portada.png (2 MB)
+18:09:38   [8/9] Sansón_y_Dalila_HD.mp4 (15 MB)
+18:09:52   [9/9] Sansón_y_Dalila_HD_portada.png (2 MB)
+18:09:52 LISTO: 32 videos en C:\Users\hp\Videos\animador_biblico\videos\youtube
+11:19:45 Conectando con tu cuenta de GitHub (si se abre una ventana, inicia sesion y autoriza)...
+11:20:04 Sesion iniciada como: sebast112103-blip

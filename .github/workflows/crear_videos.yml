@@ -9,7 +9,7 @@ on:
       carpeta:
         description: "Qué videos crear"
         type: choice
-        options: [cortos, largos, todos, youtube]
+        options: [cortos, largos, todos, youtube, diario]
         default: cortos
       filtro:
         description: "Opcional: solo historias que contengan este texto (ej: 30s, noe, 05_)"
@@ -43,7 +43,7 @@ jobs:
           else:
               c = os.environ.get("CARPETA") or "cortos"
               dirs = {"cortos": ["historias_cortas"], "largos": ["historias"], "todos": ["historias", "historias_cortas"],
-                      "youtube": ["historias_youtube"]}[c]
+                      "youtube": ["historias_youtube"], "diario": ["historias_largas"]}[c]
               archivos = sorted(f for d in dirs for f in glob.glob(f"{d}/*.json"))
               filtro = (os.environ.get("FILTRO") or "").strip().lower()
               if filtro:
@@ -59,7 +59,7 @@ jobs:
     needs: preparar
     if: needs.preparar.outputs.cantidad != '0'
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 330
     strategy:
       fail-fast: false
       max-parallel: 20
@@ -104,13 +104,13 @@ jobs:
           merge-multiple: true
           path: videos
       - name: Armar recopilaciones para YouTube
-        if: github.event.inputs.carpeta == 'youtube'
+        if: github.event.inputs.carpeta == 'youtube' || github.event.inputs.carpeta == 'diario'
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
           pip install -q pillow
           git clone -q --depth 1 "https://github.com/${{ github.repository }}" codigo
           python codigo/recopilar.py videos
-          echo "youtube" > videos/_youtube.txt
+          echo "${{ github.event.inputs.carpeta }}" > videos/_youtube.txt
       - run: ls -la videos
       - uses: actions/upload-artifact@v4
         with:
