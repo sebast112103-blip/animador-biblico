@@ -134,7 +134,8 @@ def main():
         texto = titulo.split(" - ")[0].upper()
         sub = titulo.split(" - ")[1].upper() if " - " in titulo else ""
         portada = carpeta / f"{base}_portada.png"
-        miniatura([portada] if portada.exists() else [], texto, 0, carpeta / f"{base}_miniatura.jpg", sello=sub or None)
+        if not (carpeta / f"{base}_miniatura.jpg").exists():
+            miniatura([portada] if portada.exists() else [], texto, 0, carpeta / f"{base}_miniatura.jpg", sello=sub or None)
         desc = (f"TÍTULO:\n{titulo} | Historia de la Biblia animada\n\n"
                 f"DESCRIPCIÓN:\nLa historia completa de {titulo.split(' - ')[0]}, contada en dibujos animados "
                 f"para ver en familia. ¿Qué parte te gustó más? Cuéntame en los comentarios.\n\n"

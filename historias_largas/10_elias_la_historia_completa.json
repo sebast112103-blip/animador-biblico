@@ -1,0 +1,1366 @@
+{
+ "titulo": "Elías - El Profeta del Fuego",
+ "gancho": "450 profetas contra UNO solo... y cayó FUEGO del cielo.",
+ "final": "",
+ "formato": "horizontal",
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.1,
+ "pausa_escenas": 0.35,
+ "corte_seg": 3.0,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "barra_progreso": false,
+ "resaltar": [
+  "ELÍAS",
+  "BAAL",
+  "ACAB",
+  "JEZABEL",
+  "FUEGO",
+  "LLUVIA",
+  "CARMELO",
+  "SEÑOR",
+  "DIOS",
+  "COMENTARIOS",
+  "SUSCRÍBETE"
+ ],
+ "personajes": {
+  "acab": {
+   "tunica": "#6a2a6a",
+   "manto": "#d9a62e",
+   "tocado": "corona",
+   "barba": "#3a2a1a"
+  },
+  "jezabel": {
+   "tunica": "#8a1a3a",
+   "manto": "#d9a62e",
+   "tocado": "corona",
+   "pelo": "#1a1410",
+   "pelo_largo": true,
+   "voz": {
+    "nombre": "es_AR-daniela-high",
+    "tono": -2
+   }
+  }
+ },
+ "escenas": [
+  {
+   "fondo": "montana",
+   "texto": "Cuatrocientos cincuenta profetas gritan, saltan y se cortan con cuchillos desde la mañana hasta la tarde. Y frente a ellos, un solo hombre los mira... y se burla.",
+   "personajes": [
+    {
+     "id": "profeta_baal1",
+     "x": 0.25,
+     "accion": "saltar",
+     "emocion": "enojado"
+    },
+    {
+     "id": "profeta_baal2",
+     "x": 0.42,
+     "accion": "alabar",
+     "emocion": "enojado"
+    },
+    {
+     "id": "elias",
+     "x": 0.78,
+     "mira": "izquierda",
+     "emocion": "burlon",
+     "objeto": "cayado"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.33
+    }
+   ],
+   "camara": "acercar_rapido",
+   "portada": true
+  },
+  {
+   "fondo": "montana",
+   "texto": "¿Qué pasó cuando ese hombre oró? ¿Y por qué después quiso morir? Esta es la historia de Elías, el profeta del fuego.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.5,
+     "emocion": "valiente",
+     "objeto": "cayado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "flash",
+     "inicio": 0.85
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Israel estaba gobernado por Acab, el rey más malvado que había tenido hasta entonces. Se casó con Jezabel, una princesa extranjera que adoraba al dios Baal.",
+   "personajes": [
+    {
+     "id": "acab",
+     "x": 0.45,
+     "tocado": "corona",
+     "manto": "#6a2a6a",
+     "emocion": "burlon"
+    },
+    {
+     "id": "jezabel",
+     "x": 0.65,
+     "mira": "izquierda",
+     "emocion": "burlon"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.55,
+     "profundidad": -30
+    }
+   ],
+   "rotulo": "CAPÍTULO 1: LA SEQUÍA",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Jezabel construyó templos para Baal, persiguió y mató a los profetas del Señor, y llevó a todo el pueblo a adorar ídolos.",
+   "personajes": [
+    {
+     "id": "jezabel",
+     "x": 0.5,
+     "accion": "senalar",
+     "emocion": "enojado"
+    },
+    {
+     "id": "soldado1",
+     "x": 0.75,
+     "mira": "izquierda",
+     "objeto": "lanza"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.3
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Baal era considerado el dios de la lluvia y de las cosechas. Y un día, un profeta desconocido llamado Elías se presentó ante el rey con un mensaje.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.3,
+     "objeto": "cayado",
+     "accion": "caminar",
+     "hasta": 0.38,
+     "emocion": "valiente"
+    },
+    {
+     "id": "acab",
+     "x": 0.72,
+     "mira": "izquierda",
+     "tocado": "corona",
+     "manto": "#6a2a6a",
+     "emocion": "sorprendido"
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "¡Vive el Señor, Dios de Israel, que no habrá lluvia ni rocío en estos años, sino por mi palabra!",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.4,
+     "objeto": "cayado",
+     "accion": "senalar",
+     "emocion": "enojado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "temblor",
+     "inicio": 0.6,
+     "fin": 0.8
+    },
+    {
+     "tipo": "rayo",
+     "inicio": 0.85
+    }
+   ],
+   "habla": "elias",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "desierto",
+   "texto": "Y dejó de llover. Un mes, dos meses, un año... tres años y medio sin una sola gota. Los ríos se secaron y los campos se volvieron polvo. El supuesto dios de la lluvia no podía hacer nada.",
+   "personajes": [
+    {
+     "id": "hombre2",
+     "x": 0.4,
+     "accion": "agacharse",
+     "emocion": "triste"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.15
+    }
+   ],
+   "rotulo": "3 AÑOS Y MEDIO",
+   "camara": "alejar"
+  },
+  {
+   "fondo": "rocas",
+   "texto": "Dios escondió a Elías junto a un arroyo llamado Querit. Y cada mañana y cada tarde, unos cuervos le traían pan y carne en el pico. Elías bebía del arroyo.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.45,
+     "objeto": "cayado",
+     "accion": "agacharse",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "agua",
+     "x": 0.6
+    },
+    {
+     "tipo": "brillo",
+     "x": 0.55,
+     "y": -500
+    }
+   ],
+   "rotulo": "CAPÍTULO 2: LA HARINA Y EL ACEITE",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "rocas",
+   "texto": "Pero un día el arroyo también se secó. Y Dios le dijo: Ve a Sarepta. Allí le he ordenado a una viuda que te dé de comer.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.5,
+     "objeto": "cayado",
+     "emocion": "sorprendido"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.7
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "En la entrada de la ciudad, Elías vio a una mujer recogiendo leña. Le pidió: Por favor, tráeme un poco de agua... y un pedazo de pan.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.3,
+     "objeto": "cayado",
+     "accion": "ofrecer"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.65,
+     "mira": "izquierda",
+     "accion": "agacharse",
+     "tunica": "#4a4a5a"
+    }
+   ],
+   "habla": "elias",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "La mujer respondió llorando: No tengo pan. Solo me queda un puñado de harina y un poco de aceite. Estaba recogiendo leña para cocinar lo último... comerlo con mi hijo, y después morir.",
+   "personajes": [
+    {
+     "id": "mujer1",
+     "x": 0.55,
+     "mira": "izquierda",
+     "tunica": "#4a4a5a",
+     "emocion": "llorando"
+    },
+    {
+     "id": "nino",
+     "x": 0.72,
+     "mira": "izquierda",
+     "emocion": "triste"
+    }
+   ],
+   "habla": "mujer1",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Elías le dijo: No tengas miedo. Hazme primero a mí un pequeño pan. Porque así dice el Señor: la harina no se acabará y el aceite no faltará, hasta el día en que vuelva a llover.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.35,
+     "objeto": "cayado",
+     "accion": "senalar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "habla": "elias",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "¡Qué fe tuvo esa mujer! Le dio su última comida a un desconocido. Y desde ese día, cada vez que metía la mano en la vasija, había harina. Y en la jarra, siempre había aceite.",
+   "personajes": [
+    {
+     "id": "mujer1",
+     "x": 0.45,
+     "accion": "celebrar",
+     "emocion": "feliz",
+     "tunica": "#4a4a5a"
+    },
+    {
+     "id": "nino",
+     "x": 0.65,
+     "accion": "saltar",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "canasta",
+     "x": 0.55
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "brillo",
+     "x": 0.55
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Tiempo después, el hijo de la viuda enfermó gravemente... y murió. La madre, desesperada, le gritó a Elías: ¿Viniste a mi casa para que muriera mi hijo?",
+   "personajes": [
+    {
+     "id": "mujer1",
+     "x": 0.4,
+     "accion": "arrodillarse",
+     "emocion": "llorando",
+     "tunica": "#4a4a5a"
+    },
+    {
+     "id": "elias",
+     "x": 0.68,
+     "mira": "izquierda",
+     "objeto": "cayado",
+     "emocion": "triste"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.45
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Elías tomó al niño en sus brazos, lo subió a su cuarto y clamó tres veces: Señor, Dios mío, te ruego que vuelva el alma de este niño a él.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.5,
+     "objeto": "cayado",
+     "accion": "orar",
+     "emocion": "llorando"
+    },
+    {
+     "id": "nino",
+     "x": 0.68,
+     "accion": "dormir"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.35
+    },
+    {
+     "tipo": "luz",
+     "x": 0.6
+    }
+   ],
+   "habla": "elias",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Y Dios escuchó. El niño volvió a respirar. Elías se lo devolvió a su madre y le dijo: Mira, tu hijo vive. Y ella dijo: Ahora sé que eres un hombre de Dios.",
+   "personajes": [
+    {
+     "id": "nino",
+     "x": 0.45,
+     "accion": "celebrar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.62,
+     "mira": "izquierda",
+     "accion": "abrazar",
+     "emocion": "llorando",
+     "tunica": "#4a4a5a"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo"
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Si Dios está proveyendo para ti en medio de tu sequía, escribe en los comentarios: mi harina no se acaba.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.5,
+     "objeto": "cayado",
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Al tercer año, Dios envió a Elías de vuelta ante Acab. Cuando el rey lo vio, le gritó: ¿Eres tú el que trae la desgracia sobre Israel?",
+   "personajes": [
+    {
+     "id": "acab",
+     "x": 0.65,
+     "mira": "izquierda",
+     "tocado": "corona",
+     "manto": "#6a2a6a",
+     "accion": "senalar",
+     "emocion": "enojado"
+    },
+    {
+     "id": "elias",
+     "x": 0.32,
+     "objeto": "cayado"
+    }
+   ],
+   "habla": "acab",
+   "rotulo": "CAPÍTULO 3: EL DESAFÍO",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "No soy yo, respondió Elías. Eres tú, por abandonar al Señor y seguir a Baal. Ahora reúne a todo Israel en el monte Carmelo, y a los cuatrocientos cincuenta profetas de Baal.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.35,
+     "objeto": "cayado",
+     "accion": "senalar",
+     "emocion": "valiente"
+    },
+    {
+     "id": "acab",
+     "x": 0.68,
+     "mira": "izquierda",
+     "tocado": "corona",
+     "manto": "#6a2a6a",
+     "emocion": "sorprendido"
+    }
+   ],
+   "habla": "elias",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Todo el pueblo subió al monte. Y Elías les habló: ¿Hasta cuándo van a estar indecisos? Si el Señor es Dios, síganlo. Y si Baal es dios, síganlo a él. Pero el pueblo no respondió ni una palabra.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.4,
+     "objeto": "cayado",
+     "accion": "levantar",
+     "emocion": "valiente"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.7,
+     "escala": 0.6,
+     "y": 250,
+     "profundidad": 100
+    }
+   ],
+   "habla": "elias",
+   "camara": "alejar"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Entonces propuso un desafío: Traigan dos bueyes. Ellos prepararán uno sobre la leña, y yo el otro. Pero nadie le pondrá fuego. El Dios que responda con fuego... ese es el Dios verdadero.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.5,
+     "objeto": "cayado",
+     "accion": "senalar"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.25
+    },
+    {
+     "tipo": "altar",
+     "x": 0.78
+    }
+   ],
+   "habla": "elias",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Y todo el pueblo respondió: ¡Bien dicho!",
+   "personajes": [],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.6,
+     "y": 280,
+     "profundidad": 100
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "temblor",
+     "inicio": 0.2,
+     "fin": 0.4
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Pausa. Antes de ver qué pasó: ¿tú crees que Dios todavía responde con fuego hoy? Escribe sí o no en los comentarios.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.5,
+     "objeto": "cayado",
+     "accion": "senalar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "¿Y TÚ QUÉ CREES?",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Los profetas de Baal empezaron primero. Desde la mañana hasta el mediodía gritaban: ¡Baal, respóndenos! ¡Baal, respóndenos! Pero no hubo ninguna voz, ni nadie que respondiera.",
+   "personajes": [
+    {
+     "id": "profeta_baal1",
+     "x": 0.3,
+     "accion": "saltar",
+     "emocion": "enojado"
+    },
+    {
+     "id": "profeta_baal2",
+     "x": 0.5,
+     "accion": "alabar",
+     "emocion": "enojado"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.4
+    }
+   ],
+   "habla": "profeta_baal1",
+   "rotulo": "CAPÍTULO 4: FUEGO DEL CIELO",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Al mediodía, Elías se burló de ellos: ¡Griten más fuerte! A lo mejor su dios está ocupado, o se fue de viaje... o está dormido y hay que despertarlo.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.75,
+     "mira": "izquierda",
+     "objeto": "cayado",
+     "accion": "senalar",
+     "emocion": "burlon"
+    },
+    {
+     "id": "profeta_baal1",
+     "x": 0.35,
+     "emocion": "enojado"
+    }
+   ],
+   "habla": "elias",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Y ellos gritaban más fuerte y se cortaban con cuchillos, como era su costumbre, hasta que la sangre les corría. Pasó toda la tarde. Y no pasó nada.",
+   "personajes": [
+    {
+     "id": "profeta_baal1",
+     "x": 0.3,
+     "accion": "temblar",
+     "emocion": "llorando"
+    },
+    {
+     "id": "profeta_baal2",
+     "x": 0.5,
+     "accion": "arrodillarse",
+     "emocion": "enojado"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.42
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.2
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Entonces Elías llamó al pueblo. Reconstruyó el altar del Señor con doce piedras, una por cada tribu de Israel, cavó una zanja alrededor y puso la leña y el buey.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.45,
+     "objeto": "cayado",
+     "accion": "levantar"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.65
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Y luego hizo algo que nadie esperaba: Llenen cuatro cántaros de agua y échenla sobre el sacrificio. Otra vez. Y otra vez. Doce cántaros. El agua corría por todo el altar y llenó la zanja.",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.45,
+     "accion": "lanzar"
+    },
+    {
+     "id": "elias",
+     "x": 0.25,
+     "objeto": "cayado",
+     "accion": "senalar"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.68
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "agua",
+     "x": 0.68
+    }
+   ],
+   "habla": "elias",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "montana",
+   "texto": "A la hora del sacrificio de la tarde, Elías se acercó y oró con calma: Señor, Dios de Abraham, de Isaac y de Israel, que se sepa hoy que tú eres Dios. Respóndeme, Señor, respóndeme.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.45,
+     "objeto": "cayado",
+     "accion": "orar"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.7
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.45
+    }
+   ],
+   "habla": "elias",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "montana",
+   "texto": "¡Y entonces cayó fuego del cielo! Consumió el sacrificio, la leña, las piedras, el polvo... y hasta el agua de la zanja.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.35,
+     "objeto": "cayado",
+     "accion": "levantar",
+     "emocion": "sorprendido"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.68
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "rayo",
+     "inicio": 0.05
+    },
+    {
+     "tipo": "flash",
+     "inicio": 0.1
+    },
+    {
+     "tipo": "fuego",
+     "x": 0.68,
+     "y": -100,
+     "tamano": 2.6,
+     "crece": true
+    },
+    {
+     "tipo": "temblor",
+     "inicio": 0.1,
+     "fin": 0.6
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Todo el pueblo cayó de rodillas gritando: ¡El Señor es Dios! ¡El Señor es Dios!",
+   "personajes": [],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.65,
+     "y": 260,
+     "profundidad": 100
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "fuego",
+     "x": 0.75,
+     "y": -100,
+     "tamano": 1.8
+    },
+    {
+     "tipo": "luz"
+    }
+   ],
+   "habla": "hombre1",
+   "camara": "alejar"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Después, Elías subió a la cima del Carmelo, se postró en tierra con la cabeza entre las rodillas, y oró por lluvia. Y le dijo a su siervo: Sube y mira hacia el mar.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.4,
+     "objeto": "cayado",
+     "accion": "arrodillarse"
+    },
+    {
+     "id": "nino",
+     "x": 0.65,
+     "accion": "caminar",
+     "hasta": 0.75
+    }
+   ],
+   "rotulo": "CAPÍTULO 5: LA LLUVIA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "montana",
+   "texto": "No hay nada. Vuelve. Nada. Vuelve otra vez. Siete veces subió el siervo. Y a la séptima dijo: Veo una nube pequeña, como la palma de una mano, que sube del mar.",
+   "personajes": [
+    {
+     "id": "nino",
+     "x": 0.6,
+     "accion": "senalar",
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "elias",
+     "x": 0.35,
+     "objeto": "cayado",
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "brillo",
+     "x": 0.8,
+     "y": -600
+    }
+   ],
+   "habla": "nino",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "tormenta",
+   "texto": "En poco tiempo el cielo se oscureció con nubes y viento, y cayó una gran lluvia. Después de tres años y medio, la tierra volvió a beber.",
+   "personajes": [
+    {
+     "id": "hombre2",
+     "x": 0.4,
+     "accion": "celebrar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.6,
+     "accion": "alabar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    },
+    {
+     "tipo": "rayo",
+     "inicio": 0.3
+    }
+   ],
+   "camara": "alejar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Pero cuando Jezabel supo lo que había pasado, se puso furiosa. Le mandó un mensaje a Elías: Que los dioses me castiguen si mañana a esta hora no te he matado.",
+   "personajes": [
+    {
+     "id": "jezabel",
+     "x": 0.5,
+     "accion": "senalar",
+     "emocion": "enojado"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.6,
+     "profundidad": -30
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.3
+    }
+   ],
+   "habla": "jezabel",
+   "rotulo": "CAPÍTULO 6: EL PROFETA CANSADO",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "desierto",
+   "texto": "Y el mismo hombre que vio caer fuego del cielo... tuvo miedo y huyó. Caminó un día entero por el desierto, se sentó bajo un arbusto y le pidió a Dios: Basta ya, Señor. Quítame la vida.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.45,
+     "objeto": "cayado",
+     "accion": "arrodillarse",
+     "emocion": "llorando"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "arbol",
+     "x": 0.62,
+     "escala": 0.6
+    }
+   ],
+   "habla": "elias",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "desierto",
+   "texto": "Elías estaba agotado, deprimido, sin fuerzas. Y se quedó dormido. Pero Dios no lo regañó. Le envió un ángel que lo tocó y le dijo: Levántate y come.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.45,
+     "objeto": "cayado",
+     "accion": "dormir"
+    },
+    {
+     "id": "angel",
+     "x": 0.7,
+     "mira": "izquierda",
+     "accion": "ofrecer"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "panes_peces",
+     "x": 0.58
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.7
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "desierto",
+   "texto": "Junto a su cabeza había un pan cocido sobre piedras calientes y una jarra de agua. Comió, bebió, y volvió a dormir. Y el ángel volvió: Come, porque el camino es largo para ti.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.45,
+     "objeto": "cayado",
+     "accion": "agacharse",
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "angel",
+     "x": 0.7,
+     "mira": "izquierda"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "brillo",
+     "x": 0.58
+    }
+   ],
+   "habla": "angel",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "A veces lo más espiritual que puedes hacer es descansar y comer. Dios cuida tu cuerpo y tu ánimo, no solo tu fe. Si estás cansado, escribe: Dios renueva mis fuerzas.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.5,
+     "objeto": "cayado",
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Con la fuerza de esa comida, Elías caminó cuarenta días hasta el monte Horeb, el monte de Dios. Y allí entró en una cueva.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.3,
+     "objeto": "cayado",
+     "accion": "caminar",
+     "hasta": 0.55
+    }
+   ],
+   "rotulo": "CAPÍTULO 7: LA VOZ SUAVE",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "tormenta",
+   "texto": "Dios le dijo: Sal y ponte en el monte, porque voy a pasar. Y vino un viento tan fuerte que rompía las rocas... pero Dios no estaba en el viento.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.45,
+     "objeto": "cayado",
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    },
+    {
+     "tipo": "temblor",
+     "inicio": 0.1,
+     "fin": 0.9
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Después vino un terremoto... pero Dios no estaba en el terremoto. Y después un fuego... pero Dios no estaba en el fuego.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.45,
+     "objeto": "cayado",
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "temblor",
+     "inicio": 0.0,
+     "fin": 0.5
+    },
+    {
+     "tipo": "fuego",
+     "x": 0.75,
+     "tamano": 1.6
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Y después del fuego, se escuchó un susurro suave y apacible. Elías se cubrió el rostro con su manto... porque supo que Dios estaba ahí.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.5,
+     "objeto": "cayado",
+     "accion": "arrodillarse"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Dios le habló con ternura, le dio nuevas tareas y le dijo algo que lo consoló: No estás solo. Todavía hay siete mil en Israel que no se han arrodillado ante Baal.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.5,
+     "objeto": "cayado",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Dios le dio un compañero: Eliseo, un joven que estaba arando el campo. Elías le echó su manto encima, y Eliseo lo dejó todo para seguirlo.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.35,
+     "objeto": "cayado",
+     "accion": "ofrecer"
+    },
+    {
+     "id": "discipulo1",
+     "x": 0.62,
+     "mira": "izquierda",
+     "emocion": "sorprendido"
+    }
+   ],
+   "rotulo": "CAPÍTULO 8: EL CARRO DE FUEGO",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "mar",
+   "texto": "Años después, Elías y Eliseo llegaron al río Jordán. Elías golpeó el agua con su manto... y el río se abrió en dos para que pasaran.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.45,
+     "objeto": "cayado",
+     "accion": "levantar"
+    },
+    {
+     "id": "discipulo1",
+     "x": 0.28
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "agua"
+    },
+    {
+     "tipo": "flash",
+     "inicio": 0.5
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Mientras caminaban conversando, de repente apareció un carro de fuego con caballos de fuego que los separó.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.55,
+     "objeto": "cayado",
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "discipulo1",
+     "x": 0.3,
+     "emocion": "asustado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "fuego",
+     "x": 0.55,
+     "tamano": 2.2,
+     "crece": true
+    },
+    {
+     "tipo": "temblor",
+     "inicio": 0.3,
+     "fin": 0.8
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Y Elías subió al cielo en un torbellino. Sin morir. Solo dos personas en toda la Biblia fueron llevadas así: Enoc... y Elías.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.5,
+     "objeto": "cayado",
+     "accion": "alabar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    },
+    {
+     "tipo": "fuego",
+     "x": 0.5,
+     "y": 120,
+     "tamano": 1.0
+    }
+   ],
+   "camara": "alejar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Elías fue un hombre como nosotros: valiente un día, y asustado al siguiente. Pero oró, y el cielo se cerró. Volvió a orar, y el cielo dio lluvia.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.5,
+     "objeto": "cayado",
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "ENSEÑANZA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Dios no solo está en el fuego y en los milagros grandes. También está en el susurro suave, en el pan del camino, y en el ángel que te dice: levántate y come.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.5,
+     "objeto": "cayado",
+     "accion": "alabar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Qué parte te impactó más: la viuda, el fuego del Carmelo o el carro de fuego? Cuéntame en los comentarios.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.4,
+     "objeto": "cayado",
+     "accion": "senalar"
+    },
+    {
+     "id": "discipulo1",
+     "x": 0.62,
+     "mira": "izquierda"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Suscríbete y activa la campanita, que mañana llega otra gran historia de la Biblia. ¡Dios te bendiga!",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.5,
+     "objeto": "cayado",
+     "accion": "alabar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "rotulo": "¡SUSCRÍBETE!",
+   "pausa": 2.0,
+   "camara": "acercar"
+  }
+ ],
+ "miniatura": {
+  "texto": [
+   "¡FUEGO",
+   "DEL CIELO!"
+  ],
+  "escena": {
+   "fondo": "montana",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.6,
+     "accion": "levantar",
+     "emocion": "valiente",
+     "objeto": "cayado",
+     "escala": 1.3
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.82
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "fuego",
+     "x": 0.82,
+     "y": -100,
+     "tamano": 2.6
+    },
+    {
+     "tipo": "rayo",
+     "inicio": 0.4
+    },
+    {
+     "tipo": "luz",
+     "x": 0.8
+    }
+   ]
+  }
+ }
+}

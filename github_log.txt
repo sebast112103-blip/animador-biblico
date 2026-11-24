@@ -95,3 +95,18 @@
 12:33:00 Video pendiente: Sansón - La Historia Completa
 12:33:00 Conectando con tu cuenta de GitHub (si se abre una ventana, inicia sesion y autoriza)...
 12:33:08 Sesion iniciada como: sebast112103-blip
+12:33:19 Subiendo el proyecto a GitHub...
+12:33:37 Proyecto subido.
+12:33:40 Creacion de videos lanzada en la nube (diario).
+12:33:40 Esperando a que GitHub cree los videos (revisa cada minuto)...
+12:33:51 Puedes verla aqui: https://github.com/sebast112103-blip/animador-biblico/actions/runs/45050383327
+12:33:53   0/7 videos terminados (in_progress)
+19:47:04 Video pendiente: Abraham - El Padre de la Fe
+19:47:04 Video pendiente: Rut - Una Historia de Amor y Lealtad
+19:47:04 Video pendiente: Elías - El Profeta del Fuego
+19:47:05 Video pendiente: Ester - La Reina Valiente
+19:47:05 Video pendiente: Samuel - El Niño que Escuchó a Dios
+19:47:05 Video pendiente: Salomón - El Rey Más Sabio
+19:47:05 Video pendiente: La Navidad - Parte 1 - El Anuncio
+19:47:05 Conectando con tu cuenta de GitHub (si se abre una ventana, inicia sesion y autoriza)...
+19:47:19 Sesion iniciada como: sebast112103-blip

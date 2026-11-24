@@ -1,0 +1,1178 @@
+{
+ "titulo": "La Navidad - Parte 1 - El Anuncio",
+ "gancho": "Un ángel visitó a una joven de NAZARET... y todo cambió.",
+ "final": "",
+ "formato": "horizontal",
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.1,
+ "pausa_escenas": 0.35,
+ "corte_seg": 3.0,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "barra_progreso": false,
+ "resaltar": [
+  "MARÍA",
+  "JOSÉ",
+  "GABRIEL",
+  "ÁNGEL",
+  "JESÚS",
+  "ELISABET",
+  "ZACARÍAS",
+  "JUAN",
+  "EMANUEL",
+  "NAVIDAD",
+  "DIOS",
+  "COMENTARIOS",
+  "SUSCRÍBETE"
+ ],
+ "personajes": {
+  "zacarias": {
+   "tunica": "#f4f1ea",
+   "manto": "#3f5a8a",
+   "tocado": "turbante",
+   "color_tocado": "#e9e4d8",
+   "barba": "#e8e4dc",
+   "pelo": "#e8e4dc"
+  },
+  "elisabet": {
+   "tunica": "#8a6a8a",
+   "tocado": "velo",
+   "color_tocado": "#5a4a6a",
+   "pelo": null,
+   "voz": {
+    "nombre": "es_AR-daniela-high",
+    "tono": -3
+   }
+  }
+ },
+ "escenas": [
+  {
+   "fondo": "noche",
+   "texto": "Una joven de Nazaret está sola en su casa. Tiene unos quince años. Y de repente, la habitación se llena de luz... y un ángel le dice: ¡Alégrate, muy favorecida! El Señor está contigo.",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.4,
+     "emocion": "asustado",
+     "accion": "temblar"
+    },
+    {
+     "id": "angel",
+     "x": 0.72,
+     "mira": "izquierda",
+     "accion": "ofrecer"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.72
+    },
+    {
+     "tipo": "brillo",
+     "x": 0.72
+    },
+    {
+     "tipo": "flash",
+     "inicio": 0.1
+    }
+   ],
+   "camara": "acercar_rapido",
+   "portada": true
+  },
+  {
+   "fondo": "noche",
+   "texto": "Lo que ese ángel estaba por anunciarle cambiaría la historia del mundo para siempre. Esta es la primera parte de la verdadera historia de la Navidad.",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.5,
+     "emocion": "sorprendido"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "flash",
+     "inicio": 0.85
+    }
+   ],
+   "rotulo": "LA NAVIDAD · PARTE 1",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Durante cuatrocientos años, Dios no envió ningún profeta a su pueblo. Cuatrocientos años de silencio. El último mensaje del Antiguo Testamento había sido una promesa: Dios enviaría un mensajero para preparar el camino.",
+   "personajes": [],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.35
+    }
+   ],
+   "rotulo": "CAPÍTULO 1: 400 AÑOS DE SILENCIO",
+   "camara": "alejar"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Israel ya no era un reino libre. Ahora lo gobernaba el poderoso Imperio Romano, y en Judea reinaba Herodes, un rey cruel y desconfiado.",
+   "personajes": [
+    {
+     "id": "soldado1",
+     "x": 0.35,
+     "objeto": "lanza",
+     "casco": true
+    },
+    {
+     "id": "soldado2",
+     "x": 0.6,
+     "objeto": "lanza",
+     "casco": true
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.8,
+     "escala": 0.5,
+     "y": -160,
+     "profundidad": -70,
+     "variante": "soldados"
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "El pueblo esperaba al Mesías, el Salvador prometido. Muchos creían que vendría como un rey guerrero para expulsar a los romanos. Nadie imaginaba cómo iba a llegar en realidad.",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.4,
+     "accion": "orar"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.6,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.5
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "templo",
+   "texto": "En esos días vivía un sacerdote llamado Zacarías, con su esposa Elisabet. Los dos eran justos delante de Dios. Pero tenían una tristeza: no tenían hijos, y ya eran ancianos.",
+   "personajes": [
+    {
+     "id": "zacarias",
+     "x": 0.4,
+     "emocion": "triste"
+    },
+    {
+     "id": "elisabet",
+     "x": 0.6,
+     "mira": "izquierda",
+     "emocion": "triste"
+    }
+   ],
+   "rotulo": "CAPÍTULO 2: EL SACERDOTE",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "templo",
+   "texto": "Había miles de sacerdotes en Israel, y se sorteaba quién entraría al templo a ofrecer el incienso. Muchos nunca tenían esa oportunidad en toda su vida. Y ese día, la suerte cayó sobre Zacarías.",
+   "personajes": [
+    {
+     "id": "zacarias",
+     "x": 0.5,
+     "accion": "caminar",
+     "hasta": 0.6,
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.2,
+     "escala": 0.5,
+     "y": -160,
+     "profundidad": -70
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "templo",
+   "texto": "Mientras afuera el pueblo oraba, Zacarías entró solo al lugar santo. Y junto al altar del incienso... estaba un ángel.",
+   "personajes": [
+    {
+     "id": "zacarias",
+     "x": 0.35,
+     "accion": "temblar",
+     "emocion": "asustado"
+    },
+    {
+     "id": "angel",
+     "x": 0.7,
+     "mira": "izquierda"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.55
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "fuego",
+     "x": 0.55,
+     "y": -120,
+     "tamano": 0.4
+    },
+    {
+     "tipo": "luz",
+     "x": 0.7
+    },
+    {
+     "tipo": "brillo",
+     "x": 0.7
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "templo",
+   "texto": "No temas, Zacarías, porque tu oración ha sido escuchada. Tu esposa Elisabet te dará un hijo, y le pondrás por nombre Juan. Irá delante del Señor para preparar a su pueblo.",
+   "personajes": [
+    {
+     "id": "angel",
+     "x": 0.65,
+     "mira": "izquierda",
+     "accion": "senalar"
+    },
+    {
+     "id": "zacarias",
+     "x": 0.35,
+     "emocion": "sorprendido"
+    }
+   ],
+   "habla": "angel",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "templo",
+   "texto": "Pero Zacarías dudó: ¿Cómo sabré que esto es cierto? Yo soy viejo, y mi esposa también.",
+   "personajes": [
+    {
+     "id": "zacarias",
+     "x": 0.4,
+     "accion": "ofrecer",
+     "emocion": "sorprendido"
+    }
+   ],
+   "habla": "zacarias",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "templo",
+   "texto": "Y el ángel le respondió: Yo soy Gabriel, que estoy delante de Dios. Fui enviado para darte esta buena noticia. Pero como no creíste mis palabras, quedarás mudo hasta el día en que esto suceda.",
+   "personajes": [
+    {
+     "id": "angel",
+     "x": 0.6,
+     "mira": "izquierda",
+     "accion": "levantar",
+     "emocion": "valiente"
+    },
+    {
+     "id": "zacarias",
+     "x": 0.35,
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "temblor",
+     "inicio": 0.75,
+     "fin": 0.9
+    }
+   ],
+   "habla": "angel",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "templo",
+   "texto": "Afuera, el pueblo se preguntaba por qué tardaba tanto. Cuando por fin salió, Zacarías no podía hablar. Solo hacía señas. Y todos entendieron que había visto una visión.",
+   "personajes": [
+    {
+     "id": "zacarias",
+     "x": 0.4,
+     "accion": "senalar",
+     "emocion": "sorprendido"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.75,
+     "escala": 0.55,
+     "y": -160,
+     "profundidad": -70
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Y poco tiempo después, tal como Dios dijo, la anciana Elisabet quedó embarazada. Ella decía con alegría: El Señor me ha quitado mi vergüenza.",
+   "personajes": [
+    {
+     "id": "elisabet",
+     "x": 0.45,
+     "accion": "alabar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "zacarias",
+     "x": 0.65,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Zacarías oró por un hijo durante años... y quizás ya había dejado de pedirlo. Pero Dios no se había olvidado. Si sigues esperando una respuesta, escribe: Dios escucha mi oración.",
+   "personajes": [
+    {
+     "id": "zacarias",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Seis meses después, Dios envió al mismo ángel Gabriel a un pueblito pequeño y sin importancia de Galilea: Nazaret.",
+   "personajes": [
+    {
+     "id": "angel",
+     "x": 0.5
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.8,
+     "escala": 0.4,
+     "y": -160,
+     "profundidad": -70
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "rotulo": "CAPÍTULO 3: LA JOVEN DE NAZARET",
+   "camara": "alejar"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Nazaret era tan pequeño que ni siquiera aparece mencionado en el Antiguo Testamento. Tenía unas pocas casas de piedra y gente humilde que trabajaba la tierra. Algunos decían: ¿De Nazaret puede salir algo bueno?",
+   "personajes": [
+    {
+     "id": "hombre2",
+     "x": 0.35,
+     "accion": "agacharse"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.6,
+     "accion": "levantar"
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Allí vivía una joven llamada María, comprometida para casarse con un carpintero llamado José, que era descendiente del rey David.",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.4,
+     "emocion": "feliz"
+    },
+    {
+     "id": "jose_carpintero",
+     "x": 0.62,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "José trabajaba con sus manos la madera y la piedra. María, como las jóvenes de su tiempo, ayudaba en casa y esperaba el día de su boda. Eran personas sencillas. Nadie se fijaba en ellos.",
+   "personajes": [
+    {
+     "id": "jose_carpintero",
+     "x": 0.38,
+     "accion": "empujar"
+    },
+    {
+     "id": "maria",
+     "x": 0.65,
+     "accion": "levantar",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "piedra",
+     "x": 0.25,
+     "escala": 0.5
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "noche",
+   "texto": "El ángel entró donde estaba María y le dijo: ¡Alégrate, muy favorecida! El Señor está contigo. Y María se turbó mucho, preguntándose qué significaba ese saludo.",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.4,
+     "emocion": "asustado"
+    },
+    {
+     "id": "angel",
+     "x": 0.7,
+     "mira": "izquierda",
+     "accion": "ofrecer"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.7
+    }
+   ],
+   "habla": "angel",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "noche",
+   "texto": "No temas, María, porque has hallado gracia delante de Dios. Concebirás y darás a luz un hijo, y le pondrás por nombre Jesús.",
+   "personajes": [
+    {
+     "id": "angel",
+     "x": 0.65,
+     "mira": "izquierda",
+     "accion": "senalar"
+    },
+    {
+     "id": "maria",
+     "x": 0.38,
+     "emocion": "sorprendido"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo"
+    }
+   ],
+   "habla": "angel",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Él será grande, y será llamado Hijo del Altísimo. Dios le dará el trono de David su padre, y su reino no tendrá fin.",
+   "personajes": [],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "habla": "angel",
+   "camara": "alejar"
+  },
+  {
+   "fondo": "noche",
+   "texto": "María preguntó: ¿Cómo será esto, si nunca he estado con un hombre? Y el ángel respondió: El Espíritu Santo vendrá sobre ti, y el poder del Altísimo te cubrirá con su sombra. Por eso el niño será llamado Hijo de Dios.",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.4,
+     "accion": "ofrecer",
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "angel",
+     "x": 0.68,
+     "mira": "izquierda",
+     "accion": "levantar"
+    }
+   ],
+   "habla": "angel",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Y le dio una señal: Tu parienta Elisabet, la que llamaban estéril, ya está en su sexto mes. Porque para Dios no hay nada imposible.",
+   "personajes": [
+    {
+     "id": "angel",
+     "x": 0.6,
+     "mira": "izquierda",
+     "accion": "senalar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "habla": "angel",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Piensa en lo que esto significaba para María. Una joven embarazada antes de casarse podía ser rechazada, avergonzada... e incluso apedreada. Decir que sí podía costarle todo.",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.5,
+     "emocion": "triste",
+     "accion": "temblar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.3
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Y aun así, María respondió: Aquí está la sierva del Señor. Hágase conmigo conforme a tu palabra.",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.5,
+     "accion": "arrodillarse",
+     "emocion": "valiente"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "habla": "maria",
+   "rotulo": "LUCAS 1:38",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Pausa. ¿Qué crees que habrías respondido tú en el lugar de María? Escríbelo con sinceridad en los comentarios.",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "¿Y TÚ?",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "camino",
+   "texto": "María se levantó y fue de prisa a las montañas de Judea, a visitar a Elisabet. Fue un viaje de varios días.",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.25,
+     "accion": "caminar",
+     "hasta": 0.6,
+     "emocion": "feliz"
+    }
+   ],
+   "rotulo": "CAPÍTULO 4: EL ENCUENTRO",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Cuando entró en la casa y saludó a Elisabet, el bebé que Elisabet llevaba en su vientre saltó de alegría. Y Elisabet, llena del Espíritu Santo, exclamó:",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.4,
+     "accion": "abrazar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "elisabet",
+     "x": 0.6,
+     "mira": "izquierda",
+     "accion": "abrazar",
+     "emocion": "sorprendido"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo"
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "campo",
+   "texto": "¡Bendita tú entre las mujeres, y bendito el fruto de tu vientre! ¿Y quién soy yo para que la madre de mi Señor venga a visitarme? Dichosa tú, que creíste.",
+   "personajes": [
+    {
+     "id": "elisabet",
+     "x": 0.55,
+     "mira": "izquierda",
+     "accion": "alabar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "maria",
+     "x": 0.35,
+     "emocion": "feliz"
+    }
+   ],
+   "habla": "elisabet",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Y María cantó una canción de alabanza que hoy se conoce como el Magníficat: Mi alma engrandece al Señor, y mi espíritu se alegra en Dios mi Salvador, porque miró la humildad de su sierva.",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.5,
+     "accion": "alabar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "habla": "maria",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Derribó a los poderosos de sus tronos, y exaltó a los humildes. A los hambrientos llenó de bienes, y a los ricos los despidió vacíos.",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.5,
+     "accion": "levantar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "habla": "maria",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "María se quedó con Elisabet unos tres meses. Dos mujeres, una muy joven y otra anciana, esperando juntas dos milagros.",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.4,
+     "emocion": "feliz"
+    },
+    {
+     "id": "elisabet",
+     "x": 0.6,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "rotulo": "3 MESES",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Cuando llegó el tiempo, Elisabet dio a luz un hijo. Los vecinos y parientes celebraron con ella. Y al octavo día querían llamarlo Zacarías, como su padre.",
+   "personajes": [
+    {
+     "id": "elisabet",
+     "x": 0.4,
+     "accion": "abrazar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.62,
+     "mira": "izquierda",
+     "accion": "celebrar",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "pesebre",
+     "x": 0.5,
+     "escala": 0.6
+    }
+   ],
+   "rotulo": "CAPÍTULO 5: SU NOMBRE ES JUAN",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Pero Elisabet dijo: No. Se llamará Juan. ¿Juan? Nadie en tu familia se llama así. Y le preguntaron por señas a Zacarías.",
+   "personajes": [
+    {
+     "id": "elisabet",
+     "x": 0.38,
+     "accion": "senalar"
+    },
+    {
+     "id": "hombre1",
+     "x": 0.62,
+     "mira": "izquierda",
+     "emocion": "sorprendido"
+    }
+   ],
+   "habla": "elisabet",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Zacarías pidió una tablilla y escribió: Su nombre es Juan. Y en ese mismo instante, su boca se abrió... ¡y volvió a hablar! Lo primero que hizo fue alabar a Dios.",
+   "personajes": [
+    {
+     "id": "zacarias",
+     "x": 0.5,
+     "accion": "alabar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo"
+    },
+    {
+     "tipo": "flash",
+     "inicio": 0.4
+    }
+   ],
+   "habla": "zacarias",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Y Zacarías, lleno del Espíritu Santo, profetizó: Bendito el Señor Dios de Israel, que ha visitado y redimido a su pueblo. Y tú, niño, serás llamado profeta del Altísimo, porque irás delante del Señor para preparar sus caminos.",
+   "personajes": [
+    {
+     "id": "zacarias",
+     "x": 0.5,
+     "accion": "levantar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "habla": "zacarias",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Todos los vecinos se llenaron de asombro y se preguntaban: ¿Qué llegará a ser este niño? Ese niño crecería y sería Juan el Bautista, el que prepararía el camino para Jesús.",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.35,
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.55,
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "zacarias",
+     "x": 0.78,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "desierto",
+   "texto": "El niño Juan crecía y se fortalecía en espíritu. Y años más tarde vivió en el desierto, vestido con pelo de camello, comiendo langostas y miel silvestre, hasta el día en que comenzó a predicar.",
+   "personajes": [
+    {
+     "id": "discipulo1",
+     "x": 0.5,
+     "tunica": "#8a6a3a",
+     "pelo_largo": true,
+     "emocion": "valiente"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "alejar"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Mientras tanto, María regresó a Nazaret. Y José descubrió que estaba embarazada. Imagina lo que sintió: confusión, tristeza... traición.",
+   "personajes": [
+    {
+     "id": "jose_carpintero",
+     "x": 0.5,
+     "emocion": "triste",
+     "accion": "temblar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.35
+    }
+   ],
+   "rotulo": "CAPÍTULO 6: EL SUEÑO DE JOSÉ",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Había soñado con formar un hogar con ella. Había preparado la casa, ahorrado, trabajado duro. Y ahora todo parecía derrumbarse. Por la ley, José tenía derecho a denunciarla públicamente.",
+   "personajes": [
+    {
+     "id": "jose_carpintero",
+     "x": 0.5,
+     "accion": "agacharse",
+     "emocion": "llorando"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.35
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "noche",
+   "texto": "José era un hombre justo y no quería avergonzarla en público. Así que decidió terminar el compromiso en secreto.",
+   "personajes": [
+    {
+     "id": "jose_carpintero",
+     "x": 0.5,
+     "accion": "orar",
+     "emocion": "triste"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.35
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Pero esa noche, mientras dormía, un ángel se le apareció en sueños: José, hijo de David, no temas recibir a María como tu esposa. Lo que hay en ella es obra del Espíritu Santo.",
+   "personajes": [
+    {
+     "id": "jose_carpintero",
+     "x": 0.4,
+     "accion": "dormir"
+    },
+    {
+     "id": "angel",
+     "x": 0.68,
+     "mira": "izquierda",
+     "accion": "ofrecer"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.68
+    },
+    {
+     "tipo": "brillo",
+     "x": 0.68
+    }
+   ],
+   "habla": "angel",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Dará a luz un hijo, y le pondrás por nombre Jesús, porque él salvará a su pueblo de sus pecados.",
+   "personajes": [
+    {
+     "id": "angel",
+     "x": 0.55,
+     "accion": "senalar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "habla": "angel",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Cuando José despertó, hizo exactamente lo que el ángel le dijo. Recibió a María como su esposa, y decidió cuidar y proteger a ese niño como si fuera suyo.",
+   "personajes": [
+    {
+     "id": "jose_carpintero",
+     "x": 0.4,
+     "accion": "abrazar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "maria",
+     "x": 0.6,
+     "mira": "izquierda",
+     "accion": "abrazar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "arcoiris"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Y así se cumplía lo que el profeta Isaías había escrito setecientos años antes: La virgen concebirá y dará a luz un hijo, y lo llamarán Emanuel, que significa Dios con nosotros.",
+   "personajes": [],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "rotulo": "EMANUEL",
+   "camara": "alejar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Zacarías dudó, María creyó, José obedeció. Tres personas sencillas que dijeron sí a Dios, y prepararon el camino para la noche más importante de la historia.",
+   "personajes": [
+    {
+     "id": "zacarias",
+     "x": 0.3
+    },
+    {
+     "id": "maria",
+     "x": 0.5,
+     "emocion": "feliz"
+    },
+    {
+     "id": "jose_carpintero",
+     "x": 0.7,
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "ENSEÑANZA",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Pero todavía faltaba un viaje largo, una orden del emperador, una ciudad sin lugar... y un pesebre. Eso lo verás en la Parte 2 de la Navidad.",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.4,
+     "accion": "caminar",
+     "hasta": 0.55
+    },
+    {
+     "id": "jose_carpintero",
+     "x": 0.25,
+     "accion": "caminar",
+     "hasta": 0.4
+    },
+    {
+     "id": "burro",
+     "x": 0.1,
+     "accion": "caminar",
+     "hasta": 0.25
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "estrella",
+     "x": 0.75,
+     "y": -700
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "brillo",
+     "x": 0.75,
+     "y": -700
+    }
+   ],
+   "rotulo": "PRÓXIMAMENTE: PARTE 2",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Suscríbete y activa la campanita para no perderte la Parte 2. Y escribe en los comentarios: ¡Emanuel, Dios con nosotros! ¡Dios te bendiga!",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.5,
+     "accion": "alabar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "rotulo": "¡SUSCRÍBETE!",
+   "pausa": 2.0,
+   "camara": "acercar"
+  }
+ ],
+ "miniatura": {
+  "texto": [
+   "EL ÁNGEL",
+   "LE DIJO..."
+  ],
+  "sello": "NAVIDAD · PARTE 1",
+  "escena": {
+   "fondo": "noche",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.6,
+     "emocion": "sorprendido",
+     "escala": 1.3
+    },
+    {
+     "id": "angel",
+     "x": 0.85,
+     "mira": "izquierda",
+     "accion": "ofrecer",
+     "escala": 1.35
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.85
+    },
+    {
+     "tipo": "brillo",
+     "x": 0.85
+    }
+   ]
+  }
+ }
+}

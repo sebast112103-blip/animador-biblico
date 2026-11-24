@@ -1,0 +1,1298 @@
+{
+ "titulo": "Rut - Una Historia de Amor y Lealtad",
+ "gancho": "Lo perdió TODO... y terminó siendo bisabuela de un REY.",
+ "final": "",
+ "formato": "horizontal",
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.1,
+ "pausa_escenas": 0.35,
+ "corte_seg": 3.0,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "barra_progreso": false,
+ "resaltar": [
+  "RUT",
+  "NOEMÍ",
+  "BOOZ",
+  "BELÉN",
+  "REDENTOR",
+  "DAVID",
+  "JESÚS",
+  "LEALTAD",
+  "DIOS",
+  "COMENTARIOS",
+  "SUSCRÍBETE"
+ ],
+ "personajes": {
+  "orfa": {
+   "tunica": "#b85a6a",
+   "tocado": "velo",
+   "color_tocado": "#8a3a4a",
+   "pelo": null
+  }
+ },
+ "escenas": [
+  {
+   "fondo": "camino",
+   "texto": "Dos mujeres solas en un camino polvoriento. Una es anciana, la otra muy joven. Las dos perdieron a sus esposos. No tienen dinero, ni casa, ni a nadie que las proteja.",
+   "personajes": [
+    {
+     "id": "noemi",
+     "x": 0.4,
+     "accion": "caminar",
+     "hasta": 0.5,
+     "emocion": "triste"
+    },
+    {
+     "id": "rut",
+     "x": 0.25,
+     "accion": "caminar",
+     "hasta": 0.35,
+     "emocion": "triste"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.2
+    }
+   ],
+   "camara": "acercar_rapido",
+   "portada": true
+  },
+  {
+   "fondo": "camino",
+   "texto": "Nadie habría apostado por ellas. Pero la joven tomó una decisión que la convertiría en la bisabuela del rey más famoso de Israel. Esta es la historia de Rut.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.5,
+     "emocion": "valiente"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "flash",
+     "inicio": 0.85
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "En los días en que los jueces gobernaban Israel, hubo un hambre terrible en la tierra. En Belén, que significa casa del pan, ya no había pan.",
+   "personajes": [
+    {
+     "id": "hombre2",
+     "x": 0.4,
+     "accion": "agacharse",
+     "emocion": "triste"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "canasta",
+     "x": 0.6
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.2
+    }
+   ],
+   "rotulo": "CAPÍTULO 1: LEJOS DE CASA",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "camino",
+   "texto": "Un hombre llamado Elimelec tomó a su esposa Noemí y a sus dos hijos, Mahlón y Quelión, y se fueron a vivir a Moab, una tierra extranjera donde se adoraban otros dioses.",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.35,
+     "accion": "caminar",
+     "hasta": 0.55
+    },
+    {
+     "id": "noemi",
+     "x": 0.22,
+     "accion": "caminar",
+     "hasta": 0.42,
+     "pelo": null
+    },
+    {
+     "id": "hermano1",
+     "x": 0.1,
+     "accion": "caminar",
+     "hasta": 0.3,
+     "escala": 0.85
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Pensaban quedarse un tiempo. Pero se quedaron diez años. Allí murió Elimelec, y Noemí quedó viuda con sus dos hijos.",
+   "personajes": [
+    {
+     "id": "noemi",
+     "x": 0.5,
+     "accion": "arrodillarse",
+     "emocion": "llorando",
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "lluvia"
+    },
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.3
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "campo",
+   "texto": "Sus hijos se casaron con dos muchachas moabitas: una se llamaba Orfa, y la otra se llamaba Rut. Por un tiempo, la casa volvió a tener alegría.",
+   "personajes": [
+    {
+     "id": "hermano1",
+     "x": 0.25,
+     "emocion": "feliz"
+    },
+    {
+     "id": "rut",
+     "x": 0.42,
+     "emocion": "feliz"
+    },
+    {
+     "id": "hermano2",
+     "x": 0.6,
+     "emocion": "feliz"
+    },
+    {
+     "id": "orfa",
+     "x": 0.77,
+     "emocion": "feliz"
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Pero entonces sucedió lo impensable. Los dos hijos de Noemí también murieron. Tres mujeres quedaron viudas, solas, en una tierra difícil.",
+   "personajes": [
+    {
+     "id": "noemi",
+     "x": 0.3,
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a",
+     "emocion": "llorando",
+     "accion": "arrodillarse"
+    },
+    {
+     "id": "rut",
+     "x": 0.5,
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a",
+     "emocion": "llorando"
+    },
+    {
+     "id": "orfa",
+     "x": 0.7,
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a",
+     "emocion": "llorando"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.45
+    },
+    {
+     "tipo": "lluvia"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Si alguna vez perdiste a alguien que amabas, escribe en los comentarios: Dios sana mi corazón. Porque esta historia no termina en el dolor.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.5,
+     "accion": "orar",
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "camino",
+   "texto": "Un día Noemí escuchó que Dios había visitado a su pueblo y que en Belén volvía a haber pan. Y decidió regresar a casa.",
+   "personajes": [
+    {
+     "id": "noemi",
+     "x": 0.45,
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a",
+     "emocion": "sorprendido"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.8
+    }
+   ],
+   "rotulo": "CAPÍTULO 2: LA DECISIÓN",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "camino",
+   "texto": "Orfa y Rut salieron con ella. Pero en el camino, Noemí se detuvo y les dijo: Vuelvan a la casa de sus madres. Ustedes son jóvenes, pueden casarse otra vez. Yo ya no tengo nada que darles.",
+   "personajes": [
+    {
+     "id": "noemi",
+     "x": 0.5,
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a",
+     "accion": "senalar",
+     "emocion": "triste"
+    },
+    {
+     "id": "rut",
+     "x": 0.3,
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a"
+    },
+    {
+     "id": "orfa",
+     "x": 0.72,
+     "mira": "izquierda",
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a"
+    }
+   ],
+   "habla": "noemi",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "camino",
+   "texto": "Las tres lloraron abrazadas. Orfa besó a su suegra, se despidió... y regresó a Moab.",
+   "personajes": [
+    {
+     "id": "orfa",
+     "x": 0.6,
+     "accion": "abrazar",
+     "emocion": "llorando",
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a"
+    },
+    {
+     "id": "noemi",
+     "x": 0.4,
+     "accion": "abrazar",
+     "emocion": "llorando",
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "camino",
+   "texto": "Pero Rut se quedó abrazada a Noemí y no la soltó. Mira, tu cuñada se ha vuelto a su pueblo y a sus dioses. Vete tú también con ella.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.4,
+     "accion": "abrazar",
+     "emocion": "llorando",
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a"
+    },
+    {
+     "id": "noemi",
+     "x": 0.58,
+     "mira": "izquierda",
+     "emocion": "triste",
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a"
+    }
+   ],
+   "habla": "noemi",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "camino",
+   "texto": "Y entonces Rut dijo una de las frases más hermosas de toda la Biblia:",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.5,
+     "emocion": "valiente",
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.5
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "No me pidas que te deje. A donde tú vayas, iré yo. Donde tú vivas, viviré. Tu pueblo será mi pueblo, y tu Dios será mi Dios.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.5,
+     "accion": "orar",
+     "emocion": "llorando",
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "habla": "rut",
+   "rotulo": "RUT 1:16",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "camino",
+   "texto": "Rut lo estaba dejando todo: su tierra, su familia, sus costumbres, y cualquier esperanza de volver a casarse. Lo dejaba por amor a una anciana... y por el Dios de Israel.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.4,
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a",
+     "accion": "caminar",
+     "hasta": 0.55
+    },
+    {
+     "id": "noemi",
+     "x": 0.25,
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a",
+     "accion": "caminar",
+     "hasta": 0.4
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Pausa. ¿Tú habrías hecho lo mismo que Rut, o lo que hizo Orfa? Respóndeme con sinceridad en los comentarios.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.4,
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a"
+    },
+    {
+     "id": "orfa",
+     "x": 0.62,
+     "mira": "izquierda",
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "¿RUT U ORFA?",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Cuando llegaron a Belén, toda la ciudad se conmovió. ¿No es esta Noemí?, decían las mujeres. Pero ella respondió: No me llamen Noemí, que significa agradable. Llámenme Mara, que significa amarga.",
+   "personajes": [
+    {
+     "id": "noemi",
+     "x": 0.45,
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a",
+     "emocion": "llorando"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.68,
+     "mira": "izquierda",
+     "emocion": "sorprendido"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.8,
+     "escala": 0.5,
+     "y": -160,
+     "profundidad": -70
+    }
+   ],
+   "habla": "noemi",
+   "rotulo": "CAPÍTULO 3: EL CAMPO DE BOOZ",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Me fui llena, y el Señor me ha hecho volver vacía. Noemí estaba tan herida que no podía ver que a su lado caminaba una gran bendición: Rut.",
+   "personajes": [
+    {
+     "id": "noemi",
+     "x": 0.4,
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a",
+     "emocion": "triste"
+    },
+    {
+     "id": "rut",
+     "x": 0.6,
+     "mira": "izquierda",
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a",
+     "emocion": "triste"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "trigal",
+   "texto": "Llegaron justo al comienzo de la cosecha de la cebada. Y la ley de Dios decía que los pobres podían recoger las espigas que se les caían a los segadores.",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.3,
+     "accion": "agacharse"
+    },
+    {
+     "id": "hombre2",
+     "x": 0.55,
+     "accion": "levantar"
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "trigal",
+   "texto": "Rut le dijo a Noemí: Déjame ir al campo a recoger espigas, detrás de alguien que me trate con bondad. Y fue a trabajar bajo el sol, para que las dos pudieran comer.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.5,
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a",
+     "accion": "agacharse",
+     "emocion": "valiente"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "trigal",
+   "texto": "No era un trabajo fácil. Había que caminar todo el día agachada bajo el sol, buscando espiga por espiga entre la paja. Y como era extranjera, muchos la miraban con desconfianza.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.45,
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a",
+     "accion": "agacharse",
+     "emocion": "triste"
+    },
+    {
+     "id": "hombre2",
+     "x": 0.75,
+     "mira": "izquierda",
+     "emocion": "burlon"
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "trigal",
+   "texto": "Y por casualidad, aunque en la Biblia nada es casualidad, llegó a un campo que pertenecía a un hombre llamado Booz, pariente de Elimelec.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.35,
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a",
+     "accion": "agacharse"
+    },
+    {
+     "id": "booz",
+     "x": 0.7,
+     "mira": "izquierda",
+     "accion": "caminar",
+     "hasta": 0.62
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "brillo",
+     "x": 0.7
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "trigal",
+   "texto": "Booz era un hombre rico, respetado y temeroso de Dios. Cuando llegó, saludó a sus trabajadores: El Señor esté con ustedes. Y ellos respondieron: El Señor te bendiga.",
+   "personajes": [
+    {
+     "id": "booz",
+     "x": 0.45,
+     "accion": "levantar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "hombre1",
+     "x": 0.7,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "habla": "booz",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "trigal",
+   "texto": "Entonces Booz vio a Rut y preguntó: ¿De quién es esa joven? Es la moabita que vino con Noemí, le dijeron. Ha trabajado desde la mañana sin descansar.",
+   "personajes": [
+    {
+     "id": "booz",
+     "x": 0.6,
+     "mira": "izquierda",
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "rut",
+     "x": 0.25,
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a",
+     "accion": "agacharse"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "trigal",
+   "texto": "Booz se acercó a Rut y le dijo: Hija mía, no vayas a otro campo. Quédate aquí con mis criadas. Ya ordené que nadie te moleste. Y cuando tengas sed, bebe del agua de mis trabajadores.",
+   "personajes": [
+    {
+     "id": "booz",
+     "x": 0.55,
+     "mira": "izquierda",
+     "accion": "ofrecer",
+     "emocion": "feliz"
+    },
+    {
+     "id": "rut",
+     "x": 0.35,
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a",
+     "emocion": "sorprendido"
+    }
+   ],
+   "habla": "booz",
+   "rotulo": "CAPÍTULO 4: UN HOMBRE BUENO",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "trigal",
+   "texto": "Rut se inclinó hasta el suelo: ¿Por qué me tratas con tanta bondad, si soy una extranjera?",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.4,
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a",
+     "accion": "arrodillarse",
+     "emocion": "llorando"
+    },
+    {
+     "id": "booz",
+     "x": 0.62,
+     "mira": "izquierda"
+    }
+   ],
+   "habla": "rut",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "trigal",
+   "texto": "Y Booz respondió: Me han contado todo lo que hiciste por tu suegra. Que el Señor, bajo cuyas alas has venido a refugiarte, te recompense.",
+   "personajes": [
+    {
+     "id": "booz",
+     "x": 0.55,
+     "mira": "izquierda",
+     "accion": "senalar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "rut",
+     "x": 0.35,
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "habla": "booz",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "trigal",
+   "texto": "A la hora de comer, Booz la invitó a su mesa. Y en secreto les dijo a sus trabajadores: Dejen caer espigas a propósito, para que ella recoja más.",
+   "personajes": [
+    {
+     "id": "booz",
+     "x": 0.4,
+     "accion": "senalar",
+     "emocion": "burlon"
+    },
+    {
+     "id": "hombre1",
+     "x": 0.65,
+     "mira": "izquierda",
+     "accion": "agacharse",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "panes_peces",
+     "x": 0.55
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Esa noche Rut llegó a casa con casi veinte kilos de cebada. Noemí no lo podía creer. ¿Dónde trabajaste hoy? En el campo de un hombre llamado Booz.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.4,
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a",
+     "accion": "ofrecer",
+     "emocion": "feliz"
+    },
+    {
+     "id": "noemi",
+     "x": 0.62,
+     "mira": "izquierda",
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a",
+     "emocion": "sorprendido"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "canasta",
+     "x": 0.5
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Rut le contó todo: cómo Booz la protegió, cómo le dio agua y comida, y cómo le pidió que se quedara en su campo hasta el final de la cosecha. Noemí escuchaba con los ojos muy abiertos.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.4,
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a",
+     "accion": "senalar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "noemi",
+     "x": 0.62,
+     "mira": "izquierda",
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a",
+     "emocion": "sorprendido"
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "noche",
+   "texto": "¡Booz! ¡Bendito sea el Señor! Ese hombre es nuestro pariente. Es uno de nuestros redentores. Por primera vez en años, Noemí volvió a sonreír.",
+   "personajes": [
+    {
+     "id": "noemi",
+     "x": 0.5,
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a",
+     "accion": "celebrar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "habla": "noemi",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "En Israel existía una ley especial: cuando un hombre moría sin hijos, un pariente cercano podía casarse con la viuda, recuperar sus tierras y darle descendencia. A ese pariente se le llamaba redentor.",
+   "personajes": [
+    {
+     "id": "booz",
+     "x": 0.5,
+     "emocion": "valiente"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "CAPÍTULO 5: EL REDENTOR",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "trigal",
+   "texto": "Durante semanas, Rut trabajó en el campo de Booz, primero en la cosecha de la cebada y después en la del trigo. Y cada noche volvía a casa con comida para ella y para Noemí.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.4,
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a",
+     "accion": "levantar",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "canasta",
+     "x": 0.55
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Al final de la cosecha, Noemí le dio a Rut un consejo. Rut se arregló, fue de noche al lugar donde Booz cuidaba el grano, y se acostó a sus pies.",
+   "personajes": [
+    {
+     "id": "booz",
+     "x": 0.6,
+     "accion": "dormir"
+    },
+    {
+     "id": "rut",
+     "x": 0.4,
+     "accion": "agacharse",
+     "emocion": "asustado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.4
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "noche",
+   "texto": "A medianoche Booz despertó sobresaltado. ¿Quién eres? Soy Rut, tu sierva. Extiende tu manto sobre mí, porque tú eres mi redentor.",
+   "personajes": [
+    {
+     "id": "booz",
+     "x": 0.6,
+     "mira": "izquierda",
+     "emocion": "sorprendido"
+    },
+    {
+     "id": "rut",
+     "x": 0.38,
+     "accion": "arrodillarse"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.35
+    }
+   ],
+   "habla": "rut",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Booz respondió con ternura: Bendita seas, hija mía. No has buscado a los jóvenes, ni ricos ni pobres. Todo mi pueblo sabe que eres una mujer virtuosa.",
+   "personajes": [
+    {
+     "id": "booz",
+     "x": 0.55,
+     "mira": "izquierda",
+     "accion": "ofrecer",
+     "emocion": "feliz"
+    },
+    {
+     "id": "rut",
+     "x": 0.38,
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.5
+    }
+   ],
+   "habla": "booz",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Pero hay un problema: existe otro pariente más cercano que yo. Él tiene el primer derecho. Mañana resolveré este asunto, te lo prometo.",
+   "personajes": [
+    {
+     "id": "booz",
+     "x": 0.5,
+     "emocion": "triste"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.3
+    }
+   ],
+   "habla": "booz",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Antes del amanecer, Booz le llenó el manto con seis medidas de cebada. No vuelvas a tu suegra con las manos vacías, le dijo. Y Noemí, al verlo, sonrió: Ese hombre no descansará hasta resolverlo hoy mismo.",
+   "personajes": [
+    {
+     "id": "booz",
+     "x": 0.6,
+     "mira": "izquierda",
+     "accion": "ofrecer"
+    },
+    {
+     "id": "rut",
+     "x": 0.38,
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "canasta",
+     "x": 0.48
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.25
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "A la mañana siguiente, Booz se sentó a la puerta de la ciudad, donde se hacían los tratos. Cuando pasó el otro pariente, lo llamó delante de diez ancianos como testigos.",
+   "personajes": [
+    {
+     "id": "booz",
+     "x": 0.35
+    },
+    {
+     "id": "hombre2",
+     "x": 0.6,
+     "mira": "izquierda"
+    },
+    {
+     "id": "jacob",
+     "x": 0.82,
+     "mira": "izquierda",
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.7,
+     "escala": 0.5,
+     "y": -160,
+     "profundidad": -70
+    }
+   ],
+   "rotulo": "CAPÍTULO 6: EL TRATO",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Noemí vende el terreno de Elimelec. ¿Quieres comprarlo? Sí, lo compro, dijo el hombre. Pero hay algo más: el que compre el terreno, también debe casarse con Rut la moabita.",
+   "personajes": [
+    {
+     "id": "booz",
+     "x": 0.4,
+     "accion": "senalar"
+    },
+    {
+     "id": "hombre2",
+     "x": 0.62,
+     "mira": "izquierda",
+     "emocion": "sorprendido"
+    }
+   ],
+   "habla": "booz",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Entonces no puedo, respondió el pariente. Arruinaría mi propia herencia. Cómpralo tú. Y se quitó la sandalia y se la dio a Booz, que era la forma de cerrar un trato en Israel.",
+   "personajes": [
+    {
+     "id": "hombre2",
+     "x": 0.55,
+     "mira": "izquierda",
+     "accion": "ofrecer",
+     "emocion": "triste"
+    },
+    {
+     "id": "booz",
+     "x": 0.35,
+     "emocion": "feliz"
+    }
+   ],
+   "habla": "hombre2",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "ciudad",
+   "texto": "Y Booz declaró ante todo el pueblo: Hoy ustedes son testigos de que tomo a Rut la moabita como mi esposa. Y todos respondieron: ¡Somos testigos! ¡Que el Señor la bendiga!",
+   "personajes": [
+    {
+     "id": "booz",
+     "x": 0.5,
+     "accion": "levantar",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.55,
+     "y": 320,
+     "delante": true
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "habla": "booz",
+   "camara": "alejar"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Booz y Rut se casaron. Y Dios les dio un hijo. La extranjera viuda y sin esperanza ahora tenía un esposo que la amaba, un hogar y un hijo.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.4,
+     "accion": "abrazar",
+     "emocion": "feliz"
+    },
+    {
+     "id": "booz",
+     "x": 0.6,
+     "mira": "izquierda",
+     "accion": "abrazar",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "pesebre",
+     "x": 0.5,
+     "escala": 0.7
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "arcoiris"
+    }
+   ],
+   "rotulo": "CAPÍTULO 7: LA RECOMPENSA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Las mujeres de Belén le dijeron a Noemí: Bendito sea el Señor, que no te dejó sin redentor. Tu nuera, que te ama, vale más para ti que siete hijos.",
+   "personajes": [
+    {
+     "id": "noemi",
+     "x": 0.45,
+     "accion": "abrazar",
+     "emocion": "llorando"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.68,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "habla": "mujer1",
+   "camara": "paneo"
+  },
+  {
+   "fondo": "valle",
+   "texto": "Y Noemí tomó al niño en sus brazos y lo cuidó como a su propio hijo. La mujer que se llamó a sí misma amarga, volvió a ser feliz.",
+   "personajes": [
+    {
+     "id": "noemi",
+     "x": 0.5,
+     "accion": "abrazar",
+     "emocion": "feliz"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "pesebre",
+     "x": 0.62,
+     "escala": 0.6
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Al niño lo llamaron Obed. Obed fue el padre de Isaí. E Isaí fue el padre de... David, el pastorcito que venció a Goliat y llegó a ser el gran rey de Israel.",
+   "personajes": [
+    {
+     "id": "david",
+     "x": 0.5,
+     "accion": "alabar",
+     "emocion": "feliz",
+     "tocado": "corona"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Y de la familia de David, mil años después, nacería en Belén el Hijo de Dios: Jesús. Rut, la extranjera que todo lo dejó, aparece con su nombre en la genealogía de Jesús.",
+   "personajes": [
+    {
+     "id": "jesus",
+     "x": 0.5,
+     "accion": "ofrecer",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Booz es una imagen de Jesús: nuestro Redentor. Él pagó el precio para rescatarnos, nos dio un hogar y una familia, aunque éramos extranjeros sin esperanza.",
+   "personajes": [
+    {
+     "id": "booz",
+     "x": 0.4,
+     "emocion": "feliz"
+    },
+    {
+     "id": "jesus",
+     "x": 0.62,
+     "mira": "izquierda",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "ENSEÑANZA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Rut nos enseña que la lealtad y la bondad nunca pasan desapercibidas para Dios. Una decisión de amor puede cambiar la historia de muchas generaciones.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.5,
+     "accion": "alabar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Quién ha sido una Rut en tu vida, alguien que se quedó contigo en el peor momento? Etiquétalo o escribe su nombre en los comentarios.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.4,
+     "accion": "abrazar"
+    },
+    {
+     "id": "noemi",
+     "x": 0.6,
+     "mira": "izquierda",
+     "accion": "abrazar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Suscríbete y activa la campanita, que mañana llega otra gran historia de la Biblia. ¡Dios te bendiga!",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.5,
+     "accion": "alabar",
+     "emocion": "feliz"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "rotulo": "¡SUSCRÍBETE!",
+   "pausa": 2.0,
+   "camara": "acercar"
+  }
+ ],
+ "miniatura": {
+  "texto": [
+   "LO PERDIÓ",
+   "TODO..."
+  ],
+  "sello": "Y DIOS LA RESTAURÓ",
+  "escena": {
+   "fondo": "trigal",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.62,
+     "accion": "agacharse",
+     "emocion": "llorando",
+     "escala": 1.3
+    },
+    {
+     "id": "booz",
+     "x": 0.85,
+     "mira": "izquierda",
+     "accion": "ofrecer",
+     "emocion": "feliz",
+     "escala": 1.3
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.7
+    },
+    {
+     "tipo": "brillo",
+     "x": 0.7
+    }
+   ]
+  }
+ }
+}

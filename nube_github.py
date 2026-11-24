@@ -73,15 +73,19 @@ def api(token, metodo, ruta, datos=None, aceptar=(200, 201, 204)):
     req.add_header("Accept", "application/vnd.github+json")
     req.add_header("X-GitHub-Api-Version", "2022-11-28")
     req.add_header("User-Agent", "animador-biblico")
-    try:
-        with urllib.request.urlopen(req, timeout=120) as r:
-            cuerpo = r.read()
-            return r.status, (json.loads(cuerpo) if cuerpo and r.headers.get_content_type() == "application/json" else cuerpo)
-    except urllib.error.HTTPError as e:
-        cuerpo = e.read().decode("utf-8", "replace")
-        if e.code in aceptar:
-            return e.code, cuerpo
-        return e.code, cuerpo
+    for intento in range(30):   # si se cae el internet un momento, reintenta (hasta ~15 min)
+        try:
+            with urllib.request.urlopen(req, timeout=120) as r:
+                cuerpo = r.read()
+                return r.status, (json.loads(cuerpo) if cuerpo and r.headers.get_content_type() == "application/json" else cuerpo)
+        except urllib.error.HTTPError as e:
+            return e.code, e.read().decode("utf-8", "replace")
+        except (urllib.error.URLError, TimeoutError, ConnectionError, OSError) as ex:
+            if intento == 29:
+                raise
+            if intento == 0:
+                log(f"  (sin conexion a internet: {getattr(ex, 'reason', ex)}; reintentando cada 30 s...)")
+            time.sleep(30)
 
 
 def usuario(token):

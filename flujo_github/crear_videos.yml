@@ -82,7 +82,9 @@ jobs:
           path: voces
           key: voces-piper-v1
       - name: Crear video
-        run: python animador.py "${{ matrix.archivo }}" --salida salida
+        run: |
+          python animador.py "${{ matrix.archivo }}" --salida salida --partes $(nproc)
+          case "${{ matrix.archivo }}" in historias_largas/*) python miniatura.py "${{ matrix.archivo }}" salida ;; esac
       - name: Nombre del paquete
         id: nombre
         run: echo "n=$(basename '${{ matrix.archivo }}' .json)" >> "$GITHUB_OUTPUT"
@@ -92,6 +94,8 @@ jobs:
           path: |
             salida/*.mp4
             salida/*_portada.png
+            salida/*_miniatura.jpg
+            salida/*_capitulos.txt
           retention-days: 1
 
   juntar:

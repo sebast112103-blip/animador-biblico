@@ -33,7 +33,7 @@ def gente(x=0.5, esc=0.65, y=-160, prof=-70, **kw):
     return {"tipo": "multitud", "x": x, "escala": esc, "y": y, "profundidad": prof, **kw}
 
 
-def guardar(archivo, titulo, gancho, resaltar, personajes=None):
+def guardar(archivo, titulo, gancho, resaltar, personajes=None, miniatura=None):
     for e in E:
         for c in e.get("cosas", []):
             if c.get("profundidad", 0) is None:
@@ -45,8 +45,10 @@ def guardar(archivo, titulo, gancho, resaltar, personajes=None):
         "barra_progreso": False, "resaltar": resaltar + ["DIOS", "COMENTARIOS", "SUSCRÍBETE"],
         "personajes": personajes or {}, "escenas": E,
     }
+    if miniatura:
+        h["miniatura"] = miniatura
     out = Path(__file__).resolve().parent.parent / "historias_largas" / archivo
     out.parent.mkdir(exist_ok=True)
     out.write_text(json.dumps(h, ensure_ascii=False, indent=1), encoding="utf-8")
     w = sum(len(e["texto"].split()) for e in E)
-    print(f"{out.name}: {len(E)} escenas, {w} palabras, ~{w / 145:.1f} min")
+    print(f"{out.name}: {len(E)} escenas, {w} palabras, ~{w / 165 + len(E) * 0.35 / 60:.1f} min")

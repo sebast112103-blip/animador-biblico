@@ -1774,6 +1774,7 @@ def main():
     ap.add_argument("--sin-voz", action="store_true", help="no generar voz (prueba rapida)")
     ap.add_argument("--borrador", action="store_true", help="render rapido a media calidad")
     ap.add_argument("--salida", default=None)
+    ap.add_argument("--partes", type=int, default=0, help="dividir el video en N partes que se crean a la vez (Linux)")
     ap.add_argument("--paralelo", type=int, default=0,
                     help="cuantos videos crear a la vez con --todas (por defecto: la mitad de los nucleos, max 4)")
     ap.add_argument("--vista", action="store_true",
@@ -1982,7 +1983,10 @@ def crear_video(ruta, a):
     cmd += ["-filter_complex", filtro, "-map", "[v]", "-map", "[a]", "-t", f"{total:.2f}",
             "-c:v", "libx264", "-preset", "veryfast" if not a.borrador else "ultrafast", "-crf", "20",
             "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", salida]
-    proc = None if a.vista else subprocess.Popen(cmd, stdin=subprocess.PIPE, cwd=carpeta)
+    import os
+    partes = int(getattr(a, "partes", 0) or 0)
+    en_paralelo = partes > 1 and not a.vista and hasattr(os, "fork") and len(escenas) > 1
+    proc = None if (a.vista or en_paralelo) else subprocess.Popen(cmd, stdin=subprocess.PIPE, cwd=carpeta)
     vistas = []
     VW = 853 if horizontal else 270
 
@@ -1990,202 +1994,264 @@ def crear_video(ruta, a):
     cache_fondo = {}
     portada_guardada = False
     frame = 0
-    try:
-        for ie, (e, t0, (au, pal, dur)) in enumerate(zip(escenas, inicios, voces)):
-            fnom = e.get("fondo", "valle")
-            if Path(fnom).suffix:
-                fnom = str((base_dir / fnom).resolve())
-            if fnom not in cache_fondo:
-                cache_fondo[fnom] = fondo(fnom, len(cache_fondo) * 7 + 3)
-            bg, suelo = cache_fondo[fnom]
-            items = e.get("personajes", [])
-            cosas = e.get("cosas", [])
-            efectos = e.get("efectos", [])
-            camara = e.get("camara", "fijo")
-            nfr = max(1, int(round(dur * FPS)))
-            capas = [(it.get("profundidad", 0), 0, "p", it) for it in items] + \
-                    [(co.get("profundidad", 500 if co.get("delante") else -20), 1, "c", co) for co in cosas]
-            capas.sort(key=lambda c: (c[0], c[1]))
-            cuadros = range(nfr) if not a.vista else [int(nfr * 0.6)]
-            for fi in cuadros:
-                t = fi / FPS
-                p = t / dur
-                img = bg.copy()
-                d = ImageDraw.Draw(img, "RGBA")
-                manos, pos_cabeza = {}, {}
-                # efectos que van detras de todo
-                for ef in efectos:
-                    tipo = ef.get("tipo")
-                    a0, a1 = ef.get("inicio", 0.0), ef.get("fin", 1.0)
-                    kk = suave((p - a0) / max(a1 - a0, .01))
-                    if tipo == "abrir_mar":
-                        efecto_mar(d, kk, suelo)
-                    elif tipo == "cerrar_mar":
-                        efecto_mar(d, 1 - kk, suelo)
-                for j, (_, _, clase, it) in enumerate(capas):
-                    if clase == "c":
-                        pegar_cosa(img, it, t, dur, suelo)
-                        continue
-                    pid = it.get("id")
-                    if pid is None:
-                        continue
-                    c = personajes.get(pid)
-                    if c is None:
-                        print(f"\n  [aviso] El personaje '{pid}' no esta definido.")
-                        it["id"] = None
-                        continue
-                    cambios = {k: v for k, v in it.items() if k in DEFECTO and k not in ("escala", "tipo", "voz")}
-                    if cambios:   # cambiar aspecto solo en esta escena (pelo, objeto, venda...)
-                        c = dict(c, **cambios)
-                    if "escala" in it:
-                        c = dict(c, escala=c["escala"] * it["escala"])
-                    x = estado_personaje(it, t, dur)
-                    if x is None or ("sale_en" in it and t >= it["sale_en"]):
-                        continue
-                    hablando = e.get("habla") == pid
-                    boca = 0.0
-                    if hablando:
-                        gi = int((t0 + t) * FPS)
-                        if hay_voz:
-                            boca = float(np.clip(env[min(gi, len(env) - 1)] * 1.3, 0, 1))
-                        else:
-                            en_palabra = any(w["start"] <= t <= w["end"] for w in pal)
-                            boca = (0.5 + 0.5 * math.sin(t * 22)) if en_palabra else 0
-                    if it.get("accion") == "rugir":
-                        boca = max(boca, 0.55 + 0.45 * math.sin(t * 7))
-                    mira = 1 if it.get("mira", "derecha") == "derecha" else -1
-                    po = pose_de(it.get("accion", "quieto"), t, dur, it.get("emocion", "neutral"), hablando)
-                    prof = it.get("profundidad", 0)
-                    yb = suelo + prof + it.get("y", 0)
-                    spr, pos, mano = render_personaje(c, x * W, yb, po, t, hablando, boca, mira,
-                                                      j + 1 + ie, frame)
-                    img.paste(spr, pos, spr)
-                    manos[pid] = mano
-                    if not po.get("caida"):   # acostados no sirven para primer plano
-                        pos_cabeza[pid] = (x * W, yb - (430 + 30) * c["escala"])
-                d = ImageDraw.Draw(img, "RGBA")
-                sx = sy = 0
-                for ef in efectos:
-                    tipo = ef.get("tipo")
-                    a0, a1 = ef.get("inicio", 0.0), ef.get("fin", 1.0)
-                    activo = a0 <= p <= a1
-                    kk = suave((p - a0) / max(a1 - a0, .01))
-                    if tipo == "agua":
-                        n0 = ef.get("nivel", 0.2)
-                        efecto_agua(d, n0 + (ef.get("hasta", n0) - n0) * kk, t)
-                    elif tipo == "arcoiris" and p >= a0:
-                        efecto_arcoiris(d, kk)
-                    elif tipo == "rayo" and activo and (frame // 4) % 9 == 0:
-                        efecto_rayo(d, random.Random(frame // 4))
-                        img = Image.blend(img, Image.new("RGB", (W, H), (230, 235, 255)), 0.35)
-                        d = ImageDraw.Draw(img, "RGBA")
-                    elif tipo == "oscuridad" and activo:
-                        d.rectangle([0, 0, W, H], fill=(0, 0, 20, int(255 * ef.get("fuerza", 0.45))))
-                    elif tipo == "brillo" and activo:
-                        efecto_brillo(d, ef.get("x", .5) * W, suelo + ef.get("y", -250), t,
-                                      ef.get("cantidad", 14), ef.get("radio", 260))
-                    elif tipo == "proyectil" and activo:
-                        k = (p - a0) / max(a1 - a0, .01)
-                        o = manos.get(ef.get("de")) or (W * .3, suelo - 300)
-                        dst = pos_cabeza.get(ef.get("a"), (W * .7, suelo - 500))
-                        for tr in range(5, -1, -1):
-                            k2 = max(0, k - tr * 0.03)
-                            tx = o[0] + (dst[0] - o[0]) * k2
-                            ty = o[1] + (dst[1] - o[1]) * k2 - math.sin(k2 * math.pi) * 160
-                            r = 14 if tr == 0 else 13 - tr * 2
-                            if tr == 0:
-                                d.ellipse([tx - r, ty - r, tx + r, ty + r], fill=(130, 130, 130, 255),
-                                          outline=TINTA, width=4)
-                            elif r > 0:
-                                d.ellipse([tx - r, ty - r, tx + r, ty + r], fill=(120, 120, 120, 220 - tr * 40))
-                    elif tipo == "luz" and activo:
-                        alfa = 0.6 + 0.4 * math.sin(t * 2)
-                        l2 = luz.copy()
-                        l2.putalpha(l2.getchannel("A").point(lambda v: int(v * alfa)))
-                        if ef.get("x") is not None:
-                            l2 = l2.transform(l2.size, Image.AFFINE, (1, 0, (0.5 - ef["x"]) * W, 0, 1, 0))
-                        img.paste(l2, (0, 0), l2)
-                        d = ImageDraw.Draw(img, "RGBA")
-                    elif tipo == "temblor" and activo:
-                        sx, sy = random.uniform(-14, 14), random.uniform(-14, 14)
-                    elif tipo == "flash" and activo:
-                        k = 1 - (p - a0) / max(a1 - a0, .01)
-                        img = Image.blend(img, Image.new("RGB", (W, H), (255, 255, 255)), 0.85 * k)
-                        d = ImageDraw.Draw(img, "RGBA")
-                    elif tipo == "lluvia" and activo:
-                        rr = random.Random(frame)
-                        for _ in range(160):
-                            x, y = rr.uniform(0, W), rr.uniform(0, H)
-                            d.line([(x, y), (x - 12, y + 45)], fill=(200, 210, 230, 140), width=3)
-                    elif tipo == "fuego" and activo:
-                        rr = random.Random(frame // 2)
-                        fx = ef.get("x", .5) * W
-                        base = suelo + ef.get("y", 0)
-                        tam = ef.get("tamano", 1.0) * (0.3 + 0.7 * kk if ef.get("crece") else 1)
-                        for _ in range(int(30 * max(tam, .3))):
-                            r = rr.uniform(20, 60) * tam
-                            x = fx + rr.uniform(-90, 90) * tam
-                            y = base - rr.uniform(0, 260) * tam * (1 - abs(x - fx) / (140 * tam))
-                            d.ellipse([x - r, y - r * 1.5, x + r, y + r],
-                                      fill=(255, rr.randint(90, 200), 30, 150))
-                # camara
-                z = 1.0
-                if camara == "acercar":
-                    z = 1 + 0.14 * suave(p)
-                elif camara == "alejar":
-                    z = 1.14 - 0.14 * suave(p)
-                elif camara == "acercar_rapido":
-                    z = 1 + 0.3 * suave(min(1, p * 3))
-                fx, fy = e.get("foco_x", 0.5) * W, suelo - 420
-                desp = 0.0
-                if camara == "paneo":
-                    z, desp = 1.1, (p - 0.5) * W * 0.08
-                # cortes de camara: cada ~2 s cambia el plano (primer plano, plano medio...)
-                corte = h.get("corte_seg", 2.2)
-                centrado = None
-                if h.get("cortes", True) and e.get("cortes", True) and dur >= corte * 1.5:
-                    k = int(t // corte)
-                    frac = (t % corte) / corte
-                    caras = [pos_cabeza[i] for i in sorted(pos_cabeza)]
-                    if k > 0:
-                        if caras and k % 2 == 1:      # primer plano de un personaje
-                            cx_, cy_ = caras[(k // 2) % len(caras)]
-                            centrado = (1.6 + 0.06 * frac, cx_, cy_ + 120)
-                        elif caras:                   # plano medio del grupo
-                            mx_ = sum(c[0] for c in caras) / len(caras)
-                            my_ = sum(c[1] for c in caras) / len(caras)
-                            centrado = (1.25 + 0.05 * frac, mx_, my_ + 260)
-                        else:                         # sin personajes: acercar a la escena
-                            centrado = (1.2 + 0.08 * frac if k % 2 else 1.0 + 0.05 * frac, W / 2, suelo - 350)
-                if centrado:
-                    z, cx_, cy_ = centrado
-                    cw, ch = W / z, H / z
-                    l = min(max(cx_ - cw / 2 + sx, 0), W - cw)
-                    tp = min(max(cy_ - ch * 0.42 + sy, 0), H - ch)
-                    img = img.resize((W, H), Image.BILINEAR, box=(l, tp, l + cw, tp + ch))
-                else:
-                    if sx or sy:
-                        z = max(z, 1.03)
-                    if z != 1.0:
+
+    def _render(sel, proc):
+        nonlocal portada_guardada, frame
+        try:
+            for ie, (e, t0, (au, pal, dur)) in enumerate(zip(escenas, inicios, voces)):
+                if sel is not None and ie not in sel:
+                    continue
+                fnom = e.get("fondo", "valle")
+                if Path(fnom).suffix:
+                    fnom = str((base_dir / fnom).resolve())
+                if fnom not in cache_fondo:
+                    cache_fondo[fnom] = fondo(fnom, len(cache_fondo) * 7 + 3)
+                bg, suelo = cache_fondo[fnom]
+                items = e.get("personajes", [])
+                cosas = e.get("cosas", [])
+                efectos = e.get("efectos", [])
+                camara = e.get("camara", "fijo")
+                nfr = max(1, int(round(dur * FPS)))
+                capas = [(it.get("profundidad", 0), 0, "p", it) for it in items] + \
+                        [(co.get("profundidad", 500 if co.get("delante") else -20), 1, "c", co) for co in cosas]
+                capas.sort(key=lambda c: (c[0], c[1]))
+                cuadros = range(nfr) if not a.vista else [int(nfr * 0.6)]
+                for fi in cuadros:
+                    t = fi / FPS
+                    p = t / dur
+                    img = bg.copy()
+                    d = ImageDraw.Draw(img, "RGBA")
+                    manos, pos_cabeza = {}, {}
+                    # efectos que van detras de todo
+                    for ef in efectos:
+                        tipo = ef.get("tipo")
+                        a0, a1 = ef.get("inicio", 0.0), ef.get("fin", 1.0)
+                        kk = suave((p - a0) / max(a1 - a0, .01))
+                        if tipo == "abrir_mar":
+                            efecto_mar(d, kk, suelo)
+                        elif tipo == "cerrar_mar":
+                            efecto_mar(d, 1 - kk, suelo)
+                    for j, (_, _, clase, it) in enumerate(capas):
+                        if clase == "c":
+                            pegar_cosa(img, it, t, dur, suelo)
+                            continue
+                        pid = it.get("id")
+                        if pid is None:
+                            continue
+                        c = personajes.get(pid)
+                        if c is None:
+                            print(f"\n  [aviso] El personaje '{pid}' no esta definido.")
+                            it["id"] = None
+                            continue
+                        cambios = {k: v for k, v in it.items() if k in DEFECTO and k not in ("escala", "tipo", "voz")}
+                        if cambios:   # cambiar aspecto solo en esta escena (pelo, objeto, venda...)
+                            c = dict(c, **cambios)
+                        if "escala" in it:
+                            c = dict(c, escala=c["escala"] * it["escala"])
+                        x = estado_personaje(it, t, dur)
+                        if x is None or ("sale_en" in it and t >= it["sale_en"]):
+                            continue
+                        hablando = e.get("habla") == pid
+                        boca = 0.0
+                        if hablando:
+                            gi = int((t0 + t) * FPS)
+                            if hay_voz:
+                                boca = float(np.clip(env[min(gi, len(env) - 1)] * 1.3, 0, 1))
+                            else:
+                                en_palabra = any(w["start"] <= t <= w["end"] for w in pal)
+                                boca = (0.5 + 0.5 * math.sin(t * 22)) if en_palabra else 0
+                        if it.get("accion") == "rugir":
+                            boca = max(boca, 0.55 + 0.45 * math.sin(t * 7))
+                        mira = 1 if it.get("mira", "derecha") == "derecha" else -1
+                        po = pose_de(it.get("accion", "quieto"), t, dur, it.get("emocion", "neutral"), hablando)
+                        prof = it.get("profundidad", 0)
+                        yb = suelo + prof + it.get("y", 0)
+                        spr, pos, mano = render_personaje(c, x * W, yb, po, t, hablando, boca, mira,
+                                                          j + 1 + ie, frame)
+                        img.paste(spr, pos, spr)
+                        manos[pid] = mano
+                        if not po.get("caida"):   # acostados no sirven para primer plano
+                            pos_cabeza[pid] = (x * W, yb - (430 + 30) * c["escala"])
+                    d = ImageDraw.Draw(img, "RGBA")
+                    sx = sy = 0
+                    for ef in efectos:
+                        tipo = ef.get("tipo")
+                        a0, a1 = ef.get("inicio", 0.0), ef.get("fin", 1.0)
+                        activo = a0 <= p <= a1
+                        kk = suave((p - a0) / max(a1 - a0, .01))
+                        if tipo == "agua":
+                            n0 = ef.get("nivel", 0.2)
+                            efecto_agua(d, n0 + (ef.get("hasta", n0) - n0) * kk, t)
+                        elif tipo == "arcoiris" and p >= a0:
+                            efecto_arcoiris(d, kk)
+                        elif tipo == "rayo" and activo and (frame // 4) % 9 == 0:
+                            efecto_rayo(d, random.Random(frame // 4))
+                            img = Image.blend(img, Image.new("RGB", (W, H), (230, 235, 255)), 0.35)
+                            d = ImageDraw.Draw(img, "RGBA")
+                        elif tipo == "oscuridad" and activo:
+                            d.rectangle([0, 0, W, H], fill=(0, 0, 20, int(255 * ef.get("fuerza", 0.45))))
+                        elif tipo == "brillo" and activo:
+                            efecto_brillo(d, ef.get("x", .5) * W, suelo + ef.get("y", -250), t,
+                                          ef.get("cantidad", 14), ef.get("radio", 260))
+                        elif tipo == "proyectil" and activo:
+                            k = (p - a0) / max(a1 - a0, .01)
+                            o = manos.get(ef.get("de")) or (W * .3, suelo - 300)
+                            dst = pos_cabeza.get(ef.get("a"), (W * .7, suelo - 500))
+                            for tr in range(5, -1, -1):
+                                k2 = max(0, k - tr * 0.03)
+                                tx = o[0] + (dst[0] - o[0]) * k2
+                                ty = o[1] + (dst[1] - o[1]) * k2 - math.sin(k2 * math.pi) * 160
+                                r = 14 if tr == 0 else 13 - tr * 2
+                                if tr == 0:
+                                    d.ellipse([tx - r, ty - r, tx + r, ty + r], fill=(130, 130, 130, 255),
+                                              outline=TINTA, width=4)
+                                elif r > 0:
+                                    d.ellipse([tx - r, ty - r, tx + r, ty + r], fill=(120, 120, 120, 220 - tr * 40))
+                        elif tipo == "luz" and activo:
+                            alfa = 0.6 + 0.4 * math.sin(t * 2)
+                            l2 = luz.copy()
+                            l2.putalpha(l2.getchannel("A").point(lambda v: int(v * alfa)))
+                            if ef.get("x") is not None:
+                                l2 = l2.transform(l2.size, Image.AFFINE, (1, 0, (0.5 - ef["x"]) * W, 0, 1, 0))
+                            img.paste(l2, (0, 0), l2)
+                            d = ImageDraw.Draw(img, "RGBA")
+                        elif tipo == "temblor" and activo:
+                            sx, sy = random.uniform(-14, 14), random.uniform(-14, 14)
+                        elif tipo == "flash" and activo:
+                            k = 1 - (p - a0) / max(a1 - a0, .01)
+                            img = Image.blend(img, Image.new("RGB", (W, H), (255, 255, 255)), 0.85 * k)
+                            d = ImageDraw.Draw(img, "RGBA")
+                        elif tipo == "lluvia" and activo:
+                            rr = random.Random(frame)
+                            for _ in range(160):
+                                x, y = rr.uniform(0, W), rr.uniform(0, H)
+                                d.line([(x, y), (x - 12, y + 45)], fill=(200, 210, 230, 140), width=3)
+                        elif tipo == "fuego" and activo:
+                            rr = random.Random(frame // 2)
+                            fx = ef.get("x", .5) * W
+                            base = suelo + ef.get("y", 0)
+                            tam = ef.get("tamano", 1.0) * (0.3 + 0.7 * kk if ef.get("crece") else 1)
+                            for _ in range(int(30 * max(tam, .3))):
+                                r = rr.uniform(20, 60) * tam
+                                x = fx + rr.uniform(-90, 90) * tam
+                                y = base - rr.uniform(0, 260) * tam * (1 - abs(x - fx) / (140 * tam))
+                                d.ellipse([x - r, y - r * 1.5, x + r, y + r],
+                                          fill=(255, rr.randint(90, 200), 30, 150))
+                    # camara
+                    z = 1.0
+                    if camara == "acercar":
+                        z = 1 + 0.14 * suave(p)
+                    elif camara == "alejar":
+                        z = 1.14 - 0.14 * suave(p)
+                    elif camara == "acercar_rapido":
+                        z = 1 + 0.3 * suave(min(1, p * 3))
+                    fx, fy = e.get("foco_x", 0.5) * W, suelo - 420
+                    desp = 0.0
+                    if camara == "paneo":
+                        z, desp = 1.1, (p - 0.5) * W * 0.08
+                    # cortes de camara: cada ~2 s cambia el plano (primer plano, plano medio...)
+                    corte = h.get("corte_seg", 2.2)
+                    centrado = None
+                    if h.get("cortes", True) and e.get("cortes", True) and dur >= corte * 1.5:
+                        k = int(t // corte)
+                        frac = (t % corte) / corte
+                        caras = [pos_cabeza[i] for i in sorted(pos_cabeza)]
+                        if k > 0:
+                            if caras and k % 2 == 1:      # primer plano de un personaje
+                                cx_, cy_ = caras[(k // 2) % len(caras)]
+                                centrado = (1.6 + 0.06 * frac, cx_, cy_ + 120)
+                            elif caras:                   # plano medio del grupo
+                                mx_ = sum(c[0] for c in caras) / len(caras)
+                                my_ = sum(c[1] for c in caras) / len(caras)
+                                centrado = (1.25 + 0.05 * frac, mx_, my_ + 260)
+                            else:                         # sin personajes: acercar a la escena
+                                centrado = (1.2 + 0.08 * frac if k % 2 else 1.0 + 0.05 * frac, W / 2, suelo - 350)
+                    if centrado:
+                        z, cx_, cy_ = centrado
                         cw, ch = W / z, H / z
-                        l = min(max(fx - fx / z + desp + sx, 0), W - cw)
-                        tp = min(max(fy - fy / z + sy, 0), H - ch)
+                        l = min(max(cx_ - cw / 2 + sx, 0), W - cw)
+                        tp = min(max(cy_ - ch * 0.42 + sy, 0), H - ch)
                         img = img.resize((W, H), Image.BILINEAR, box=(l, tp, l + cw, tp + ch))
-                if h.get("barra_progreso"):
-                    db = ImageDraw.Draw(img, "RGBA")
-                    db.rectangle([0, 0, W, 16], fill=(0, 0, 0, 120))
-                    db.rectangle([0, 0, int(W * min(1, (t0 + t) / total)), 16], fill=(255, 214, 0, 255))
-                if not portada_guardada and e.get("portada") and fi == nfr // 2:
-                    (img.resize((1920, 1080), Image.LANCZOS) if horizontal else img).save(carpeta / f"{nombre}_portada.png")
-                    portada_guardada = True
-                if a.vista:
-                    vistas.append(img.resize((VW, 480), Image.LANCZOS))
-                else:
-                    proc.stdin.write(img.tobytes())
-                frame += 1
-            print(f"\r  Escena {ie + 1}/{len(escenas)} lista", end="", flush=True)
-    except BrokenPipeError:
-        pass
+                    else:
+                        if sx or sy:
+                            z = max(z, 1.03)
+                        if z != 1.0:
+                            cw, ch = W / z, H / z
+                            l = min(max(fx - fx / z + desp + sx, 0), W - cw)
+                            tp = min(max(fy - fy / z + sy, 0), H - ch)
+                            img = img.resize((W, H), Image.BILINEAR, box=(l, tp, l + cw, tp + ch))
+                    if h.get("barra_progreso"):
+                        db = ImageDraw.Draw(img, "RGBA")
+                        db.rectangle([0, 0, W, 16], fill=(0, 0, 0, 120))
+                        db.rectangle([0, 0, int(W * min(1, (t0 + t) / total)), 16], fill=(255, 214, 0, 255))
+                    if not portada_guardada and e.get("portada") and fi == nfr // 2:
+                        (img.resize((1920, 1080), Image.LANCZOS) if horizontal else img).save(carpeta / f"{nombre}_portada.png")
+                        portada_guardada = True
+                    if a.vista:
+                        vistas.append(img.resize((VW, 480), Image.LANCZOS))
+                    else:
+                        proc.stdin.write(img.tobytes())
+                    frame += 1
+                print(f"\r  Escena {ie + 1}/{len(escenas)} lista", end="", flush=True)
+        except BrokenPipeError:
+            pass
+
+    if en_paralelo:
+        # Varias partes del video a la vez (una por nucleo); luego se unen sin recomprimir
+        durs = [d for (_, _, d) in voces]
+        objetivo = sum(durs) / partes
+        grupos, actual, acum = [], [], 0.0
+        for ie, d in enumerate(durs):
+            actual.append(ie); acum += d
+            if acum >= objetivo and len(grupos) < partes - 1:
+                grupos.append(actual); actual, acum = [], 0.0
+        if actual:
+            grupos.append(actual)
+        print(f"  (en paralelo: {len(grupos)} partes)")
+        hijos = []
+        for gi, g in enumerate(grupos):
+            pid = os.fork()
+            if pid == 0:
+                seg = f"_seg_{TMP}_{gi:02d}.mp4"
+                cv = ["ffmpeg", "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
+                      "-r", str(FPS), "-i", "-", "-vf", f"scale={escala_out}", "-c:v", "libx264",
+                      "-preset", "veryfast" if not a.borrador else "ultrafast", "-crf", "16",
+                      "-pix_fmt", "yuv420p", seg]
+                pp = subprocess.Popen(cv, stdin=subprocess.PIPE, cwd=carpeta)
+                try:
+                    _render(set(g), pp)
+                    pp.stdin.close()
+                    pp.wait()
+                    os._exit(pp.returncode)
+                except Exception as ex:
+                    print(f"[ERROR] parte {gi}: {ex}", flush=True)
+                    os._exit(1)
+            hijos.append(pid)
+        fallo = False
+        for pid in hijos:
+            _, st = os.waitpid(pid, 0)
+            fallo = fallo or st != 0
+        if fallo:
+            sys.exit("[ERROR] Fallo una de las partes del video.")
+        lista = carpeta / f"_partes_{TMP}.txt"
+        lista.write_text("".join(f"file '_seg_{TMP}_{gi:02d}.mp4'\n" for gi in range(len(grupos))), encoding="utf-8")
+        cmd_final = ["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", lista.name] + cmd[14:]
+        # los subtitulos se dibujan sobre el video ya reducido: decirle a ffmpeg el tamano original
+        cmd_final = [x.replace(":fontsdir=_fuentes", f":fontsdir=_fuentes:original_size={W}x{H}") if isinstance(x, str) else x
+                     for x in cmd_final]
+        print("  Uniendo las partes, voz, musica y subtitulos...")
+        r = subprocess.run(cmd_final, cwd=carpeta)
+        for gi in range(len(grupos)):
+            (carpeta / f"_seg_{TMP}_{gi:02d}.mp4").unlink(missing_ok=True)
+        lista.unlink(missing_ok=True)
+        if r.returncode != 0:
+            sys.exit("[ERROR] ffmpeg no pudo unir el video.")
+        for f in (f"_narracion_{TMP}.wav", f"_subs_{TMP}.ass"):
+            (carpeta / f).unlink(missing_ok=True)
+        os.replace(carpeta / salida, final_mp4)
+        print(f"[3/3] Listo: {final_mp4.resolve()}")
+        return
+    _render(None, proc)
     if a.vista:
         cols = 6 if not horizontal else 3
         filas = (len(vistas) + cols - 1) // cols
