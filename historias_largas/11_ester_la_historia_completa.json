@@ -1,6 +1,6 @@
 {
  "titulo": "Ester - La Reina Valiente",
- "gancho": "Si entraba sin permiso, MORÍA... y aun así entró.",
+ "gancho": "Si entraba sin permiso, MORÍA.",
  "final": "",
  "formato": "horizontal",
  "voz_narrador": "es_MX-claude-high",
@@ -37,7 +37,7 @@
  "escenas": [
   {
    "fondo": "palacio",
-   "texto": "Una joven camina sola hacia el trono del hombre más poderoso del mundo. Nadie la ha llamado. Y la ley es clara: quien entre sin ser invitado, muere. A menos que el rey extienda su cetro de oro.",
+   "texto": "Si da un paso más, la matan. Una joven camina sola hacia el trono del hombre más poderoso del mundo. Nadie la llamó, y la ley es clara: quien entra sin ser invitado, muere.",
    "personajes": [
     {
      "id": "ester",
@@ -72,7 +72,7 @@
   },
   {
    "fondo": "palacio",
-   "texto": "Si el rey no levanta el cetro, ella morirá. Y si no se arriesga, morirá todo su pueblo. ¿Cómo llegó una huérfana a este momento? Esta es la historia de Ester.",
+   "texto": "Si el rey no levanta su cetro de oro, ella muere. Y si no se arriesga, muere todo su pueblo. ¿Cómo llegó una huérfana hasta aquí? Todo empezó con un rey muy poderoso.",
    "personajes": [
     {
      "id": "ester",
@@ -107,7 +107,6 @@
      "profundidad": -30
     }
    ],
-   "rotulo": "CAPÍTULO 1: UNA NUEVA REINA",
    "camara": "alejar"
   },
   {
@@ -204,7 +203,7 @@
      "tocado": "velo"
     }
    ],
-   "rotulo": "CAPÍTULO 2: LA HUÉRFANA",
+   "rotulo": "CAPÍTULO 1: LA HUÉRFANA",
    "camara": "acercar"
   },
   {
@@ -345,7 +344,7 @@
      "delante": true
     }
    ],
-   "rotulo": "CAPÍTULO 3: EL ENEMIGO",
+   "rotulo": "CAPÍTULO 2: EL ENEMIGO",
    "camara": "acercar"
   },
   {
@@ -496,7 +495,7 @@
      "accion": "ofrecer"
     }
    ],
-   "rotulo": "CAPÍTULO 4: PARA ESTA HORA",
+   "rotulo": "CAPÍTULO 3: PARA ESTA HORA",
    "camara": "acercar"
   },
   {
@@ -678,7 +677,7 @@
      "profundidad": -70
     }
    ],
-   "rotulo": "CAPÍTULO 5: EL CETRO DE ORO",
+   "rotulo": "CAPÍTULO 4: EL CETRO DE ORO",
    "camara": "acercar"
   },
   {
@@ -780,7 +779,7 @@
      "fuerza": 0.4
     }
    ],
-   "rotulo": "CAPÍTULO 6: UNA NOCHE SIN SUEÑO",
+   "rotulo": "CAPÍTULO 5: UNA NOCHE SIN SUEÑO",
    "camara": "acercar"
   },
   {
@@ -957,7 +956,7 @@
      "x": 0.5
     }
    ],
-   "rotulo": "CAPÍTULO 7: LA VERDAD",
+   "rotulo": "CAPÍTULO 6: LA VERDAD",
    "camara": "acercar"
   },
   {

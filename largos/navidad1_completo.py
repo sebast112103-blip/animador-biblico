@@ -4,15 +4,15 @@ from base import S, P, gente, guardar
 VIEJO = {"barba": "#e8e4dc", "pelo": "#e8e4dc"}
 
 # ---------- APERTURA EN FRÍO ----------
-S("noche", "Una joven de Nazaret está sola en su casa. Tiene unos quince años. Y de repente, la habitación se llena de luz... y un ángel le dice: ¡Alégrate, muy favorecida! El Señor está contigo.",
+S("noche", "Tiene quince años y un ángel aparece en su cuarto. Está sola en su casa en Nazaret, y de repente todo se llena de luz: ¡Alégrate, muy favorecida! El Señor está contigo.",
   [P("maria", 0.4, emocion="asustado", accion="temblar"), P("angel", 0.72, mira="izquierda", accion="ofrecer")],
   efectos=[{"tipo": "luz", "x": 0.72}, {"tipo": "brillo", "x": 0.72}, {"tipo": "flash", "inicio": 0.1}], camara="acercar_rapido", portada=True)
-S("noche", "Lo que ese ángel estaba por anunciarle cambiaría la historia del mundo para siempre. Esta es la primera parte de la verdadera historia de la Navidad.",
-  [P("maria", 0.5, emocion="sorprendido")], efectos=[{"tipo": "luz"}, {"tipo": "flash", "inicio": 0.85}], rotulo="LA NAVIDAD · PARTE 1", camara="acercar")
+S("noche", "Lo que ese ángel le iba a anunciar cambiaría la historia del mundo para siempre. Esta es la verdadera historia de la Navidad.",
+  [P("maria", 0.5, emocion="sorprendido")], efectos=[{"tipo": "luz"}, {"tipo": "flash", "inicio": 0.85}], camara="acercar")
 
 # ---------- 1. EL SILENCIO ----------
 S("cielo", "Durante cuatrocientos años, Dios no envió ningún profeta a su pueblo. Cuatrocientos años de silencio. El último mensaje del Antiguo Testamento había sido una promesa: Dios enviaría un mensajero para preparar el camino.",
-  [], efectos=[{"tipo": "oscuridad", "fuerza": 0.35}], rotulo="CAPÍTULO 1: 400 AÑOS DE SILENCIO", camara="alejar")
+  [], efectos=[{"tipo": "oscuridad", "fuerza": 0.35}], camara="alejar")
 S("ciudad", "Israel ya no era un reino libre. Ahora lo gobernaba el poderoso Imperio Romano, y en Judea reinaba Herodes, un rey cruel y desconfiado.",
   [P("soldado1", 0.35, objeto="lanza", casco=True), P("soldado2", 0.6, objeto="lanza", casco=True)], [gente(0.8, 0.5, variante="soldados")], camara="paneo")
 S("ciudad", "El pueblo esperaba al Mesías, el Salvador prometido. Muchos creían que vendría como un rey guerrero para expulsar a los romanos. Nadie imaginaba cómo iba a llegar en realidad.",
@@ -20,7 +20,7 @@ S("ciudad", "El pueblo esperaba al Mesías, el Salvador prometido. Muchos creía
 
 # ---------- 2. ZACARÍAS ----------
 S("templo", "En esos días vivía un sacerdote llamado Zacarías, con su esposa Elisabet. Los dos eran justos delante de Dios. Pero tenían una tristeza: no tenían hijos, y ya eran ancianos.",
-  [P("zacarias", 0.4, emocion="triste"), P("elisabet", 0.6, mira="izquierda", emocion="triste")], rotulo="CAPÍTULO 2: EL SACERDOTE", camara="acercar")
+  [P("zacarias", 0.4, emocion="triste"), P("elisabet", 0.6, mira="izquierda", emocion="triste")], rotulo="CAPÍTULO 1: EL SACERDOTE", camara="acercar")
 S("templo", "Había miles de sacerdotes en Israel, y se sorteaba quién entraría al templo a ofrecer el incienso. Muchos nunca tenían esa oportunidad en toda su vida. Y ese día, la suerte cayó sobre Zacarías.",
   [P("zacarias", 0.5, accion="caminar", hasta=0.6, emocion="feliz")], [gente(0.2, 0.5)], camara="paneo")
 S("templo", "Mientras afuera el pueblo oraba, Zacarías entró solo al lugar santo. Y junto al altar del incienso... estaba un ángel.",
@@ -42,7 +42,7 @@ S("cielo", "Zacarías oró por un hijo durante años... y quizás ya había deja
 
 # ---------- 3. MARÍA ----------
 S("ciudad", "Seis meses después, Dios envió al mismo ángel Gabriel a un pueblito pequeño y sin importancia de Galilea: Nazaret.",
-  [P("angel", 0.5)], [gente(0.8, 0.4)], efectos=[{"tipo": "luz"}, {"tipo": "brillo", "y": -600}], rotulo="CAPÍTULO 3: LA JOVEN DE NAZARET", camara="alejar")
+  [P("angel", 0.5)], [gente(0.8, 0.4)], efectos=[{"tipo": "luz"}, {"tipo": "brillo", "y": -600}], rotulo="CAPÍTULO 2: LA JOVEN DE NAZARET", camara="alejar")
 S("ciudad", "Nazaret era tan pequeño que ni siquiera aparece mencionado en el Antiguo Testamento. Tenía unas pocas casas de piedra y gente humilde que trabajaba la tierra. Algunos decían: ¿De Nazaret puede salir algo bueno?",
   [P("hombre2", 0.35, accion="agacharse"), P("mujer1", 0.6, accion="levantar")], camara="paneo")
 S("ciudad", "Allí vivía una joven llamada María, comprometida para casarse con un carpintero llamado José, que era descendiente del rey David.",
@@ -68,7 +68,7 @@ S("cielo", "Pausa. ¿Qué crees que habrías respondido tú en el lugar de Marí
 
 # ---------- 4. LA VISITA ----------
 S("camino", "María se levantó y fue de prisa a las montañas de Judea, a visitar a Elisabet. Fue un viaje de varios días.",
-  [P("maria", 0.25, accion="caminar", hasta=0.6, emocion="feliz")], rotulo="CAPÍTULO 4: EL ENCUENTRO", camara="paneo")
+  [P("maria", 0.25, accion="caminar", hasta=0.6, emocion="feliz")], rotulo="CAPÍTULO 3: EL ENCUENTRO", camara="paneo")
 S("campo", "Cuando entró en la casa y saludó a Elisabet, el bebé que Elisabet llevaba en su vientre saltó de alegría. Y Elisabet, llena del Espíritu Santo, exclamó:",
   [P("maria", 0.4, accion="abrazar", emocion="feliz"), P("elisabet", 0.6, mira="izquierda", accion="abrazar", emocion="sorprendido")], efectos=[{"tipo": "luz"}, {"tipo": "brillo"}],
   camara="acercar_rapido")
@@ -84,7 +84,7 @@ S("campo", "María se quedó con Elisabet unos tres meses. Dos mujeres, una muy 
 # ---------- 5. JUAN ----------
 S("campo", "Cuando llegó el tiempo, Elisabet dio a luz un hijo. Los vecinos y parientes celebraron con ella. Y al octavo día querían llamarlo Zacarías, como su padre.",
   [P("elisabet", 0.4, accion="abrazar", emocion="feliz"), P("mujer1", 0.62, mira="izquierda", accion="celebrar", emocion="feliz")], [{"tipo": "pesebre", "x": 0.5, "escala": 0.6}],
-  rotulo="CAPÍTULO 5: SU NOMBRE ES JUAN", camara="acercar")
+  rotulo="CAPÍTULO 4: SU NOMBRE ES JUAN", camara="acercar")
 S("campo", "Pero Elisabet dijo: No. Se llamará Juan. ¿Juan? Nadie en tu familia se llama así. Y le preguntaron por señas a Zacarías.",
   [P("elisabet", 0.38, accion="senalar"), P("hombre1", 0.62, mira="izquierda", emocion="sorprendido")], habla="elisabet", camara="fijo")
 S("campo", "Zacarías pidió una tablilla y escribió: Su nombre es Juan. Y en ese mismo instante, su boca se abrió... ¡y volvió a hablar! Lo primero que hizo fue alabar a Dios.",
@@ -99,7 +99,7 @@ S("desierto", "El niño Juan crecía y se fortalecía en espíritu. Y años más
 
 # ---------- 6. JOSÉ ----------
 S("noche", "Mientras tanto, María regresó a Nazaret. Y José descubrió que estaba embarazada. Imagina lo que sintió: confusión, tristeza... traición.",
-  [P("jose_carpintero", 0.5, emocion="triste", accion="temblar")], efectos=[{"tipo": "oscuridad", "fuerza": 0.35}], rotulo="CAPÍTULO 6: EL SUEÑO DE JOSÉ", camara="acercar")
+  [P("jose_carpintero", 0.5, emocion="triste", accion="temblar")], efectos=[{"tipo": "oscuridad", "fuerza": 0.35}], rotulo="CAPÍTULO 5: EL SUEÑO DE JOSÉ", camara="acercar")
 S("noche", "Había soñado con formar un hogar con ella. Había preparado la casa, ahorrado, trabajado duro. Y ahora todo parecía derrumbarse. Por la ley, José tenía derecho a denunciarla públicamente.",
   [P("jose_carpintero", 0.5, accion="agacharse", emocion="llorando")], efectos=[{"tipo": "oscuridad", "fuerza": 0.35}], camara="acercar")
 S("noche", "José era un hombre justo y no quería avergonzarla en público. Así que decidió terminar el compromiso en secreto.",
@@ -124,7 +124,7 @@ S("cielo", "Suscríbete y activa la campanita para no perderte la Parte 2. Y esc
   [P("maria", 0.5, accion="alabar", emocion="feliz")], efectos=[{"tipo": "luz"}, {"tipo": "brillo", "y": -600}], rotulo="¡SUSCRÍBETE!", pausa=2.0, camara="acercar")
 
 guardar("14_navidad_parte1_el_anuncio.json", "La Navidad - Parte 1 - El Anuncio",
-        "Un ángel visitó a una joven de NAZARET... y todo cambió.",
+        "Un ÁNGEL apareció en su cuarto...",
         ["MARÍA", "JOSÉ", "GABRIEL", "ÁNGEL", "JESÚS", "ELISABET", "ZACARÍAS", "JUAN", "EMANUEL", "NAVIDAD"],
         personajes={"zacarias": {"tunica": "#f4f1ea", "manto": "#3f5a8a", "tocado": "turbante", "color_tocado": "#e9e4d8", "barba": "#e8e4dc", "pelo": "#e8e4dc"},
                     "elisabet": {"tunica": "#8a6a8a", "tocado": "velo", "color_tocado": "#5a4a6a", "pelo": None, "voz": {"nombre": "es_AR-daniela-high", "tono": -3}}},

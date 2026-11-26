@@ -1,6 +1,6 @@
 {
  "titulo": "Samuel - El Niño que Escuchó a Dios",
- "gancho": "Dios le habló a un NIÑO en medio de la noche...",
+ "gancho": "Dios le habló a un NIÑO a medianoche.",
  "final": "",
  "formato": "horizontal",
  "voz_narrador": "es_MX-claude-high",
@@ -51,7 +51,7 @@
  "escenas": [
   {
    "fondo": "noche",
-   "texto": "Medianoche en el templo. Un niño duerme junto al arca de Dios. Y de repente, una voz lo llama por su nombre: ¡Samuel! ¡Samuel!",
+   "texto": "¡Samuel! ¡Samuel! Una voz despierta a un niño a medianoche, en el templo, junto al arca de Dios.",
    "personajes": [
     {
      "id": "samuel",
@@ -79,7 +79,7 @@
   },
   {
    "fondo": "noche",
-   "texto": "No es el sacerdote. No es nadie en el templo. Es Dios mismo hablándole a un niño. ¿Por qué a él? Para entenderlo, tenemos que conocer primero a su madre.",
+   "texto": "No es el sacerdote. No es nadie del templo. Es Dios mismo hablándole a un niño. ¿Por qué a él? La respuesta empieza con las lágrimas de su madre.",
    "personajes": [
     {
      "id": "samuel",
@@ -126,7 +126,6 @@
      "escala": 0.7
     }
    ],
-   "rotulo": "CAPÍTULO 1: LAS LÁGRIMAS DE ANA",
    "camara": "paneo"
   },
   {
@@ -327,7 +326,7 @@
      "tipo": "brillo"
     }
    ],
-   "rotulo": "CAPÍTULO 2: UN NIÑO PARA DIOS",
+   "rotulo": "CAPÍTULO 1: UN NIÑO PARA DIOS",
    "camara": "acercar"
   },
   {
@@ -492,7 +491,7 @@
      "emocion": "burlon"
     }
    ],
-   "rotulo": "CAPÍTULO 3: UN TEMPLO CORRUPTO",
+   "rotulo": "CAPÍTULO 2: UN TEMPLO CORRUPTO",
    "camara": "paneo"
   },
   {
@@ -568,7 +567,7 @@
      "x": 0.7
     }
    ],
-   "rotulo": "CAPÍTULO 4: LA VOZ EN LA NOCHE",
+   "rotulo": "CAPÍTULO 3: LA VOZ EN LA NOCHE",
    "camara": "acercar"
   },
   {
@@ -783,7 +782,7 @@
      "variante": "soldados"
     }
    ],
-   "rotulo": "CAPÍTULO 5: EL ARCA PERDIDA",
+   "rotulo": "CAPÍTULO 4: EL ARCA PERDIDA",
    "camara": "paneo"
   },
   {
@@ -1049,7 +1048,7 @@
     }
    ],
    "habla": "jacob",
-   "rotulo": "CAPÍTULO 6: QUEREMOS UN REY",
+   "rotulo": "CAPÍTULO 5: QUEREMOS UN REY",
    "camara": "acercar"
   },
   {

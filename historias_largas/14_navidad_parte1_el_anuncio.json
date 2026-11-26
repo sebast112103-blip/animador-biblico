@@ -1,6 +1,6 @@
 {
  "titulo": "La Navidad - Parte 1 - El Anuncio",
- "gancho": "Un ángel visitó a una joven de NAZARET... y todo cambió.",
+ "gancho": "Un ÁNGEL apareció en su cuarto...",
  "final": "",
  "formato": "horizontal",
  "voz_narrador": "es_MX-claude-high",
@@ -49,7 +49,7 @@
  "escenas": [
   {
    "fondo": "noche",
-   "texto": "Una joven de Nazaret está sola en su casa. Tiene unos quince años. Y de repente, la habitación se llena de luz... y un ángel le dice: ¡Alégrate, muy favorecida! El Señor está contigo.",
+   "texto": "Tiene quince años y un ángel aparece en su cuarto. Está sola en su casa en Nazaret, y de repente todo se llena de luz: ¡Alégrate, muy favorecida! El Señor está contigo.",
    "personajes": [
     {
      "id": "maria",
@@ -83,7 +83,7 @@
   },
   {
    "fondo": "noche",
-   "texto": "Lo que ese ángel estaba por anunciarle cambiaría la historia del mundo para siempre. Esta es la primera parte de la verdadera historia de la Navidad.",
+   "texto": "Lo que ese ángel le iba a anunciar cambiaría la historia del mundo para siempre. Esta es la verdadera historia de la Navidad.",
    "personajes": [
     {
      "id": "maria",
@@ -100,7 +100,6 @@
      "inicio": 0.85
     }
    ],
-   "rotulo": "LA NAVIDAD · PARTE 1",
    "camara": "acercar"
   },
   {
@@ -113,7 +112,6 @@
      "fuerza": 0.35
     }
    ],
-   "rotulo": "CAPÍTULO 1: 400 AÑOS DE SILENCIO",
    "camara": "alejar"
   },
   {
@@ -184,7 +182,7 @@
      "emocion": "triste"
     }
    ],
-   "rotulo": "CAPÍTULO 2: EL SACERDOTE",
+   "rotulo": "CAPÍTULO 1: EL SACERDOTE",
    "camara": "acercar"
   },
   {
@@ -401,7 +399,7 @@
      "y": -600
     }
    ],
-   "rotulo": "CAPÍTULO 3: LA JOVEN DE NAZARET",
+   "rotulo": "CAPÍTULO 2: LA JOVEN DE NAZARET",
    "camara": "alejar"
   },
   {
@@ -645,7 +643,7 @@
      "emocion": "feliz"
     }
    ],
-   "rotulo": "CAPÍTULO 4: EL ENCUENTRO",
+   "rotulo": "CAPÍTULO 3: EL ENCUENTRO",
    "camara": "paneo"
   },
   {
@@ -782,7 +780,7 @@
      "escala": 0.6
     }
    ],
-   "rotulo": "CAPÍTULO 5: SU NOMBRE ES JUAN",
+   "rotulo": "CAPÍTULO 4: SU NOMBRE ES JUAN",
    "camara": "acercar"
   },
   {
@@ -912,7 +910,7 @@
      "fuerza": 0.35
     }
    ],
-   "rotulo": "CAPÍTULO 6: EL SUEÑO DE JOSÉ",
+   "rotulo": "CAPÍTULO 5: EL SUEÑO DE JOSÉ",
    "camara": "acercar"
   },
   {

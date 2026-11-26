@@ -136,7 +136,9 @@ def main():
         portada = carpeta / f"{base}_portada.png"
         if not (carpeta / f"{base}_miniatura.jpg").exists():
             miniatura([portada] if portada.exists() else [], texto, 0, carpeta / f"{base}_miniatura.jpg", sello=sub or None)
-        desc = (f"TÍTULO:\n{titulo} | Historia de la Biblia animada\n\n"
+        nom, _, resto = titulo.partition(" - ")
+        yt = f"{nom.upper()}: {resto} | Película Bíblica Animada" if resto else f"{nom.upper()} | Película Bíblica Animada"
+        desc = (f"TÍTULO:\n{yt}\n\n"
                 f"DESCRIPCIÓN:\nLa historia completa de {titulo.split(' - ')[0]}, contada en dibujos animados "
                 f"para ver en familia. ¿Qué parte te gustó más? Cuéntame en los comentarios.\n\n"
                 f"🔔 Suscríbete: cada día una nueva historia de la Biblia.\n\n"

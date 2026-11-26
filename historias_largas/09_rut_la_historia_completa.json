@@ -1,6 +1,6 @@
 {
  "titulo": "Rut - Una Historia de Amor y Lealtad",
- "gancho": "Lo perdió TODO... y terminó siendo bisabuela de un REY.",
+ "gancho": "Lo perdió TODO... y terminó en la familia de un REY.",
  "final": "",
  "formato": "horizontal",
  "voz_narrador": "es_MX-claude-high",
@@ -35,7 +35,7 @@
  "escenas": [
   {
    "fondo": "camino",
-   "texto": "Dos mujeres solas en un camino polvoriento. Una es anciana, la otra muy joven. Las dos perdieron a sus esposos. No tienen dinero, ni casa, ni a nadie que las proteja.",
+   "texto": "Lo perdió todo: su esposo, su casa y su país. Ahora camina por un camino polvoriento junto a una anciana viuda, sin dinero y sin nadie que las proteja.",
    "personajes": [
     {
      "id": "noemi",
@@ -63,7 +63,7 @@
   },
   {
    "fondo": "camino",
-   "texto": "Nadie habría apostado por ellas. Pero la joven tomó una decisión que la convertiría en la bisabuela del rey más famoso de Israel. Esta es la historia de Rut.",
+   "texto": "Nadie habría apostado por ella. Pero una sola decisión la convirtió en la bisabuela del rey más famoso de Israel. Y todo empezó con hambre.",
    "personajes": [
     {
      "id": "rut",
@@ -102,7 +102,6 @@
      "fuerza": 0.2
     }
    ],
-   "rotulo": "CAPÍTULO 1: LEJOS DE CASA",
    "camara": "paneo"
   },
   {
@@ -258,7 +257,7 @@
      "x": 0.8
     }
    ],
-   "rotulo": "CAPÍTULO 2: LA DECISIÓN",
+   "rotulo": "CAPÍTULO 1: LA DECISIÓN",
    "camara": "acercar"
   },
   {
@@ -460,7 +459,7 @@
     }
    ],
    "habla": "noemi",
-   "rotulo": "CAPÍTULO 3: EL CAMPO DE BOOZ",
+   "rotulo": "CAPÍTULO 2: EL CAMPO DE BOOZ",
    "camara": "acercar"
   },
   {
@@ -625,7 +624,7 @@
     }
    ],
    "habla": "booz",
-   "rotulo": "CAPÍTULO 4: UN HOMBRE BUENO",
+   "rotulo": "CAPÍTULO 3: UN HOMBRE BUENO",
    "camara": "acercar"
   },
   {
@@ -789,7 +788,7 @@
      "tipo": "luz"
     }
    ],
-   "rotulo": "CAPÍTULO 5: EL REDENTOR",
+   "rotulo": "CAPÍTULO 4: EL REDENTOR",
    "camara": "acercar"
   },
   {
@@ -967,7 +966,7 @@
      "profundidad": -70
     }
    ],
-   "rotulo": "CAPÍTULO 6: EL TRATO",
+   "rotulo": "CAPÍTULO 5: EL TRATO",
    "camara": "paneo"
   },
   {
@@ -1070,7 +1069,7 @@
      "tipo": "arcoiris"
     }
    ],
-   "rotulo": "CAPÍTULO 7: LA RECOMPENSA",
+   "rotulo": "CAPÍTULO 6: LA RECOMPENSA",
    "camara": "acercar"
   },
   {

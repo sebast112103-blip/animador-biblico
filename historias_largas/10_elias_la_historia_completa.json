@@ -1,6 +1,6 @@
 {
  "titulo": "Elías - El Profeta del Fuego",
- "gancho": "450 profetas contra UNO solo... y cayó FUEGO del cielo.",
+ "gancho": "1 contra 450... y cayó FUEGO del cielo.",
  "final": "",
  "formato": "horizontal",
  "voz_narrador": "es_MX-claude-high",
@@ -46,7 +46,7 @@
  "escenas": [
   {
    "fondo": "montana",
-   "texto": "Cuatrocientos cincuenta profetas gritan, saltan y se cortan con cuchillos desde la mañana hasta la tarde. Y frente a ellos, un solo hombre los mira... y se burla.",
+   "texto": "Un hombre contra cuatrocientos cincuenta. Los profetas de Baal gritan, saltan y se cortan con cuchillos desde la mañana. Y ese hombre los mira... y se burla.",
    "personajes": [
     {
      "id": "profeta_baal1",
@@ -79,7 +79,7 @@
   },
   {
    "fondo": "montana",
-   "texto": "¿Qué pasó cuando ese hombre oró? ¿Y por qué después quiso morir? Esta es la historia de Elías, el profeta del fuego.",
+   "texto": "Cuando ese hombre oró, cayó fuego del cielo. Pero días después, quiso morir. ¿Qué le pasó? Todo empezó con un rey malvado.",
    "personajes": [
     {
      "id": "elias",
@@ -121,7 +121,6 @@
      "profundidad": -30
     }
    ],
-   "rotulo": "CAPÍTULO 1: LA SEQUÍA",
    "camara": "paneo"
   },
   {
@@ -241,7 +240,7 @@
      "y": -500
     }
    ],
-   "rotulo": "CAPÍTULO 2: LA HARINA Y EL ACEITE",
+   "rotulo": "CAPÍTULO 1: LA HARINA Y EL ACEITE",
    "camara": "acercar"
   },
   {
@@ -481,7 +480,7 @@
     }
    ],
    "habla": "acab",
-   "rotulo": "CAPÍTULO 3: EL DESAFÍO",
+   "rotulo": "CAPÍTULO 2: EL DESAFÍO",
    "camara": "acercar"
   },
   {
@@ -620,7 +619,7 @@
     }
    ],
    "habla": "profeta_baal1",
-   "rotulo": "CAPÍTULO 4: FUEGO DEL CIELO",
+   "rotulo": "CAPÍTULO 3: FUEGO DEL CIELO",
    "camara": "paneo"
   },
   {
@@ -837,7 +836,7 @@
      "hasta": 0.75
     }
    ],
-   "rotulo": "CAPÍTULO 5: LA LLUVIA",
+   "rotulo": "CAPÍTULO 4: LA LLUVIA",
    "camara": "acercar"
   },
   {
@@ -920,7 +919,7 @@
     }
    ],
    "habla": "jezabel",
-   "rotulo": "CAPÍTULO 6: EL PROFETA CANSADO",
+   "rotulo": "CAPÍTULO 5: EL PROFETA CANSADO",
    "camara": "acercar_rapido"
   },
   {
@@ -1032,7 +1031,7 @@
      "hasta": 0.55
     }
    ],
-   "rotulo": "CAPÍTULO 7: LA VOZ SUAVE",
+   "rotulo": "CAPÍTULO 6: LA VOZ SUAVE",
    "camara": "paneo"
   },
   {
@@ -1142,7 +1141,7 @@
      "emocion": "sorprendido"
     }
    ],
-   "rotulo": "CAPÍTULO 8: EL CARRO DE FUEGO",
+   "rotulo": "CAPÍTULO 7: EL CARRO DE FUEGO",
    "camara": "acercar"
   },
   {

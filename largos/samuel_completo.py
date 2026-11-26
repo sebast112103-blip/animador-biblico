@@ -5,16 +5,15 @@ NINO = {"escala": 0.72}
 VIEJO = {"barba": "#e8e4dc", "pelo": "#e8e4dc"}
 
 # ---------- APERTURA EN FRÍO ----------
-S("noche", "Medianoche en el templo. Un niño duerme junto al arca de Dios. Y de repente, una voz lo llama por su nombre: ¡Samuel! ¡Samuel!",
+S("noche", "¡Samuel! ¡Samuel! Una voz despierta a un niño a medianoche, en el templo, junto al arca de Dios.",
   [P("samuel", 0.5, **NINO, accion="dormir")], efectos=[{"tipo": "oscuridad", "fuerza": 0.4}, {"tipo": "luz", "x": 0.7}, {"tipo": "brillo", "x": 0.7}],
   camara="acercar_rapido", portada=True)
-S("noche", "No es el sacerdote. No es nadie en el templo. Es Dios mismo hablándole a un niño. ¿Por qué a él? Para entenderlo, tenemos que conocer primero a su madre.",
+S("noche", "No es el sacerdote. No es nadie del templo. Es Dios mismo hablándole a un niño. ¿Por qué a él? La respuesta empieza con las lágrimas de su madre.",
   [P("samuel", 0.5, **NINO, emocion="sorprendido")], efectos=[{"tipo": "oscuridad", "fuerza": 0.3}, {"tipo": "flash", "inicio": 0.85}], camara="acercar")
 
 # ---------- 1. LA ORACIÓN DE ANA ----------
 S("campo", "Había un hombre llamado Elcana que tenía dos esposas: Penina y Ana. Penina tenía hijos e hijas. Pero Ana... no podía tener hijos.",
-  [P("hombre1", 0.5, emocion="feliz"), P("mujer1", 0.3, emocion="burlon"), P("ana", 0.72, mira="izquierda", emocion="triste"), P("nino", 0.15, escala=0.7)],
-  rotulo="CAPÍTULO 1: LAS LÁGRIMAS DE ANA", camara="paneo")
+  [P("hombre1", 0.5, emocion="feliz"), P("mujer1", 0.3, emocion="burlon"), P("ana", 0.72, mira="izquierda", emocion="triste"), P("nino", 0.15, escala=0.7)], camara="paneo")
 S("campo", "En aquel tiempo, no tener hijos era visto como una vergüenza. Y Penina se burlaba de Ana todos los días, año tras año, hasta hacerla llorar.",
   [P("mujer1", 0.4, accion="senalar", emocion="burlon"), P("ana", 0.65, mira="izquierda", accion="temblar", emocion="llorando")], habla="mujer1", camara="acercar")
 S("campo", "Elcana la amaba mucho y le decía: Ana, ¿por qué lloras? ¿Por qué no comes? ¿No soy yo para ti mejor que diez hijos? Pero el dolor de Ana no se iba.",
@@ -35,7 +34,7 @@ S("cielo", "Si tienes una petición que llevas años pidiéndole a Dios, escríb
 # ---------- 2. EL NIÑO PRESTADO ----------
 S("campo", "Y Dios se acordó de Ana. Al año siguiente nació un niño, y ella le puso por nombre Samuel, que significa porque se lo pedí a Dios.",
   [P("ana", 0.45, accion="abrazar", emocion="feliz"), P("hombre1", 0.65, mira="izquierda", accion="celebrar", emocion="feliz")], [{"tipo": "pesebre", "x": 0.52, "escala": 0.7}],
-  efectos=[{"tipo": "luz"}, {"tipo": "brillo"}], rotulo="CAPÍTULO 2: UN NIÑO PARA DIOS", camara="acercar")
+  efectos=[{"tipo": "luz"}, {"tipo": "brillo"}], rotulo="CAPÍTULO 1: UN NIÑO PARA DIOS", camara="acercar")
 S("campo", "Ana lo cuidó y lo amamantó con todo su amor. Pero ella no había olvidado su promesa.",
   [P("ana", 0.45, accion="abrazar", emocion="feliz"), P("samuel", 0.6, **NINO, emocion="feliz")], camara="fijo")
 S("templo", "Cuando Samuel tenía unos tres años, Ana lo llevó al templo de Silo, ante el sacerdote Elí. ¿Se acuerda de mí? Yo soy la mujer que oraba aquí. Por este niño oraba, y el Señor me lo concedió.",
@@ -51,7 +50,7 @@ S("cielo", "Y Dios la bendijo todavía más: Ana tuvo después tres hijos más y
 S("templo", "Así, el pequeño Samuel se quedó a vivir en el templo. Aprendió a encender las lámparas, a abrir las puertas cada mañana y a servir al anciano Elí. Y la Biblia dice que el niño crecía delante del Señor.",
   [P("samuel", 0.45, **NINO, accion="levantar", emocion="feliz"), P("eli", 0.7, mira="izquierda", **VIEJO, emocion="feliz")], efectos=[{"tipo": "luz", "x": 0.45}], camara="paneo")
 S("templo", "Samuel creció en el templo, sirviendo a Dios junto a Elí. Pero en ese mismo templo había un gran problema: los hijos de Elí, Ofni y Finees.",
-  [P("samuel", 0.4, **NINO, accion="levantar"), P("hermano1", 0.65, emocion="burlon"), P("hermano2", 0.82, emocion="burlon")], rotulo="CAPÍTULO 3: UN TEMPLO CORRUPTO", camara="paneo")
+  [P("samuel", 0.4, **NINO, accion="levantar"), P("hermano1", 0.65, emocion="burlon"), P("hermano2", 0.82, emocion="burlon")], rotulo="CAPÍTULO 2: UN TEMPLO CORRUPTO", camara="paneo")
 S("templo", "Eran sacerdotes, pero no conocían a Dios. Robaban las mejores ofrendas, trataban con desprecio a la gente y hacían cosas terribles dentro del templo.",
   [P("hermano1", 0.4, accion="senalar", emocion="burlon"), P("hombre2", 0.65, mira="izquierda", emocion="triste")], [{"tipo": "altar", "x": 0.25}], efectos=[{"tipo": "oscuridad", "fuerza": 0.3}],
   camara="acercar")
@@ -60,7 +59,7 @@ S("templo", "Elí lo sabía. Los regañaba con palabras, pero nunca hizo nada pa
 
 # ---------- 4. LA VOZ EN LA NOCHE ----------
 S("noche", "Una noche, Samuel dormía en el templo, cerca del arca de Dios. La lámpara del santuario todavía estaba encendida. Y una voz lo llamó: ¡Samuel!",
-  [P("samuel", 0.5, **NINO, accion="dormir")], efectos=[{"tipo": "oscuridad", "fuerza": 0.4}, {"tipo": "brillo", "x": 0.7}], rotulo="CAPÍTULO 4: LA VOZ EN LA NOCHE", camara="acercar")
+  [P("samuel", 0.5, **NINO, accion="dormir")], efectos=[{"tipo": "oscuridad", "fuerza": 0.4}, {"tipo": "brillo", "x": 0.7}], rotulo="CAPÍTULO 3: LA VOZ EN LA NOCHE", camara="acercar")
 S("noche", "Samuel se levantó corriendo y fue donde Elí: ¡Aquí estoy! ¿Me llamaste? No te llamé, hijo. Vuelve a acostarte.",
   [P("samuel", 0.4, **NINO, accion="correr", hasta=0.5), P("eli", 0.72, mira="izquierda", **VIEJO, accion="dormir")], habla="samuel", efectos=[{"tipo": "oscuridad", "fuerza": 0.35}], camara="paneo")
 S("noche", "Pasó otra vez. Y otra vez. Tres veces. Y a la tercera, Elí entendió: era Dios quien llamaba al niño.",
@@ -80,7 +79,7 @@ S("cielo", "Pausa. ¿Cuándo fue la última vez que le dijiste a Dios: habla, qu
 
 # ---------- 5. EL ARCA PERDIDA ----------
 S("valle", "Poco tiempo después, los filisteos atacaron a Israel. Los hijos de Elí llevaron el arca de Dios a la batalla, como si fuera un amuleto de buena suerte.",
-  [P("hermano1", 0.4, accion="levantar", emocion="burlon"), P("hermano2", 0.58)], [gente(0.8, 0.55, variante="soldados")], rotulo="CAPÍTULO 5: EL ARCA PERDIDA", camara="paneo")
+  [P("hermano1", 0.4, accion="levantar", emocion="burlon"), P("hermano2", 0.58)], [gente(0.8, 0.55, variante="soldados")], rotulo="CAPÍTULO 4: EL ARCA PERDIDA", camara="paneo")
 S("valle", "Pero Dios no se deja usar. Israel perdió la batalla, los dos hijos de Elí murieron, y los filisteos se llevaron el arca de Dios.",
   [P("filisteo1", 0.5, accion="celebrar", emocion="burlon"), P("hermano1", 0.25, accion="caer")], efectos=[{"tipo": "fuego", "x": 0.85, "tamano": 1.2}, {"tipo": "temblor", "inicio": 0.3, "fin": 0.6}],
   camara="acercar_rapido")
@@ -106,7 +105,7 @@ S("cielo", "Mira tu vida y escribe en los comentarios: Hasta aquí me ayudó el 
 # ---------- 6. QUEREMOS UN REY ----------
 S("ciudad", "Samuel guió al pueblo durante muchos años como juez y profeta. Pero cuando envejeció, los ancianos de Israel vinieron a pedirle algo: Danos un rey, como tienen todas las naciones.",
   [P("samuel", 0.35, **VIEJO, tunica="#f4f1ea", manto="#3f5a8a", emocion="triste"), P("jacob", 0.65, mira="izquierda", **VIEJO, accion="senalar")], [gente(0.82, 0.5)],
-  habla="jacob", rotulo="CAPÍTULO 6: QUEREMOS UN REY", camara="acercar")
+  habla="jacob", rotulo="CAPÍTULO 5: QUEREMOS UN REY", camara="acercar")
 S("noche", "A Samuel le dolió mucho. Pero Dios le dijo: No te han rechazado a ti. Me han rechazado a mí como su rey. Dales lo que piden, pero adviérteles lo que eso les costará.",
   [P("samuel", 0.5, **VIEJO, tunica="#f4f1ea", manto="#3f5a8a", accion="orar", emocion="triste")], efectos=[{"tipo": "luz", "x": 0.7}], camara="fijo")
 S("ciudad", "Samuel les advirtió: Un rey tomará a sus hijos para su ejército, a sus hijas para su palacio, y la décima parte de sus cosechas. Un día clamarán por causa del rey que eligieron. Pero el pueblo insistió: ¡No! Queremos un rey.",
@@ -132,7 +131,7 @@ S("cielo", "Suscríbete y activa la campanita, que mañana llega otra gran histo
   [P("samuel", 0.5, **NINO, accion="alabar", emocion="feliz")], efectos=[{"tipo": "luz"}, {"tipo": "brillo", "y": -600}], rotulo="¡SUSCRÍBETE!", pausa=2.0, camara="acercar")
 
 guardar("12_samuel_la_historia_completa.json", "Samuel - El Niño que Escuchó a Dios",
-        "Dios le habló a un NIÑO en medio de la noche...",
+        "Dios le habló a un NIÑO a medianoche.",
         ["SAMUEL", "ANA", "ELÍ", "SEÑOR", "ESCUCHA", "ARCA", "REY", "SAÚL"],
         personajes={"samuel": {"tunica": "#e9e4d8", "pelo": "#5a3a1a", "barba": None},
                     "ana": {"tunica": "#7a5c8a", "tocado": "velo", "color_tocado": "#4a3a6a", "pelo": None, "voz": {"nombre": "es_AR-daniela-high"}},

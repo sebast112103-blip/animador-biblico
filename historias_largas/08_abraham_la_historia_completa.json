@@ -1,6 +1,6 @@
 {
  "titulo": "Abraham - El Padre de la Fe",
- "gancho": "Dios le pidió lo que más amaba... ¿lo entregaría?",
+ "gancho": "¿Sacrificaría a su propio HIJO?",
  "final": "",
  "formato": "horizontal",
  "voz_narrador": "es_MX-claude-high",
@@ -28,7 +28,7 @@
  "escenas": [
   {
    "fondo": "montana",
-   "texto": "Un anciano sube una montaña con su único hijo. Lleva leña, fuego y un cuchillo. El muchacho pregunta: Padre, ¿dónde está el cordero? Y el anciano no sabe cómo responder.",
+   "texto": "Este padre está a punto de sacrificar a su propio hijo. Sube la montaña con leña, fuego y un cuchillo. Y el muchacho le pregunta: Padre, ¿dónde está el cordero?",
    "personajes": [
     {
      "id": "abraham",
@@ -58,7 +58,7 @@
   },
   {
    "fondo": "montana",
-   "texto": "¿Por qué Dios le pidió algo así? ¿Y qué pasó en la cima de esa montaña? Para entenderlo, tenemos que volver muchos años atrás, a una ciudad llamada Ur.",
+   "texto": "¿Por qué Dios le pediría algo así? Lo que pasó en la cima de esa montaña te va a sorprender. Pero todo empezó muchos años antes, con una orden imposible.",
    "personajes": [
     {
      "id": "abraham",
@@ -101,7 +101,6 @@
      "profundidad": -70
     }
    ],
-   "rotulo": "CAPÍTULO 1: EL LLAMADO",
    "camara": "paneo"
   },
   {
@@ -288,7 +287,7 @@
      "x": 0.15
     }
    ],
-   "rotulo": "CAPÍTULO 2: EL SOBRINO",
+   "rotulo": "CAPÍTULO 1: EL SOBRINO",
    "camara": "paneo"
   },
   {
@@ -392,7 +391,7 @@
      "accion": "arrodillarse"
     }
    ],
-   "rotulo": "CAPÍTULO 3: LAS ESTRELLAS",
+   "rotulo": "CAPÍTULO 2: LAS ESTRELLAS",
    "camara": "acercar"
   },
   {
@@ -530,7 +529,7 @@
      "y": -600
     }
    ],
-   "rotulo": "CAPÍTULO 4: LA RISA",
+   "rotulo": "CAPÍTULO 3: LA RISA",
    "camara": "acercar"
   },
   {
@@ -832,7 +831,7 @@
      "tipo": "brillo"
     }
    ],
-   "rotulo": "CAPÍTULO 5: EL HIJO DE LA PROMESA",
+   "rotulo": "CAPÍTULO 4: EL HIJO DE LA PROMESA",
    "camara": "acercar"
   },
   {
@@ -929,7 +928,7 @@
      "inicio": 0.8
     }
    ],
-   "rotulo": "CAPÍTULO 6: LA PRUEBA",
+   "rotulo": "CAPÍTULO 5: LA PRUEBA",
    "camara": "acercar_rapido"
   },
   {
@@ -1104,7 +1103,7 @@
      "fuerza": 0.3
     }
    ],
-   "rotulo": "CAPÍTULO 7: DIOS PROVEERÁ",
+   "rotulo": "CAPÍTULO 6: DIOS PROVEERÁ",
    "camara": "acercar"
   },
   {
@@ -1292,7 +1291,7 @@
      "y": -600
     }
    ],
-   "rotulo": "CAPÍTULO 8: EL CORDERO DE DIOS",
+   "rotulo": "CAPÍTULO 7: EL CORDERO DE DIOS",
    "camara": "acercar"
   },
   {

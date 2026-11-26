@@ -4,16 +4,15 @@ from base import S, P, gente, guardar
 VIUDA = {"tunica": "#4a4a5a", "color_tocado": "#2a2a3a"}
 
 # ---------- APERTURA EN FRÍO ----------
-S("camino", "Dos mujeres solas en un camino polvoriento. Una es anciana, la otra muy joven. Las dos perdieron a sus esposos. No tienen dinero, ni casa, ni a nadie que las proteja.",
+S("camino", "Lo perdió todo: su esposo, su casa y su país. Ahora camina por un camino polvoriento junto a una anciana viuda, sin dinero y sin nadie que las proteja.",
   [P("noemi", 0.4, accion="caminar", hasta=0.5, emocion="triste"), P("rut", 0.25, accion="caminar", hasta=0.35, emocion="triste")],
   efectos=[{"tipo": "oscuridad", "fuerza": 0.2}], camara="acercar_rapido", portada=True)
-S("camino", "Nadie habría apostado por ellas. Pero la joven tomó una decisión que la convertiría en la bisabuela del rey más famoso de Israel. Esta es la historia de Rut.",
+S("camino", "Nadie habría apostado por ella. Pero una sola decisión la convirtió en la bisabuela del rey más famoso de Israel. Y todo empezó con hambre.",
   [P("rut", 0.5, emocion="valiente")], efectos=[{"tipo": "flash", "inicio": 0.85}], camara="acercar")
 
 # ---------- 1. EL HAMBRE ----------
 S("campo", "En los días en que los jueces gobernaban Israel, hubo un hambre terrible en la tierra. En Belén, que significa casa del pan, ya no había pan.",
-  [P("hombre2", 0.4, accion="agacharse", emocion="triste")], [{"tipo": "canasta", "x": 0.6}], efectos=[{"tipo": "oscuridad", "fuerza": 0.2}],
-  rotulo="CAPÍTULO 1: LEJOS DE CASA", camara="paneo")
+  [P("hombre2", 0.4, accion="agacharse", emocion="triste")], [{"tipo": "canasta", "x": 0.6}], efectos=[{"tipo": "oscuridad", "fuerza": 0.2}], camara="paneo")
 S("camino", "Un hombre llamado Elimelec tomó a su esposa Noemí y a sus dos hijos, Mahlón y Quelión, y se fueron a vivir a Moab, una tierra extranjera donde se adoraban otros dioses.",
   [P("hombre1", 0.35, accion="caminar", hasta=0.55), P("noemi", 0.22, accion="caminar", hasta=0.42, pelo=None), P("hermano1", 0.1, accion="caminar", hasta=0.3, escala=0.85)],
   camara="paneo")
@@ -29,7 +28,7 @@ S("cielo", "Si alguna vez perdiste a alguien que amabas, escribe en los comentar
 
 # ---------- 2. LA DECISIÓN ----------
 S("camino", "Un día Noemí escuchó que Dios había visitado a su pueblo y que en Belén volvía a haber pan. Y decidió regresar a casa.",
-  [P("noemi", 0.45, **VIUDA, emocion="sorprendido")], efectos=[{"tipo": "luz", "x": 0.8}], rotulo="CAPÍTULO 2: LA DECISIÓN", camara="acercar")
+  [P("noemi", 0.45, **VIUDA, emocion="sorprendido")], efectos=[{"tipo": "luz", "x": 0.8}], rotulo="CAPÍTULO 1: LA DECISIÓN", camara="acercar")
 S("camino", "Orfa y Rut salieron con ella. Pero en el camino, Noemí se detuvo y les dijo: Vuelvan a la casa de sus madres. Ustedes son jóvenes, pueden casarse otra vez. Yo ya no tengo nada que darles.",
   [P("noemi", 0.5, **VIUDA, accion="senalar", emocion="triste"), P("rut", 0.3, **VIUDA), P("orfa", 0.72, mira="izquierda", **VIUDA)], habla="noemi", camara="acercar")
 S("camino", "Las tres lloraron abrazadas. Orfa besó a su suegra, se despidió... y regresó a Moab.",
@@ -48,7 +47,7 @@ S("cielo", "Pausa. ¿Tú habrías hecho lo mismo que Rut, o lo que hizo Orfa? Re
 # ---------- 3. BELÉN ----------
 S("ciudad", "Cuando llegaron a Belén, toda la ciudad se conmovió. ¿No es esta Noemí?, decían las mujeres. Pero ella respondió: No me llamen Noemí, que significa agradable. Llámenme Mara, que significa amarga.",
   [P("noemi", 0.45, **VIUDA, emocion="llorando"), P("mujer1", 0.68, mira="izquierda", emocion="sorprendido")], [gente(0.8, 0.5)], habla="noemi",
-  rotulo="CAPÍTULO 3: EL CAMPO DE BOOZ", camara="acercar")
+  rotulo="CAPÍTULO 2: EL CAMPO DE BOOZ", camara="acercar")
 S("ciudad", "Me fui llena, y el Señor me ha hecho volver vacía. Noemí estaba tan herida que no podía ver que a su lado caminaba una gran bendición: Rut.",
   [P("noemi", 0.4, **VIUDA, emocion="triste"), P("rut", 0.6, mira="izquierda", **VIUDA, emocion="triste")], camara="fijo")
 S("trigal", "Llegaron justo al comienzo de la cosecha de la cebada. Y la ley de Dios decía que los pobres podían recoger las espigas que se les caían a los segadores.",
@@ -67,7 +66,7 @@ S("trigal", "Entonces Booz vio a Rut y preguntó: ¿De quién es esa joven? Es l
 # ---------- 4. LA BONDAD DE BOOZ ----------
 S("trigal", "Booz se acercó a Rut y le dijo: Hija mía, no vayas a otro campo. Quédate aquí con mis criadas. Ya ordené que nadie te moleste. Y cuando tengas sed, bebe del agua de mis trabajadores.",
   [P("booz", 0.55, mira="izquierda", accion="ofrecer", emocion="feliz"), P("rut", 0.35, **VIUDA, emocion="sorprendido")], habla="booz",
-  rotulo="CAPÍTULO 4: UN HOMBRE BUENO", camara="acercar")
+  rotulo="CAPÍTULO 3: UN HOMBRE BUENO", camara="acercar")
 S("trigal", "Rut se inclinó hasta el suelo: ¿Por qué me tratas con tanta bondad, si soy una extranjera?",
   [P("rut", 0.4, **VIUDA, accion="arrodillarse", emocion="llorando"), P("booz", 0.62, mira="izquierda")], habla="rut", camara="acercar_rapido")
 S("trigal", "Y Booz respondió: Me han contado todo lo que hiciste por tu suegra. Que el Señor, bajo cuyas alas has venido a refugiarte, te recompense.",
@@ -85,7 +84,7 @@ S("noche", "¡Booz! ¡Bendito sea el Señor! Ese hombre es nuestro pariente. Es 
 
 # ---------- 5. EL REDENTOR ----------
 S("cielo", "En Israel existía una ley especial: cuando un hombre moría sin hijos, un pariente cercano podía casarse con la viuda, recuperar sus tierras y darle descendencia. A ese pariente se le llamaba redentor.",
-  [P("booz", 0.5, emocion="valiente")], efectos=[{"tipo": "luz"}], rotulo="CAPÍTULO 5: EL REDENTOR", camara="acercar")
+  [P("booz", 0.5, emocion="valiente")], efectos=[{"tipo": "luz"}], rotulo="CAPÍTULO 4: EL REDENTOR", camara="acercar")
 S("trigal", "Durante semanas, Rut trabajó en el campo de Booz, primero en la cosecha de la cebada y después en la del trigo. Y cada noche volvía a casa con comida para ella y para Noemí.",
   [P("rut", 0.4, **VIUDA, accion="levantar", emocion="feliz")], [{"tipo": "canasta", "x": 0.55}], camara="paneo")
 S("noche", "Al final de la cosecha, Noemí le dio a Rut un consejo. Rut se arregló, fue de noche al lugar donde Booz cuidaba el grano, y se acostó a sus pies.",
@@ -103,7 +102,7 @@ S("noche", "Antes del amanecer, Booz le llenó el manto con seis medidas de ceba
   [P("booz", 0.6, mira="izquierda", accion="ofrecer"), P("rut", 0.38, emocion="feliz")], [{"tipo": "canasta", "x": 0.48}], efectos=[{"tipo": "oscuridad", "fuerza": 0.25}], camara="acercar")
 S("ciudad", "A la mañana siguiente, Booz se sentó a la puerta de la ciudad, donde se hacían los tratos. Cuando pasó el otro pariente, lo llamó delante de diez ancianos como testigos.",
   [P("booz", 0.35), P("hombre2", 0.6, mira="izquierda"), P("jacob", 0.82, mira="izquierda", barba="#e8e4dc", pelo="#e8e4dc")], [gente(0.7, 0.5)],
-  rotulo="CAPÍTULO 6: EL TRATO", camara="paneo")
+  rotulo="CAPÍTULO 5: EL TRATO", camara="paneo")
 S("ciudad", "Noemí vende el terreno de Elimelec. ¿Quieres comprarlo? Sí, lo compro, dijo el hombre. Pero hay algo más: el que compre el terreno, también debe casarse con Rut la moabita.",
   [P("booz", 0.4, accion="senalar"), P("hombre2", 0.62, mira="izquierda", emocion="sorprendido")], habla="booz", camara="acercar")
 S("ciudad", "Entonces no puedo, respondió el pariente. Arruinaría mi propia herencia. Cómpralo tú. Y se quitó la sandalia y se la dio a Booz, que era la forma de cerrar un trato en Israel.",
@@ -114,7 +113,7 @@ S("ciudad", "Y Booz declaró ante todo el pueblo: Hoy ustedes son testigos de qu
 # ---------- 7. LA RECOMPENSA ----------
 S("valle", "Booz y Rut se casaron. Y Dios les dio un hijo. La extranjera viuda y sin esperanza ahora tenía un esposo que la amaba, un hogar y un hijo.",
   [P("rut", 0.4, accion="abrazar", emocion="feliz"), P("booz", 0.6, mira="izquierda", accion="abrazar", emocion="feliz")], [{"tipo": "pesebre", "x": 0.5, "escala": 0.7}],
-  efectos=[{"tipo": "luz"}, {"tipo": "arcoiris"}], rotulo="CAPÍTULO 7: LA RECOMPENSA", camara="acercar")
+  efectos=[{"tipo": "luz"}, {"tipo": "arcoiris"}], rotulo="CAPÍTULO 6: LA RECOMPENSA", camara="acercar")
 S("valle", "Las mujeres de Belén le dijeron a Noemí: Bendito sea el Señor, que no te dejó sin redentor. Tu nuera, que te ama, vale más para ti que siete hijos.",
   [P("noemi", 0.45, accion="abrazar", emocion="llorando"), P("mujer1", 0.68, mira="izquierda", emocion="feliz")], habla="mujer1", camara="paneo")
 S("valle", "Y Noemí tomó al niño en sus brazos y lo cuidó como a su propio hijo. La mujer que se llamó a sí misma amarga, volvió a ser feliz.",
@@ -135,7 +134,7 @@ S("cielo", "Suscríbete y activa la campanita, que mañana llega otra gran histo
   [P("rut", 0.5, accion="alabar", emocion="feliz")], efectos=[{"tipo": "luz"}, {"tipo": "brillo", "y": -600}], rotulo="¡SUSCRÍBETE!", pausa=2.0, camara="acercar")
 
 guardar("09_rut_la_historia_completa.json", "Rut - Una Historia de Amor y Lealtad",
-        "Lo perdió TODO... y terminó siendo bisabuela de un REY.",
+        "Lo perdió TODO... y terminó en la familia de un REY.",
         ["RUT", "NOEMÍ", "BOOZ", "BELÉN", "REDENTOR", "DAVID", "JESÚS", "LEALTAD"],
         personajes={"orfa": {"tunica": "#b85a6a", "tocado": "velo", "color_tocado": "#8a3a4a", "pelo": None}},
         miniatura={"texto": ["LO PERDIÓ", "TODO..."], "sello": "Y DIOS LA RESTAURÓ",

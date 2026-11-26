@@ -1,6 +1,6 @@
 {
  "titulo": "Salomón - El Rey Más Sabio",
- "gancho": "Dios le dijo: pídeme LO QUE QUIERAS... ¿qué pidió?",
+ "gancho": "¿Partiría al BEBÉ en dos?",
  "final": "",
  "formato": "horizontal",
  "voz_narrador": "es_MX-claude-high",
@@ -58,7 +58,7 @@
  "escenas": [
   {
    "fondo": "palacio",
-   "texto": "Dos mujeres gritan delante del rey. Las dos dicen que son la madre del mismo bebé. No hay testigos, no hay pruebas. Y el rey da una orden que deja a todos helados: ¡Traigan una espada!",
+   "texto": "¡Traigan una espada y partan al bebé en dos! Eso ordenó el rey. Dos mujeres decían ser la madre del mismo niño, y no había testigos ni pruebas.",
    "personajes": [
     {
      "id": "mujer1",
@@ -92,7 +92,7 @@
   },
   {
    "fondo": "palacio",
-   "texto": "¿De verdad iba a partir al niño en dos? Este es el rey más sabio que ha existido. Y esta es su historia: cómo empezó, lo que construyó... y cómo terminó.",
+   "texto": "¿De verdad iba a hacerlo? Este es el rey más sabio que ha existido. Hoy verás cómo llegó al trono, lo que construyó... y cómo terminó.",
    "personajes": [
     {
      "id": "salomon",
@@ -134,7 +134,6 @@
      "x": 0.3
     }
    ],
-   "rotulo": "LA CONSPIRACIÓN",
    "camara": "paneo"
   },
   {
@@ -220,7 +219,6 @@
      "profundidad": -30
     }
    ],
-   "rotulo": "CAPÍTULO 1: EL JOVEN REY",
    "camara": "acercar"
   },
   {
@@ -287,7 +285,7 @@
      "y": -600
     }
    ],
-   "rotulo": "CAPÍTULO 2: PÍDEME LO QUE QUIERAS",
+   "rotulo": "CAPÍTULO 1: PÍDEME LO QUE QUIERAS",
    "camara": "acercar"
   },
   {
@@ -402,7 +400,7 @@
     }
    ],
    "habla": "mujer1",
-   "rotulo": "CAPÍTULO 3: EL JUICIO",
+   "rotulo": "CAPÍTULO 2: EL JUICIO",
    "camara": "paneo"
   },
   {
@@ -566,7 +564,7 @@
      "profundidad": -70
     }
    ],
-   "rotulo": "CAPÍTULO 4: LA CASA DE DIOS",
+   "rotulo": "CAPÍTULO 3: LA CASA DE DIOS",
    "camara": "paneo"
   },
   {
@@ -781,7 +779,7 @@
      "x": 0.7
     }
    ],
-   "rotulo": "CAPÍTULO 5: LA REINA DE SABÁ",
+   "rotulo": "CAPÍTULO 4: LA REINA DE SABÁ",
    "camara": "paneo"
   },
   {
@@ -894,7 +892,7 @@
      "fuerza": 0.25
     }
    ],
-   "rotulo": "CAPÍTULO 6: EL CORAZÓN DIVIDIDO",
+   "rotulo": "CAPÍTULO 5: EL CORAZÓN DIVIDIDO",
    "camara": "acercar"
   },
   {
@@ -1063,7 +1061,7 @@
      "tipo": "luz"
     }
    ],
-   "rotulo": "CAPÍTULO 7: LA CONCLUSIÓN",
+   "rotulo": "CAPÍTULO 6: LA CONCLUSIÓN",
    "camara": "acercar"
   },
   {

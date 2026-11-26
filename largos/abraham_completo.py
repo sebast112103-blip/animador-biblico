@@ -6,16 +6,15 @@ VIEJO = {"barba": "#e8e4dc", "pelo": "#e8e4dc"}
 SARA_V = {"pelo": "#e8e4dc"}
 
 # ---------- APERTURA EN FRÍO ----------
-S("montana", "Un anciano sube una montaña con su único hijo. Lleva leña, fuego y un cuchillo. El muchacho pregunta: Padre, ¿dónde está el cordero? Y el anciano no sabe cómo responder.",
+S("montana", "Este padre está a punto de sacrificar a su propio hijo. Sube la montaña con leña, fuego y un cuchillo. Y el muchacho le pregunta: Padre, ¿dónde está el cordero?",
   [P("abraham", 0.45, **VIEJO, accion="caminar", hasta=0.55, emocion="triste"), P("isaac", 0.3, accion="caminar", hasta=0.4, escala=0.85)],
   efectos=[{"tipo": "oscuridad", "fuerza": 0.2}], camara="acercar_rapido", portada=True)
-S("montana", "¿Por qué Dios le pidió algo así? ¿Y qué pasó en la cima de esa montaña? Para entenderlo, tenemos que volver muchos años atrás, a una ciudad llamada Ur.",
+S("montana", "¿Por qué Dios le pediría algo así? Lo que pasó en la cima de esa montaña te va a sorprender. Pero todo empezó muchos años antes, con una orden imposible.",
   [P("abraham", 0.5, **VIEJO, emocion="triste")], efectos=[{"tipo": "flash", "inicio": 0.85}], camara="acercar")
 
 # ---------- 1. EL LLAMADO ----------
 S("ciudad", "Abram vivía en Ur de los caldeos, una de las ciudades más ricas y avanzadas del mundo antiguo. Tenía casa, familia, ganado y una vida cómoda.",
-  [P("abraham", 0.4, emocion="feliz"), P("sara", 0.6, mira="izquierda", emocion="feliz")], [gente(0.75, 0.55)],
-  rotulo="CAPÍTULO 1: EL LLAMADO", camara="paneo")
+  [P("abraham", 0.4, emocion="feliz"), P("sara", 0.6, mira="izquierda", emocion="feliz")], [gente(0.75, 0.55)], camara="paneo")
 S("ciudad", "Pero en Ur la gente adoraba a muchos dioses: a la luna, al sol, a estatuas de piedra y de madera. Nadie conocía al Dios verdadero.",
   [P("hombre2", 0.4, accion="arrodillarse"), P("mujer1", 0.6, accion="orar")], [{"tipo": "columna", "x": 0.8, "escala": 0.7}], camara="acercar")
 S("campo", "Un día, Dios le habló a Abram: Vete de tu tierra, de tu parentela y de la casa de tu padre, a la tierra que yo te mostraré.",
@@ -36,7 +35,7 @@ S("cielo", "Pero había un problema enorme. Abram y Sarai no tenían hijos. Y Sa
 # ---------- 2. LOT ----------
 S("campo", "Dios bendijo tanto a Abram y a Lot, que sus rebaños crecieron muchísimo. Tanto, que ya no cabían juntos, y sus pastores empezaron a pelear.",
   [P("pastor1", 0.35, accion="senalar", emocion="enojado"), P("pastor2", 0.6, mira="izquierda", emocion="enojado"), P("oveja1", 0.8), P("oveja2", 0.15)],
-  rotulo="CAPÍTULO 2: EL SOBRINO", camara="paneo")
+  rotulo="CAPÍTULO 1: EL SOBRINO", camara="paneo")
 S("montana", "Abram, como buen tío, le dijo a Lot: No haya pleito entre nosotros, porque somos familia. Escoge tú primero. Si vas a la izquierda, yo iré a la derecha.",
   [P("abraham", 0.4, **{}, accion="senalar", emocion="feliz"), P("hombre2", 0.62, mira="izquierda")], habla="abraham", camara="acercar")
 S("valle", "Lot miró a su alrededor y escogió lo mejor: el valle verde y lleno de agua, cerca de las ciudades de Sodoma y Gomorra. Abram se quedó con lo que sobró.",
@@ -49,7 +48,7 @@ S("cielo", "El que cede con generosidad nunca pierde con Dios. Si crees eso, esc
 
 # ---------- 3. LAS ESTRELLAS ----------
 S("noche", "Pasaron los años y el hijo no llegaba. Una noche Abram le dijo a Dios con tristeza: ¿De qué me sirve todo lo que me das, si no tengo hijos?",
-  [P("abraham", 0.5, **VIEJO, emocion="triste", accion="arrodillarse")], rotulo="CAPÍTULO 3: LAS ESTRELLAS", camara="acercar")
+  [P("abraham", 0.5, **VIEJO, emocion="triste", accion="arrodillarse")], rotulo="CAPÍTULO 2: LAS ESTRELLAS", camara="acercar")
 S("noche", "Entonces Dios lo llevó afuera y le dijo: Mira al cielo y cuenta las estrellas, si es que puedes contarlas. Así será tu descendencia.",
   [P("abraham", 0.45, **VIEJO, accion="levantar", emocion="sorprendido")],
   [{"tipo": "estrella", "x": 0.2, "y": -700}, {"tipo": "estrella", "x": 0.4, "y": -760}, {"tipo": "estrella", "x": 0.65, "y": -690}, {"tipo": "estrella", "x": 0.85, "y": -740}],
@@ -64,7 +63,7 @@ S("campo", "Pero ese no era el plan de Dios. Y en vez de traer alegría, trajo c
 # ---------- 4. NOMBRES NUEVOS ----------
 S("cielo", "Cuando Abram tenía noventa y nueve años, Dios se le apareció otra vez: Yo soy el Dios Todopoderoso. Ya no te llamarás Abram, sino Abraham, que significa padre de muchas naciones.",
   [P("abraham", 0.5, **VIEJO, accion="arrodillarse", emocion="sorprendido")], efectos=[{"tipo": "luz"}, {"tipo": "brillo", "y": -600}],
-  rotulo="CAPÍTULO 4: LA RISA", camara="acercar")
+  rotulo="CAPÍTULO 3: LA RISA", camara="acercar")
 S("cielo", "Y a Sarai la llamarás Sara, que significa princesa. Porque de ella nacerá un hijo, y será madre de naciones y de reyes.",
   [P("sara", 0.5, **SARA_V, emocion="sorprendido")], efectos=[{"tipo": "luz"}], camara="fijo")
 S("desierto", "Un día de mucho calor, Abraham estaba sentado a la puerta de su tienda, cuando vio a tres hombres parados frente a él. Corrió a recibirlos y les preparó comida.",
@@ -97,7 +96,7 @@ S("cielo", "Tus oraciones por tu familia sí cuentan. Abraham oró por Lot, y Lo
 # ---------- 5. ISAAC ----------
 S("campo", "Y tal como Dios lo prometió, un año después, Sara dio a luz un hijo. Abraham tenía cien años, y Sara noventa.",
   [P("sara", 0.45, **SARA_V, accion="abrazar", emocion="feliz"), P("abraham", 0.65, mira="izquierda", **VIEJO, accion="celebrar", emocion="feliz")],
-  [{"tipo": "pesebre", "x": 0.55, "escala": 0.7}], efectos=[{"tipo": "luz"}, {"tipo": "brillo"}], rotulo="CAPÍTULO 5: EL HIJO DE LA PROMESA", camara="acercar")
+  [{"tipo": "pesebre", "x": 0.55, "escala": 0.7}], efectos=[{"tipo": "luz"}, {"tipo": "brillo"}], rotulo="CAPÍTULO 4: EL HIJO DE LA PROMESA", camara="acercar")
 S("campo", "Le pusieron por nombre Isaac, que significa risa. Y Sara dijo: Dios me ha hecho reír, y todos los que lo oigan se reirán conmigo.",
   [P("sara", 0.4, **SARA_V, accion="celebrar", emocion="feliz"), P("abraham", 0.6, **VIEJO, accion="alabar", emocion="feliz")], habla="sara", camara="paneo")
 S("campo", "Veinticinco años esperando. Veinticinco años de promesas que parecían imposibles. Pero Dios nunca llega tarde.",
@@ -108,7 +107,7 @@ S("campo", "Isaac creció, y era la alegría de sus padres. Abraham le enseñaba
 # ---------- 6. LA PRUEBA ----------
 S("noche", "Pero un día, Dios probó a Abraham. Le dijo: Toma a tu hijo, tu único hijo Isaac, a quien amas, y ve a la tierra de Moriah. Allí ofrécelo en sacrificio sobre uno de los montes.",
   [P("abraham", 0.5, **VIEJO, accion="temblar", emocion="asustado")], efectos=[{"tipo": "oscuridad", "fuerza": 0.4}, {"tipo": "rayo", "inicio": 0.8}],
-  rotulo="CAPÍTULO 6: LA PRUEBA", camara="acercar_rapido")
+  rotulo="CAPÍTULO 5: LA PRUEBA", camara="acercar_rapido")
 S("noche", "¿Cómo podía Dios pedirle eso? Isaac era el hijo de la promesa. Sin Isaac, no habría gran nación. No tenía sentido.",
   [P("abraham", 0.5, **VIEJO, accion="arrodillarse", emocion="llorando")], efectos=[{"tipo": "oscuridad", "fuerza": 0.4}], camara="acercar")
 S("camino", "Pero Abraham se levantó muy temprano, preparó el burro, cortó la leña y salió con Isaac y dos siervos. Caminaron tres días.",
@@ -127,7 +126,7 @@ S("montana", "Y Abraham respondió: Dios proveerá el cordero, hijo mío.",
 # ---------- 7. DIOS PROVEE ----------
 S("montana", "En la cima, Abraham construyó un altar, acomodó la leña... y ató a su hijo sobre el altar. Isaac no se resistió. Confió en su padre.",
   [P("abraham", 0.5, **VIEJO, accion="levantar", emocion="llorando"), P("isaac", 0.68, accion="dormir", escala=0.85)], [{"tipo": "altar", "x": 0.68}],
-  efectos=[{"tipo": "oscuridad", "fuerza": 0.3}], rotulo="CAPÍTULO 7: DIOS PROVEERÁ", camara="acercar")
+  efectos=[{"tipo": "oscuridad", "fuerza": 0.3}], rotulo="CAPÍTULO 6: DIOS PROVEERÁ", camara="acercar")
 S("montana", "Abraham levantó el cuchillo con la mano temblando...",
   [P("abraham", 0.5, **VIEJO, accion="levantar", emocion="llorando", objeto="espada")], efectos=[{"tipo": "temblor", "inicio": 0.3, "fin": 0.9}], camara="acercar_rapido")
 S("montana", "¡Abraham! ¡Abraham! Era el ángel del Señor llamándolo desde el cielo. ¡No le hagas nada al muchacho! Ya sé que temes a Dios, porque no me negaste a tu único hijo.",
@@ -145,7 +144,7 @@ S("cielo", "Y el ángel repitió la promesa: Por cuanto has hecho esto, multipli
 
 # ---------- 8. EL CORDERO ----------
 S("cielo", "Siglos después, en ese mismo monte de Moriah se construyó Jerusalén. Y muy cerca de ahí, otro Padre entregó a su único Hijo.",
-  [P("jesus", 0.5, accion="ofrecer", emocion="feliz")], efectos=[{"tipo": "luz"}, {"tipo": "brillo", "y": -600}], rotulo="CAPÍTULO 8: EL CORDERO DE DIOS", camara="acercar")
+  [P("jesus", 0.5, accion="ofrecer", emocion="feliz")], efectos=[{"tipo": "luz"}, {"tipo": "brillo", "y": -600}], rotulo="CAPÍTULO 7: EL CORDERO DE DIOS", camara="acercar")
 S("cielo", "Isaac fue salvado porque un carnero murió en su lugar. Y nosotros somos salvados porque Jesús, el Cordero de Dios, murió en el nuestro. Esta vez, Dios no detuvo el cuchillo.",
   [P("jesus", 0.5, accion="alabar")], [{"tipo": "cruz_vacia", "x": 0.75, "escala": 0.6}], efectos=[{"tipo": "luz"}], camara="fijo")
 
@@ -161,7 +160,7 @@ S("cielo", "Suscríbete y activa la campanita, que mañana llega otra gran histo
   [P("abraham", 0.5, **VIEJO, accion="alabar", emocion="feliz")], efectos=[{"tipo": "luz"}, {"tipo": "brillo", "y": -600}], rotulo="¡SUSCRÍBETE!", pausa=2.0, camara="acercar")
 
 guardar("08_abraham_la_historia_completa.json", "Abraham - El Padre de la Fe",
-        "Dios le pidió lo que más amaba... ¿lo entregaría?",
+        "¿Sacrificaría a su propio HIJO?",
         ["ABRAHAM", "SARA", "ISAAC", "PROMESA", "ESTRELLAS", "CORDERO", "PROVEERÁ", "FE"],
         miniatura={"texto": ["LA PRUEBA", "MÁS DIFÍCIL"],
                    "escena": {"fondo": "montana", "personajes": [
