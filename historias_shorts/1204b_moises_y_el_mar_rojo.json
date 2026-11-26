@@ -1,0 +1,316 @@
+{
+ "titulo": "Moisés y el mar Rojo",
+ "gancho": "¿Y si el MAR se abriera frente a ti?",
+ "final": "Sígueme para más historias de la BIBLIA",
+ "resaltar": [
+  "MOISÉS",
+  "MAR",
+  "ROJO",
+  "EGIPTO",
+  "CAMINO",
+  "FARAÓN",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.2,
+ "pausa_escenas": 0.12,
+ "corte_seg": 2.3,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "escenas": [
+  {
+   "fondo": "egipto",
+   "texto": "El mar delante. El ejército del faraón detrás. No había salida. El pueblo de Israel había vivido durante años como esclavo en Egipto.",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.3,
+     "accion": "caminar",
+     "emocion": "triste",
+     "hasta": 0.45
+    },
+    {
+     "id": "hombre2",
+     "x": 0.55,
+     "accion": "caminar",
+     "emocion": "triste",
+     "hasta": 0.7
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.65,
+     "y": -180,
+     "profundidad": -80
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Dios escogió a Moisés para liberarlos, pero el faraón se negó a dejarlos marchar.",
+   "personajes": [
+    {
+     "id": "moises",
+     "x": 0.3,
+     "accion": "senalar",
+     "emocion": "valiente"
+    },
+    {
+     "id": "faraon",
+     "x": 0.7,
+     "mira": "izquierda",
+     "emocion": "enojado"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.76,
+     "profundidad": -30
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "tormenta",
+   "texto": "Después de numerosas señales y plagas, finalmente el pueblo salió de Egipto.",
+   "personajes": [
+    {
+     "id": "moises",
+     "x": 0.15,
+     "hasta": 0.55,
+     "accion": "caminar"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.2,
+     "hasta": 0.5,
+     "escala": 0.65,
+     "y": -120,
+     "profundidad": -60
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "rayo"
+    },
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.2
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "egipto",
+   "texto": "Sin embargo, el faraón cambió de opinión y envió su ejército para perseguirlos.",
+   "personajes": [
+    {
+     "id": "faraon",
+     "x": 0.7,
+     "mira": "izquierda",
+     "accion": "senalar",
+     "emocion": "enojado",
+     "profundidad": 40
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "variante": "soldados",
+     "escala": 0.7,
+     "y": -150,
+     "profundidad": -60
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "mar",
+   "texto": "Los israelitas quedaron atrapados frente al mar Rojo, sin tener escapatoria.",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.3,
+     "accion": "temblar",
+     "emocion": "asustado"
+    },
+    {
+     "id": "mujer1",
+     "x": 0.65,
+     "mira": "izquierda",
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.75,
+     "y": 330,
+     "delante": true
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "mar_rojo",
+   "texto": "El pueblo comenzó a sentir miedo, pero Moisés levantó su vara siguiendo las instrucciones de Dios.",
+   "personajes": [
+    {
+     "id": "moises",
+     "x": 0.5,
+     "accion": "levantar",
+     "profundidad": 120
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.8,
+     "y": 330,
+     "profundidad": 200
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "abrir_mar",
+     "inicio": 0.99,
+     "fin": 1
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "mar_rojo",
+   "texto": "Entonces ocurrió algo extraordinario: las aguas comenzaron a separarse y apareció un camino seco en medio del mar.",
+   "personajes": [
+    {
+     "id": "moises",
+     "x": 0.5,
+     "accion": "levantar",
+     "profundidad": 120
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.8,
+     "y": 330,
+     "profundidad": 200
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "abrir_mar",
+     "inicio": 0.05,
+     "fin": 0.85
+    },
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "temblor",
+     "inicio": 0.1,
+     "fin": 0.3
+    }
+   ],
+   "portada": true,
+   "camara": "alejar"
+  },
+  {
+   "fondo": "mar_rojo",
+   "texto": "Los israelitas cruzaron al otro lado, mientras el ejército egipcio intentaba perseguirlos.",
+   "personajes": [],
+   "cosas": [
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.45,
+     "y": 0,
+     "sube": -250,
+     "profundidad": 0
+    },
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "variante": "soldados",
+     "escala": 0.8,
+     "y": 380,
+     "profundidad": 300
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "mar_rojo",
+   "texto": "Cuando el pueblo estuvo a salvo, las aguas regresaron a su lugar.",
+   "personajes": [],
+   "efectos": [
+    {
+     "tipo": "cerrar_mar",
+     "inicio": 0.1,
+     "fin": 0.8
+    },
+    {
+     "tipo": "temblor",
+     "inicio": 0.3,
+     "fin": 0.6
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "Cuando parece que no existe una salida, Dios puede abrir un camino donde nadie lo imagina.",
+   "personajes": [
+    {
+     "id": "moises",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "ENSEÑANZA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Qué mar necesitas que Dios abra en tu vida? Escríbelo en los comentarios.",
+   "personajes": [
+    {
+     "id": "moises",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "pausa": 1.6,
+   "camara": "fijo"
+  }
+ ]
+}

@@ -357,7 +357,7 @@ def main():
         subir(login)
         t = lanzar(token, login, carpeta, filtro)
         run = esperar(token, login, t)
-        if carpeta == "diario":
+        if carpeta in ("diario", "shorts"):
             # los videos largos quedan en GitHub (rama "publicar") y Claude los sube a YouTube:
             # no hace falta llenar el disco de la computadora
             log("LISTO: los videos del dia quedaron en GitHub, listos para subir a YouTube.")

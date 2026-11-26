@@ -1,0 +1,127 @@
+{
+ "titulo": "Jonás - Short",
+ "gancho": "Tres días VIVO dentro de un PEZ gigante... ¿cómo llegó ahí?",
+ "final": "Historia COMPLETA hoy 7:00 p.m.",
+ "resaltar": [
+  "JONÁS",
+  "NÍNIVE",
+  "PEZ",
+  "TORMENTA",
+  "MAR",
+  "TARSIS",
+  "COMPASIÓN",
+  "SEÑOR",
+  "DIOS",
+  "COMENTARIOS",
+  "SUSCRÍBETE"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.2,
+ "pausa_escenas": 0.12,
+ "corte_seg": 2.3,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "personajes": {},
+ "escenas": [
+  {
+   "fondo": "dentro_pez",
+   "texto": "¡Está vivo dentro de un pez gigante! Oscuridad total. Algas enredadas en la cabeza. Un olor insoportable. Un hombre está vivo... dentro del estómago de un pez gigante.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.35
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "mar",
+   "texto": "Jonás se hundía en las profundidades. Las olas pasaban sobre su cabeza. Ya no había esperanza...",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "caer",
+     "emocion": "asustado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.4
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "mar",
+   "texto": "Pero Dios ya había preparado algo. De la oscuridad del océano apareció un pez enorme... y se tragó a Jonás de un solo bocado.",
+   "personajes": [],
+   "cosas": [
+    {
+     "tipo": "pez_gigante",
+     "x": 0.5,
+     "escala": 1.2
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "agua"
+    },
+    {
+     "tipo": "temblor",
+     "inicio": 0.5,
+     "fin": 0.7
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "dentro_pez",
+   "texto": "Y ahí estaba Jonás, en el vientre del pez, vivo. Tres días y tres noches en la oscuridad.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.35
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "dentro_pez",
+   "texto": "¿Cómo salió vivo de ahí? Mira la historia completa hoy a las siete de la noche, en Biblia Animada.",
+   "personajes": [
+    {
+     "id": "jonas",
+     "x": 0.5,
+     "accion": "temblar",
+     "emocion": "asustado"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.35
+    }
+   ],
+   "camara": "acercar"
+  }
+ ]
+}

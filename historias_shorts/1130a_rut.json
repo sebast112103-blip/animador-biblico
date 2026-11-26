@@ -1,0 +1,164 @@
+{
+ "titulo": "Rut - Short",
+ "gancho": "Lo perdió TODO... y terminó en la familia de un REY.",
+ "final": "Historia COMPLETA hoy 7:00 p.m.",
+ "resaltar": [
+  "RUT",
+  "NOEMÍ",
+  "BOOZ",
+  "BELÉN",
+  "REDENTOR",
+  "DAVID",
+  "JESÚS",
+  "LEALTAD",
+  "DIOS",
+  "COMENTARIOS",
+  "SUSCRÍBETE"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.2,
+ "pausa_escenas": 0.12,
+ "corte_seg": 2.3,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "personajes": {
+  "orfa": {
+   "tunica": "#b85a6a",
+   "tocado": "velo",
+   "color_tocado": "#8a3a4a",
+   "pelo": null
+  }
+ },
+ "escenas": [
+  {
+   "fondo": "camino",
+   "texto": "Lo perdió todo: su esposo, su casa y su país. Ahora camina por un camino polvoriento junto a una anciana viuda, sin dinero y sin nadie que las proteja.",
+   "personajes": [
+    {
+     "id": "noemi",
+     "x": 0.7,
+     "accion": "caminar",
+     "hasta": 0.8,
+     "emocion": "triste",
+     "escala": 0.8
+    },
+    {
+     "id": "rut",
+     "x": 0.3,
+     "accion": "caminar",
+     "hasta": 0.4,
+     "emocion": "triste",
+     "escala": 0.8
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.2
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "camino",
+   "texto": "Pero Rut se quedó abrazada a Noemí y no la soltó. Mira, tu cuñada se ha vuelto a su pueblo y a sus dioses. Vete tú también con ella.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.3,
+     "accion": "abrazar",
+     "emocion": "llorando",
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a",
+     "escala": 0.8
+    },
+    {
+     "id": "noemi",
+     "x": 0.7,
+     "mira": "izquierda",
+     "emocion": "triste",
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a",
+     "escala": 0.8
+    }
+   ],
+   "habla": "noemi",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "camino",
+   "texto": "Y entonces Rut dijo una de las frases más hermosas de toda la Biblia:",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.5,
+     "emocion": "valiente",
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.5
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "No me pidas que te deje. A donde tú vayas, iré yo. Donde tú vivas, viviré. Tu pueblo será mi pueblo, y tu Dios será mi Dios.",
+   "personajes": [
+    {
+     "id": "rut",
+     "x": 0.5,
+     "accion": "orar",
+     "emocion": "llorando",
+     "tunica": "#4a4a5a",
+     "color_tocado": "#2a2a3a"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "habla": "rut",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "camino",
+   "texto": "Esa decisión cambió la historia de Israel. Mira la historia completa hoy a las siete de la noche, en Biblia Animada.",
+   "personajes": [
+    {
+     "id": "noemi",
+     "x": 0.7,
+     "accion": "caminar",
+     "hasta": 0.8,
+     "emocion": "triste",
+     "escala": 0.8
+    },
+    {
+     "id": "rut",
+     "x": 0.3,
+     "accion": "caminar",
+     "hasta": 0.4,
+     "emocion": "triste",
+     "escala": 0.8
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.2
+    }
+   ],
+   "camara": "acercar"
+  }
+ ]
+}

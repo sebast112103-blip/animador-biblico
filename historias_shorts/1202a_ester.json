@@ -1,0 +1,146 @@
+{
+ "titulo": "Ester - Short",
+ "gancho": "Si entraba sin permiso, MORÍA.",
+ "final": "Historia COMPLETA hoy 7:00 p.m.",
+ "resaltar": [
+  "ESTER",
+  "MARDOQUEO",
+  "AMÁN",
+  "REY",
+  "CETRO",
+  "REINA",
+  "PUEBLO",
+  "HORA",
+  "DIOS",
+  "COMENTARIOS",
+  "SUSCRÍBETE"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.2,
+ "pausa_escenas": 0.12,
+ "corte_seg": 2.3,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "personajes": {
+  "mardoqueo": {
+   "tunica": "#3f5a8a",
+   "manto": "#d9c7a3",
+   "barba": "#cfcac0",
+   "pelo": "#cfcac0",
+   "tocado": "turbante",
+   "color_tocado": "#e9e4d8"
+  }
+ },
+ "escenas": [
+  {
+   "fondo": "palacio",
+   "texto": "Si da un paso más, la matan. Una joven camina sola hacia el trono del hombre más poderoso del mundo. Nadie la llamó, y la ley es clara: quien entra sin ser invitado, muere.",
+   "personajes": [
+    {
+     "id": "ester",
+     "x": 0.3,
+     "tocado": "corona",
+     "accion": "caminar",
+     "hasta": 0.42,
+     "emocion": "asustado",
+     "escala": 0.8
+    },
+    {
+     "id": "rey_asuero",
+     "x": 0.7,
+     "mira": "izquierda",
+     "emocion": "enojado",
+     "escala": 0.8
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.82,
+     "profundidad": -30
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.2
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Al tercer día, Ester se puso su vestido real y entró al patio interior del palacio. El silencio era total. Todos esperaban a ver qué haría el rey.",
+   "personajes": [
+    {
+     "id": "ester",
+     "x": 0.3,
+     "tocado": "corona",
+     "accion": "caminar",
+     "hasta": 0.43,
+     "emocion": "asustado",
+     "escala": 0.8
+    },
+    {
+     "id": "rey_asuero",
+     "x": 0.7,
+     "mira": "izquierda",
+     "emocion": "sorprendido",
+     "escala": 0.8
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.82,
+     "profundidad": -30
+    },
+    {
+     "tipo": "multitud",
+     "x": 0.2,
+     "escala": 0.4,
+     "y": -160,
+     "profundidad": -70
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "¿Levantará el rey su cetro? Mira la historia completa hoy a las siete de la noche, en Biblia Animada.",
+   "personajes": [
+    {
+     "id": "ester",
+     "x": 0.3,
+     "tocado": "corona",
+     "accion": "caminar",
+     "hasta": 0.42,
+     "emocion": "asustado",
+     "escala": 0.8
+    },
+    {
+     "id": "rey_asuero",
+     "x": 0.7,
+     "mira": "izquierda",
+     "emocion": "enojado",
+     "escala": 0.8
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.82,
+     "profundidad": -30
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.2
+    }
+   ],
+   "camara": "acercar"
+  }
+ ]
+}

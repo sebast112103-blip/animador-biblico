@@ -1,0 +1,209 @@
+{
+ "titulo": "Sansón - Short",
+ "gancho": "El hombre más FUERTE del mundo... perdió todo por un SECRETO.",
+ "final": "Historia COMPLETA hoy 7:00 p.m.",
+ "resaltar": [
+  "SANSÓN",
+  "DALILA",
+  "FILISTEOS",
+  "FUERZA",
+  "CABELLO",
+  "LEÓN",
+  "COLUMNAS",
+  "SEÑOR",
+  "DIOS",
+  "COMENTARIOS",
+  "SUSCRÍBETE"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.2,
+ "pausa_escenas": 0.12,
+ "corte_seg": 2.3,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "personajes": {},
+ "escenas": [
+  {
+   "fondo": "templo",
+   "texto": "Tres mil personas se burlan de él. Está ciego, encadenado entre dos columnas gigantes. Era el hombre más fuerte que jamás existió... y ahora es un esclavo.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "accion": "empujar",
+     "venda": true,
+     "emocion": "triste"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "columna",
+     "x": 0.3
+    },
+    {
+     "tipo": "columna",
+     "x": 0.7
+    },
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.44,
+     "y": -200,
+     "profundidad": -70,
+     "variante": "soldados"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.3
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "templo",
+   "texto": "Traigan a Sansón para que nos divierta. Y lo sacaron de la cárcel para burlarse de él delante de todos. El templo estaba lleno, y en el techo había unas tres mil personas más.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "venda": true,
+     "emocion": "triste",
+     "accion": "caminar",
+     "hasta": 0.5,
+     "escala": 0.68
+    },
+    {
+     "id": "filisteo1",
+     "x": 0.2,
+     "accion": "senalar",
+     "emocion": "burlon",
+     "escala": 0.68
+    },
+    {
+     "id": "filisteo2",
+     "x": 0.8,
+     "mira": "izquierda",
+     "accion": "celebrar",
+     "emocion": "burlon",
+     "escala": 0.68
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "columna",
+     "x": 0.35,
+     "profundidad": -60
+    },
+    {
+     "tipo": "columna",
+     "x": 0.65,
+     "profundidad": -60
+    }
+   ],
+   "camara": "paneo"
+  },
+  {
+   "fondo": "templo",
+   "texto": "Sansón le pidió al muchacho que lo guiaba: Déjame tocar las columnas que sostienen el templo, para apoyarme en ellas.",
+   "personajes": [
+    {
+     "id": "nino",
+     "x": 0.3,
+     "emocion": "triste",
+     "escala": 0.8
+    },
+    {
+     "id": "sanson",
+     "x": 0.7,
+     "venda": true,
+     "emocion": "triste",
+     "escala": 0.8
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "columna",
+     "x": 0.38
+    },
+    {
+     "tipo": "columna",
+     "x": 0.62
+    }
+   ],
+   "habla": "sanson",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "templo",
+   "texto": "Y entonces Sansón oró: Señor, acuérdate de mí. Dame fuerzas solo una vez más.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "venda": true,
+     "emocion": "triste",
+     "accion": "orar"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "columna",
+     "x": 0.38
+    },
+    {
+     "tipo": "columna",
+     "x": 0.62
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.5
+    }
+   ],
+   "habla": "sanson",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "templo",
+   "texto": "¿Le respondió Dios? Mira la historia completa hoy a las siete de la noche, en Biblia Animada.",
+   "personajes": [
+    {
+     "id": "sanson",
+     "x": 0.5,
+     "accion": "empujar",
+     "venda": true,
+     "emocion": "triste"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "columna",
+     "x": 0.3
+    },
+    {
+     "tipo": "columna",
+     "x": 0.7
+    },
+    {
+     "tipo": "multitud",
+     "x": 0.5,
+     "escala": 0.44,
+     "y": -200,
+     "profundidad": -70,
+     "variante": "soldados"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.3
+    }
+   ],
+   "camara": "acercar"
+  }
+ ]
+}

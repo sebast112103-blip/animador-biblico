@@ -1,0 +1,181 @@
+{
+ "titulo": "Samuel - Short",
+ "gancho": "Dios le habló a un NIÑO a medianoche.",
+ "final": "Historia COMPLETA hoy 7:00 p.m.",
+ "resaltar": [
+  "SAMUEL",
+  "ANA",
+  "ELÍ",
+  "SEÑOR",
+  "ESCUCHA",
+  "ARCA",
+  "REY",
+  "SAÚL",
+  "DIOS",
+  "COMENTARIOS",
+  "SUSCRÍBETE"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.2,
+ "pausa_escenas": 0.12,
+ "corte_seg": 2.3,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "personajes": {
+  "samuel": {
+   "tunica": "#e9e4d8",
+   "pelo": "#5a3a1a",
+   "barba": null
+  },
+  "ana": {
+   "tunica": "#7a5c8a",
+   "tocado": "velo",
+   "color_tocado": "#4a3a6a",
+   "pelo": null,
+   "voz": {
+    "nombre": "es_AR-daniela-high"
+   }
+  },
+  "eli": {
+   "tunica": "#f4f1ea",
+   "manto": "#3f5a8a",
+   "tocado": "turbante",
+   "color_tocado": "#e9e4d8",
+   "barba": "#e8e4dc",
+   "pelo": "#e8e4dc"
+  }
+ },
+ "escenas": [
+  {
+   "fondo": "noche",
+   "texto": "¡Samuel! ¡Samuel! Una voz despierta a un niño a medianoche, en el templo, junto al arca de Dios.",
+   "personajes": [
+    {
+     "id": "samuel",
+     "x": 0.5,
+     "escala": 0.72,
+     "accion": "dormir"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.4
+    },
+    {
+     "tipo": "luz",
+     "x": 0.7
+    },
+    {
+     "tipo": "brillo",
+     "x": 0.7
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Pasó otra vez. Y otra vez. Tres veces. Y a la tercera, Elí entendió: era Dios quien llamaba al niño.",
+   "personajes": [
+    {
+     "id": "eli",
+     "x": 0.7,
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "emocion": "sorprendido",
+     "escala": 0.8
+    },
+    {
+     "id": "samuel",
+     "x": 0.3,
+     "escala": 0.576,
+     "emocion": "sorprendido"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.35
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Le dijo: Ve y acuéstate. Y si te vuelve a llamar, responde: Habla, Señor, que tu siervo escucha.",
+   "personajes": [
+    {
+     "id": "eli",
+     "x": 0.7,
+     "mira": "izquierda",
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "accion": "senalar",
+     "escala": 0.8
+    },
+    {
+     "id": "samuel",
+     "x": 0.3,
+     "escala": 0.576
+    }
+   ],
+   "habla": "eli",
+   "camara": "fijo"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Y el Señor vino, se quedó allí, y llamó como las otras veces: ¡Samuel, Samuel! Y el niño respondió:",
+   "personajes": [
+    {
+     "id": "samuel",
+     "x": 0.5,
+     "escala": 0.72,
+     "accion": "arrodillarse"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.3
+    },
+    {
+     "tipo": "luz",
+     "x": 0.7
+    },
+    {
+     "tipo": "brillo",
+     "x": 0.7
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "noche",
+   "texto": "¿Qué le dijo Dios a ese niño? Mira la historia completa hoy a las siete de la noche, en Biblia Animada.",
+   "personajes": [
+    {
+     "id": "samuel",
+     "x": 0.5,
+     "escala": 0.72,
+     "accion": "dormir"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.4
+    },
+    {
+     "tipo": "luz",
+     "x": 0.7
+    },
+    {
+     "tipo": "brillo",
+     "x": 0.7
+    }
+   ],
+   "camara": "acercar"
+  }
+ ]
+}

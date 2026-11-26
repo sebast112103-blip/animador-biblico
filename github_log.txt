@@ -135,3 +135,20 @@
 20:00:52 Video pendiente: La Navidad - Parte 1 - El Anuncio
 20:00:52 Conectando con tu cuenta de GitHub (si se abre una ventana, inicia sesion y autoriza)...
 20:01:07 Sesion iniciada como: sebast112103-blip
+20:01:14 Subiendo el proyecto a GitHub...
+20:01:28 Proyecto subido.
+20:01:31 Creacion de videos lanzada en la nube (diario).
+20:01:31 Esperando a que GitHub cree los videos (revisa cada minuto)...
+20:01:44 Puedes verla aqui: https://github.com/sebast112103-blip/animador-biblico/actions/runs/45733167923
+20:01:46   0/7 videos terminados (in_progress)
+20:30:56   1/7 videos terminados (in_progress)
+20:31:58   2/7 videos terminados (in_progress)
+20:35:06   3/7 videos terminados (in_progress)
+20:36:08   5/7 videos terminados (in_progress)
+20:39:14   6/7 videos terminados (in_progress)
+20:42:21   7/7 videos terminados (in_progress)
+20:46:31   7/7 videos terminados (completed)
+20:46:31 GitHub termino: success
+20:46:31 LISTO: los videos del dia quedaron en GitHub, listos para subir a YouTube.
+16:27:33 Conectando con tu cuenta de GitHub (si se abre una ventana, inicia sesion y autoriza)...
+16:27:51 Sesion iniciada como: sebast112103-blip

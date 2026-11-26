@@ -9,7 +9,7 @@ on:
       carpeta:
         description: "Qué videos crear"
         type: choice
-        options: [cortos, largos, todos, youtube, diario]
+        options: [cortos, largos, todos, youtube, diario, shorts]
         default: cortos
       filtro:
         description: "Opcional: solo historias que contengan este texto (ej: 30s, noe, 05_)"
@@ -43,7 +43,7 @@ jobs:
           else:
               c = os.environ.get("CARPETA") or "cortos"
               dirs = {"cortos": ["historias_cortas"], "largos": ["historias"], "todos": ["historias", "historias_cortas"],
-                      "youtube": ["historias_youtube"], "diario": ["historias_largas"]}[c]
+                      "youtube": ["historias_youtube"], "diario": ["historias_largas"], "shorts": ["historias_shorts"]}[c]
               archivos = sorted(f for d in dirs for f in glob.glob(f"{d}/*.json"))
               filtro = (os.environ.get("FILTRO") or "").strip().lower()
               if filtro:
@@ -117,9 +117,10 @@ jobs:
           python codigo/recopilar.py videos
           echo "${{ github.event.inputs.carpeta }}" > videos/_youtube.txt
       - name: Dejar los videos del dia listos para subir a YouTube (rama "publicar")
-        if: github.event.inputs.carpeta == 'diario'
+        if: github.event.inputs.carpeta == 'diario' || github.event.inputs.carpeta == 'shorts'
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RAMA: ${{ github.event.inputs.carpeta == 'shorts' && 'publicar_shorts' || 'publicar' }}
         run: |
           python3 - <<'EOF'
           import json, os, re, shutil, subprocess, unicodedata
@@ -146,12 +147,12 @@ jobs:
           print(json.dumps([[x["video"], len(x["partes"])] for x in lista], ensure_ascii=False))
           EOF
           cd pub
-          git init -q -b publicar
+          git init -q -b "$RAMA"
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add -A
           git commit -q -m "Videos listos para subir"
-          git push -q -f "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}" publicar
+          git push -q -f "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}" "$RAMA"
       - run: ls -la videos
       - uses: actions/upload-artifact@v4
         with:

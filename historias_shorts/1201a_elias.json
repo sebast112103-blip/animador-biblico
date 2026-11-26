@@ -1,0 +1,217 @@
+{
+ "titulo": "Elías - Short",
+ "gancho": "1 contra 450... y cayó FUEGO del cielo.",
+ "final": "Historia COMPLETA hoy 7:00 p.m.",
+ "resaltar": [
+  "ELÍAS",
+  "BAAL",
+  "ACAB",
+  "JEZABEL",
+  "FUEGO",
+  "LLUVIA",
+  "CARMELO",
+  "SEÑOR",
+  "DIOS",
+  "COMENTARIOS",
+  "SUSCRÍBETE"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.2,
+ "pausa_escenas": 0.12,
+ "corte_seg": 2.3,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "personajes": {
+  "acab": {
+   "tunica": "#6a2a6a",
+   "manto": "#d9a62e",
+   "tocado": "corona",
+   "barba": "#3a2a1a"
+  },
+  "jezabel": {
+   "tunica": "#8a1a3a",
+   "manto": "#d9a62e",
+   "tocado": "corona",
+   "pelo": "#1a1410",
+   "pelo_largo": true,
+   "voz": {
+    "nombre": "es_AR-daniela-high",
+    "tono": -2
+   }
+  }
+ },
+ "escenas": [
+  {
+   "fondo": "montana",
+   "texto": "Un hombre contra cuatrocientos cincuenta. Los profetas de Baal gritan, saltan y se cortan con cuchillos desde la mañana. Y ese hombre los mira... y se burla.",
+   "personajes": [
+    {
+     "id": "profeta_baal1",
+     "x": 0.2,
+     "accion": "saltar",
+     "emocion": "enojado",
+     "escala": 0.68
+    },
+    {
+     "id": "profeta_baal2",
+     "x": 0.5,
+     "accion": "alabar",
+     "emocion": "enojado",
+     "escala": 0.68
+    },
+    {
+     "id": "elias",
+     "x": 0.8,
+     "mira": "izquierda",
+     "emocion": "burlon",
+     "objeto": "cayado",
+     "escala": 0.68
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.33
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Y luego hizo algo que nadie esperaba: Llenen cuatro cántaros de agua y échenla sobre el sacrificio. Otra vez. Y otra vez. Doce cántaros. El agua corría por todo el altar y llenó la zanja.",
+   "personajes": [
+    {
+     "id": "hombre1",
+     "x": 0.7,
+     "accion": "lanzar",
+     "escala": 0.8
+    },
+    {
+     "id": "elias",
+     "x": 0.3,
+     "objeto": "cayado",
+     "accion": "senalar",
+     "escala": 0.8
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.68
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "agua",
+     "x": 0.68
+    }
+   ],
+   "habla": "elias",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "montana",
+   "texto": "A la hora del sacrificio de la tarde, Elías se acercó y oró con calma: Señor, Dios de Abraham, de Isaac y de Israel, que se sepa hoy que tú eres Dios. Respóndeme, Señor, respóndeme.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.45,
+     "objeto": "cayado",
+     "accion": "orar"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.7
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.45
+    }
+   ],
+   "habla": "elias",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "montana",
+   "texto": "¡Y entonces cayó fuego del cielo! Consumió el sacrificio, la leña, las piedras, el polvo... y hasta el agua de la zanja.",
+   "personajes": [
+    {
+     "id": "elias",
+     "x": 0.35,
+     "objeto": "cayado",
+     "accion": "levantar",
+     "emocion": "sorprendido"
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.68
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "rayo",
+     "inicio": 0.05
+    },
+    {
+     "tipo": "flash",
+     "inicio": 0.1
+    },
+    {
+     "tipo": "fuego",
+     "x": 0.68,
+     "y": -100,
+     "tamano": 2.6,
+     "crece": true
+    },
+    {
+     "tipo": "temblor",
+     "inicio": 0.1,
+     "fin": 0.6
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Pero lo que pasó después... nadie lo esperaba. Mira la historia completa hoy a las siete de la noche, en Biblia Animada.",
+   "personajes": [
+    {
+     "id": "profeta_baal1",
+     "x": 0.2,
+     "accion": "saltar",
+     "emocion": "enojado",
+     "escala": 0.68
+    },
+    {
+     "id": "profeta_baal2",
+     "x": 0.5,
+     "accion": "alabar",
+     "emocion": "enojado",
+     "escala": 0.68
+    },
+    {
+     "id": "elias",
+     "x": 0.8,
+     "mira": "izquierda",
+     "emocion": "burlon",
+     "objeto": "cayado",
+     "escala": 0.68
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.33
+    }
+   ],
+   "camara": "acercar"
+  }
+ ]
+}

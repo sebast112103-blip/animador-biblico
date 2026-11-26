@@ -1,0 +1,173 @@
+{
+ "titulo": "Salomón - Short",
+ "gancho": "¿Partiría al BEBÉ en dos?",
+ "final": "Historia COMPLETA hoy 7:00 p.m.",
+ "resaltar": [
+  "SALOMÓN",
+  "SABIDURÍA",
+  "TEMPLO",
+  "REY",
+  "DAVID",
+  "SABÁ",
+  "CORAZÓN",
+  "SEÑOR",
+  "DIOS",
+  "COMENTARIOS",
+  "SUSCRÍBETE"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.2,
+ "pausa_escenas": 0.12,
+ "corte_seg": 2.3,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "personajes": {
+  "salomon": {
+   "tunica": "#f4f1ea",
+   "manto": "#7a2a8a",
+   "tocado": "corona",
+   "barba": "#3a2a1a",
+   "pelo": "#3a2a1a"
+  },
+  "madre2": {
+   "tunica": "#8a6a3a",
+   "tocado": "velo",
+   "color_tocado": "#5a4a2a",
+   "pelo": null,
+   "voz": {
+    "nombre": "es_AR-daniela-high",
+    "tono": -2
+   }
+  },
+  "reina_saba": {
+   "tunica": "#d9a62e",
+   "manto": "#1a6a6a",
+   "tocado": "corona",
+   "piel": "#8a5a3a",
+   "pelo": "#1a1410",
+   "pelo_largo": true,
+   "voz": {
+    "nombre": "es_AR-daniela-high",
+    "tono": -1
+   }
+  }
+ },
+ "escenas": [
+  {
+   "fondo": "palacio",
+   "texto": "¡Traigan una espada y partan al bebé en dos! Eso ordenó el rey. Dos mujeres decían ser la madre del mismo niño, y no había testigos ni pruebas.",
+   "personajes": [
+    {
+     "id": "mujer1",
+     "x": 0.2,
+     "accion": "senalar",
+     "emocion": "enojado",
+     "escala": 0.68
+    },
+    {
+     "id": "madre2",
+     "x": 0.5,
+     "accion": "senalar",
+     "emocion": "llorando",
+     "escala": 0.68
+    },
+    {
+     "id": "salomon",
+     "x": 0.8,
+     "mira": "izquierda",
+     "tocado": "corona",
+     "accion": "levantar",
+     "escala": 0.68
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.8,
+     "profundidad": -30
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "Una noche, el hijo de ella murió. Y mientras yo dormía, cambió los bebés: puso a su hijo muerto en mis brazos y se llevó al mío.",
+   "personajes": [
+    {
+     "id": "mujer1",
+     "x": 0.4,
+     "accion": "temblar",
+     "emocion": "llorando"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.3
+    }
+   ],
+   "habla": "mujer1",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "¡Mentira!, gritó la otra. ¡El niño vivo es mío, y el muerto es el tuyo! Y empezaron a discutir delante del rey.",
+   "personajes": [
+    {
+     "id": "madre2",
+     "x": 0.3,
+     "accion": "senalar",
+     "emocion": "enojado",
+     "escala": 0.8
+    },
+    {
+     "id": "mujer1",
+     "x": 0.7,
+     "mira": "izquierda",
+     "accion": "senalar",
+     "emocion": "enojado",
+     "escala": 0.8
+    }
+   ],
+   "habla": "madre2",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "palacio",
+   "texto": "¿Qué hizo el rey sabio? Mira la historia completa hoy a las siete de la noche, en Biblia Animada.",
+   "personajes": [
+    {
+     "id": "mujer1",
+     "x": 0.2,
+     "accion": "senalar",
+     "emocion": "enojado",
+     "escala": 0.68
+    },
+    {
+     "id": "madre2",
+     "x": 0.5,
+     "accion": "senalar",
+     "emocion": "llorando",
+     "escala": 0.68
+    },
+    {
+     "id": "salomon",
+     "x": 0.8,
+     "mira": "izquierda",
+     "tocado": "corona",
+     "accion": "levantar",
+     "escala": 0.68
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "trono",
+     "x": 0.8,
+     "profundidad": -30
+    }
+   ],
+   "camara": "acercar"
+  }
+ ]
+}

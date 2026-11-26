@@ -1,0 +1,333 @@
+{
+ "titulo": "La resurrección de Jesús",
+ "gancho": "La TUMBA estaba VACÍA",
+ "final": "Sígueme para más historias de la BIBLIA",
+ "resaltar": [
+  "JESÚS",
+  "TUMBA",
+  "VACÍA",
+  "RESUCITADO",
+  "VIVO",
+  "ESPERANZA",
+  "DIOS",
+  "JESÚS",
+  "BIBLIA"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.2,
+ "pausa_escenas": 0.12,
+ "corte_seg": 2.3,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "escenas": [
+  {
+   "fondo": "jardin",
+   "texto": "Tres días después de morir, su tumba estaba vacía. Después de ser crucificado, Jesús fue colocado en una tumba que pertenecía a José de Arimatea.",
+   "personajes": [],
+   "cosas": [
+    {
+     "tipo": "tumba",
+     "x": 0.6
+    },
+    {
+     "tipo": "piedra",
+     "x": 0.6,
+     "profundidad": 10
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.45
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "jardin",
+   "texto": "Una gran piedra fue colocada en la entrada y unos guardias quedaron vigilando el lugar.",
+   "personajes": [
+    {
+     "id": "guardia1",
+     "x": 0.3,
+     "profundidad": 40,
+     "escala": 0.8
+    },
+    {
+     "id": "guardia2",
+     "x": 0.7,
+     "mira": "izquierda",
+     "profundidad": 40,
+     "escala": 0.8
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "tumba",
+     "x": 0.6
+    },
+    {
+     "tipo": "piedra",
+     "x": 0.6,
+     "profundidad": 10
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.4
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Sus seguidores estaban tristes porque pensaban que todo había terminado.",
+   "personajes": [
+    {
+     "id": "maria_magdalena",
+     "x": 0.3,
+     "emocion": "llorando",
+     "escala": 0.8
+    },
+    {
+     "id": "pedro",
+     "x": 0.7,
+     "mira": "izquierda",
+     "emocion": "triste",
+     "escala": 0.8
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "jardin",
+   "texto": "Pero al tercer día, ocurrió algo extraordinario.",
+   "personajes": [],
+   "cosas": [
+    {
+     "tipo": "tumba",
+     "x": 0.6
+    },
+    {
+     "tipo": "piedra",
+     "x": 0.6,
+     "hasta": 0.92,
+     "girar": true,
+     "profundidad": 10
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.6
+    },
+    {
+     "tipo": "flash",
+     "fin": 0.1
+    },
+    {
+     "tipo": "temblor",
+     "inicio": 0.1,
+     "fin": 0.5
+    }
+   ],
+   "rotulo": "AL TERCER DÍA",
+   "portada": true,
+   "camara": "paneo"
+  },
+  {
+   "fondo": "jardin",
+   "texto": "María Magdalena llegó temprano a la tumba y descubrió que la piedra había sido retirada.",
+   "personajes": [
+    {
+     "id": "maria_magdalena",
+     "x": 0.02,
+     "hasta": 0.25,
+     "accion": "caminar",
+     "emocion": "sorprendido",
+     "profundidad": 40
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "tumba",
+     "x": 0.6
+    },
+    {
+     "tipo": "piedra",
+     "x": 0.92,
+     "profundidad": 10
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "jardin",
+   "texto": "Al entrar, encontró que el cuerpo de Jesús no estaba allí.",
+   "personajes": [
+    {
+     "id": "maria_magdalena",
+     "x": 0.3,
+     "emocion": "asustado",
+     "profundidad": 40
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "tumba",
+     "x": 0.6
+    },
+    {
+     "tipo": "piedra",
+     "x": 0.92,
+     "profundidad": 10
+    }
+   ],
+   "camara": "acercar",
+   "foco_x": 0.55,
+   "rotulo": "VACÍA"
+  },
+  {
+   "fondo": "jardin",
+   "texto": "Entonces recibió un mensaje de los ángeles: Jesús había resucitado.",
+   "personajes": [
+    {
+     "id": "maria_magdalena",
+     "x": 0.3,
+     "emocion": "sorprendido",
+     "profundidad": 40,
+     "escala": 0.8
+    },
+    {
+     "id": "angel",
+     "x": 0.7,
+     "mira": "izquierda",
+     "accion": "senalar",
+     "profundidad": 40,
+     "escala": 0.8
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "tumba",
+     "x": 0.6
+    },
+    {
+     "tipo": "piedra",
+     "x": 0.92,
+     "profundidad": 10
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.62
+    },
+    {
+     "tipo": "brillo",
+     "x": 0.62,
+     "y": -450
+    }
+   ],
+   "rotulo": "¡RESUCITÓ!",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "jardin",
+   "texto": "Poco después, Jesús se apareció a sus seguidores y les demostró que estaba vivo.",
+   "personajes": [
+    {
+     "id": "pedro",
+     "x": 0.2,
+     "emocion": "sorprendido",
+     "escala": 0.68
+    },
+    {
+     "id": "maria_magdalena",
+     "x": 0.5,
+     "emocion": "feliz",
+     "escala": 0.68
+    },
+    {
+     "id": "jesus",
+     "x": 0.8,
+     "mira": "izquierda",
+     "accion": "ofrecer",
+     "aureola": true,
+     "escala": 0.68
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.7
+    }
+   ],
+   "camara": "fijo"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "La muerte no había tenido la última palabra.",
+   "personajes": [
+    {
+     "id": "jesus",
+     "x": 0.5,
+     "accion": "alabar",
+     "aureola": true
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -450
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "La resurrección representa la esperanza, la victoria y la promesa de una nueva vida.",
+   "personajes": [
+    {
+     "id": "jesus",
+     "x": 0.5,
+     "accion": "alabar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    }
+   ],
+   "rotulo": "ENSEÑANZA",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "cielo",
+   "texto": "¿Qué significa para ti que Jesús vive? Escribe AMÉN en los comentarios.",
+   "personajes": [
+    {
+     "id": "jesus",
+     "x": 0.5,
+     "accion": "orar"
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz"
+    },
+    {
+     "tipo": "brillo",
+     "y": -600
+    }
+   ],
+   "pausa": 1.6,
+   "camara": "fijo"
+  }
+ ]
+}

@@ -1,0 +1,146 @@
+{
+ "titulo": "Navidad - Short",
+ "gancho": "Un ÁNGEL apareció en su cuarto...",
+ "final": "Historia COMPLETA hoy 7:00 p.m.",
+ "resaltar": [
+  "MARÍA",
+  "JOSÉ",
+  "GABRIEL",
+  "ÁNGEL",
+  "JESÚS",
+  "ELISABET",
+  "ZACARÍAS",
+  "JUAN",
+  "EMANUEL",
+  "NAVIDAD",
+  "DIOS",
+  "COMENTARIOS",
+  "SUSCRÍBETE"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.2,
+ "pausa_escenas": 0.12,
+ "corte_seg": 2.3,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "personajes": {
+  "zacarias": {
+   "tunica": "#f4f1ea",
+   "manto": "#3f5a8a",
+   "tocado": "turbante",
+   "color_tocado": "#e9e4d8",
+   "barba": "#e8e4dc",
+   "pelo": "#e8e4dc"
+  },
+  "elisabet": {
+   "tunica": "#8a6a8a",
+   "tocado": "velo",
+   "color_tocado": "#5a4a6a",
+   "pelo": null,
+   "voz": {
+    "nombre": "es_AR-daniela-high",
+    "tono": -3
+   }
+  }
+ },
+ "escenas": [
+  {
+   "fondo": "noche",
+   "texto": "Tiene quince años y un ángel aparece en su cuarto. Está sola en su casa en Nazaret, y de repente todo se llena de luz: ¡Alégrate, muy favorecida! El Señor está contigo.",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.3,
+     "emocion": "asustado",
+     "accion": "temblar",
+     "escala": 0.8
+    },
+    {
+     "id": "angel",
+     "x": 0.7,
+     "mira": "izquierda",
+     "accion": "ofrecer",
+     "escala": 0.8
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.72
+    },
+    {
+     "tipo": "brillo",
+     "x": 0.72
+    },
+    {
+     "tipo": "flash",
+     "inicio": 0.1
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "noche",
+   "texto": "El ángel entró donde estaba María y le dijo: ¡Alégrate, muy favorecida! El Señor está contigo. Y María se turbó mucho, preguntándose qué significaba ese saludo.",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.3,
+     "emocion": "asustado",
+     "escala": 0.8
+    },
+    {
+     "id": "angel",
+     "x": 0.7,
+     "mira": "izquierda",
+     "accion": "ofrecer",
+     "escala": 0.8
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.7
+    }
+   ],
+   "habla": "angel",
+   "camara": "acercar"
+  },
+  {
+   "fondo": "noche",
+   "texto": "Lo que el ángel le anunció cambió el mundo. Mira la historia completa hoy a las siete de la noche, en Biblia Animada.",
+   "personajes": [
+    {
+     "id": "maria",
+     "x": 0.3,
+     "emocion": "asustado",
+     "accion": "temblar",
+     "escala": 0.8
+    },
+    {
+     "id": "angel",
+     "x": 0.7,
+     "mira": "izquierda",
+     "accion": "ofrecer",
+     "escala": 0.8
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "luz",
+     "x": 0.72
+    },
+    {
+     "tipo": "brillo",
+     "x": 0.72
+    },
+    {
+     "tipo": "flash",
+     "inicio": 0.1
+    }
+   ],
+   "camara": "acercar"
+  }
+ ]
+}

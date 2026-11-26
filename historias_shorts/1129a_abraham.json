@@ -1,0 +1,145 @@
+{
+ "titulo": "Abraham - Short",
+ "gancho": "¿Sacrificaría a su propio HIJO?",
+ "final": "Historia COMPLETA hoy 7:00 p.m.",
+ "resaltar": [
+  "ABRAHAM",
+  "SARA",
+  "ISAAC",
+  "PROMESA",
+  "ESTRELLAS",
+  "CORDERO",
+  "PROVEERÁ",
+  "FE",
+  "DIOS",
+  "COMENTARIOS",
+  "SUSCRÍBETE"
+ ],
+ "voz_narrador": "es_MX-claude-high",
+ "velocidad_narrador": 1.2,
+ "pausa_escenas": 0.12,
+ "corte_seg": 2.3,
+ "musica": "auto",
+ "volumen_musica": 0.1,
+ "efectos_sonido": true,
+ "personajes": {},
+ "escenas": [
+  {
+   "fondo": "montana",
+   "texto": "Este padre está a punto de sacrificar a su propio hijo. Sube la montaña con leña, fuego y un cuchillo. Y el muchacho le pregunta: Padre, ¿dónde está el cordero?",
+   "personajes": [
+    {
+     "id": "abraham",
+     "x": 0.7,
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "accion": "caminar",
+     "hasta": 0.8,
+     "emocion": "triste",
+     "escala": 0.8
+    },
+    {
+     "id": "isaac",
+     "x": 0.3,
+     "accion": "caminar",
+     "hasta": 0.4,
+     "escala": 0.68
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.2
+    }
+   ],
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "montana",
+   "texto": "Y Abraham respondió: Dios proveerá el cordero, hijo mío.",
+   "personajes": [
+    {
+     "id": "abraham",
+     "x": 0.7,
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "emocion": "llorando",
+     "accion": "abrazar",
+     "escala": 0.8
+    },
+    {
+     "id": "isaac",
+     "x": 0.3,
+     "escala": 0.68,
+     "accion": "abrazar"
+    }
+   ],
+   "habla": "abraham",
+   "camara": "acercar_rapido"
+  },
+  {
+   "fondo": "montana",
+   "texto": "En la cima, Abraham construyó un altar, acomodó la leña... y ató a su hijo sobre el altar. Isaac no se resistió. Confió en su padre.",
+   "personajes": [
+    {
+     "id": "abraham",
+     "x": 0.3,
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "accion": "levantar",
+     "emocion": "llorando",
+     "escala": 0.8
+    },
+    {
+     "id": "isaac",
+     "x": 0.7,
+     "accion": "dormir",
+     "escala": 0.68
+    }
+   ],
+   "cosas": [
+    {
+     "tipo": "altar",
+     "x": 0.68
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.3
+    }
+   ],
+   "camara": "acercar"
+  },
+  {
+   "fondo": "montana",
+   "texto": "¿Qué pasó en la cima de esa montaña? Mira la historia completa hoy a las siete de la noche, en Biblia Animada.",
+   "personajes": [
+    {
+     "id": "abraham",
+     "x": 0.7,
+     "barba": "#e8e4dc",
+     "pelo": "#e8e4dc",
+     "accion": "caminar",
+     "hasta": 0.8,
+     "emocion": "triste",
+     "escala": 0.8
+    },
+    {
+     "id": "isaac",
+     "x": 0.3,
+     "accion": "caminar",
+     "hasta": 0.4,
+     "escala": 0.68
+    }
+   ],
+   "efectos": [
+    {
+     "tipo": "oscuridad",
+     "fuerza": 0.2
+    }
+   ],
+   "camara": "acercar"
+  }
+ ]
+}
